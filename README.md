@@ -10,7 +10,11 @@ This repository is intended for those users of ZB Block that make use of the **b
 
 This fork is based upon the **BADIP-2015-02a** iteration of `badip.inc` as contained within the **beta signatures 77g** signatures set, **[originally released February 24th, 2015](http://www.spambotsecurity.com/forum/viewtopic.php?f=5&t=2992)**.
 
+---
+
 **Directories:** 77g contains the original, verbatim, 77g beta signatures `badip.inc` file, whereas 77g+U contains my fork. You could diff the two files for comparison if you wanted to. The "+U" is to signify that it's an unofficial fork (official releases don't contain that marker).
+
+---
 
 History (*change_log*) of this repository (and of those updates merged into it) is as follows:
 
@@ -20,16 +24,16 @@ History (*change_log*) of this repository (and of those updates merged into it) 
 #####2015-02-24
 - Beta signatures 77g is announced and released by Zaphod (spambotsecurity.com/forum/viewtopic.php?f=5&t=2992#p22177).
 
-####2015-06-13
+#####2015-06-13
 - chris_c posts an update for the Pegasus and Fortress IP CIDRs (spambotsecurity.com/forum/viewtopic.php?f=48&t=3474#p23452).
 
-####2015-06-29/30
+#####2015-06-29/30
 - BlueEyed Zebra and chris_c posts an update for the PlusServer CIDRs (spambotsecurity.com/forum/viewtopic.php?f=48&t=3506#p23710).
 
-####2015-08-07
+#####2015-08-07
 - chris_c posts an update for the PSYCHZ.NET CIDRs (spambotsecurity.com/forum/viewtopic.php?f=48&t=3546#p23988).
 
-####2015-08-14
+#####2015-08-14
 - chris_c posts an update for the OVH CIDRs (spambotsecurity.com/forum/viewtopic.php?f=48&t=2750#p24042).
 - chris_c posts an update for the Nobis CIDRs (spambotsecurity.com/forum/viewtopic.php?f=7&t=2874#p24043).
 - chris_c posts an update for the Webexxpurts CIDRs (spambotsecurity.com/forum/viewtopic.php?f=48&t=3366#p24044).
@@ -37,25 +41,31 @@ History (*change_log*) of this repository (and of those updates merged into it) 
 - chris_c posts an update for the HostDime CIDRs (spambotsecurity.com/forum/viewtopic.php?f=48&t=3332#24057).
 - chris_c posts an update for the Singlehop CIDRs (spambotsecurity.com/forum/viewtopic.php?f=48&t=3555#24063).
 
-####2015-08-18
+#####2015-08-18
 - chris_c posts an update for the Quadranet CIDRs (spambotsecurity.com/forum/viewtopic.php?f=48&t=3334#p24069).
 - chris_c posts an update for the Wholesale/DataShack CIDRs (spambotsecurity.com/forum/viewtopic.php?f=48&t=2552#24070).
 
-####2015-08-20
+#####2015-08-20
 - chris_c posts an update for the Eonix CIDRs (spambotsecurity.com/forum/viewtopic.php?f=7&t=2903#p24099).
 
-####2015-08-21
+#####2015-08-21
 - chris_c posts an update for the Avante Hosting CIDRs (spambotsecurity.com/forum/viewtopic.php?f=7&t=2205#p24103).
 - chris_c posts an update for the VolumeDrive CIDRs (spambotsecurity.com/forum/viewtopic.php?f=7&t=2317#p24104); These CIDRs are mostly new additions, but, one of their CIDRs did already exist in the original beta signatures release and a decision had already been reached regarding these ranges prior to, and so, I feel they can be safely included in this repository without it entirely constituting as the additional of new signatures.
 
-####2015-08-23
+#####2015-08-23
 - This repository, `zbb-badip-fork`, created, on this date, with all aforementioned updates implemented into its base. All changes committed to GitHub and then announced to Spambot Security.
+
+---
 
 Additional "bad IPs" worth considering including in your installation of ZB Block, but not included specifically in this repository (because including them would constitute the addition of new signatures, and I intend this repository to only be for updates to existing outdated signatures):
 
 - VPLS (spambotsecurity.com/forum/viewtopic.php?f=7&t=3273).
 - Bilgisayar (spambotsecurity.com/forum/viewtopic.php?f=7&t=3553).
 
+---
+
 Additionally, Hurricane Electric signatures have an available update (can be found at spambotsecurity.com/forum/viewtopic.php?f=7&t=2711), but I haven't included that update in this repository, due to the potential need for specific bypasses for certain users and my wanting to avoid introducing complications to the signatures by way of this repository.
+
+---
 
 EOF
