@@ -1,0 +1,61 @@
+### What is this repository?
+
+This repository, "zbb-badip-fork", is for tracking updates necessary for the `badip.inc` file of ZB Block prior to their eventual release. I created this to expediate distribution of updates for until the next iteration is released. I'll probably delete this repository after the next iteration is released, because it'll no longer serve purpose after that time. New signatures or signature sets won't be added, nor old signatures removed, except where as updates to previously existing signatures that have become outdated; This is purely for updates.
+
+Please note that I've neither written any of the herein contained signatures, nor tested, doubled-checked or audited them for their validity or functionality.
+
+ZB Block (and therefore this repository) is licensed under GNU/GPL v2 and can be obtained free of charge from **[http://www.spambotsecurity.com/zbblock_download.php](http://www.spambotsecurity.com/zbblock_download.php)**.
+
+This repository is intended for those users of ZB Block that make use of the **beta signatures 77g** signatures set. If you're not already keeping up-to-date with the latest beta signatures, or if you're using the **unblocked signatures**, then, this repository **won't** be of any value to you (and potentially won't work as intended, anyhow, due to some small required changes brought about as of a recent mainlined beta signatures update).
+
+This fork is based upon the **BADIP-2015-02a** iteration of `badip.inc` as contained within the **beta signatures 77g** signatures set, **[originally released February 24th, 2015](http://www.spambotsecurity.com/forum/viewtopic.php?f=5&t=2992)**.
+
+**Directories:** 77g contains the original, verbatim, 77g beta signatures `badip.inc` file, whereas 77g+U contains my fork. You could diff the two files for comparison if you wanted to. The "+U" is to signify that it's an unofficial fork (official releases don't contain that marker).
+
+History (*change_log*) of this repository (and of those updates merged into it) is as follows:
+
+#####2014-10-29
+- igknight posts a last minute update for Digital Ocean CIDRs that isn't mainlined by the time of the next release (spambotsecurity.com/forum/viewtopic.php?p=21029#p21029)
+
+#####2015-02-24
+- Beta signatures 77g is announced and released by Zaphod (spambotsecurity.com/forum/viewtopic.php?f=5&t=2992#p22177).
+
+####2015-06-13
+- chris_c posts an update for the Pegasus and Fortress IP CIDRs (spambotsecurity.com/forum/viewtopic.php?f=48&t=3474#p23452).
+
+####2015-06-29/30
+- BlueEyed Zebra and chris_c posts an update for the PlusServer CIDRs (spambotsecurity.com/forum/viewtopic.php?f=48&t=3506#p23710).
+
+####2015-08-07
+- chris_c posts an update for the PSYCHZ.NET CIDRs (spambotsecurity.com/forum/viewtopic.php?f=48&t=3546#p23988).
+
+####2015-08-14
+- chris_c posts an update for the OVH CIDRs (spambotsecurity.com/forum/viewtopic.php?f=48&t=2750#p24042).
+- chris_c posts an update for the Nobis CIDRs (spambotsecurity.com/forum/viewtopic.php?f=7&t=2874#p24043).
+- chris_c posts an update for the Webexxpurts CIDRs (spambotsecurity.com/forum/viewtopic.php?f=48&t=3366#p24044).
+- chris_c posts an update for the Colocrossing CIDRs (spambotsecurity.com/forum/viewtopic.php?f=48&t=3554#24056).
+- chris_c posts an update for the HostDime CIDRs (spambotsecurity.com/forum/viewtopic.php?f=48&t=3332#24057).
+- chris_c posts an update for the Singlehop CIDRs (spambotsecurity.com/forum/viewtopic.php?f=48&t=3555#24063).
+
+####2015-08-18
+- chris_c posts an update for the Quadranet CIDRs (spambotsecurity.com/forum/viewtopic.php?f=48&t=3334#p24069).
+- chris_c posts an update for the Wholesale/DataShack CIDRs (spambotsecurity.com/forum/viewtopic.php?f=48&t=2552#24070).
+
+####2015-08-20
+- chris_c posts an update for the Eonix CIDRs (spambotsecurity.com/forum/viewtopic.php?f=7&t=2903#p24099).
+
+####2015-08-21
+- chris_c posts an update for the Avante Hosting CIDRs (spambotsecurity.com/forum/viewtopic.php?f=7&t=2205#p24103).
+- chris_c posts an update for the VolumeDrive CIDRs (spambotsecurity.com/forum/viewtopic.php?f=7&t=2317#p24104); These CIDRs are mostly new additions, but, one of their CIDRs did already exist in the original beta signatures release and a decision had already been reached regarding these ranges prior to, and so, I feel they can be safely included in this repository without it entirely constituting as the additional of new signatures.
+
+####2015-08-23
+- This repository, `zbb-badip-fork`, created, on this date, with all aforementioned updates implemented into its base. All changes committed to GitHub and then announced to Spambot Security.
+
+Additional "bad IPs" worth considering including in your installation of ZB Block, but not included specifically in this repository (because including them would constitute the addition of new signatures, and I intend this repository to only be for updates to existing outdated signatures):
+
+- VPLS (spambotsecurity.com/forum/viewtopic.php?f=7&t=3273).
+- Bilgisayar (spambotsecurity.com/forum/viewtopic.php?f=7&t=3553).
+
+Additionally, Hurricane Electric signatures have an available update (can be found at spambotsecurity.com/forum/viewtopic.php?f=7&t=2711), but I haven't included that update in this repository, due to the potential need for specific bypasses for certain users and my wanting to avoid introducing complications to the signatures by way of this repository.
+
+EOF
