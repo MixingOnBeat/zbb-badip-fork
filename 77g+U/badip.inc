@@ -1702,35 +1702,37 @@ $ax += cidrblock($address,'216.99.128.0/20','Trend Micro. Follows their users ar
 $ax += cidrblock($address,'216.104.0.0/19','Trend Micro. Follows their users around, and attempts to get into restricted / private parts of websites. Privacy risk & Replay Attack (ASN-TRENDM-4). '); //74c
 
 // Hetzner Online AG
-// AS24940
+// AS24940 updated 08/11/15
 
-$ax += cidrblock($address,'5.9.0.0/16','Hetzner (ASN-HETZ-0). '); //74c
-$ax += cidrblock($address,'46.4.0.0/16','Hetzner (ASN-HETZ-1). '); //74c
-$ax += cidrblock($address,'78.46.0.0/15','Hetzner (ASN-HETZ-2). '); //74c
-$ax += cidrblock($address,'85.10.192.0/18','Hetzner (ASN-HETZ-3). '); //74c
-$ax += cidrblock($address,'88.198.0.0/16','Hetzner (ASN-HETZ-4). '); //74c
-$ax += cidrblock($address,'91.220.49.0/24','Hetzner (ASN-HETZ-5). '); //74c
-$ax += cidrblock($address,'91.233.8.0/22','Hetzner (ASN-HETZ-6). '); //74c
-$ax += cidrblock($address,'136.243.0.0/16','Hetzner (ASN-HETZ-7). '); //74c
-$ax += cidrblock($address,'138.201.0.0/16','Hetzner (ASN-HETZ-8). '); //74c
-$ax += cidrblock($address,'144.76.0.0/16','Hetzner (ASN-HETZ-9). '); //74c
-$ax += cidrblock($address,'148.251.0.0/16','Hetzner (ASN-HETZ-10). '); //74c
-$ax += cidrblock($address,'176.9.0.0/16','Hetzner (ASN-HETZ-11). '); //74c
-$ax += cidrblock($address,'176.102.168.0/21','Hetzner (ASN-HETZ-12). '); //74c
-$ax += cidrblock($address,'178.63.0.0/16','Hetzner (ASN-HETZ-13). '); //74c
-$ax += cidrblock($address,'185.12.64.0/22','Hetzner (ASN-HETZ-14). '); //74c
-$ax += cidrblock($address,'188.40.0.0/16','Hetzner (ASN-HETZ-15). '); //74c
-$ax += cidrblock($address,'193.25.170.0/23','Hetzner (ASN-HETZ-16). '); //74c
-$ax += cidrblock($address,'193.28.90.0/24','Hetzner (ASN-HETZ-17). '); //74c
-$ax += cidrblock($address,'193.110.6.0/23','Hetzner (ASN-HETZ-18). '); //74c
-$ax += cidrblock($address,'193.223.77.0/24','Hetzner (ASN-HETZ-19). '); //74c
-$ax += cidrblock($address,'194.42.180.0/22','Hetzner (ASN-HETZ-20). '); //74c
-$ax += cidrblock($address,'194.42.184.0/22','Hetzner (ASN-HETZ-21). '); //74c
-$ax += cidrblock($address,'194.145.226.0/24','Hetzner (ASN-HETZ-22). '); //74c
-$ax += cidrblock($address,'195.13.45.0/24','Hetzner (ASN-HETZ-23). '); //74c
-$ax += cidrblock($address,'197.242.84.0/22','Hetzner (ASN-HETZ-24). '); //74c
-$ax += cidrblock($address,'213.133.96.0/19','Hetzner (ASN-HETZ-25). '); //74c
-$ax += cidrblock($address,'213.239.192.0/18','Hetzner (ASN-HETZ-26). '); //74c
+$ax += cidrblock($address,'5.9.0.0/16','Hetzner (ASN-HETZ-01). ');
+$ax += cidrblock($address,'46.4.0.0/16','Hetzner (ASN-HETZ-02). ');
+$ax += cidrblock($address,'78.46.0.0/15','Hetzner (ASN-HETZ-03). ');
+$ax += cidrblock($address,'85.10.192.0/18','Hetzner (ASN-HETZ-04). ');
+$ax += cidrblock($address,'88.198.0.0/16','Hetzner (ASN-HETZ-05). ');
+$ax += cidrblock($address,'91.220.49.0/24','Hetzner (ASN-HETZ-06). ');
+$ax += cidrblock($address,'91.233.8.0/22','Hetzner (ASN-HETZ-07). ');
+$ax += cidrblock($address,'136.243.0.0/16','Hetzner (ASN-HETZ-08). ');
+$ax += cidrblock($address,'138.201.0.0/16','Hetzner (ASN-HETZ-09). ');
+$ax += cidrblock($address,'144.76.0.0/16','Hetzner (ASN-HETZ-10). ');
+$ax += cidrblock($address,'148.251.0.0/16','Hetzner (ASN-HETZ-11). ');
+$ax += cidrblock($address,'176.9.0.0/16','Hetzner (ASN-HETZ-12). ');
+$ax += cidrblock($address,'176.102.168.0/21','Hetzner (ASN-HETZ-13). ');
+$ax += cidrblock($address,'178.63.0.0/16','Hetzner (ASN-HETZ-14). ');
+$ax += cidrblock($address,'185.12.64.0/22','Hetzner (ASN-HETZ-15). ');
+$ax += cidrblock($address,'185.50.120.0/23','Hetzner (ASN-HETZ-16). ');
+$ax += cidrblock($address,'188.40.0.0/16','Hetzner (ASN-HETZ-17). ');
+$ax += cidrblock($address,'193.25.170.0/23','Hetzner (ASN-HETZ-18). ');
+$ax += cidrblock($address,'193.28.90.0/24','Hetzner (ASN-HETZ-19). ');
+$ax += cidrblock($address,'193.110.6.0/23','Hetzner (ASN-HETZ-20). ');
+$ax += cidrblock($address,'193.223.77.0/24','Hetzner (ASN-HETZ-21). ');
+$ax += cidrblock($address,'194.42.180.0/22','Hetzner (ASN-HETZ-22). ');
+$ax += cidrblock($address,'194.42.184.0/22','Hetzner (ASN-HETZ-23). ');
+$ax += cidrblock($address,'194.145.226.0/24','Hetzner (ASN-HETZ-24). ');
+$ax += cidrblock($address,'195.248.224.0/24','Hetzner (ASN-HETZ-25). ');
+$ax += cidrblock($address,'197.242.84.0/22','Hetzner (ASN-HETZ-26). ');
+$ax += cidrblock($address,'213.133.96.0/19','Hetzner (ASN-HETZ-27). ');
+$ax += cidrblock($address,'213.169.144.0/22','Hetzner (ASN-HETZ-28). ');
+$ax += cidrblock($address,'213.239.192.0/18','Hetzner (ASN-HETZ-29). ');
 
 // Digital Ocean, Inc.
 // AS14061, AS62567, AS46652, AS200130

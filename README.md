@@ -34,6 +34,7 @@ History (*change_log*) of this repository (and of those updates merged into it) 
 - chris_c posts an update for the PSYCHZ.NET CIDRs (spambotsecurity.com/forum/viewtopic.php?f=48&t=3546#p23988).
 
 #####2015-08-14
+- chris_c posts an update for the Hetzner CIDRs (spambotsecurity.com/forum/viewtopic.php?f=7&t=3483#p24041).
 - chris_c posts an update for the OVH CIDRs (spambotsecurity.com/forum/viewtopic.php?f=48&t=2750#p24042).
 - chris_c posts an update for the Nobis CIDRs (spambotsecurity.com/forum/viewtopic.php?f=7&t=2874#p24043).
 - chris_c posts an update for the Webexxpurts CIDRs (spambotsecurity.com/forum/viewtopic.php?f=48&t=3366#p24044).
