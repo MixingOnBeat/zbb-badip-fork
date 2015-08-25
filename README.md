@@ -56,6 +56,12 @@ History (*change_log*) of this repository (and of those updates merged into it) 
 #####2015-08-23
 - This repository, `zbb-badip-fork`, created, on this date, with all aforementioned updates implemented into its base. All changes committed to GitHub and then announced to Spambot Security.
 
+#####2015-08-24
+- chris_c posts an update for the Ecatel CIDRs (spambotsecurity.com/forum/viewtopic.php?f=48&t=3570#p24148).
+- chris_c posts an update for the Leaseweb DE CIDRs (spambotsecurity.com/forum/viewtopic.php?f=48&t=3571#p24149).
+- chris_c posts an update for the Leaseweb CIDRs (spambotsecurity.com/forum/viewtopic.php?f=48&t=3572#p24150).
+- Repository updated with new changes.
+
 ---
 
 Additional "bad IPs" worth considering including in your installation of ZB Block, but not included specifically in this repository (because including them would constitute the addition of new signatures, and I intend this repository to only be for updates to existing outdated signatures):
