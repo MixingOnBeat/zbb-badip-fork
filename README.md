@@ -72,6 +72,7 @@ History (*change_log*) of this repository (and of those updates merged into it) 
 - chris_c posts an update for the Rackspace CIDRs (spambotsecurity.com/forum/viewtopic.php?f=7&t=3306#p24182).
 - chris_c posts an update for the Limestone CIDRs (spambotsecurity.com/forum/viewtopic.php?f=7&t=2562#p24183).
 - chris_c posts an update for the Redstation CIDRs (spambotsecurity.com/forum/viewtopic.php?f=43&t=2122#p24184).
+- Repository updated with new changes.
 
 ---
 
