@@ -20,7 +20,7 @@ COPYRIGHT 2008-2015 GNU/GPL V.2 BY MIKE H.
 FOR USE WITH ZB BLOCK OR ANY GNU/GPL V.2 COMPLIANT DERIVATIVE
 */
 
-$zbbversion .= ' / BADIP-2015-08+U.1'; // Version number goes here. (product code)-(Year)-(Month)(issue letter)(+U = Unofficial fork, non-mainlined release).(Optional build number)
+$zbbversion .= ' / BADIP-2015-08+U.2'; // Version number goes here. (product code)-(Year)-(Month)(issue letter)(+U = Unofficial fork, non-mainlined release).(Optional build number)
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -129,9 +129,7 @@ $ax += cidrblock($address,'194.71.222.0/23','ERRSY-NET: Proxy services for scrap
 $ax += cidrblock($address,'178.238.232.0/21','ice2solutions , known dangerous host/network (IP-106). '); //74c
 $ax += lmatch($address,'78.158.11.226','Project Honey Pot rule-breaker, vulnerability scanner (IP-107). ');
 
-
 $ax += cidrblock($address,'72.10.32.0/19','MediaTemple, illegal nameserver response on reverse lookup. Caught scraping (IP-099). ');
-
 
 // Ecatel
 // AS29073 updated 08/24/15
@@ -542,7 +540,6 @@ $ax += cidrblock($address,'216.231.128.0/20','Nobis Technology Group. (ASN-NOBIS
 $ax += inmatch($hoster,'nobis','Nobis Technology Group. (ASN-NOBIS-TECH-110). ');
 $ax += inmatch($hoster,'ubiquity','Nobis Technology Group. (ASN-NOBIS-TECH-111). ');
 
-
 // Rackspace
 // AS19994/AS27357/AS15395/AS33070/AS12200
 
@@ -650,23 +647,57 @@ $ax += cidrblock($address,'216.18.144.0/21','Rackspace (ASN-RKSP-100). '); //77g
 $ax += cidrblock($address,'216.105.48.0/20','Rackspace (ASN-RKSP-101). '); //77g
 $ax += cidrblock($address,'216.110.32.0/20','Rackspace (ASN-RKSP-102). '); //77g
 
+//Pakistan Telecom AS45595
+//Spam without end, huge blacklistings! updated 08/25/15
 
-
-//Pakistan Telecom AS44595
-//Spam without end, huge blacklistings!
-
-$ax += cidrblock($address,'39.40.0.0/13','Pakistan Telecom AS44595 (ASN-PkT-01). '); //70d
-$ax += cidrblock($address,'39.48.0.0/12','Pakistan Telecom AS44595 (ASN-PkT-02). '); //70d
-$ax += cidrblock($address,'59.103.0.0/16','Pakistan Telecom (Possible Interlace) AS44595 (ASN-PkT-03). '); //70d
-$ax += cidrblock($address,'116.71.0.0/16','Pakistan Telecom AS44595 (ASN-PkT-04). '); //70d
-$ax += cidrblock($address,'119.152.0.0/13','Pakistan Telecom AS44595 (ASN-PkT-05). '); //70d
-$ax += cidrblock($address,'182.176.0.0/12','Pakistan Telecom AS44595 (ASN-PkT-06). '); //70d
-$ax += cidrblock($address,'202.70.144.0/20','Pakistan Telecom AS44595 (ASN-PkT-07). '); //70d
-$ax += cidrblock($address,'202.125.128.0/19','Pakistan Telecom AS44595 (ASN-PkT-08). '); //70d
-$ax += cidrblock($address,'203.99.160.0/19','Pakistan Telecom AS44595 (ASN-PkT-09). '); //70d
-$ax += cidrblock($address,'203.128.252.0/22','Pakistan Telecom AS44595 (ASN-PkT-10). '); //70d
-$ax += cidrblock($address,'203.135.0.0/18','Pakistan Telecom (Heavy Interlace) AS44595 (ASN-PkT-11). '); //70d
-$ax += cidrblock($address,'203.175.107.0/24','Pakistan Telecom AS44595 (ASN-PkT-11). '); //70d
+$ax += cidrblock($address,'39.32.0.0/11','Pakistan Telecom AS45595 (ASN-PkT-01). ');
+$ax += cidrblock($address,'59.103.0.0/19','Pakistan Telecom AS45595 (ASN-PkT-02). ');
+$ax += cidrblock($address,'59.103.48.0/20','Pakistan Telecom AS45595 (ASN-PkT-03). ');
+$ax += cidrblock($address,'59.103.64.0/21','Pakistan Telecom AS45595 (ASN-PkT-04). ');
+$ax += cidrblock($address,'59.103.72.0/22','Pakistan Telecom AS45595 (ASN-PkT-05). ');
+$ax += cidrblock($address,'59.103.76.0/24','Pakistan Telecom AS45595 (ASN-PkT-06). ');
+$ax += cidrblock($address,'59.103.90.0/23','Pakistan Telecom AS45595 (ASN-PkT-07). ');
+$ax += cidrblock($address,'59.103.92.0/22','Pakistan Telecom AS45595 (ASN-PkT-08). ');
+$ax += cidrblock($address,'59.103.96.0/22','Pakistan Telecom AS45595 (ASN-PkT-09). ');
+$ax += cidrblock($address,'59.103.128.0/23','Pakistan Telecom AS45595 (ASN-PkT-10). ');
+$ax += cidrblock($address,'59.103.132.0/22','Pakistan Telecom AS45595 (ASN-PkT-11). ');
+$ax += cidrblock($address,'59.103.144.0/21','Pakistan Telecom AS45595 (ASN-PkT-12). ');
+$ax += cidrblock($address,'59.103.155.0/24','Pakistan Telecom AS45595 (ASN-PkT-13). ');
+$ax += cidrblock($address,'59.103.156.0/22','Pakistan Telecom AS45595 (ASN-PkT-14). ');
+$ax += cidrblock($address,'59.103.164.0/22','Pakistan Telecom AS45595 (ASN-PkT-15). ');
+$ax += cidrblock($address,'59.103.168.0/24','Pakistan Telecom AS45595 (ASN-PkT-16). ');
+$ax += cidrblock($address,'59.103.192.0/19','Pakistan Telecom AS45595 (ASN-PkT-17). ');
+$ax += cidrblock($address,'59.103.224.0/24','Pakistan Telecom AS45595 (ASN-PkT-18). ');
+$ax += cidrblock($address,'104.99.130.0/23','Pakistan Telecom AS45595 (ASN-PkT-19). ');
+$ax += cidrblock($address,'104.99.132.0/22','Pakistan Telecom AS45595 (ASN-PkT-20). ');
+$ax += cidrblock($address,'116.71.96.0/20','Pakistan Telecom AS45595 (ASN-PkT-21). ');
+$ax += cidrblock($address,'116.71.160.0/19','Pakistan Telecom AS45595 (ASN-PkT-22). ');
+$ax += cidrblock($address,'116.71.192.0/18','Pakistan Telecom AS45595 (ASN-PkT-23). ');
+$ax += cidrblock($address,'119.152.0.0/13','Pakistan Telecom AS45595 (ASN-PkT-24). ');
+$ax += cidrblock($address,'182.176.0.0/12','Pakistan Telecom AS45595 (ASN-PkT-25). ');
+$ax += cidrblock($address,'203.99.160.0/19','Pakistan Telecom AS45595 (ASN-PkT-26). ');
+$ax += cidrblock($address,'203.128.252.0/24','Pakistan Telecom AS45595 (ASN-PkT-27). ');
+$ax += cidrblock($address,'203.128.254.0/23','Pakistan Telecom AS45595 (ASN-PkT-28). ');
+$ax += cidrblock($address,'203.135.11.0/24','Pakistan Telecom AS45595 (ASN-PkT-29). ');
+$ax += cidrblock($address,'203.135.13.0/24','Pakistan Telecom AS45595 (ASN-PkT-30). ');
+$ax += cidrblock($address,'203.135.16.0/24','Pakistan Telecom AS45595 (ASN-PkT-31). ');
+$ax += cidrblock($address,'203.135.20.0/24','Pakistan Telecom AS45595 (ASN-PkT-32). ');
+$ax += cidrblock($address,'203.135.24.0/23','Pakistan Telecom AS45595 (ASN-PkT-33). ');
+$ax += cidrblock($address,'203.135.26.0/24','Pakistan Telecom AS45595 (ASN-PkT-34). ');
+$ax += cidrblock($address,'203.135.30.0/24','Pakistan Telecom AS45595 (ASN-PkT-35). ');
+$ax += cidrblock($address,'203.135.33.0/24','Pakistan Telecom AS45595 (ASN-PkT-36). ');
+$ax += cidrblock($address,'203.135.34.0/23','Pakistan Telecom AS45595 (ASN-PkT-37). ');
+$ax += cidrblock($address,'203.135.36.0/23','Pakistan Telecom AS45595 (ASN-PkT-38). ');
+$ax += cidrblock($address,'203.135.38.0/24','Pakistan Telecom AS45595 (ASN-PkT-39). ');
+$ax += cidrblock($address,'203.135.41.0/24','Pakistan Telecom AS45595 (ASN-PkT-40). ');
+$ax += cidrblock($address,'203.135.43.0/24','Pakistan Telecom AS45595 (ASN-PkT-41). ');
+$ax += cidrblock($address,'203.135.48.0/23','Pakistan Telecom AS45595 (ASN-PkT-42). ');
+$ax += cidrblock($address,'203.135.50.0/24','Pakistan Telecom AS45595 (ASN-PkT-43). ');
+$ax += cidrblock($address,'203.135.54.0/23','Pakistan Telecom AS45595 (ASN-PkT-44). ');
+$ax += cidrblock($address,'203.135.58.0/24','Pakistan Telecom AS45595 (ASN-PkT-45). ');
+$ax += cidrblock($address,'203.135.61.0/24','Pakistan Telecom AS45595 (ASN-PkT-46). ');
+$ax += cidrblock($address,'221.120.225.0/24','Pakistan Telecom AS45595 (ASN-PkT-47). ');
+$ax += cidrblock($address,'221.120.233.0/24','Pakistan Telecom AS45595 (ASN-PkT-48). ');
 
 //Kintiskton LLC, Mark Manager copyright check bot (abusive history)
 
@@ -701,7 +732,6 @@ $ax += cidrblock($address,'216.245.192.0/19','Limestone Networks AS46475 (ASN-LS
 // Redstation Network
 // ASN35662
 
-
 $ax += cidrblock($address,'5.152.192.0/19','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-0). '); //74d
 $ax += cidrblock($address,'31.3.224.0/19','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-1). '); //74d
 $ax += cidrblock($address,'37.157.240.0/21','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-2). '); //74d
@@ -722,7 +752,6 @@ $ax += cidrblock($address,'185.5.0.0/22','Redstation Limited, not an access prov
 $ax += cidrblock($address,'185.20.96.0/22','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-17). '); //74d
 $ax += cidrblock($address,'188.227.160.0/19','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-18). '); //74d
 $ax += cidrblock($address,'213.238.163.0/24','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-19). '); //74d
-
 
 // AFAS AnchorFree Inc IP Network ASN26642
 // Listed 71h
@@ -1163,7 +1192,6 @@ $ax += cidrblock($address,'196.196.28.0/24','WEBEXXPURTS (ASN-WXX-40). ');
 $ax += cidrblock($address,'196.196.32.0/24','WEBEXXPURTS (ASN-WXX-41). ');
 $ax += cidrblock($address,'196.196.36.0/24','WEBEXXPURTS (ASN-WXX-42). ');
 
-
 // Hurricane Electric, not an access provider ISP.
 // Too many infected and hostile servers. Good folks otherwise (Free DYN-DNS service SBS enjoys)
 // ( as6939 )
@@ -1390,7 +1418,6 @@ $ax += cidrblock($address,'209.140.128.0/18','Pegasus Web Technologies / Fortres
 $ax += cidrblock($address,'212.38.160.0/21','Pegasus Web Technologies / Fortress ITX, Not an access provider  (ASN-PWEBFITX-63). '); //77 updated
 $ax += cidrblock($address,'216.67.224.0/19','Pegasus Web Technologies / Fortress ITX, Not an access provider  (ASN-PWEBFITX-64). '); //77 updated
 $ax += cidrblock($address,'216.74.96.0/19','Pegasus Web Technologies / Fortress ITX, Not an access provider  (ASN-PWEBFITX-65). '); //77 updated
-
 
 // Steadfast DNS
 // Not an access provider.
@@ -1659,7 +1686,6 @@ $ax += cidrblock($address,'213.251.128.0/18','OVH Networks (ASN-OVH-52). ');
 
 if (($ax == 1) && (inmatch($whyblockout,'(ASN-OVH-','')) && (rmatch($hoster,'.dsl.ovh.fr',''))){$ax = 0; $whyblockout = '';} //76d
 
-
 // Redstation & IOMart
 // Hosting Death by Captcha .com and .eu CAPTCHA cracking services.
 // 74b. Updated 76f with 11 more ranges.
@@ -1741,7 +1767,6 @@ $ax += cidrblock($address,'213.238.163.0/24','Redstation / IO Mart (ASN-REDIOM-7
 $ax += cidrblock($address,'217.26.232.0/21','Redstation / IO Mart (ASN-REDIOM-73). '); //76f
 $ax += cidrblock($address,'217.77.176.0/20','Redstation / IO Mart (ASN-REDIOM-74). '); //76f
 $ax += cidrblock($address,'217.147.80.0/20','Redstation / IO Mart (ASN-REDIOM-75). '); //76f
-
 
 // Bytemark Anonymous Proxies
 // AS35425
@@ -2007,7 +2032,6 @@ $ax += cidrblock($address,'216.193.197.0/24','Corpcolo (ASN-AS17139-23). '); //7
 $ax += cidrblock($address,'216.193.219.0/24','Corpcolo (ASN-AS17139-24). '); //76e
 $ax += cidrblock($address,'216.193.251.0/24','Corpcolo (ASN-AS17139-25). '); //76e
 
-
 //  iWeb Technologies Inc.
 //  AS32613
 
@@ -2038,13 +2062,11 @@ $ax += cidrblock($address,'205.236.34.0/24','iWeb Technologies Inc. Not an acces
 $ax += cidrblock($address,'206.123.20.0/23','iWeb Technologies Inc. Not an access provider ISP (ASN-IWEB-24). '); //74d
 $ax += cidrblock($address,'209.172.32.0/19','iWeb Technologies Inc. Not an access provider ISP (ASN-IWEB-25). '); //74d
 
-
 //  Reliable Hosting Services
 //  AS29713
 
 $ax += cidrblock($address,'199.15.248.0/21','Reliable Hosting Services. Not an access provider ISP. (ASN-RELIA-0). '); //74d
 $ax += cidrblock($address,'208.73.20.0/22','Reliable Hosting Services. Not an access provider ISP. (ASN-RELIA-1). '); //74d
-
 
 // Westhost
 // AS29854
@@ -2233,7 +2255,6 @@ $ax += cidrblock($address,'41.189.0.0/19','Swift Networks Limited is blocked by 
 $ax += cidrblock($address,'41.221.160.0/20','Swift Networks Limited is blocked by the system administrator, Nigeria, nuf said (ASN-AS36923-2). '); //75a
 $ax += cidrblock($address,'41.222.64.0/21','Swift Networks Limited is blocked by the system administrator, Nigeria, nuf said (ASN-AS36923-3). '); //75a
 
-
 // HostDime.com, Inc.
 // 75a. Update 76f. Dropped from #1 to #3. Graph appears they are trying to clean things up.
 // AS33182 updated 08/14/15
@@ -2331,7 +2352,6 @@ $ax += cidrblock($address,'209.148.85.0/24','HostDime.com Inc, #3 HE Rank (ASN-A
 $ax += cidrblock($address,'209.148.90.0/24','HostDime.com Inc, #3 HE Rank (ASN-AS33182-91). ');
 $ax += cidrblock($address,'212.18.224.0/20','HostDime.com Inc, #3 HE Rank (ASN-AS33182-92). ');
 
-
 // New Dream Network, LLC, #2 Host Exploit rank.
 // AS26347
 
@@ -2345,7 +2365,6 @@ $ax += cidrblock($address,'173.236.128.0/17','New Dream Network LLC, #2 HE Rank 
 $ax += cidrblock($address,'205.196.208.0/20','New Dream Network LLC, #2 HE Rank (ASN-AS26347-7). '); //75a
 $ax += cidrblock($address,'208.97.128.0/18','New Dream Network LLC, #2 HE Rank (ASN-AS26347-8). '); //75a
 $ax += cidrblock($address,'208.113.128.0/17','New Dream Network LLC, #2 HE Rank (ASN-AS26347-9). '); //75a
-
 
 // GoDaddy.com, LLC, #18 Host Exploit rank.
 // AS26496
@@ -2379,7 +2398,6 @@ $ax += cidrblock($address,'206.16.40.0/21','GoDaddy.com LLC, #18 HE Rank  (ASN-G
 $ax += cidrblock($address,'208.109.0.0/16','GoDaddy.com LLC, #18 HE Rank  (ASN-GODADDY-26). '); //75a updated 76b
 $ax += cidrblock($address,'216.69.128.0/18','GoDaddy.com LLC, #18 HE Rank  (ASN-GODADDY-27). '); //75a updated 76b
 $ax += cidrblock($address,'216.138.70.0/23','GoDaddy.com LLC, #18 HE Rank  (ASN-GODADDY-28). '); //75a updated 76b
-
 
 // PVNT Networks, #116 Host Exploit rank.
 // AS21788
@@ -3112,7 +3130,6 @@ $ax += cidrblock($address,'66.249.16.0/23','Domain tools (ASN-17318-3). '); //76
 $ax += cidrblock($address,'199.30.228.0/22','Domain tools (ASN-17318-4). '); //76f
 $ax += cidrblock($address,'208.51.144.0/22','Domain tools (ASN-17318-5). '); //76f
 
-
 // megatypers.com Human Captcha Crackers Related
 // AS29550 and AS8669
 
@@ -3576,8 +3593,6 @@ $ax += cidrblock($address,'195.211.152.0/22','Unit-is Banned, 10HiT-IC 3a6opoHeH
 $ax += cidrblock($address,'38.99.82.0/24','Fieldtech Inc (BADNET-FTI). '); //77b
 
 $ax += cidrblock($address,'14.96.0.0/14','TATAINDICOM-IN (Site Scraper) (BADNET-TATA). '); //77g
-
-
 
 // RBN IP and IP Range Blocks 
 
