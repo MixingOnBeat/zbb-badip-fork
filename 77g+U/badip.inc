@@ -20,7 +20,7 @@ COPYRIGHT 2008-2015 GNU/GPL V.2 BY MIKE H.
 FOR USE WITH ZB BLOCK OR ANY GNU/GPL V.2 COMPLIANT DERIVATIVE
 */
 
-$zbbversion .= ' / BADIP-2015-08+U.2'; // Version number goes here. (product code)-(Year)-(Month)(issue letter)(+U = Unofficial fork, non-mainlined release).(Optional build number)
+$zbbversion .= ' / BADIP-2015-08+U.3'; // Version number goes here. (product code)-(Year)-(Month)(issue letter)(+U = Unofficial fork, non-mainlined release).(Optional build number)
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -541,111 +541,115 @@ $ax += inmatch($hoster,'nobis','Nobis Technology Group. (ASN-NOBIS-TECH-110). ')
 $ax += inmatch($hoster,'ubiquity','Nobis Technology Group. (ASN-NOBIS-TECH-111). ');
 
 // Rackspace
-// AS19994/AS27357/AS15395/AS33070/AS12200
+// AS19994/AS27357/AS15395/AS33070/AS12200 updated 08/26/15
 
-$ax += cidrblock($address,'5.79.0.0/18','Rackspace (ASN-RKSP-0). '); //77g
-$ax += cidrblock($address,'23.253.0.0/16','Rackspace (ASN-RKSP-1). '); //77g
-$ax += cidrblock($address,'27.126.144.0/21','Rackspace (ASN-RKSP-2). '); //77g
-$ax += cidrblock($address,'31.222.128.0/18','Rackspace (ASN-RKSP-3). '); //77g
-$ax += cidrblock($address,'37.188.96.0/19','Rackspace (ASN-RKSP-4). '); //77g
-$ax += cidrblock($address,'46.38.160.0/19','Rackspace (ASN-RKSP-5). '); //77g
-$ax += cidrblock($address,'50.28.192.0/19','Rackspace (ASN-RKSP-6). '); //77g
-$ax += cidrblock($address,'50.28.224.0/22','Rackspace (ASN-RKSP-7). '); //77g
-$ax += cidrblock($address,'50.56.0.0/15','Rackspace (ASN-RKSP-8). '); //77g
-$ax += cidrblock($address,'64.39.0.0/19','Rackspace (ASN-RKSP-9). '); //77g
-$ax += cidrblock($address,'64.49.192.0/18','Rackspace (ASN-RKSP-10). '); //77g
-$ax += cidrblock($address,'65.61.128.0/18','Rackspace (ASN-RKSP-11). '); //77g
-$ax += cidrblock($address,'66.209.217.0/24','Rackspace (ASN-RKSP-12). '); //77g
-$ax += cidrblock($address,'66.216.64.0/18','Rackspace (ASN-RKSP-13). '); //77g
-$ax += cidrblock($address,'67.23.0.0/19','Rackspace (ASN-RKSP-14). '); //77g
-$ax += cidrblock($address,'67.23.32.0/20','Rackspace (ASN-RKSP-15). '); //77g
-$ax += cidrblock($address,'67.192.0.0/16','Rackspace (ASN-RKSP-16). '); //77g
-$ax += cidrblock($address,'67.207.128.0/19','Rackspace (ASN-RKSP-17). '); //77g
-$ax += cidrblock($address,'69.20.0.0/17','Rackspace (ASN-RKSP-18). '); //77g
-$ax += cidrblock($address,'72.3.128.0/17','Rackspace (ASN-RKSP-19). '); //77g
-$ax += cidrblock($address,'72.4.112.0/20','Rackspace (ASN-RKSP-20). '); //77g
-$ax += cidrblock($address,'72.32.0.0/16','Rackspace (ASN-RKSP-21). '); //77g
-$ax += cidrblock($address,'74.91.80.0/20','Rackspace (ASN-RKSP-22). '); //77g
-$ax += cidrblock($address,'74.205.0.0/17','Rackspace (ASN-RKSP-23). '); //77g
-$ax += cidrblock($address,'78.136.0.0/18','Rackspace (ASN-RKSP-24). '); //77g
-$ax += cidrblock($address,'83.138.128.0/18','Rackspace (ASN-RKSP-25). '); //77g
-$ax += cidrblock($address,'89.234.0.0/18','Rackspace (ASN-RKSP-26). '); //77g
-$ax += cidrblock($address,'91.227.208.0/24','Rackspace (ASN-RKSP-27). '); //77g
-$ax += cidrblock($address,'92.52.64.0/18','Rackspace (ASN-RKSP-28). '); //77g
-$ax += cidrblock($address,'94.236.0.0/17','Rackspace (ASN-RKSP-29). '); //77g
-$ax += cidrblock($address,'95.138.128.0/18','Rackspace (ASN-RKSP-30). '); //77g
-$ax += cidrblock($address,'98.129.0.0/16','Rackspace (ASN-RKSP-31). '); //77g
-$ax += cidrblock($address,'103.28.40.0/22','Rackspace (ASN-RKSP-32). '); //77g
-$ax += cidrblock($address,'104.130.0.0/16','Rackspace (ASN-RKSP-33). '); //77g
-$ax += cidrblock($address,'104.239.128.0/17','Rackspace (ASN-RKSP-34). '); //77g
-$ax += cidrblock($address,'108.166.0.0/17','Rackspace (ASN-RKSP-35). '); //77g
-$ax += cidrblock($address,'108.171.160.0/19','Rackspace (ASN-RKSP-36). '); //77g
-$ax += cidrblock($address,'134.8.0.0/24','Rackspace (ASN-RKSP-37). '); //77g
-$ax += cidrblock($address,'134.8.2.0/24','Rackspace (ASN-RKSP-38). '); //77g
-$ax += cidrblock($address,'134.213.0.0/16','Rackspace (ASN-RKSP-39). '); //77g
-$ax += cidrblock($address,'142.54.40.0/24','Rackspace (ASN-RKSP-40). '); //77g
-$ax += cidrblock($address,'146.88.16.0/23','Rackspace (ASN-RKSP-41). '); //77g
-$ax += cidrblock($address,'146.88.18.0/24','Rackspace (ASN-RKSP-42). '); //77g
-$ax += cidrblock($address,'146.88.28.0/24','Rackspace (ASN-RKSP-43). '); //77g
-$ax += cidrblock($address,'146.177.0.0/16','Rackspace (ASN-RKSP-44). '); //77g
-$ax += cidrblock($address,'156.43.59.0/24','Rackspace (ASN-RKSP-45). '); //77g
-$ax += cidrblock($address,'159.127.178.0/24','Rackspace (ASN-RKSP-46). '); //77g
-$ax += cidrblock($address,'162.13.0.0/16','Rackspace (ASN-RKSP-47). '); //77g
-$ax += cidrblock($address,'162.209.0.0/17','Rackspace (ASN-RKSP-48). '); //77g
-$ax += cidrblock($address,'162.220.0.0/24','Rackspace (ASN-RKSP-49). '); //77g
-$ax += cidrblock($address,'162.242.128.0/17','Rackspace (ASN-RKSP-50). '); //77g
-$ax += cidrblock($address,'162.247.112.0/21','Rackspace (ASN-RKSP-51). '); //77g
-$ax += cidrblock($address,'163.47.180.0/22','Rackspace (ASN-RKSP-52). '); //77g
-$ax += cidrblock($address,'164.177.128.0/19','Rackspace (ASN-RKSP-53). '); //77g
-$ax += cidrblock($address,'166.78.0.0/16','Rackspace (ASN-RKSP-54). '); //77g
-$ax += cidrblock($address,'168.235.224.0/20','Rackspace (ASN-RKSP-55). '); //77g
-$ax += cidrblock($address,'173.45.224.0/19','Rackspace (ASN-RKSP-56). '); //77g
-$ax += cidrblock($address,'173.203.0.0/16','Rackspace (ASN-RKSP-57). '); //77g
-$ax += cidrblock($address,'174.143.0.0/16','Rackspace (ASN-RKSP-58). '); //77g
-$ax += cidrblock($address,'175.107.191.0/24','Rackspace (ASN-RKSP-59). '); //77g
-$ax += cidrblock($address,'177.152.202.0/24','Rackspace (ASN-RKSP-60). '); //77g
-$ax += cidrblock($address,'180.189.136.0/22','Rackspace (ASN-RKSP-61). '); //77g
-$ax += cidrblock($address,'184.106.0.0/16','Rackspace (ASN-RKSP-62). '); //77g
-$ax += cidrblock($address,'185.28.196.0/24','Rackspace (ASN-RKSP-63). '); //77g
-$ax += cidrblock($address,'185.36.144.0/22','Rackspace (ASN-RKSP-64). '); //77g
-$ax += cidrblock($address,'185.64.72.0/24','Rackspace (ASN-RKSP-65). '); //77g
-$ax += cidrblock($address,'185.75.60.0/22','Rackspace (ASN-RKSP-66). '); //77g
-$ax += cidrblock($address,'192.30.252.0/22','Rackspace (ASN-RKSP-67). '); //77g
-$ax += cidrblock($address,'192.40.168.0/21','Rackspace (ASN-RKSP-68). '); //77g
-$ax += cidrblock($address,'192.204.40.0/21','Rackspace (ASN-RKSP-69). '); //77g
-$ax += cidrblock($address,'192.237.128.0/17','Rackspace (ASN-RKSP-70). '); //77g
-$ax += cidrblock($address,'193.142.244.0/24','Rackspace (ASN-RKSP-71). '); //77g
-$ax += cidrblock($address,'198.54.230.0/24','Rackspace (ASN-RKSP-72). '); //77g
-$ax += cidrblock($address,'198.61.128.0/17','Rackspace (ASN-RKSP-73). '); //77g
-$ax += cidrblock($address,'198.101.128.0/17','Rackspace (ASN-RKSP-74). '); //77g
-$ax += cidrblock($address,'198.184.18.0/24','Rackspace (ASN-RKSP-75). '); //77g
-$ax += cidrblock($address,'198.254.64.0/20','Rackspace (ASN-RKSP-76). '); //77g
-$ax += cidrblock($address,'199.15.212.0/22','Rackspace (ASN-RKSP-77). '); //77g
-$ax += cidrblock($address,'199.91.52.0/23','Rackspace (ASN-RKSP-78). '); //77g
-$ax += cidrblock($address,'199.166.37.0/24','Rackspace (ASN-RKSP-79). '); //77g
-$ax += cidrblock($address,'199.187.164.0/22','Rackspace (ASN-RKSP-80). '); //77g
-$ax += cidrblock($address,'199.241.120.0/21','Rackspace (ASN-RKSP-81). '); //77g
-$ax += cidrblock($address,'203.55.21.0/24','Rackspace (ASN-RKSP-82). '); //77g
-$ax += cidrblock($address,'203.55.138.0/24','Rackspace (ASN-RKSP-83). '); //77g
-$ax += cidrblock($address,'204.75.142.0/24','Rackspace (ASN-RKSP-84). '); //77g
-$ax += cidrblock($address,'204.232.128.0/17','Rackspace (ASN-RKSP-85). '); //77g
-$ax += cidrblock($address,'205.166.177.0/24','Rackspace (ASN-RKSP-86). '); //77g
-$ax += cidrblock($address,'206.188.192.0/19','Rackspace (ASN-RKSP-87). '); //77g
-$ax += cidrblock($address,'207.32.116.0/24','Rackspace (ASN-RKSP-88). '); //77g
-$ax += cidrblock($address,'207.97.192.0/18','Rackspace (ASN-RKSP-89). '); //77g
-$ax += cidrblock($address,'208.78.96.0/21','Rackspace (ASN-RKSP-90). '); //77g
-$ax += cidrblock($address,'209.20.64.0/19','Rackspace (ASN-RKSP-91). '); //77g
-$ax += cidrblock($address,'209.61.128.0/18','Rackspace (ASN-RKSP-92). '); //77g
-$ax += cidrblock($address,'209.114.32.0/19','Rackspace (ASN-RKSP-93). '); //77g
-$ax += cidrblock($address,'209.163.232.0/21','Rackspace (ASN-RKSP-94). '); //77g
-$ax += cidrblock($address,'209.163.244.0/22','Rackspace (ASN-RKSP-95). '); //77g
-$ax += cidrblock($address,'209.163.248.0/22','Rackspace (ASN-RKSP-96). '); //77g
-$ax += cidrblock($address,'209.216.104.0/21','Rackspace (ASN-RKSP-97). '); //77g
-$ax += cidrblock($address,'212.64.128.0/19','Rackspace (ASN-RKSP-98). '); //77g
-if ($hoster != 'www.googlealert.com'){$ax += cidrblock($address,'212.100.224.0/19','Rackspace (ASN-RKSP-099). ');}  //70d mod 71e 77g
-$ax += cidrblock($address,'216.18.144.0/21','Rackspace (ASN-RKSP-100). '); //77g
-$ax += cidrblock($address,'216.105.48.0/20','Rackspace (ASN-RKSP-101). '); //77g
-$ax += cidrblock($address,'216.110.32.0/20','Rackspace (ASN-RKSP-102). '); //77g
+$ax += cidrblock($address,'5.79.0.0/18','Rackspace (ASN-RKSP-001). ');
+$ax += cidrblock($address,'5.152.187.0/24','Rackspace (ASN-RKSP-002). ');
+$ax += cidrblock($address,'23.253.0.0/16','Rackspace (ASN-RKSP-003). ');
+$ax += cidrblock($address,'27.126.144.0/21','Rackspace (ASN-RKSP-004). ');
+$ax += cidrblock($address,'31.222.128.0/18','Rackspace (ASN-RKSP-005). ');
+$ax += cidrblock($address,'37.188.96.0/19','Rackspace (ASN-RKSP-006). ');
+$ax += cidrblock($address,'46.38.160.0/19','Rackspace (ASN-RKSP-007). ');
+$ax += cidrblock($address,'50.28.192.0/19','Rackspace (ASN-RKSP-008). ');
+$ax += cidrblock($address,'50.28.224.0/22','Rackspace (ASN-RKSP-009). ');
+$ax += cidrblock($address,'50.56.0.0/15','Rackspace (ASN-RKSP-010). ');
+$ax += cidrblock($address,'64.39.0.0/19','Rackspace (ASN-RKSP-011). ');
+$ax += cidrblock($address,'64.49.192.0/18','Rackspace (ASN-RKSP-012). ');
+$ax += cidrblock($address,'65.61.128.0/18','Rackspace (ASN-RKSP-013). ');
+$ax += cidrblock($address,'66.209.217.0/24','Rackspace (ASN-RKSP-014). ');
+$ax += cidrblock($address,'66.216.64.0/18','Rackspace (ASN-RKSP-015). ');
+$ax += cidrblock($address,'67.23.0.0/19','Rackspace (ASN-RKSP-016). ');
+$ax += cidrblock($address,'67.23.32.0/20','Rackspace (ASN-RKSP-017). ');
+$ax += cidrblock($address,'67.192.0.0/16','Rackspace (ASN-RKSP-018). ');
+$ax += cidrblock($address,'67.207.128.0/19','Rackspace (ASN-RKSP-019). ');
+$ax += cidrblock($address,'69.20.0.0/17','Rackspace (ASN-RKSP-020). ');
+$ax += cidrblock($address,'72.3.128.0/17','Rackspace (ASN-RKSP-021). ');
+$ax += cidrblock($address,'72.4.112.0/20','Rackspace (ASN-RKSP-022). ');
+$ax += cidrblock($address,'72.32.0.0/16','Rackspace (ASN-RKSP-023). ');
+$ax += cidrblock($address,'74.91.80.0/20','Rackspace (ASN-RKSP-024). ');
+$ax += cidrblock($address,'74.205.0.0/17','Rackspace (ASN-RKSP-025). ');
+$ax += cidrblock($address,'78.136.0.0/18','Rackspace (ASN-RKSP-026). ');
+$ax += cidrblock($address,'83.138.128.0/18','Rackspace (ASN-RKSP-027). ');
+$ax += cidrblock($address,'89.234.0.0/18','Rackspace (ASN-RKSP-028). ');
+$ax += cidrblock($address,'91.227.208.0/24','Rackspace (ASN-RKSP-029). ');
+$ax += cidrblock($address,'92.52.64.0/18','Rackspace (ASN-RKSP-030). ');
+$ax += cidrblock($address,'94.236.0.0/17','Rackspace (ASN-RKSP-031). ');
+$ax += cidrblock($address,'95.138.128.0/18','Rackspace (ASN-RKSP-032). ');
+$ax += cidrblock($address,'98.129.0.0/16','Rackspace (ASN-RKSP-033). ');
+$ax += cidrblock($address,'103.28.40.0/22','Rackspace (ASN-RKSP-034). ');
+$ax += cidrblock($address,'104.130.0.0/16','Rackspace (ASN-RKSP-035). ');
+$ax += cidrblock($address,'104.239.128.0/17','Rackspace (ASN-RKSP-036). ');
+$ax += cidrblock($address,'108.166.0.0/17','Rackspace (ASN-RKSP-037). ');
+$ax += cidrblock($address,'108.171.160.0/19','Rackspace (ASN-RKSP-038). ');
+$ax += cidrblock($address,'134.8.0.0/24','Rackspace (ASN-RKSP-039). ');
+$ax += cidrblock($address,'134.8.2.0/24','Rackspace (ASN-RKSP-040). ');
+$ax += cidrblock($address,'134.213.0.0/16','Rackspace (ASN-RKSP-041). ');
+$ax += cidrblock($address,'142.0.184.0/22','Rackspace (ASN-RKSP-042). ');
+$ax += cidrblock($address,'142.54.40.0/24','Rackspace (ASN-RKSP-043). ');
+$ax += cidrblock($address,'146.88.16.0/23','Rackspace (ASN-RKSP-044). ');
+$ax += cidrblock($address,'146.88.18.0/24','Rackspace (ASN-RKSP-045). ');
+$ax += cidrblock($address,'146.88.28.0/24','Rackspace (ASN-RKSP-046). ');
+$ax += cidrblock($address,'146.177.0.0/16','Rackspace (ASN-RKSP-047). ');
+$ax += cidrblock($address,'156.43.59.0/24','Rackspace (ASN-RKSP-048). ');
+$ax += cidrblock($address,'159.127.178.0/23','Rackspace (ASN-RKSP-049). ');
+$ax += cidrblock($address,'162.13.0.0/16','Rackspace (ASN-RKSP-050). ');
+$ax += cidrblock($address,'162.209.0.0/17','Rackspace (ASN-RKSP-051). ');
+$ax += cidrblock($address,'162.220.0.0/24','Rackspace (ASN-RKSP-052). ');
+$ax += cidrblock($address,'162.242.128.0/17','Rackspace (ASN-RKSP-053). ');
+$ax += cidrblock($address,'162.247.112.0/21','Rackspace (ASN-RKSP-054). ');
+$ax += cidrblock($address,'163.47.180.0/22','Rackspace (ASN-RKSP-055). ');
+$ax += cidrblock($address,'164.177.128.0/19','Rackspace (ASN-RKSP-056). ');
+$ax += cidrblock($address,'166.78.0.0/16','Rackspace (ASN-RKSP-057). ');
+$ax += cidrblock($address,'168.235.224.0/20','Rackspace (ASN-RKSP-058). ');
+$ax += cidrblock($address,'172.99.64.0/18','Rackspace (ASN-RKSP-059). ');
+$ax += cidrblock($address,'173.45.224.0/19','Rackspace (ASN-RKSP-060). ');
+$ax += cidrblock($address,'173.203.0.0/16','Rackspace (ASN-RKSP-061). ');
+$ax += cidrblock($address,'174.143.0.0/16','Rackspace (ASN-RKSP-062). ');
+$ax += cidrblock($address,'175.107.191.0/24','Rackspace (ASN-RKSP-063). ');
+$ax += cidrblock($address,'177.152.202.0/24','Rackspace (ASN-RKSP-064). ');
+$ax += cidrblock($address,'180.189.136.0/22','Rackspace (ASN-RKSP-065). ');
+$ax += cidrblock($address,'184.106.0.0/16','Rackspace (ASN-RKSP-066). ');
+$ax += cidrblock($address,'185.28.196.0/24','Rackspace (ASN-RKSP-067). ');
+$ax += cidrblock($address,'185.36.144.0/22','Rackspace (ASN-RKSP-068). ');
+$ax += cidrblock($address,'185.64.72.0/24','Rackspace (ASN-RKSP-069). ');
+$ax += cidrblock($address,'185.75.60.0/22','Rackspace (ASN-RKSP-070). ');
+$ax += cidrblock($address,'192.30.252.0/22','Rackspace (ASN-RKSP-071). ');
+$ax += cidrblock($address,'192.40.168.0/21','Rackspace (ASN-RKSP-072). ');
+$ax += cidrblock($address,'192.204.40.0/21','Rackspace (ASN-RKSP-073). ');
+$ax += cidrblock($address,'192.237.128.0/17','Rackspace (ASN-RKSP-074). ');
+$ax += cidrblock($address,'193.142.244.0/24','Rackspace (ASN-RKSP-075). ');
+$ax += cidrblock($address,'198.54.230.0/24','Rackspace (ASN-RKSP-076). ');
+$ax += cidrblock($address,'198.61.128.0/17','Rackspace (ASN-RKSP-077). ');
+$ax += cidrblock($address,'198.101.128.0/17','Rackspace (ASN-RKSP-078). ');
+$ax += cidrblock($address,'198.184.18.0/24','Rackspace (ASN-RKSP-079). ');
+$ax += cidrblock($address,'198.254.64.0/20','Rackspace (ASN-RKSP-080). ');
+$ax += cidrblock($address,'199.15.212.0/22','Rackspace (ASN-RKSP-081). ');
+$ax += cidrblock($address,'199.91.52.0/23','Rackspace (ASN-RKSP-082). ');
+$ax += cidrblock($address,'199.166.37.0/24','Rackspace (ASN-RKSP-083). ');
+$ax += cidrblock($address,'199.187.164.0/22','Rackspace (ASN-RKSP-084). ');
+$ax += cidrblock($address,'199.241.120.0/21','Rackspace (ASN-RKSP-085). ');
+$ax += cidrblock($address,'203.55.21.0/24','Rackspace (ASN-RKSP-086). ');
+$ax += cidrblock($address,'203.55.138.0/24','Rackspace (ASN-RKSP-087). ');
+$ax += cidrblock($address,'204.75.142.0/24','Rackspace (ASN-RKSP-088). ');
+$ax += cidrblock($address,'204.232.128.0/17','Rackspace (ASN-RKSP-089). ');
+$ax += cidrblock($address,'205.166.177.0/24','Rackspace (ASN-RKSP-090). ');
+$ax += cidrblock($address,'206.188.192.0/19','Rackspace (ASN-RKSP-091). ');
+$ax += cidrblock($address,'207.32.116.0/24','Rackspace (ASN-RKSP-092). ');
+$ax += cidrblock($address,'207.97.192.0/18','Rackspace (ASN-RKSP-093). ');
+$ax += cidrblock($address,'208.78.96.0/21','Rackspace (ASN-RKSP-094). ');
+$ax += cidrblock($address,'209.20.64.0/19','Rackspace (ASN-RKSP-095). ');
+$ax += cidrblock($address,'209.61.128.0/18','Rackspace (ASN-RKSP-096). ');
+$ax += cidrblock($address,'209.114.32.0/19','Rackspace (ASN-RKSP-097). ');
+$ax += cidrblock($address,'209.133.224.0/19','Rackspace (ASN-RKSP-098). ');
+$ax += cidrblock($address,'209.163.232.0/21','Rackspace (ASN-RKSP-099). ');
+$ax += cidrblock($address,'209.163.244.0/22','Rackspace (ASN-RKSP-100). ');
+$ax += cidrblock($address,'209.163.248.0/22','Rackspace (ASN-RKSP-101). ');
+$ax += cidrblock($address,'209.216.104.0/21','Rackspace (ASN-RKSP-102). ');
+$ax += cidrblock($address,'212.64.128.0/19','Rackspace (ASN-RKSP-103). ');
+if ($hoster != 'www.googlealert.com'){$ax += cidrblock($address,'212.100.224.0/19','Rackspace (ASN-RKSP-104). ');}
+$ax += cidrblock($address,'216.18.144.0/21','Rackspace (ASN-RKSP-105). ');
+$ax += cidrblock($address,'216.105.48.0/20','Rackspace (ASN-RKSP-106). ');
+$ax += cidrblock($address,'216.110.32.0/20','Rackspace (ASN-RKSP-107). ');
 
 //Pakistan Telecom AS45595
 //Spam without end, huge blacklistings! updated 08/25/15
@@ -718,40 +722,54 @@ $ax += cidrblock($address,'76.216.100.0/24','Kintiskton LLC (ASN-KINT-15). ');
 $ax += cidrblock($address,'207.126.100.0/24','Kintiskton LLC (ASN-KINT-16). ');
 
 // Limestone networks, Hosts of hackforums.net
-// AS46475
+// AS46475 updated 08/26/15
 
-$ax += cidrblock($address,'63.143.32.0/19','Limestone Networks AS46475 (ASN-LSN-0). '); //update 76b
-$ax += cidrblock($address,'64.31.0.0/18','Limestone Networks AS46475 (ASN-LSN-1). '); //update 76b
-$ax += cidrblock($address,'69.162.64.0/18','Limestone Networks AS46475 (ASN-LSN-2). '); //update 76b
-$ax += cidrblock($address,'74.63.192.0/18','Limestone Networks AS46475 (ASN-LSN-3). '); //update 76b
-$ax += cidrblock($address,'192.169.80.0/20','Limestone Networks AS46475 (ASN-LSN-4). '); //update 76b
-$ax += cidrblock($address,'208.115.192.0/18','Limestone Networks AS46475 (ASN-LSN-5). '); //update 76b
-$ax += cidrblock($address,'216.144.240.0/20','Limestone Networks AS46475 (ASN-LSN-6). '); //update 76b
-$ax += cidrblock($address,'216.245.192.0/19','Limestone Networks AS46475 (ASN-LSN-7). '); //update 76b
+$ax += cidrblock($address,'63.143.32.0/19','Limestone Networks AS46475 (ASN-LSN-01). ');
+$ax += cidrblock($address,'64.31.0.0/18','Limestone Networks AS46475 (ASN-LSN-02). ');
+$ax += cidrblock($address,'69.162.64.0/18','Limestone Networks AS46475 (ASN-LSN-03). ');
+$ax += cidrblock($address,'74.63.192.0/18','Limestone Networks AS46475 (ASN-LSN-04). ');
+$ax += cidrblock($address,'103.60.218.0/24','Limestone Networks AS46475 (ASN-LSN-05). ');
+$ax += cidrblock($address,'150.129.136.0/23','Limestone Networks AS46475 (ASN-LSN-06). ');
+$ax += cidrblock($address,'150.242.36.0/24','Limestone Networks AS46475 (ASN-LSN-07). ');
+$ax += cidrblock($address,'162.253.40.0/22','Limestone Networks AS46475 (ASN-LSN-08). ');
+$ax += cidrblock($address,'192.169.80.0/20','Limestone Networks AS46475 (ASN-LSN-09). ');
+$ax += cidrblock($address,'208.115.192.0/18','Limestone Networks AS46475 (ASN-LSN-10). ');
+$ax += cidrblock($address,'216.144.240.0/20','Limestone Networks AS46475 (ASN-LSN-11). ');
+$ax += cidrblock($address,'216.245.192.0/19','Limestone Networks AS46475 (ASN-LSN-12). ');
 
 // Redstation Network
-// ASN35662
+// AS35662 updated 08/26/15
 
-$ax += cidrblock($address,'5.152.192.0/19','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-0). '); //74d
-$ax += cidrblock($address,'31.3.224.0/19','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-1). '); //74d
-$ax += cidrblock($address,'37.157.240.0/21','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-2). '); //74d
-$ax += cidrblock($address,'37.220.0.0/19','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-3). '); //74d
-$ax += cidrblock($address,'77.245.64.0/20','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-4). '); //74d
-$ax += cidrblock($address,'79.143.80.0/22','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-5). '); //74d
-$ax += cidrblock($address,'80.84.48.0/20','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-6). '); //74d
-$ax += cidrblock($address,'80.243.176.0/20','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-7). '); //74d
-$ax += cidrblock($address,'81.94.192.0/20','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-8). '); //74d
-$ax += cidrblock($address,'88.150.128.0/17','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-9). '); //74d
-$ax += cidrblock($address,'91.225.0.0/22','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-10). '); //74d
-$ax += cidrblock($address,'91.238.100.0/24','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-11). '); //74d
-$ax += cidrblock($address,'109.73.64.0/20','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-12). '); //74d
-$ax += cidrblock($address,'109.200.0.0/19','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-13). '); //74d
-$ax += cidrblock($address,'149.3.128.0/20','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-14). '); //74d
-$ax += cidrblock($address,'176.227.192.0/19','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-15). '); //74d
-$ax += cidrblock($address,'185.5.0.0/22','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-16). '); //74d
-$ax += cidrblock($address,'185.20.96.0/22','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-17). '); //74d
-$ax += cidrblock($address,'188.227.160.0/19','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-18). '); //74d
-$ax += cidrblock($address,'213.238.163.0/24','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-19). '); //74d
+$ax += cidrblock($address,'5.152.192.0/19','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-01). ');
+$ax += cidrblock($address,'27.111.15.0/24','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-02). ');
+$ax += cidrblock($address,'31.3.224.0/19','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-03). ');
+$ax += cidrblock($address,'37.157.240.0/21','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-04). ');
+$ax += cidrblock($address,'37.220.0.0/19','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-05). ');
+$ax += cidrblock($address,'77.245.64.0/20','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-06). ');
+$ax += cidrblock($address,'79.143.80.0/22','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-07). ');
+$ax += cidrblock($address,'80.84.48.0/20','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-08). ');
+$ax += cidrblock($address,'80.243.176.0/20','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-09). ');
+$ax += cidrblock($address,'81.94.192.0/20','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-10). ');
+$ax += cidrblock($address,'82.102.8.0/24','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-11). ');
+$ax += cidrblock($address,'87.236.209.0/24','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-12). ');
+$ax += cidrblock($address,'87.236.214.0/24','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-13). ');
+$ax += cidrblock($address,'88.150.128.0/17','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-14). ');
+$ax += cidrblock($address,'91.225.0.0/22','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-15). ');
+$ax += cidrblock($address,'91.228.206.0/24','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-16). ');
+$ax += cidrblock($address,'91.238.100.0/24','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-17). ');
+$ax += cidrblock($address,'109.73.64.0/20','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-18). ');
+$ax += cidrblock($address,'109.200.0.0/19','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-19). ');
+$ax += cidrblock($address,'149.3.128.0/20','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-20). ');
+$ax += cidrblock($address,'176.56.192.0/19','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-21). ');
+$ax += cidrblock($address,'176.227.192.0/19','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-22). ');
+$ax += cidrblock($address,'185.5.0.0/22','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-23). ');
+$ax += cidrblock($address,'185.20.96.0/22','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-24). ');
+$ax += cidrblock($address,'185.36.76.0/22','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-25). ');
+$ax += cidrblock($address,'185.82.221.0/24','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-26). ');
+$ax += cidrblock($address,'188.72.99.0/24','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-27). ');
+$ax += cidrblock($address,'188.212.122.0/23','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-28). ');
+$ax += cidrblock($address,'188.227.160.0/19','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-29). ');
+$ax += cidrblock($address,'190.121.209.0/24','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-30). ');
 
 // AFAS AnchorFree Inc IP Network ASN26642
 // Listed 71h

@@ -68,6 +68,11 @@ History (*change_log*) of this repository (and of those updates merged into it) 
 #####2015-08-26
 - Repository updated with new changes.
 
+#####2015-08-27
+- chris_c posts an update for the Rackspace CIDRs (spambotsecurity.com/forum/viewtopic.php?f=7&t=3306#p24182).
+- chris_c posts an update for the Limestone CIDRs (spambotsecurity.com/forum/viewtopic.php?f=7&t=2562#p24183).
+- chris_c posts an update for the Redstation CIDRs (spambotsecurity.com/forum/viewtopic.php?f=43&t=2122#p24184).
+
 ---
 
 Additional "bad IPs" worth considering including in your installation of ZB Block, but not included specifically in this repository (because including them would constitute the addition of new signatures, and I intend this repository to only be for updates to existing outdated signatures):
