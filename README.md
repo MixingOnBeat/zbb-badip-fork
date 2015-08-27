@@ -74,6 +74,11 @@ History (*change_log*) of this repository (and of those updates merged into it) 
 - chris_c posts an update for the Redstation CIDRs (spambotsecurity.com/forum/viewtopic.php?f=43&t=2122#p24184).
 - Repository updated with new changes.
 
+#####2015-08-28
+- chris_c posts an update for the Swiftway CIDRs (spambotsecurity.com/forum/viewtopic.php?f=48&t=3579#p24197).
+- chris_c posts an update for the SoftLayer CIDRs (spambotsecurity.com/forum/viewtopic.php?f=48&t=3580#p24198).
+- Repository updated with new changes.
+
 ---
 
 Additional "bad IPs" worth considering including in your installation of ZB Block, but not included specifically in this repository (because including them would constitute the addition of new signatures, and I intend this repository to only be for updates to existing outdated signatures):
