@@ -79,6 +79,12 @@ History (*change_log*) of this repository (and of those updates merged into it) 
 - chris_c posts an update for the SoftLayer CIDRs (spambotsecurity.com/forum/viewtopic.php?f=48&t=3580#p24198).
 - Repository updated with new changes.
 
+#####2015-08-29
+- chris_c posts an update for the Portlane CIDRs (spambotsecurity.com/forum/viewtopic.php?f=48&t=3581#p24210).
+- chris_c posts an update for the PIN-AS CIDRs (spambotsecurity.com/forum/viewtopic.php?f=48&t=3089#p24211).
+- chris_c posts an update for the IOMART CIDRs (spambotsecurity.com/forum/viewtopic.php?f=48&t=2893#p24212).
+- Repository updated with new changes.
+
 ---
 
 Additional "bad IPs" worth considering including in your installation of ZB Block, but not included specifically in this repository (because including them would constitute the addition of new signatures, and I intend this repository to only be for updates to existing outdated signatures):
