@@ -85,6 +85,14 @@ History (*change_log*) of this repository (and of those updates merged into it) 
 - chris_c posts an update for the IOMART CIDRs (spambotsecurity.com/forum/viewtopic.php?f=48&t=2893#p24212).
 - Repository updated with new changes.
 
+#####2015-08-31
+- chris_c posts an update for the Bytemark CIDRs (spambotsecurity.com/forum/viewtopic.php?f=7&t=1954#p24240).
+- chris_c posts an update for the TrendMicro CIDRs (spambotsecurity.com/forum/viewtopic.php?f=14&t=1992#p24241).
+- chris_c posts an update for the Root SA CIDRs (spambotsecurity.com/forum/viewtopic.php?f=7&t=2088#p24242).
+- chris_c posts an update for the Corpcolo CIDRs (spambotsecurity.com/forum/viewtopic.php?f=48&t=2727#p24243).
+- chris_c posts an update for the iWeb Technologies CIDRs (spambotsecurity.com/forum/viewtopic.php?f=7&t=2117#p24244).
+- Repository updated with new changes.
+
 ---
 
 Additional "bad IPs" worth considering including in your installation of ZB Block, but not included specifically in this repository (because including them would constitute the addition of new signatures, and I intend this repository to only be for updates to existing outdated signatures):
