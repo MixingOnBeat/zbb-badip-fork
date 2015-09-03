@@ -99,6 +99,12 @@ History (*change_log*) of this repository (and of those updates merged into it) 
 - chris_c posts an update for the Bezeq CIDRs (spambotsecurity.com/forum/viewtopic.php?f=48&t=3590#p24261).
 - Repository updated with new changes.
 
+#####2015-09-03
+- chris_c posts an update for the One and One Hosting CIDRs (spambotsecurity.com/forum/viewtopic.php?f=38&t=1757#p24266).
+- chris_c posts an update for the GoDaddy CIDRs (spambotsecurity.com/forum/viewtopic.php?f=7&t=2283#p24267).
+- chris_c posts an update for the PVNT CIDRs (spambotsecurity.com/forum/viewtopic.php?f=7&t=2282#p24268).
+- Repository updated with new changes.
+
 ---
 
 Additional "bad IPs" worth considering including in your installation of ZB Block, but not included specifically in this repository (because including them would constitute the addition of new signatures, and I intend this repository to only be for updates to existing outdated signatures):
