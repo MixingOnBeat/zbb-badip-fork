@@ -105,6 +105,15 @@ History (*change_log*) of this repository (and of those updates merged into it) 
 - chris_c posts an update for the PVNT CIDRs (spambotsecurity.com/forum/viewtopic.php?f=7&t=2282#p24268).
 - Repository updated with new changes.
 
+#####2015-09-04
+- chris_c posts an update for the Internap CIDRs (spambotsecurity.com/forum/viewtopic.php?f=48&t=2541#p24282).
+- chris_c posts an update for the XIRRA CIDRs (spambotsecurity.com/forum/viewtopic.php?f=48&t=3594#p24283).
+- chris_c posts an update for the WOWRACK CIDRs (spambotsecurity.com/forum/viewtopic.php?f=43&t=784#p24284).
+- chris_c posts an update for the Black Lotus Communications CIDRs (spambotsecurity.com/forum/viewtopic.php?f=7&t=2678#p24285).
+- chris_c posts an update for the Serveryou CIDRs (spambotsecurity.com/forum/viewtopic.php?f=7&t=3160#p24286).
+- chris_c posts an update for the Elastic Hosts and Connections4London CIDRs (spambotsecurity.com/forum/viewtopic.php?f=7&t=2767#p24287).
+- Repository updated with new changes.
+
 ---
 
 Additional "bad IPs" worth considering including in your installation of ZB Block, but not included specifically in this repository (because including them would constitute the addition of new signatures, and I intend this repository to only be for updates to existing outdated signatures):
