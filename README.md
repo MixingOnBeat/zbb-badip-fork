@@ -114,6 +114,15 @@ History (*change_log*) of this repository (and of those updates merged into it) 
 - chris_c posts an update for the Elastic Hosts and Connections4London CIDRs (spambotsecurity.com/forum/viewtopic.php?f=7&t=2767#p24287).
 - Repository updated with new changes.
 
+#####2015-09-05
+- chris_c posts an update for the Private Layer CIDRs (spambotsecurity.com/forum/viewtopic.php?f=48&t=3598#p24310).
+- chris_c posts an update for the ALNET-AS PP SKS-Lugan CIDRs (spambotsecurity.com/forum/viewtopic.php?f=48&t=3078#p24311).
+- chris_c posts an update for the Versaweb CIDRs (spambotsecurity.com/forum/viewtopic.php?f=7&t=3261#p24312).
+- chris_c posts an update for the Worldstream CIDRs (spambotsecurity.com/forum/viewtopic.php?f=7&t=3261#p24313).
+- chris_c posts an update for the UOL CIDRs (spambotsecurity.com/forum/viewtopic.php?f=48&t=3599#p24314).
+- chris_c posts an update for the Choopa CIDRs (spambotsecurity.com/forum/viewtopic.php?f=7&t=2672#p24315).
+- Repository updated with new changes.
+
 ---
 
 Additional "bad IPs" worth considering including in your installation of ZB Block, but not included specifically in this repository (because including them would constitute the addition of new signatures, and I intend this repository to only be for updates to existing outdated signatures):
