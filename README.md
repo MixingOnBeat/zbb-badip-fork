@@ -123,6 +123,10 @@ History (*change_log*) of this repository (and of those updates merged into it) 
 - chris_c posts an update for the Choopa CIDRs (spambotsecurity.com/forum/viewtopic.php?f=7&t=2672#p24315).
 - Repository updated with new changes.
 
+#####2015-09-10
+- chris_c posts an update for the Digital Ocean CIDRs (spambotsecurity.com/forum/viewtopic.php?f=48&t=3410#p24360 and spambotsecurity.com/forum/viewtopic.php?f=7&t=2414#p24361).
+- Repository updated with new changes.
+
 ---
 
 Additional "bad IPs" worth considering including in your installation of ZB Block, but not included specifically in this repository (because including them would constitute the addition of new signatures, and I intend this repository to only be for updates to existing outdated signatures):
