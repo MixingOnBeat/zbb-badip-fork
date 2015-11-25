@@ -1,6 +1,6 @@
 ### What is this repository?
 
-This repository, "zbb-badip-fork", is for tracking updates necessary for the `badip.inc` file of ZB Block prior to their eventual release. I created this to expediate distribution of updates for until the next iteration is released. I'll probably delete this repository after the next iteration is released, because it'll no longer serve purpose after that time. New signatures or signature sets won't be added, nor old signatures removed, except where as updates to previously existing signatures that have become outdated; This is purely for updates.
+This repository, "zbb-badip-fork", is for tracking updates necessary for the `badip.inc` file of ZB Block prior to their eventual release. I created this to expedite distribution of updates for until the next iteration is released. I'll probably delete this repository after the next iteration is released, because it'll no longer serve purpose after that time. New signatures or signature sets won't be added, nor old signatures removed, except where as updates to previously existing signatures that have become outdated; This is purely for updates.
 
 Please note that I've neither written any of the herein contained signatures, nor tested, doubled-checked or audited them for their validity or functionality.
 
@@ -133,6 +133,10 @@ History (*change_log*) of this repository (and of those updates merged into it) 
 
 #####2015-11-08
 - Another Digital Ocean CIDR update (spambotsecurity.com/forum/viewtopic.php?f=48&t=3654#p24765).
+- Repository updated with new changes.
+
+#####2015-11-24
+- Another Digital Ocean CIDR update (spambotsecurity.com/forum/viewtopic.php?f=48&t=3654#p24982).
 - Repository updated with new changes.
 
 ---
