@@ -144,6 +144,7 @@ History (*change_log*) of this repository (and of those updates merged into it) 
 
 #####2016-01-17
 - AS15003 update by BEZ (spambotsecurity.com/forum/viewtopic.php?f=48&t=3736).
+- phpDoc block-ified comment header and corrected an outdated URL.
 - Repository updated with new changes.
 
 ---

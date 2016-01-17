@@ -1,26 +1,26 @@
 <?php
-/*
-ZB BLOCK MAIN BAD IP BLOCKS
+/**
+ * ZB BLOCK MAIN BAD IP BLOCKS
+ *
+ * These are known bad IP blocks, both range and CIDR, that have been part of ZB Block since it's inception, with more
+ * added as time goes on. More recent ones are suffixed by a //<version><beta-subversion>
+ *
+ * These are compiled with deep respect, and gratefulness from:
+ * http://robtex.com (for the BGP info).
+ * http://etmg.altervista.org/tools/aggregate.php (for the data cleaning).
+ *
+ * IT IS ILLEGAL TO USE THIS FILE IN WHOLE OR PART WITH WEBDEFENSE WEB ALARM OR ANY XYZER PRODUCT DUE TO VIOLATIONS OF
+ * THE GNU/GPL V.2
+ *
+ * ZB BLOCK, WHEN YOU CARE ENOUGH TO STEAL THE VERY BEST (thanks DEC!)
+ *
+ * COPYRIGHT 2008-2016 GNU/GPL V.2 BY MIKE H.
+ * FOR USE WITH ZB BLOCK OR ANY GNU/GPL V.2 COMPLIANT DERIVATIVE
+ *
+ * @package Maikuolan/zbb-badip-fork
+ */
 
-These are known bad IP blocks, both range and CIDR, that have been
-part of ZB Block since it's inception, with more added as time goes on.
-More recent ones are suffixed by a //<version><beta-subversion>
-
-These are compiled with deep respect, and gratefulness from:
-http://robtex.com (for the BGP info)
-http://forums.modem-help.co.uk/aggregate.php for the data cleaning.
-
-
-IT IS ILLEGAL TO USE THIS FILE IN WHOLE OR PART WITH WEBDEFENSE WEB ALARM 
-OR ANY XYZER PRODUCT DUE TO VIOLATIONS OF THE GNU/GPL V.2
-
-ZB BLOCK, WHEN YOU CARE ENOUGH TO STEAL THE VERY BEST (thanks DEC!)
-
-COPYRIGHT 2008-2015 GNU/GPL V.2 BY MIKE H.
-FOR USE WITH ZB BLOCK OR ANY GNU/GPL V.2 COMPLIANT DERIVATIVE
-*/
-
-$zbbversion .= ' / BADIP-2016-01+U'; // Version number goes here. (product code)-(Year)-(Month)(issue letter)(+U = Unofficial fork, non-mainlined release).(Build number)
+$zbbversion .= ' / BADIP-2016-01+U.1'; // Version number goes here. (product code)-(Year)-(Month)(issue letter)(+U = Unofficial fork, non-mainlined release).(Build number)
 
 // *php 5 fix
 global $whyblockout, $ax;
