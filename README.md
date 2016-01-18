@@ -147,6 +147,11 @@ History (*change_log*) of this repository (and of those updates merged into it) 
 - phpDoc block-ified comment header and corrected an outdated URL.
 - Repository updated with new changes.
 
+#####2016-01-18
+- LeaseWeb CIDR section from `zbb-dirty30-fork` moved to `zbb-badip-fork` and merged with the two LeaseWeb CIDR sections there (because of cross-over and duplication).
+- ALNET-AS PP SKS-Lugan CIDRs updated.
+- Repository updated with new changes.
+
 ---
 
 Additional "bad IPs" worth considering including in your installation of ZB Block, but not included specifically in this repository (because including them would constitute the addition of new signatures, and I intend this repository to only be for updates to existing outdated signatures):
