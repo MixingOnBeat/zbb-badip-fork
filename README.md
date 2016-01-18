@@ -152,6 +152,17 @@ History (*change_log*) of this repository (and of those updates merged into it) 
 - ALNET-AS PP SKS-Lugan CIDRs updated.
 - Repository updated with new changes.
 
+#####2016-01-19
+- HOSTING-AS Tehnologii Budushego LLC CIDRs updated.
+- MYLOC CIDRs updated.
+- INFOBOX CIDRs updated.
+- The RapidSwitch CIDRs included were a subset of the IOMart CIDRs included, so, to reduce duplication, the two sections were merged together and then updated with new CIDRs.
+- SEDO CIDRs updated.
+- Split the Spamahost and HostKey section into two distinct sections and updated both.
+- Rackspace CIDRs updated.
+- Pakistan Telecom CIDRs updated.
+- Repository updated with new changes.
+
 ---
 
 Additional "bad IPs" worth considering including in your installation of ZB Block, but not included specifically in this repository (because including them would constitute the addition of new signatures, and I intend this repository to only be for updates to existing outdated signatures):
