@@ -167,6 +167,21 @@ History (*change_log*) of this repository (and of those updates merged into it) 
 - Removed New Dream Network signatures from `zbb-badip-fork` to avoid duplication (they already exist in `zbb-dirty30-fork`).
 - Repository updated with new changes.
 
+#####2016-01-19 (Again)
+- Ecatel CIDRs updated.
+- AnchorFree CIDRs updated.
+- Virpus Networks CIDRs updated.
+- Pegasus Web Technology / Fortress ITX CIDRs updated.
+- Steadfast DNS CIDRs updated.
+- CyberBunker CIDRs updated.
+- Plus Server CIDRs updated.
+- Primary XEEX ASN has shrunk and some of their old ranges have split to other cloud providers. Accordingly, XEEX CIDRs split into three sections (XEEX, ColoGuys, Tzulo Inc) and updated.
+- Limestone networks CIDRs updated.
+- Redstation Network CIDRs updated.
+- CH-NET S.R.L. CIDRs updated.
+- Swiftway / Botmaster Labs CIDRs updated.
+- Repository updated with new changes.
+
 ---
 
 Additional "bad IPs" worth considering including in your installation of ZB Block, but not included specifically in this repository (because including them would constitute the addition of new signatures, and I intend this repository to only be for updates to existing outdated signatures):
