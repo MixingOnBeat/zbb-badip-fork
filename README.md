@@ -161,6 +161,10 @@ History (*change_log*) of this repository (and of those updates merged into it) 
 - Split the Spamahost and HostKey section into two distinct sections and updated both.
 - Rackspace CIDRs updated.
 - Pakistan Telecom CIDRs updated.
+- Label typos found by BEZ in the LeaseWeb CIDRs and HOSTING-AS CIDRs (Thank you!); Fixed.
+- Removed HostDime signatures from `zbb-badip-fork` to avoid duplication (they already exist in `zbb-dirty30-fork`).
+- Removed GoDaddy signatures from `zbb-badip-fork` to avoid duplication (they already exist in `zbb-dirty30-fork`).
+- Removed New Dream Network signatures from `zbb-badip-fork` to avoid duplication (they already exist in `zbb-dirty30-fork`).
 - Repository updated with new changes.
 
 ---
