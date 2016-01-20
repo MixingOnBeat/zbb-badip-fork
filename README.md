@@ -182,6 +182,28 @@ History (*change_log*) of this repository (and of those updates merged into it) 
 - Swiftway / Botmaster Labs CIDRs updated.
 - Repository updated with new changes.
 
+#####2016-01-20
+- Prolexic Technologies CIDRs updated.
+- Portlane Networks AB CIDRs updated.
+- WEBEXXPURTS / Deepak Servers CIDRs updated.
+- Eonix Corporation CIDRs updated.
+- PIN-AS CIDRs updated.
+- OVH Networks CIDRs updated.
+- Bytemark CIDRs updated.
+- Trend Micro CIDRs updated.
+- Hetzner CIDRs updated.
+- Digital Ocean CIDRs updated.
+- Hetzner CIDRs updated.
+- Root SA CIDRs updated.
+- Corpcolo CIDRs updated.
+- iWeb Technologies CIDRs updated.
+- Reliable Hosting Services CIDRs updated.
+- Westhost CIDRs updated.
+- Bezeq International CIDRs updated.
+- WholeSale Internet, Inc. & DataShack LLC CIDRs updated.
+- CoS International CIDRs updated.
+- Repository updated with new changes.
+
 ---
 
 Additional "bad IPs" worth considering including in your installation of ZB Block, but not included specifically in this repository (because including them would constitute the addition of new signatures, and I intend this repository to only be for updates to existing outdated signatures):
