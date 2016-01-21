@@ -2520,37 +2520,37 @@ $ax += cidrblock($address,'192.241.8.0/24','Ready Server, not an access provider
 
 // One and One Hosting / 1&1 Internet AG (updated 2016.01.21)
 // AS8560
-$ax += cidrblock($address,'37.98.148.0/22','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
+$ax += cidrblock($address,'37.98.148.0/22','One and One hosting, not an access provider (ASN-ONEANDONE-00). ');
 $ax += cidrblock($address,'50.21.176.0/20','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
-$ax += cidrblock($address,'62.151.180.0/22','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
-$ax += cidrblock($address,'66.175.232.0/21','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
-$ax += cidrblock($address,'70.35.192.0/20','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
-$ax += cidrblock($address,'74.208.0.0/16','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
-$ax += cidrblock($address,'77.68.0.0/17','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
-$ax += cidrblock($address,'79.99.40.0/21','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
-$ax += cidrblock($address,'82.165.0.0/16','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
-$ax += cidrblock($address,'87.106.0.0/16','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
-$ax += cidrblock($address,'88.208.192.0/18','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
-$ax += cidrblock($address,'93.90.192.0/20','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
-$ax += cidrblock($address,'104.192.4.0/22','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
-$ax += cidrblock($address,'104.219.40.0/22','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
-$ax += cidrblock($address,'104.254.244.0/22','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
-$ax += cidrblock($address,'108.175.0.0/20','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
-$ax += cidrblock($address,'109.228.0.0/18','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
-$ax += cidrblock($address,'162.222.200.0/21','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
-$ax += cidrblock($address,'162.252.156.0/22','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
-$ax += cidrblock($address,'162.255.84.0/22','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
-$ax += cidrblock($address,'192.195.77.0/24','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
-$ax += cidrblock($address,'195.20.224.0/19','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
-$ax += cidrblock($address,'198.71.48.0/20','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
-$ax += cidrblock($address,'198.251.64.0/20','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
-$ax += cidrblock($address,'212.227.0.0/16','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
-$ax += cidrblock($address,'213.165.64.0/19','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
-$ax += cidrblock($address,'213.171.192.0/19','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
-$ax += cidrblock($address,'216.250.112.0/20','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
-$ax += cidrblock($address,'217.72.192.0/20','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
-$ax += cidrblock($address,'217.160.0.0/16','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
-$ax += cidrblock($address,'217.174.240.0/20','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
+$ax += cidrblock($address,'62.151.180.0/22','One and One hosting, not an access provider (ASN-ONEANDONE-02). ');
+$ax += cidrblock($address,'66.175.232.0/21','One and One hosting, not an access provider (ASN-ONEANDONE-03). ');
+$ax += cidrblock($address,'70.35.192.0/20','One and One hosting, not an access provider (ASN-ONEANDONE-04). ');
+$ax += cidrblock($address,'74.208.0.0/16','One and One hosting, not an access provider (ASN-ONEANDONE-05). ');
+$ax += cidrblock($address,'77.68.0.0/17','One and One hosting, not an access provider (ASN-ONEANDONE-06). ');
+$ax += cidrblock($address,'79.99.40.0/21','One and One hosting, not an access provider (ASN-ONEANDONE-07). ');
+$ax += cidrblock($address,'82.165.0.0/16','One and One hosting, not an access provider (ASN-ONEANDONE-08). ');
+$ax += cidrblock($address,'87.106.0.0/16','One and One hosting, not an access provider (ASN-ONEANDONE-09). ');
+$ax += cidrblock($address,'88.208.192.0/18','One and One hosting, not an access provider (ASN-ONEANDONE-10). ');
+$ax += cidrblock($address,'93.90.192.0/20','One and One hosting, not an access provider (ASN-ONEANDONE-11). ');
+$ax += cidrblock($address,'104.192.4.0/22','One and One hosting, not an access provider (ASN-ONEANDONE-12). ');
+$ax += cidrblock($address,'104.219.40.0/22','One and One hosting, not an access provider (ASN-ONEANDONE-13). ');
+$ax += cidrblock($address,'104.254.244.0/22','One and One hosting, not an access provider (ASN-ONEANDONE-14). ');
+$ax += cidrblock($address,'108.175.0.0/20','One and One hosting, not an access provider (ASN-ONEANDONE-15). ');
+$ax += cidrblock($address,'109.228.0.0/18','One and One hosting, not an access provider (ASN-ONEANDONE-16). ');
+$ax += cidrblock($address,'162.222.200.0/21','One and One hosting, not an access provider (ASN-ONEANDONE-17). ');
+$ax += cidrblock($address,'162.252.156.0/22','One and One hosting, not an access provider (ASN-ONEANDONE-18). ');
+$ax += cidrblock($address,'162.255.84.0/22','One and One hosting, not an access provider (ASN-ONEANDONE-19). ');
+$ax += cidrblock($address,'192.195.77.0/24','One and One hosting, not an access provider (ASN-ONEANDONE-20). ');
+$ax += cidrblock($address,'195.20.224.0/19','One and One hosting, not an access provider (ASN-ONEANDONE-21). ');
+$ax += cidrblock($address,'198.71.48.0/20','One and One hosting, not an access provider (ASN-ONEANDONE-22). ');
+$ax += cidrblock($address,'198.251.64.0/20','One and One hosting, not an access provider (ASN-ONEANDONE-23). ');
+$ax += cidrblock($address,'212.227.0.0/16','One and One hosting, not an access provider (ASN-ONEANDONE-24). ');
+$ax += cidrblock($address,'213.165.64.0/19','One and One hosting, not an access provider (ASN-ONEANDONE-25). ');
+$ax += cidrblock($address,'213.171.192.0/19','One and One hosting, not an access provider (ASN-ONEANDONE-26). ');
+$ax += cidrblock($address,'216.250.112.0/20','One and One hosting, not an access provider (ASN-ONEANDONE-27). ');
+$ax += cidrblock($address,'217.72.192.0/20','One and One hosting, not an access provider (ASN-ONEANDONE-28). ');
+$ax += cidrblock($address,'217.160.0.0/16','One and One hosting, not an access provider (ASN-ONEANDONE-29). ');
+$ax += cidrblock($address,'217.174.240.0/20','One and One hosting, not an access provider (ASN-ONEANDONE-30). ');
 
 
 // Swift Networks Limited (updated 2016.01.21)
