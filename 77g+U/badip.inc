@@ -20,7 +20,7 @@
  * @package Maikuolan/zbb-badip-fork
  */
 
-$zbbversion .= ' / BADIP-2016-01+U.5'; // Version number goes here. (product code)-(Year)-(Month)(issue letter)(+U = Unofficial fork, non-mainlined release).(Build number)
+$zbbversion .= ' / BADIP-2016-01+U.6'; // Version number goes here. (product code)-(Year)-(Month)(issue letter)(+U = Unofficial fork, non-mainlined release).(Build number)
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -1809,9 +1809,9 @@ $ax += cidrblock($address,'195.2.240.0/23','ASN pinspb.ru (ASN-PINAS-59). ');
 $ax += cidrblock($address,'195.211.124.0/22','ASN pinspb.ru (ASN-PINAS-60). ');
 
 
-//  OVH Networks (updated 2016.01.20)
-//  Not an access provider, allows rampant abuse, hosts badware/bad services.
-//  AS16276
+// OVH Networks (updated 2016.01.20)
+// Not an access provider, allows rampant abuse, hosts badware/bad services.
+// AS16276
 $ax += cidrblock($address,'5.39.0.0/17','OVH Networks (ASN-OVH-00). ');
 $ax += cidrblock($address,'5.135.0.0/16','OVH Networks (ASN-OVH-01). ');
 $ax += cidrblock($address,'5.196.0.0/16','OVH Networks (ASN-OVH-02). ');
@@ -2253,8 +2253,8 @@ $ax += cidrblock($address,'206.226.64.0/18','Tzulo Inc (ASN-11878-31). ');
 $ax += cidrblock($address,'208.77.16.0/21','Tzulo Inc (ASN-11878-32). ');
 
 
-//  Corpcolo (updated 2016.01.20)
-//  AS17139
+// Corpcolo (updated 2016.01.20)
+// AS17139
 $ax += cidrblock($address,'45.3.32.0/20','Corpcolo (ASN-AS17139-00). ');
 $ax += cidrblock($address,'45.3.55.0/24','Corpcolo (ASN-AS17139-01). ');
 $ax += cidrblock($address,'45.3.56.0/21','Corpcolo (ASN-AS17139-02). ');
@@ -2290,8 +2290,8 @@ $ax += cidrblock($address,'216.193.219.0/24','Corpcolo (ASN-AS17139-31). ');
 $ax += cidrblock($address,'216.193.251.0/24','Corpcolo (ASN-AS17139-32). ');
 
 
-//  iWeb Technologies Inc. (updated 2016.01.20)
-//  AS32613
+// iWeb Technologies Inc. (updated 2016.01.20)
+// AS32613
 $ax += cidrblock($address,'38.108.70.0/24','iWeb Technologies Inc. Not an access provider ISP (ASN-IWEB-00). ');
 $ax += cidrblock($address,'64.15.128.0/19','iWeb Technologies Inc. Not an access provider ISP (ASN-IWEB-01). ');
 $ax += cidrblock($address,'67.205.64.0/18','iWeb Technologies Inc. Not an access provider ISP (ASN-IWEB-02). ');
@@ -2319,8 +2319,8 @@ $ax += cidrblock($address,'206.123.20.0/23','iWeb Technologies Inc. Not an acces
 $ax += cidrblock($address,'209.172.32.0/19','iWeb Technologies Inc. Not an access provider ISP (ASN-IWEB-24). ');
 
 
-//  Reliable Hosting Services (updated 2016.01.20)
-//  AS29713, AS33597
+// Reliable Hosting Services (updated 2016.01.20)
+// AS29713, AS33597
 $ax += cidrblock($address,'8.60.0.0/16','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-00). ');
 $ax += cidrblock($address,'8.111.0.0/16','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-01). ');
 $ax += cidrblock($address,'8.133.0.0/16','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-02). ');
@@ -2446,8 +2446,8 @@ $ax += cidrblock($address,'212.179.0.0/16','BEZEQ-INT (ASN-BEZEQ-52). ');
 $ax += cidrblock($address,'217.194.200.0/23','BEZEQ-INT (ASN-BEZEQ-53). ');
 
 
-//  WholeSale Internet, Inc. & DataShack LLC (updated 2016.01.20)
-//  AS33387, AS32097
+// WholeSale Internet, Inc. & DataShack LLC (updated 2016.01.20)
+// AS33387, AS32097
 $ax += cidrblock($address,'63.141.224.0/19','WholeSale Internet, Inc. Not an access provider ISP (ASN-WHOLESHACK-00). ');
 $ax += cidrblock($address,'69.30.192.0/18','WholeSale Internet, Inc. Not an access provider ISP (ASN-WHOLESHACK-01). ');
 $ax += cidrblock($address,'69.197.128.0/18','WholeSale Internet, Inc. Not an access provider ISP (ASN-WHOLESHACK-02). ');
@@ -2486,84 +2486,87 @@ $ax += cidrblock($address,'208.30.51.0/24','Known hostile network (ASN-CSI-6). '
 $ax += cidrblock($address,'208.33.13.0/24','Known hostile network (ASN-CSI-7). ');
 
 
-// Avante Hosting
-// AS36137 updated 08/20/15
-$ax += cidrblock($address,'66.248.198.0/23','Avante Hosting, not an access provider (ASN-AVANTE-01). ');
-$ax += cidrblock($address,'66.248.202.0/23','Avante Hosting, not an access provider (ASN-AVANTE-02). ');
-$ax += cidrblock($address,'66.248.205.0/24','Avante Hosting, not an access provider (ASN-AVANTE-03). ');
-$ax += cidrblock($address,'66.248.206.0/24','Avante Hosting, not an access provider (ASN-AVANTE-04). ');
-$ax += cidrblock($address,'66.248.220.0/24','Avante Hosting, not an access provider (ASN-AVANTE-05). ');
-$ax += cidrblock($address,'66.248.223.0/24','Avante Hosting, not an access provider (ASN-AVANTE-06). ');
-$ax += cidrblock($address,'72.18.69.0/24','Avante Hosting, not an access provider (ASN-AVANTE-07). ');
-$ax += cidrblock($address,'192.119.144.0/22','Avante Hosting, not an access provider (ASN-AVANTE-08). ');
-$ax += cidrblock($address,'192.119.149.0/24','Avante Hosting, not an access provider (ASN-AVANTE-09). ');
-$ax += cidrblock($address,'192.119.150.0/24','Avante Hosting, not an access provider (ASN-AVANTE-10). ');
-$ax += cidrblock($address,'192.119.152.0/24','Avante Hosting, not an access provider (ASN-AVANTE-11). ');
-$ax += cidrblock($address,'192.119.154.0/24','Avante Hosting, not an access provider (ASN-AVANTE-12). ');
-$ax += cidrblock($address,'192.119.157.0/24','Avante Hosting, not an access provider (ASN-AVANTE-13). ');
-$ax += cidrblock($address,'192.119.158.0/24','Avante Hosting, not an access provider (ASN-AVANTE-14). ');
-$ax += cidrblock($address,'192.161.195.0/24','Avante Hosting, not an access provider (ASN-AVANTE-15). ');
-$ax += cidrblock($address,'192.161.215.0/24','Avante Hosting, not an access provider (ASN-AVANTE-16). ');
-$ax += cidrblock($address,'192.161.220.0/23','Avante Hosting, not an access provider (ASN-AVANTE-17). ');
-$ax += cidrblock($address,'192.161.222.0/24','Avante Hosting, not an access provider (ASN-AVANTE-18). ');
-$ax += cidrblock($address,'192.161.238.0/23','Avante Hosting, not an access provider (ASN-AVANTE-19). ');
-$ax += cidrblock($address,'192.161.240.0/23','Avante Hosting, not an access provider (ASN-AVANTE-20). ');
-$ax += cidrblock($address,'192.161.242.0/24','Avante Hosting, not an access provider (ASN-AVANTE-21). ');
-$ax += cidrblock($address,'198.52.136.0/24','Avante Hosting, not an access provider (ASN-AVANTE-22). ');
-$ax += cidrblock($address,'198.52.176.0/23','Avante Hosting, not an access provider (ASN-AVANTE-23). ');
-$ax += cidrblock($address,'198.52.180.0/23','Avante Hosting, not an access provider (ASN-AVANTE-24). ');
-$ax += cidrblock($address,'198.52.182.0/24','Avante Hosting, not an access provider (ASN-AVANTE-25). ');
-$ax += cidrblock($address,'198.52.185.0/24','Avante Hosting, not an access provider (ASN-AVANTE-26). ');
-$ax += cidrblock($address,'198.52.202.0/24','Avante Hosting, not an access provider (ASN-AVANTE-27). ');
-$ax += cidrblock($address,'199.195.156.0/22','Avante Hosting, not an access provider (ASN-AVANTE-28). ');
-$ax += cidrblock($address,'204.16.20.0/22','Avante Hosting, not an access provider (ASN-AVANTE-29). ');
+// Avante Hosting (updated 2016.01.21)
+// AS36137
+$ax += cidrblock($address,'66.248.198.0/23','Avante Hosting, not an access provider (ASN-AVANTE-0). ');
+$ax += cidrblock($address,'45.59.72.0/21','Avante Hosting, not an access provider (ASN-AVANTE-1). ');
+$ax += cidrblock($address,'45.62.176.0/20','Avante Hosting, not an access provider (ASN-AVANTE-2). ');
+$ax += cidrblock($address,'66.248.192.0/19','Avante Hosting, not an access provider (ASN-AVANTE-3). ');
+$ax += cidrblock($address,'192.119.144.0/20','Avante Hosting, not an access provider (ASN-AVANTE-4). ');
+$ax += cidrblock($address,'192.161.192.0/18','Avante Hosting, not an access provider (ASN-AVANTE-5). ');
+$ax += cidrblock($address,'192.241.8.0/21','Avante Hosting, not an access provider (ASN-AVANTE-6). ');
+$ax += cidrblock($address,'198.52.128.0/17','Avante Hosting, not an access provider (ASN-AVANTE-7). ');
+$ax += cidrblock($address,'199.195.156.0/22','Avante Hosting, not an access provider (ASN-AVANTE-8). ');
 
 
-// One and One Hosting
-// AS8560 updated 09/02/15
+// Tex-Link Communications, Inc. (updated 2016.01.21)
+// AS11457
+$ax += cidrblock($address,'66.52.209.0/24','Tex-Link Communications, not an access provider (ASN-TEXLINK-0). ');
+$ax += cidrblock($address,'66.52.224.0/22','Tex-Link Communications, not an access provider (ASN-TEXLINK-1). ');
+$ax += cidrblock($address,'66.118.0.0/18','Tex-Link Communications, not an access provider (ASN-TEXLINK-2). ');
+$ax += cidrblock($address,'66.118.224.0/19','Tex-Link Communications, not an access provider (ASN-TEXLINK-3). ');
+$ax += cidrblock($address,'72.18.64.0/19','Tex-Link Communications, not an access provider (ASN-TEXLINK-4). ');
+$ax += cidrblock($address,'208.99.0.0/18','Tex-Link Communications, not an access provider (ASN-TEXLINK-5). ');
+
+
+// Ready Server, Dedicated Server Hosting (updated 2016.01.21)
+// AS63930
+$ax += cidrblock($address,'45.125.192.0/22','Ready Server, not an access provider (ASN-RSDSH-0). ');
+$ax += cidrblock($address,'103.47.208.0/22','Ready Server, not an access provider (ASN-RSDSH-1). ');
+$ax += cidrblock($address,'103.195.151.0/24','Ready Server, not an access provider (ASN-RSDSH-2). ');
+$ax += cidrblock($address,'154.16.95.0/24','Ready Server, not an access provider (ASN-RSDSH-3). ');
+$ax += cidrblock($address,'192.241.8.0/24','Ready Server, not an access provider (ASN-RSDSH-4). ');
+
+
+// One and One Hosting / 1&1 Internet AG (updated 2016.01.21)
+// AS8560
 $ax += cidrblock($address,'37.98.148.0/22','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
-$ax += cidrblock($address,'50.21.176.0/20','One and One hosting, not an access provider (ASN-ONEANDONE-02). ');
-$ax += cidrblock($address,'62.116.162.0/23','One and One hosting, not an access provider (ASN-ONEANDONE-03). ');
-$ax += cidrblock($address,'66.175.232.0/21','One and One hosting, not an access provider (ASN-ONEANDONE-04). ');
-$ax += cidrblock($address,'70.35.192.0/20','One and One hosting, not an access provider (ASN-ONEANDONE-05). ');
-$ax += cidrblock($address,'74.208.0.0/16','One and One hosting, not an access provider (ASN-ONEANDONE-06). ');
-$ax += cidrblock($address,'77.68.0.0/17','One and One hosting, not an access provider (ASN-ONEANDONE-07). ');
-$ax += cidrblock($address,'79.99.40.0/21','One and One hosting, not an access provider (ASN-ONEANDONE-08). ');
-$ax += cidrblock($address,'82.165.0.0/16','One and One hosting, not an access provider (ASN-ONEANDONE-09). ');
-$ax += cidrblock($address,'87.106.0.0/16','One and One hosting, not an access provider (ASN-ONEANDONE-10). ');
-$ax += cidrblock($address,'88.208.192.0/18','One and One hosting, not an access provider (ASN-ONEANDONE-11). ');
-$ax += cidrblock($address,'93.90.192.0/20','One and One hosting, not an access provider (ASN-ONEANDONE-12). ');
-$ax += cidrblock($address,'104.192.4.0/22','One and One hosting, not an access provider (ASN-ONEANDONE-13). ');
-$ax += cidrblock($address,'104.219.40.0/22','One and One hosting, not an access provider (ASN-ONEANDONE-14). ');
-$ax += cidrblock($address,'104.254.244.0/22','One and One hosting, not an access provider (ASN-ONEANDONE-15). ');
-$ax += cidrblock($address,'108.175.0.0/20','One and One hosting, not an access provider (ASN-ONEANDONE-16). ');
-$ax += cidrblock($address,'109.228.0.0/18','One and One hosting, not an access provider (ASN-ONEANDONE-17). ');
-$ax += cidrblock($address,'162.222.200.0/21','One and One hosting, not an access provider (ASN-ONEANDONE-18). ');
-$ax += cidrblock($address,'162.252.156.0/22','One and One hosting, not an access provider (ASN-ONEANDONE-19). ');
-$ax += cidrblock($address,'162.255.84.0/22','One and One hosting, not an access provider (ASN-ONEANDONE-20). ');
-$ax += cidrblock($address,'192.195.77.0/24','One and One hosting, not an access provider (ASN-ONEANDONE-21). ');
-$ax += cidrblock($address,'195.20.224.0/19','One and One hosting, not an access provider (ASN-ONEANDONE-22). ');
-$ax += cidrblock($address,'198.71.48.0/20','One and One hosting, not an access provider (ASN-ONEANDONE-23). ');
-$ax += cidrblock($address,'198.251.64.0/20','One and One hosting, not an access provider (ASN-ONEANDONE-24). ');
-$ax += cidrblock($address,'212.227.0.0/16','One and One hosting, not an access provider (ASN-ONEANDONE-25). ');
-$ax += cidrblock($address,'213.165.64.0/19','One and One hosting, not an access provider (ASN-ONEANDONE-26). ');
-$ax += cidrblock($address,'213.171.192.0/19','One and One hosting, not an access provider (ASN-ONEANDONE-27). ');
-$ax += cidrblock($address,'216.250.112.0/20','One and One hosting, not an access provider (ASN-ONEANDONE-28). ');
-$ax += cidrblock($address,'217.72.192.0/20','One and One hosting, not an access provider (ASN-ONEANDONE-29). ');
-$ax += cidrblock($address,'217.160.0.0/16','One and One hosting, not an access provider (ASN-ONEANDONE-30). ');
-$ax += cidrblock($address,'217.174.240.0/20','One and One hosting, not an access provider (ASN-ONEANDONE-31). ');
+$ax += cidrblock($address,'50.21.176.0/20','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
+$ax += cidrblock($address,'62.151.180.0/22','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
+$ax += cidrblock($address,'66.175.232.0/21','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
+$ax += cidrblock($address,'70.35.192.0/20','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
+$ax += cidrblock($address,'74.208.0.0/16','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
+$ax += cidrblock($address,'77.68.0.0/17','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
+$ax += cidrblock($address,'79.99.40.0/21','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
+$ax += cidrblock($address,'82.165.0.0/16','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
+$ax += cidrblock($address,'87.106.0.0/16','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
+$ax += cidrblock($address,'88.208.192.0/18','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
+$ax += cidrblock($address,'93.90.192.0/20','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
+$ax += cidrblock($address,'104.192.4.0/22','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
+$ax += cidrblock($address,'104.219.40.0/22','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
+$ax += cidrblock($address,'104.254.244.0/22','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
+$ax += cidrblock($address,'108.175.0.0/20','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
+$ax += cidrblock($address,'109.228.0.0/18','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
+$ax += cidrblock($address,'162.222.200.0/21','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
+$ax += cidrblock($address,'162.252.156.0/22','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
+$ax += cidrblock($address,'162.255.84.0/22','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
+$ax += cidrblock($address,'192.195.77.0/24','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
+$ax += cidrblock($address,'195.20.224.0/19','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
+$ax += cidrblock($address,'198.71.48.0/20','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
+$ax += cidrblock($address,'198.251.64.0/20','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
+$ax += cidrblock($address,'212.227.0.0/16','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
+$ax += cidrblock($address,'213.165.64.0/19','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
+$ax += cidrblock($address,'213.171.192.0/19','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
+$ax += cidrblock($address,'216.250.112.0/20','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
+$ax += cidrblock($address,'217.72.192.0/20','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
+$ax += cidrblock($address,'217.160.0.0/16','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
+$ax += cidrblock($address,'217.174.240.0/20','One and One hosting, not an access provider (ASN-ONEANDONE-01). ');
 
 
-// Swift Networks Limited
+// Swift Networks Limited (updated 2016.01.21)
 // AS36923
-$ax += cidrblock($address,'41.58.0.0/16','Swift Networks Limited is blocked by the system administrator, Nigeria, nuf said (ASN-AS36923-0). '); //75a
-$ax += cidrblock($address,'41.189.0.0/19','Swift Networks Limited is blocked by the system administrator, Nigeria, nuf said (ASN-AS36923-1). '); //75a
-$ax += cidrblock($address,'41.221.160.0/20','Swift Networks Limited is blocked by the system administrator, Nigeria, nuf said (ASN-AS36923-2). '); //75a
-$ax += cidrblock($address,'41.222.64.0/21','Swift Networks Limited is blocked by the system administrator, Nigeria, nuf said (ASN-AS36923-3). '); //75a
+$ax += cidrblock($address,'41.58.0.0/16','Swift Networks Limited is blocked by the system administrator, Nigeria, nuf said (ASN-AS36923-0). ');
+$ax += cidrblock($address,'41.189.0.0/19','Swift Networks Limited is blocked by the system administrator, Nigeria, nuf said (ASN-AS36923-1). ');
+$ax += cidrblock($address,'41.221.160.0/20','Swift Networks Limited is blocked by the system administrator, Nigeria, nuf said (ASN-AS36923-2). ');
+$ax += cidrblock($address,'41.222.64.0/21','Swift Networks Limited is blocked by the system administrator, Nigeria, nuf said (ASN-AS36923-3). ');
+$ax += cidrblock($address,'129.18.0.0/16','Swift Networks Limited is blocked by the system administrator, Nigeria, nuf said (ASN-AS36923-4). ');
 
 
 // PVNT Networks, #116 Host Exploit rank.
 // AS21788 updated 09/02/15
+//
+// I checked the BGP records for this ASN on 2016.01.21, but it didn't seem to contain any announces. Leaving it as is
+// for now, unless someone else wants to try their hand at updating this one. Cheers. -Maikuolan.
 $ax += cidrblock($address,'64.120.128.0/17','PVNT Networks, #116 HE Rank (ASN-AS21788-01). ');
 $ax += cidrblock($address,'64.191.0.0/17','PVNT Networks, #116 HE Rank (ASN-AS21788-02). ');
 $ax += cidrblock($address,'66.7.186.0/23','PVNT Networks, #116 HE Rank (ASN-AS21788-03). ');
@@ -2600,107 +2603,57 @@ $ax += cidrblock($address,'209.120.180.0/22','PVNT Networks, #116 HE Rank (ASN-A
 //$ax += cidrblock($address,'216.98.128.0/19','CariNet, Inc. Not an access provider ISP. (ASN-CARINET-4). '); //75b
 
 
-// BestHosting
+// BestHosting (records checked on 2016.01.21, no changes required)
 // AS42655
 $ax += cidrblock($address,'31.41.216.0/21','Network known to associate with malware, source: http://www.google.com/safebrowsing/diagnostic?site=AS:42655&hl=en (ASN-BESTHOSTING-0). '); //75b
 $ax += cidrblock($address,'194.28.172.0/22','Network known to associate with malware, source: http://www.google.com/safebrowsing/diagnostic?site=AS:42655&hl=en (ASN-BESTHOSTING-1). '); //75b
 $ax += cidrblock($address,'195.248.234.0/23','Network known to associate with malware, source: http://www.google.com/safebrowsing/diagnostic?site=AS:42655&hl=en (ASN-BESTHOSTING-2). '); //75b
 
 
-// Internap
-// AS12182 updated 09/03/15
-$ax += cidrblock($address,'23.92.184.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-01). ');
-$ax += cidrblock($address,'63.251.0.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-02). ');
-$ax += cidrblock($address,'63.251.100.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-03). ');
-$ax += cidrblock($address,'63.251.225.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-04). ');
-$ax += cidrblock($address,'63.251.229.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-05). ');
-$ax += cidrblock($address,'63.251.252.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-06). ');
-$ax += cidrblock($address,'63.251.254.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-07). ');
-$ax += cidrblock($address,'64.7.192.0/19','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-08). ');
-$ax += cidrblock($address,'64.74.128.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-09). ');
-$ax += cidrblock($address,'64.74.170.0/23','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-10). ');
-$ax += cidrblock($address,'64.74.208.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-11). ');
-$ax += cidrblock($address,'64.94.73.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-12). ');
-$ax += cidrblock($address,'64.94.96.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-13). ');
-$ax += cidrblock($address,'64.94.128.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-14). ');
-$ax += cidrblock($address,'64.94.158.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-15). ');
-$ax += cidrblock($address,'64.95.136.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-16). ');
-$ax += cidrblock($address,'64.95.140.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-17). ');
-$ax += cidrblock($address,'64.187.107.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-18). ');
-$ax += cidrblock($address,'66.79.143.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-19). ');
-$ax += cidrblock($address,'66.151.128.0/19','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-20). ');
-$ax += cidrblock($address,'69.12.32.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-21). ');
-$ax += cidrblock($address,'69.25.56.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-22). ');
-$ax += cidrblock($address,'69.25.81.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-23). ');
-$ax += cidrblock($address,'69.25.96.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-24). ');
-$ax += cidrblock($address,'70.42.128.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-25). ');
-$ax += cidrblock($address,'70.42.240.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-26). ');
-$ax += cidrblock($address,'71.19.216.0/23','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-27). ');
-$ax += cidrblock($address,'72.5.3.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-28). ');
-$ax += cidrblock($address,'72.5.64.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-29). ');
-$ax += cidrblock($address,'72.5.172.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-30). ');
-$ax += cidrblock($address,'72.5.224.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-31). ');
-$ax += cidrblock($address,'72.5.233.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-32). ');
-$ax += cidrblock($address,'72.42.247.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-33). ');
-$ax += cidrblock($address,'74.91.118.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-34). ');
-$ax += cidrblock($address,'74.116.112.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-35). ');
-$ax += cidrblock($address,'74.118.48.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-36). ');
-$ax += cidrblock($address,'74.201.18.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-37). ');
-$ax += cidrblock($address,'74.201.80.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-38). ');
-$ax += cidrblock($address,'74.201.112.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-39). ');
-$ax += cidrblock($address,'74.217.28.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-40). ');
-$ax += cidrblock($address,'74.217.64.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-41). ');
-$ax += cidrblock($address,'74.217.96.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-42). ');
-$ax += cidrblock($address,'74.217.193.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-43). ');
-$ax += cidrblock($address,'74.217.201.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-44). ');
-$ax += cidrblock($address,'74.217.208.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-45). ');
-$ax += cidrblock($address,'75.98.0.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-46). ');
-$ax += cidrblock($address,'75.98.80.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-47). ');
-$ax += cidrblock($address,'85.202.160.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-48). ');
-$ax += cidrblock($address,'107.150.144.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-49). ');
-$ax += cidrblock($address,'159.135.0.0/16','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-50). ');
-$ax += cidrblock($address,'160.14.0.0/16','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-51). ');
-$ax += cidrblock($address,'192.43.206.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-52). ');
-$ax += cidrblock($address,'192.86.86.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-53). ');
-$ax += cidrblock($address,'192.251.220.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-54). ');
-$ax += cidrblock($address,'192.251.224.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-55). ');
-$ax += cidrblock($address,'193.93.232.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-56). ');
-$ax += cidrblock($address,'198.36.120.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-57). ');
-$ax += cidrblock($address,'198.36.124.0/23','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-58). ');
-$ax += cidrblock($address,'198.107.213.128/29','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-59). ');
-$ax += cidrblock($address,'198.107.213.200/29','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-60). ');
-$ax += cidrblock($address,'198.147.243.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-61). ');
-$ax += cidrblock($address,'198.147.244.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-62). ');
-$ax += cidrblock($address,'199.16.144.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-63). ');
-$ax += cidrblock($address,'199.16.201.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-64). ');
-$ax += cidrblock($address,'199.16.206.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-65). ');
-$ax += cidrblock($address,'199.16.216.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-66). ');
-$ax += cidrblock($address,'199.19.195.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-67). ');
-$ax += cidrblock($address,'199.96.69.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-68). ');
-$ax += cidrblock($address,'199.102.240.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-69). ');
-$ax += cidrblock($address,'204.10.105.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-70). ');
-$ax += cidrblock($address,'204.14.108.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-71). ');
-$ax += cidrblock($address,'205.153.28.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-72). ');
-$ax += cidrblock($address,'205.153.103.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-73). ');
-$ax += cidrblock($address,'206.98.113.200/29','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-74). ');
-$ax += cidrblock($address,'208.64.56.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-75). ');
-$ax += cidrblock($address,'216.52.4.0/23','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-76). ');
-$ax += cidrblock($address,'216.52.17.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-77). ');
-$ax += cidrblock($address,'216.52.21.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-78). ');
-$ax += cidrblock($address,'216.52.28.0/23','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-79). ');
-$ax += cidrblock($address,'216.52.158.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-80). ');
-$ax += cidrblock($address,'216.129.174.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-81). ');
-$ax += cidrblock($address,'216.163.188.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-82). ');
+// Internap (updated 2016.01.21)
+// AS12182
+$ax += cidrblock($address,'23.92.184.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-00). ');
+$ax += cidrblock($address,'63.251.100.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-00). ');
+$ax += cidrblock($address,'64.74.128.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-00). ');
+$ax += cidrblock($address,'64.74.171.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-00). ');
+$ax += cidrblock($address,'64.74.208.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-00). ');
+$ax += cidrblock($address,'64.95.136.0/23','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-00). ');
+$ax += cidrblock($address,'64.95.140.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-00). ');
+$ax += cidrblock($address,'64.95.156.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-00). ');
+$ax += cidrblock($address,'66.151.128.0/19','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-00). ');
+$ax += cidrblock($address,'69.25.56.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-00). ');
+$ax += cidrblock($address,'70.42.128.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-00). ');
+$ax += cidrblock($address,'70.42.240.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-00). ');
+$ax += cidrblock($address,'72.5.3.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-00). ');
+$ax += cidrblock($address,'72.5.64.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-00). ');
+$ax += cidrblock($address,'72.5.224.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-00). ');
+$ax += cidrblock($address,'72.5.233.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-00). ');
+$ax += cidrblock($address,'74.91.118.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-00). ');
+$ax += cidrblock($address,'74.116.112.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-00). ');
+$ax += cidrblock($address,'74.118.48.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-00). ');
+$ax += cidrblock($address,'74.201.18.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-00). ');
+$ax += cidrblock($address,'74.201.80.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-00). ');
+$ax += cidrblock($address,'74.201.112.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-00). ');
+$ax += cidrblock($address,'74.217.64.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-00). ');
+$ax += cidrblock($address,'74.217.96.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-00). ');
+$ax += cidrblock($address,'74.217.208.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-00). ');
+$ax += cidrblock($address,'75.98.0.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-00). ');
+$ax += cidrblock($address,'75.98.80.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-00). ');
+$ax += cidrblock($address,'107.150.144.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-00). ');
+$ax += cidrblock($address,'192.43.206.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-00). ');
+$ax += cidrblock($address,'208.64.56.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-00). ');
+$ax += cidrblock($address,'216.52.28.0/23','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-00). ');
 
 
-// WEBSUPPORT-SRO-SK-AS
+// WEBSUPPORT-SRO-SK-AS (updated 2016.01.21)
 // AS51013
-$ax += cidrblock($address,'37.9.168.0/21','Nasty slovak proxy service, participated in DoS attack. (ASN-WEBSUP-0). '); //76b
-$ax += cidrblock($address,'195.210.28.0/23','Nasty slovak proxy service, participated in DoS attack. (ASN-WEBSUP-1). '); //76b
+$ax += cidrblock($address,'37.9.168.0/21','Nasty slovak proxy service, participated in DoS attack (ASN-WEBSUP-0). ');
+$ax += cidrblock($address,'185.111.88.0/22','Nasty slovak proxy service, participated in DoS attack (ASN-WEBSUP-1). ');
+$ax += cidrblock($address,'195.210.28.0/23','Nasty slovak proxy service, participated in DoS attack (ASN-WEBSUP-2). ');
 
 
-// XIRRA GmbH
-// AS51191 updated 09/03/15
+// XIRRA GmbH (updated 2015.09.03; records checked on 2016.01.21, no changes required)
+// AS51191
 $ax += cidrblock($address,'91.232.96.0/23','XIRRA (ASN-XIRRA-1). ');
 $ax += cidrblock($address,'130.185.104.0/21','XIRRA (ASN-XIRRA-2). ');
 $ax += cidrblock($address,'185.24.68.0/22','XIRRA (ASN-XIRRA-3). ');
@@ -2708,31 +2661,29 @@ $ax += cidrblock($address,'185.108.216.0/22','XIRRA (ASN-XIRRA-4). ');
 $ax += cidrblock($address,'195.138.240.0/21','XIRRA (ASN-XIRRA-5). ');
 
 
-// Unified Layer / Hostmonster
+// Unified Layer / Hostmonster (updated 2016.01.21)
 // Site on network caught hotlinking a resource on SBS!
 // AS46606 HE Rank: 17
-$ax += cidrblock($address,'50.87.0.0/16','Unified Layer/Hostmonster (ASN-UNIHM-0). '); //76c
-$ax += cidrblock($address,'66.147.240.0/20','Unified Layer/Hostmonster (ASN-UNIHM-1). '); //76c
-$ax += cidrblock($address,'67.20.64.0/18','Unified Layer/Hostmonster (ASN-UNIHM-2). '); //76c
-$ax += cidrblock($address,'67.222.32.0/19','Unified Layer/Hostmonster (ASN-UNIHM-3). '); //76c
-$ax += cidrblock($address,'69.89.16.0/20','Unified Layer/Hostmonster (ASN-UNIHM-4). '); //76c
-$ax += cidrblock($address,'69.195.64.0/18','Unified Layer/Hostmonster (ASN-UNIHM-5). '); //76c
-$ax += cidrblock($address,'70.40.192.0/19','Unified Layer/Hostmonster (ASN-UNIHM-6). '); //76c
-$ax += cidrblock($address,'74.220.192.0/19','Unified Layer/Hostmonster (ASN-UNIHM-7). '); //76c
-$ax += cidrblock($address,'142.4.0.0/19','Unified Layer/Hostmonster (ASN-UNIHM-8). '); //76c
-$ax += cidrblock($address,'162.144.0.0/16','Unified Layer/Hostmonster (ASN-UNIHM-9). '); //76c
-$ax += cidrblock($address,'162.214.0.0/15','Unified Layer/Hostmonster (ASN-UNIHM-10). '); //76c
-$ax += cidrblock($address,'162.240.0.0/15','Unified Layer/Hostmonster (ASN-UNIHM-11). '); //76c
-$ax += cidrblock($address,'173.254.0.0/17','Unified Layer/Hostmonster (ASN-UNIHM-12). '); //76c
-$ax += cidrblock($address,'192.163.192.0/18','Unified Layer/Hostmonster (ASN-UNIHM-13). '); //76c
-$ax += cidrblock($address,'192.185.0.0/19','Unified Layer/Hostmonster (ASN-UNIHM-14). '); //76c
-$ax += cidrblock($address,'192.185.224.0/19','Unified Layer/Hostmonster (ASN-UNIHM-15). '); //76c
-$ax += cidrblock($address,'192.232.192.0/18','Unified Layer/Hostmonster (ASN-UNIHM-16). '); //76c
-$ax += cidrblock($address,'192.254.128.0/17','Unified Layer/Hostmonster (ASN-UNIHM-17). '); //76c
-$ax += cidrblock($address,'198.1.64.0/18','Unified Layer/Hostmonster (ASN-UNIHM-18). '); //76c
-$ax += cidrblock($address,'198.20.224.0/19','Unified Layer/Hostmonster (ASN-UNIHM-19). '); //76c
-$ax += cidrblock($address,'198.57.128.0/17','Unified Layer/Hostmonster (ASN-UNIHM-20). '); //76c
-$ax += cidrblock($address,'198.154.192.0/18','Unified Layer/Hostmonster (ASN-UNIHM-21). '); //76c
+$ax += cidrblock($address,'50.87.0.0/16','Unified Layer/Hostmonster (ASN-UNIHM-00). ');
+$ax += cidrblock($address,'66.147.240.0/20','Unified Layer/Hostmonster (ASN-UNIHM-01). ');
+$ax += cidrblock($address,'67.20.64.0/18','Unified Layer/Hostmonster (ASN-UNIHM-02). ');
+$ax += cidrblock($address,'67.222.32.0/19','Unified Layer/Hostmonster (ASN-UNIHM-03). ');
+$ax += cidrblock($address,'69.89.16.0/20','Unified Layer/Hostmonster (ASN-UNIHM-04). ');
+$ax += cidrblock($address,'69.195.64.0/18','Unified Layer/Hostmonster (ASN-UNIHM-05). ');
+$ax += cidrblock($address,'70.40.192.0/19','Unified Layer/Hostmonster (ASN-UNIHM-06). ');
+$ax += cidrblock($address,'74.220.192.0/19','Unified Layer/Hostmonster (ASN-UNIHM-07). ');
+$ax += cidrblock($address,'142.4.0.0/19','Unified Layer/Hostmonster (ASN-UNIHM-08). ');
+$ax += cidrblock($address,'162.144.0.0/16','Unified Layer/Hostmonster (ASN-UNIHM-09). ');
+$ax += cidrblock($address,'162.214.0.0/15','Unified Layer/Hostmonster (ASN-UNIHM-10). ');
+$ax += cidrblock($address,'173.254.0.0/17','Unified Layer/Hostmonster (ASN-UNIHM-11). ');
+$ax += cidrblock($address,'192.163.192.0/18','Unified Layer/Hostmonster (ASN-UNIHM-12). ');
+$ax += cidrblock($address,'192.185.224.0/19','Unified Layer/Hostmonster (ASN-UNIHM-13). ');
+$ax += cidrblock($address,'192.232.192.0/18','Unified Layer/Hostmonster (ASN-UNIHM-14). ');
+$ax += cidrblock($address,'192.254.128.0/17','Unified Layer/Hostmonster (ASN-UNIHM-15). ');
+$ax += cidrblock($address,'198.1.64.0/18','Unified Layer/Hostmonster (ASN-UNIHM-16). ');
+$ax += cidrblock($address,'198.20.224.0/19','Unified Layer/Hostmonster (ASN-UNIHM-17). ');
+$ax += cidrblock($address,'198.57.128.0/17','Unified Layer/Hostmonster (ASN-UNIHM-18). ');
+$ax += cidrblock($address,'198.154.192.0/18','Unified Layer/Hostmonster (ASN-UNIHM-19). ');
 
 
 // WOWRACK Routing from Hyper to Wowrack

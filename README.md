@@ -204,6 +204,17 @@ History (*change_log*) of this repository (and of those updates merged into it) 
 - CoS International CIDRs updated.
 - Repository updated with new changes.
 
+#####2016-01-21
+- Avante Hosting CIDRs updated.
+- Tex-Link Communications CIDRs added (split from Avante Hosting CIDRs).
+- Ready Server CIDRs added (split from Avante Hosting CIDRs).
+- 1&1 Internet AG CIDRs updated.
+- Swift Networks Limited CIDRs updated.
+- Internap CIDRs updated.
+- WEBSUPPORT-SRO-SK-AS CIDRs updated.
+- Unified Layer / Hostmonster CIDRs updated.
+- Repository updated with new changes.
+
 ---
 
 Additional "bad IPs" worth considering including in your installation of ZB Block, but not included specifically in this repository (because including them would constitute the addition of new signatures, and I intend this repository to only be for updates to existing outdated signatures):
