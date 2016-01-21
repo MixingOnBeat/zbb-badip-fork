@@ -210,7 +210,7 @@ History (*change_log*) of this repository (and of those updates merged into it) 
 - Ready Server CIDRs added (split from Avante Hosting CIDRs).
 - 1&1 Internet AG CIDRs updated.
 - Swift Networks Limited CIDRs updated.
-- Internap CIDRs updated.
+- Internap CIDRs updated (cheers to Agent Smith for finding an additional ASN for these guys).
 - WEBSUPPORT-SRO-SK-AS CIDRs updated.
 - Unified Layer / Hostmonster CIDRs updated.
 - Repository updated with new changes.
