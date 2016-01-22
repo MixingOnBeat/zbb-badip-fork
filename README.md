@@ -228,6 +228,21 @@ History (*change_log*) of this repository (and of those updates merged into it) 
 - Hostspace Networks CIDRs added (split from Serveryou CIDRs).
 - Repository updated with new changes.
 
+#####2016-01-23
+- Digital Ocean CIDRs updated again (a new, additional ASN found).
+- C4L CIDRs updated.
+- SINGLEHOP-INC CIDRs updated.
+- Megatypers.com CIDRs split into three sections (eUKhost LTD, Total Web Solutions Ltd, Dataflame Internet Services Ltd) and updated.
+- AS17318 section dropped (all the originally offending CIDRs for which this section was created have since left the ASN to other ASNs; the one and only remaining CIDR in this ASN seems benign; these originally offending CIDRs have moved to a different ASN, which is also already covered, so, will be picked up again by an update to another section, coming soon).
+- PSYCHZ.NET CIDRs updated.
+- MTS-INDIA-IN CIDRs updated.
+- Leaseweb Network CIDRs updated again (a new ASN found).
+- AS33387 CIDRs were duplicated; Fixed.
+- Versaweb CIDRs updated.
+- Volume Drive CIDRs updated.
+- Choopa CIDRs updated.
+- Repository updated with new changes.
+
 ---
 
 Additional "bad IPs" worth considering including in your installation of ZB Block, but not included specifically in this repository (because including them would constitute the addition of new signatures, and I intend this repository to only be for updates to existing outdated signatures):
