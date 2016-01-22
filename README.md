@@ -215,6 +215,19 @@ History (*change_log*) of this repository (and of those updates merged into it) 
 - Unified Layer / Hostmonster CIDRs updated.
 - Repository updated with new changes.
 
+#####2016-01-22
+- Kintiskton LLC CIDRs updated (some new ranges found, but no clear ASN and possible DSL IPs included in both old and new ranges; may require additional scrutiny, time permitting).
+- WOWRACK CIDRs updated.
+- HyperHosting CIDRs added (split from WOWRACK CIDRs).
+- Swift Ventures CIDRs updated.
+- CyberVerse CIDRs updated.
+- Black Lotus (CoreSpace, Inc.) CIDRs updated.
+- Quadranet CIDRs updated.
+- Colocrossing CIDRs updated.
+- Serveryou CIDRs updated.
+- Hostspace Networks CIDRs added (split from Serveryou CIDRs).
+- Repository updated with new changes.
+
 ---
 
 Additional "bad IPs" worth considering including in your installation of ZB Block, but not included specifically in this repository (because including them would constitute the addition of new signatures, and I intend this repository to only be for updates to existing outdated signatures):
