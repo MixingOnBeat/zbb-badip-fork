@@ -243,16 +243,20 @@ History (*change_log*) of this repository (and of those updates merged into it) 
 - Choopa CIDRs updated.
 - Repository updated with new changes.
 
+#####2016-01-23 (Again)
+- Discovered there were two separate sections for Volume Drive CIDRs in the file; Merged together and updated.
+- UOL CIDRs updated.
+- SoftLayer/ThePlanet/Reach/EveryonesInternet CIDRs updated.
+- Hurricane Electric CIDRs updated (with appropriate bypasses included and possible problematic signatures commented out).
+- Checked file for duplicate ranges; A small handful found; Removed or commented out.
+- Repository updated with new changes.
+
 ---
 
 Additional "bad IPs" worth considering including in your installation of ZB Block, but not included specifically in this repository (because including them would constitute the addition of new signatures, and I intend this repository to only be for updates to existing outdated signatures):
 
 - VPLS (spambotsecurity.com/forum/viewtopic.php?f=7&t=3273).
 - Bilgisayar (spambotsecurity.com/forum/viewtopic.php?f=7&t=3553).
-
----
-
-Additionally, Hurricane Electric signatures have an available update (can be found at spambotsecurity.com/forum/viewtopic.php?f=7&t=2711), but I haven't included that update in this repository, due to the potential need for specific bypasses for certain users and my wanting to avoid introducing complications to the signatures by way of this repository.
 
 ---
 
