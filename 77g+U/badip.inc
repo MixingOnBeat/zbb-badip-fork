@@ -20,7 +20,7 @@
  * @package Maikuolan/zbb-badip-fork
  */
 
-$zbbversion .= ' / BADIP-2016-01+U.9'; // Version number goes here. (product code)-(Year)-(Month)(issue letter)(+U = Unofficial fork, non-mainlined release).(Build number)
+$zbbversion .= ' / BADIP-2016-01+U.10'; // Version number goes here. (product code)-(Year)-(Month)(issue letter)(+U = Unofficial fork, non-mainlined release).(Build number)
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -2166,55 +2166,80 @@ $ax += cidrblock($address,'212.110.160.0/19','Bytemark Anonymous Proxies (ASN-BY
 $ax += cidrblock($address,'213.138.96.0/19','Bytemark Anonymous Proxies (ASN-BYTEMARK-13). ');
 
 
-// Plus Server, not an access provider (updated 2016.01.19)
-// AS8972
+// Plus Server, not an access provider (updated 2016.01.25)
+// AS8972, AS25074
 $ax += cidrblock($address,'5.1.120.0/21','Plus Server, not an access provider (ASN-PLSSRV-00). ');
 $ax += cidrblock($address,'46.22.32.0/20','Plus Server, not an access provider (ASN-PLSSRV-01). ');
-$ax += cidrblock($address,'46.231.88.0/21','Plus Server, not an access provider (ASN-PLSSRV-02). ');
-$ax += cidrblock($address,'62.75.128.0/17','Plus Server, not an access provider (ASN-PLSSRV-03). ');
-$ax += cidrblock($address,'62.138.0.0/19','Plus Server, not an access provider (ASN-PLSSRV-04). ');
-$ax += cidrblock($address,'62.138.192.0/20','Plus Server, not an access provider (ASN-PLSSRV-05). ');
-$ax += cidrblock($address,'77.236.96.0/21','Plus Server, not an access provider (ASN-PLSSRV-06). ');
-$ax += cidrblock($address,'80.86.80.0/20','Plus Server, not an access provider (ASN-PLSSRV-07). ');
-$ax += cidrblock($address,'80.242.128.0/19','Plus Server, not an access provider (ASN-PLSSRV-08). ');
-$ax += cidrblock($address,'83.142.128.0/21','Plus Server, not an access provider (ASN-PLSSRV-09). ');
-$ax += cidrblock($address,'85.25.0.0/16','Plus Server, not an access provider (ASN-PLSSRV-10). ');
-$ax += cidrblock($address,'85.93.65.0/24','Plus Server, not an access provider (ASN-PLSSRV-11). ');
-$ax += cidrblock($address,'85.93.66.0/23','Plus Server, not an access provider (ASN-PLSSRV-12). ');
-$ax += cidrblock($address,'85.93.80.0/24','Plus Server, not an access provider (ASN-PLSSRV-13). ');
-$ax += cidrblock($address,'85.93.83.0/24','Plus Server, not an access provider (ASN-PLSSRV-14). ');
-$ax += cidrblock($address,'85.93.88.0/21','Plus Server, not an access provider (ASN-PLSSRV-15). ');
-$ax += cidrblock($address,'89.19.224.0/19','Plus Server, not an access provider (ASN-PLSSRV-16). ');
-$ax += cidrblock($address,'109.234.248.0/21','Plus Server, not an access provider (ASN-PLSSRV-17). ');
-$ax += cidrblock($address,'188.138.0.0/17','Plus Server, not an access provider (ASN-PLSSRV-18). ');
-$ax += cidrblock($address,'194.30.185.0/24','Plus Server, not an access provider (ASN-PLSSRV-19). ');
-$ax += cidrblock($address,'194.150.228.0/23','Plus Server, not an access provider (ASN-PLSSRV-20). ');
-$ax += cidrblock($address,'195.66.102.0/24','Plus Server, not an access provider (ASN-PLSSRV-21). ');
-$ax += cidrblock($address,'195.137.212.0/23','Plus Server, not an access provider (ASN-PLSSRV-22). ');
-$ax += cidrblock($address,'195.149.74.0/24','Plus Server, not an access provider (ASN-PLSSRV-23). ');
-$ax += cidrblock($address,'212.40.160.0/24','Plus Server, not an access provider (ASN-PLSSRV-24). ');
-$ax += cidrblock($address,'212.40.163.0/24','Plus Server, not an access provider (ASN-PLSSRV-25). ');
-$ax += cidrblock($address,'212.40.164.0/24','Plus Server, not an access provider (ASN-PLSSRV-26). ');
-$ax += cidrblock($address,'212.40.166.0/23','Plus Server, not an access provider (ASN-PLSSRV-27). ');
-$ax += cidrblock($address,'212.40.168.0/24','Plus Server, not an access provider (ASN-PLSSRV-28). ');
-$ax += cidrblock($address,'212.40.171.0/24','Plus Server, not an access provider (ASN-PLSSRV-29). ');
-$ax += cidrblock($address,'212.40.172.0/23','Plus Server, not an access provider (ASN-PLSSRV-30). ');
-$ax += cidrblock($address,'212.40.174.0/24','Plus Server, not an access provider (ASN-PLSSRV-31). ');
-$ax += cidrblock($address,'212.40.176.0/21','Plus Server, not an access provider (ASN-PLSSRV-32). ');
-$ax += cidrblock($address,'212.40.185.0/24','Plus Server, not an access provider (ASN-PLSSRV-33). ');
-$ax += cidrblock($address,'212.40.186.0/24','Plus Server, not an access provider (ASN-PLSSRV-34). ');
-$ax += cidrblock($address,'212.40.189.0/24','Plus Server, not an access provider (ASN-PLSSRV-35). ');
-$ax += cidrblock($address,'212.48.74.0/24','Plus Server, not an access provider (ASN-PLSSRV-36). ');
-$ax += cidrblock($address,'212.48.90.0/24','Plus Server, not an access provider (ASN-PLSSRV-37). ');
-$ax += cidrblock($address,'212.48.93.0/24','Plus Server, not an access provider (ASN-PLSSRV-38). ');
-$ax += cidrblock($address,'213.174.32.0/19','Plus Server, not an access provider (ASN-PLSSRV-39). ');
-$ax += cidrblock($address,'217.118.16.0/20','Plus Server, not an access provider (ASN-PLSSRV-40). ');
-$ax += cidrblock($address,'217.119.49.0/24','Plus Server, not an access provider (ASN-PLSSRV-41). ');
-$ax += cidrblock($address,'217.119.50.0/23','Plus Server, not an access provider (ASN-PLSSRV-42). ');
-$ax += cidrblock($address,'217.119.52.0/22','Plus Server, not an access provider (ASN-PLSSRV-43). ');
-$ax += cidrblock($address,'217.119.56.0/22','Plus Server, not an access provider (ASN-PLSSRV-44). ');
-$ax += cidrblock($address,'217.119.63.0/24','Plus Server, not an access provider (ASN-PLSSRV-45). ');
-$ax += cidrblock($address,'217.172.160.0/19','Plus Server, not an access provider (ASN-PLSSRV-46). ');
+$ax += cidrblock($address,'46.229.47.0/24','Plus Server, not an access provider (ASN-PLSSRV-02). ');
+$ax += cidrblock($address,'46.231.88.0/21','Plus Server, not an access provider (ASN-PLSSRV-03). ');
+$ax += cidrblock($address,'62.67.211.0/24','Plus Server, not an access provider (ASN-PLSSRV-04). ');
+$ax += cidrblock($address,'62.67.212.0/23','Plus Server, not an access provider (ASN-PLSSRV-05). ');
+$ax += cidrblock($address,'62.67.215.0/24','Plus Server, not an access provider (ASN-PLSSRV-06). ');
+$ax += cidrblock($address,'62.67.233.0/24','Plus Server, not an access provider (ASN-PLSSRV-07). ');
+$ax += cidrblock($address,'62.75.128.0/17','Plus Server, not an access provider (ASN-PLSSRV-08). ');
+$ax += cidrblock($address,'62.138.0.0/19','Plus Server, not an access provider (ASN-PLSSRV-09). ');
+$ax += cidrblock($address,'62.138.192.0/20','Plus Server, not an access provider (ASN-PLSSRV-10). ');
+$ax += cidrblock($address,'77.236.96.0/21','Plus Server, not an access provider (ASN-PLSSRV-11). ');
+$ax += cidrblock($address,'78.138.64.0/18','Plus Server, not an access provider (ASN-PLSSRV-12). ');
+$ax += cidrblock($address,'80.86.80.0/20','Plus Server, not an access provider (ASN-PLSSRV-13). ');
+$ax += cidrblock($address,'80.242.128.0/19','Plus Server, not an access provider (ASN-PLSSRV-14). ');
+$ax += cidrblock($address,'83.142.128.0/21','Plus Server, not an access provider (ASN-PLSSRV-15). ');
+$ax += cidrblock($address,'83.220.128.0/19','Plus Server, not an access provider (ASN-PLSSRV-16). ');
+$ax += cidrblock($address,'84.246.125.0/24','Plus Server, not an access provider (ASN-PLSSRV-17). ');
+$ax += cidrblock($address,'84.246.126.0/24','Plus Server, not an access provider (ASN-PLSSRV-18). ');
+$ax += cidrblock($address,'85.25.0.0/16','Plus Server, not an access provider (ASN-PLSSRV-19). ');
+$ax += cidrblock($address,'85.93.65.0/24','Plus Server, not an access provider (ASN-PLSSRV-20). ');
+$ax += cidrblock($address,'85.93.66.0/23','Plus Server, not an access provider (ASN-PLSSRV-21). ');
+$ax += cidrblock($address,'85.93.80.0/24','Plus Server, not an access provider (ASN-PLSSRV-22). ');
+$ax += cidrblock($address,'85.93.83.0/24','Plus Server, not an access provider (ASN-PLSSRV-23). ');
+$ax += cidrblock($address,'85.93.88.0/21','Plus Server, not an access provider (ASN-PLSSRV-24). ');
+$ax += cidrblock($address,'87.119.192.0/19','Plus Server, not an access provider (ASN-PLSSRV-25). ');
+$ax += cidrblock($address,'89.19.224.0/19','Plus Server, not an access provider (ASN-PLSSRV-26). ');
+$ax += cidrblock($address,'91.194.132.0/23','Plus Server, not an access provider (ASN-PLSSRV-27). ');
+$ax += cidrblock($address,'91.198.250.0/24','Plus Server, not an access provider (ASN-PLSSRV-28). ');
+$ax += cidrblock($address,'91.217.174.0/23','Plus Server, not an access provider (ASN-PLSSRV-29). ');
+$ax += cidrblock($address,'91.223.20.0/24','Plus Server, not an access provider (ASN-PLSSRV-30). ');
+$ax += cidrblock($address,'95.174.80.0/21','Plus Server, not an access provider (ASN-PLSSRV-31). ');
+$ax += cidrblock($address,'109.234.248.0/21','Plus Server, not an access provider (ASN-PLSSRV-32). ');
+$ax += cidrblock($address,'185.5.24.0/23','Plus Server, not an access provider (ASN-PLSSRV-33). ');
+$ax += cidrblock($address,'185.5.27.0/24','Plus Server, not an access provider (ASN-PLSSRV-34). ');
+$ax += cidrblock($address,'188.138.0.0/17','Plus Server, not an access provider (ASN-PLSSRV-35). ');
+$ax += cidrblock($address,'194.30.185.0/24','Plus Server, not an access provider (ASN-PLSSRV-36). ');
+$ax += cidrblock($address,'194.145.192.0/23','Plus Server, not an access provider (ASN-PLSSRV-37). ');
+$ax += cidrblock($address,'194.150.228.0/23','Plus Server, not an access provider (ASN-PLSSRV-38). ');
+$ax += cidrblock($address,'195.10.208.0/24','Plus Server, not an access provider (ASN-PLSSRV-39). ');
+$ax += cidrblock($address,'195.66.102.0/24','Plus Server, not an access provider (ASN-PLSSRV-40). ');
+$ax += cidrblock($address,'195.122.141.0/24','Plus Server, not an access provider (ASN-PLSSRV-41). ');
+$ax += cidrblock($address,'195.137.212.0/23','Plus Server, not an access provider (ASN-PLSSRV-42). ');
+$ax += cidrblock($address,'195.149.74.0/24','Plus Server, not an access provider (ASN-PLSSRV-43). ');
+$ax += cidrblock($address,'212.40.160.0/24','Plus Server, not an access provider (ASN-PLSSRV-44). ');
+$ax += cidrblock($address,'212.40.163.0/24','Plus Server, not an access provider (ASN-PLSSRV-45). ');
+$ax += cidrblock($address,'212.40.164.0/24','Plus Server, not an access provider (ASN-PLSSRV-46). ');
+$ax += cidrblock($address,'212.40.166.0/23','Plus Server, not an access provider (ASN-PLSSRV-47). ');
+$ax += cidrblock($address,'212.40.168.0/24','Plus Server, not an access provider (ASN-PLSSRV-48). ');
+$ax += cidrblock($address,'212.40.171.0/24','Plus Server, not an access provider (ASN-PLSSRV-49). ');
+$ax += cidrblock($address,'212.40.172.0/23','Plus Server, not an access provider (ASN-PLSSRV-50). ');
+$ax += cidrblock($address,'212.40.174.0/24','Plus Server, not an access provider (ASN-PLSSRV-51). ');
+$ax += cidrblock($address,'212.40.176.0/21','Plus Server, not an access provider (ASN-PLSSRV-52). ');
+$ax += cidrblock($address,'212.40.185.0/24','Plus Server, not an access provider (ASN-PLSSRV-53). ');
+$ax += cidrblock($address,'212.40.186.0/24','Plus Server, not an access provider (ASN-PLSSRV-54). ');
+$ax += cidrblock($address,'212.40.189.0/24','Plus Server, not an access provider (ASN-PLSSRV-55). ');
+$ax += cidrblock($address,'212.48.74.0/24','Plus Server, not an access provider (ASN-PLSSRV-56). ');
+$ax += cidrblock($address,'212.48.90.0/24','Plus Server, not an access provider (ASN-PLSSRV-57). ');
+$ax += cidrblock($address,'212.48.93.0/24','Plus Server, not an access provider (ASN-PLSSRV-58). ');
+$ax += cidrblock($address,'212.162.12.0/22','Plus Server, not an access provider (ASN-PLSSRV-59). ');
+$ax += cidrblock($address,'212.162.52.0/23','Plus Server, not an access provider (ASN-PLSSRV-60). ');
+$ax += cidrblock($address,'212.162.56.0/23','Plus Server, not an access provider (ASN-PLSSRV-61). ');
+$ax += cidrblock($address,'213.131.224.0/19','Plus Server, not an access provider (ASN-PLSSRV-62). ');
+$ax += cidrblock($address,'213.174.32.0/19','Plus Server, not an access provider (ASN-PLSSRV-63). ');
+$ax += cidrblock($address,'213.203.192.0/18','Plus Server, not an access provider (ASN-PLSSRV-64). ');
+$ax += cidrblock($address,'217.118.16.0/20','Plus Server, not an access provider (ASN-PLSSRV-65). ');
+$ax += cidrblock($address,'217.119.49.0/24','Plus Server, not an access provider (ASN-PLSSRV-66). ');
+$ax += cidrblock($address,'217.119.50.0/23','Plus Server, not an access provider (ASN-PLSSRV-67). ');
+$ax += cidrblock($address,'217.119.52.0/22','Plus Server, not an access provider (ASN-PLSSRV-68). ');
+$ax += cidrblock($address,'217.119.56.0/22','Plus Server, not an access provider (ASN-PLSSRV-69). ');
+$ax += cidrblock($address,'217.119.63.0/24','Plus Server, not an access provider (ASN-PLSSRV-70). ');
+$ax += cidrblock($address,'217.172.160.0/19','Plus Server, not an access provider (ASN-PLSSRV-71). ');
 
 
 // Trend Micro (updated 2016.01.20)
@@ -2896,7 +2921,7 @@ $ax += cidrblock($address,'194.219.79.0/24','HyperHosting, Cloud and CDN, not an
 
 
 // SWIFT VENTURES Inc (updated 2016.01.22)
-// AS197746
+// AS25700
 $ax += cidrblock($address,'74.117.174.0/24','Swift Ventures spam/scrape network (ASN-SWIFT-00). ');
 $ax += cidrblock($address,'204.8.32.0/24','Swift Ventures spam/scrape network (ASN-SWIFT-01). ');
 $ax += cidrblock($address,'204.8.34.0/24','Swift Ventures spam/scrape network (ASN-SWIFT-02). ');
@@ -2912,15 +2937,28 @@ $ax += cidrblock($address,'208.99.214.0/23','Swift Ventures spam/scrape network 
 $ax += cidrblock($address,'208.99.216.0/21','Swift Ventures spam/scrape network (ASN-SWIFT-12). ');
 
 
-// iDeal Hosting Tic. Ltd. Sti.
+// iDeal Hosting Tic. Ltd. Sti. (updated 2016.01.25)
 // Turkish host provider caught hammering honeypots
-// AS60897
-//
-// I checked the BGP records for this ASN on 2016.01.22, but it didn't seem to contain any announces. Leaving it as is
-// for now, unless someone else wants to try their hand at updating this one. Cheers. -Maikuolan.
-$ax += cidrblock($address,'213.238.166.0/23','iDeal Hosting AS60897 (ASN-iDEAL-0). '); //76d
-$ax += cidrblock($address,'213.238.168.0/21','iDeal Hosting AS60897 (ASN-iDEAL-1). '); //76d
-$ax += cidrblock($address,'213.238.178.0/23','iDeal Hosting AS60897 (ASN-iDEAL-2). '); //76d
+// AS29262, AS60897
+$ax += cidrblock$address,'185.85.189.0/24','iDeal Hosting (ASN-iDEAL-00). ');
+$ax += cidrblock$address,'185.85.190.0/23','iDeal Hosting (ASN-iDEAL-01). ');
+$ax += cidrblock$address,'185.85.237.0/24','iDeal Hosting (ASN-iDEAL-02). ');
+$ax += cidrblock$address,'185.85.238.0/23','iDeal Hosting (ASN-iDEAL-03). ');
+$ax += cidrblock$address,'185.86.5.0/24','iDeal Hosting (ASN-iDEAL-04). ');
+$ax += cidrblock$address,'185.86.81.0/24','iDeal Hosting (ASN-iDEAL-05). ');
+$ax += cidrblock$address,'185.86.82.0/23','iDeal Hosting (ASN-iDEAL-06). ');
+$ax += cidrblock$address,'185.86.153.0/24','iDeal Hosting (ASN-iDEAL-07). ');
+$ax += cidrblock$address,'185.86.154.0/24','iDeal Hosting (ASN-iDEAL-08). ');
+$ax += cidrblock$address,'185.86.164.0/22','iDeal Hosting (ASN-iDEAL-09). ');
+$ax += cidrblock$address,'185.87.26.0/23','iDeal Hosting (ASN-iDEAL-10). ');
+$ax += cidrblock$address,'185.87.121.0/24','iDeal Hosting (ASN-iDEAL-11). ');
+$ax += cidrblock$address,'185.87.122.0/23','iDeal Hosting (ASN-iDEAL-12). ');
+$ax += cidrblock$address,'185.98.60.0/24','iDeal Hosting (ASN-iDEAL-13). ');
+$ax += cidrblock$address,'185.119.80.0/23','iDeal Hosting (ASN-iDEAL-14). ');
+$ax += cidrblock$address,'185.119.82.0/24','iDeal Hosting (ASN-iDEAL-15). ');
+$ax += cidrblock$address,'213.238.166.0/23','iDeal Hosting (ASN-iDEAL-16). ');
+$ax += cidrblock$address,'213.238.168.0/21','iDeal Hosting (ASN-iDEAL-17). ');
+$ax += cidrblock$address,'213.238.178.0/23','iDeal Hosting (ASN-iDEAL-18). ');
 
 
 // CyberVerse (Colocated Data Centers)

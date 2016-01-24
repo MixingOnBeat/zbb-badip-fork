@@ -251,6 +251,11 @@ History (*change_log*) of this repository (and of those updates merged into it) 
 - Checked file for duplicate ranges; A small handful found; Removed or commented out.
 - Repository updated with new changes.
 
+#####2016-01-25
+- iDeal Hosting CIDRs updated (a new ASN added; spambotsecurity.com/forum/viewtopic.php?f=7&t=3595).
+- Plus Server CIDRs updated (a new ASN added; spambotsecurity.com/forum/viewtopic.php?f=7&t=3722).
+- Repository updated with new changes.
+
 ---
 
 Additional "bad IPs" worth considering including in your installation of ZB Block, but not included specifically in this repository (because including them would constitute the addition of new signatures, and I intend this repository to only be for updates to existing outdated signatures):
