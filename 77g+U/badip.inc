@@ -2940,25 +2940,25 @@ $ax += cidrblock($address,'208.99.216.0/21','Swift Ventures spam/scrape network 
 // iDeal Hosting Tic. Ltd. Sti. (updated 2016.01.25)
 // Turkish host provider caught hammering honeypots
 // AS29262, AS60897
-$ax += cidrblock$address,'185.85.189.0/24','iDeal Hosting (ASN-iDEAL-00). ');
-$ax += cidrblock$address,'185.85.190.0/23','iDeal Hosting (ASN-iDEAL-01). ');
-$ax += cidrblock$address,'185.85.237.0/24','iDeal Hosting (ASN-iDEAL-02). ');
-$ax += cidrblock$address,'185.85.238.0/23','iDeal Hosting (ASN-iDEAL-03). ');
-$ax += cidrblock$address,'185.86.5.0/24','iDeal Hosting (ASN-iDEAL-04). ');
-$ax += cidrblock$address,'185.86.81.0/24','iDeal Hosting (ASN-iDEAL-05). ');
-$ax += cidrblock$address,'185.86.82.0/23','iDeal Hosting (ASN-iDEAL-06). ');
-$ax += cidrblock$address,'185.86.153.0/24','iDeal Hosting (ASN-iDEAL-07). ');
-$ax += cidrblock$address,'185.86.154.0/24','iDeal Hosting (ASN-iDEAL-08). ');
-$ax += cidrblock$address,'185.86.164.0/22','iDeal Hosting (ASN-iDEAL-09). ');
-$ax += cidrblock$address,'185.87.26.0/23','iDeal Hosting (ASN-iDEAL-10). ');
-$ax += cidrblock$address,'185.87.121.0/24','iDeal Hosting (ASN-iDEAL-11). ');
-$ax += cidrblock$address,'185.87.122.0/23','iDeal Hosting (ASN-iDEAL-12). ');
-$ax += cidrblock$address,'185.98.60.0/24','iDeal Hosting (ASN-iDEAL-13). ');
-$ax += cidrblock$address,'185.119.80.0/23','iDeal Hosting (ASN-iDEAL-14). ');
-$ax += cidrblock$address,'185.119.82.0/24','iDeal Hosting (ASN-iDEAL-15). ');
-$ax += cidrblock$address,'213.238.166.0/23','iDeal Hosting (ASN-iDEAL-16). ');
-$ax += cidrblock$address,'213.238.168.0/21','iDeal Hosting (ASN-iDEAL-17). ');
-$ax += cidrblock$address,'213.238.178.0/23','iDeal Hosting (ASN-iDEAL-18). ');
+$ax += cidrblock($address,'185.85.189.0/24','iDeal Hosting (ASN-iDEAL-00). ');
+$ax += cidrblock($address,'185.85.190.0/23','iDeal Hosting (ASN-iDEAL-01). ');
+$ax += cidrblock($address,'185.85.237.0/24','iDeal Hosting (ASN-iDEAL-02). ');
+$ax += cidrblock($address,'185.85.238.0/23','iDeal Hosting (ASN-iDEAL-03). ');
+$ax += cidrblock($address,'185.86.5.0/24','iDeal Hosting (ASN-iDEAL-04). ');
+$ax += cidrblock($address,'185.86.81.0/24','iDeal Hosting (ASN-iDEAL-05). ');
+$ax += cidrblock($address,'185.86.82.0/23','iDeal Hosting (ASN-iDEAL-06). ');
+$ax += cidrblock($address,'185.86.153.0/24','iDeal Hosting (ASN-iDEAL-07). ');
+$ax += cidrblock($address,'185.86.154.0/24','iDeal Hosting (ASN-iDEAL-08). ');
+$ax += cidrblock($address,'185.86.164.0/22','iDeal Hosting (ASN-iDEAL-09). ');
+$ax += cidrblock($address,'185.87.26.0/23','iDeal Hosting (ASN-iDEAL-10). ');
+$ax += cidrblock($address,'185.87.121.0/24','iDeal Hosting (ASN-iDEAL-11). ');
+$ax += cidrblock($address,'185.87.122.0/23','iDeal Hosting (ASN-iDEAL-12). ');
+$ax += cidrblock($address,'185.98.60.0/24','iDeal Hosting (ASN-iDEAL-13). ');
+$ax += cidrblock($address,'185.119.80.0/23','iDeal Hosting (ASN-iDEAL-14). ');
+$ax += cidrblock($address,'185.119.82.0/24','iDeal Hosting (ASN-iDEAL-15). ');
+$ax += cidrblock($address,'213.238.166.0/23','iDeal Hosting (ASN-iDEAL-16). ');
+$ax += cidrblock($address,'213.238.168.0/21','iDeal Hosting (ASN-iDEAL-17). ');
+$ax += cidrblock($address,'213.238.178.0/23','iDeal Hosting (ASN-iDEAL-18). ');
 
 
 // CyberVerse (Colocated Data Centers)
