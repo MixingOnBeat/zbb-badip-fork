@@ -256,6 +256,11 @@ History (*change_log*) of this repository (and of those updates merged into it) 
 - Plus Server CIDRs updated (a new ASN added; spambotsecurity.com/forum/viewtopic.php?f=7&t=3722).
 - Repository updated with new changes.
 
+#####2016-01-26
+- Two ranges (one in the Reliable Hosting section and one in the Leaseweb section) have been commented out, due to being false positives. These sections now require updating again. The next update should contain proper fixes for these.
+- Repository updated with new changes.
+
+
 ---
 
 Additional "bad IPs" worth considering including in your installation of ZB Block, but not included specifically in this repository (because including them would constitute the addition of new signatures, and I intend this repository to only be for updates to existing outdated signatures):

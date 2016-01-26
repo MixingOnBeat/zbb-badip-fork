@@ -20,7 +20,7 @@
  * @package Maikuolan/zbb-badip-fork
  */
 
-$zbbversion .= ' / BADIP-2016-01+U.10'; // Version number goes here. (product code)-(Year)-(Month)(issue letter)(+U = Unofficial fork, non-mainlined release).(Build number)
+$zbbversion .= ' / BADIP-2016-01+U.11'; // Version number goes here. (product code)-(Year)-(Month)(issue letter)(+U = Unofficial fork, non-mainlined release).(Build number)
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -169,7 +169,7 @@ $ax += cidrblock($address,'41.191.215.0/24','Leaseweb Network (ASN-LEASEWEB-012)
 $ax += cidrblock($address,'46.17.0.0/21','Leaseweb Network (ASN-LEASEWEB-013). ');
 $ax += cidrblock($address,'46.17.14.0/23','Leaseweb Network (ASN-LEASEWEB-014). ');
 $ax += cidrblock($address,'46.102.240.0/21','Leaseweb Network (ASN-LEASEWEB-015). ');
-$ax += cidrblock($address,'46.165.192.0/18','Leaseweb Network (ASN-LEASEWEB-016). ');
+// $ax += cidrblock($address,'46.165.192.0/18','Leaseweb Network (ASN-LEASEWEB-016). '); This CIDR should be dropped upon next updating this section (refer github.com/Maikuolan/zbb-badip-fork/issues/1)
 $ax += cidrblock($address,'46.182.120.0/21','Leaseweb Network (ASN-LEASEWEB-017). ');
 $ax += cidrblock($address,'46.182.176.0/21','Leaseweb Network (ASN-LEASEWEB-018). ');
 $ax += cidrblock($address,'46.243.0.0/21','Leaseweb Network (ASN-LEASEWEB-019). ');
@@ -2504,7 +2504,7 @@ $ax += cidrblock($address,'8.150.0.0/16','Reliable Hosting Services. Not an acce
 $ax += cidrblock($address,'8.186.0.0/16','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-04). ');
 $ax += cidrblock($address,'8.189.0.0/16','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-05). ');
 $ax += cidrblock($address,'38.81.194.0/23','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-06). ');
-$ax += cidrblock($address,'46.165.0.0/16','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-07). ');
+// $ax += cidrblock($address,'46.165.0.0/16','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-07). '); This CIDR should be dropped upon next updating this section (refer github.com/Maikuolan/zbb-badip-fork/issues/1)
 $ax += cidrblock($address,'61.55.145.0/24','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-08). ');
 $ax += cidrblock($address,'66.231.176.0/20','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-09). ');
 $ax += cidrblock($address,'67.208.64.0/19','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-10). ');
