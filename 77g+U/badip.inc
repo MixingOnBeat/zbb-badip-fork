@@ -151,8 +151,11 @@ $ax += cidrblock($address,'213.184.117.0/24','Ecatel ASN29073 (ASN-ECATEL-21). '
 $ax += cidrblock($address,'213.184.124.0/24','Ecatel ASN29073 (ASN-ECATEL-22). ');
 
 
-// Leaseweb Network (updated 2016.01.23)
+// Leaseweb Network (updated 2016.01.27)
 // AS16265, AS28753, AS30633, AS60781
+//
+// Possible human A/DSL range (should remove from future aggregates for this section): 46.165.192.0/18
+// Refer: github.com/Maikuolan/zbb-badip-fork/issues/1
 $ax += cidrblock($address,'5.44.144.0/22','Leaseweb Network (ASN-LEASEWEB-000). ');
 $ax += cidrblock($address,'5.61.32.0/20','Leaseweb Network (ASN-LEASEWEB-001). ');
 $ax += cidrblock($address,'5.79.64.0/18','Leaseweb Network (ASN-LEASEWEB-002). ');
@@ -169,7 +172,6 @@ $ax += cidrblock($address,'41.191.215.0/24','Leaseweb Network (ASN-LEASEWEB-012)
 $ax += cidrblock($address,'46.17.0.0/21','Leaseweb Network (ASN-LEASEWEB-013). ');
 $ax += cidrblock($address,'46.17.14.0/23','Leaseweb Network (ASN-LEASEWEB-014). ');
 $ax += cidrblock($address,'46.102.240.0/21','Leaseweb Network (ASN-LEASEWEB-015). ');
-// $ax += cidrblock($address,'46.165.192.0/18','Leaseweb Network (ASN-LEASEWEB-016). '); This CIDR should be dropped upon next updating this section (refer github.com/Maikuolan/zbb-badip-fork/issues/1)
 $ax += cidrblock($address,'46.182.120.0/21','Leaseweb Network (ASN-LEASEWEB-017). ');
 $ax += cidrblock($address,'46.182.176.0/21','Leaseweb Network (ASN-LEASEWEB-018). ');
 $ax += cidrblock($address,'46.243.0.0/21','Leaseweb Network (ASN-LEASEWEB-019). ');
@@ -2495,44 +2497,37 @@ $ax += cidrblock($address,'206.123.20.0/23','iWeb Technologies Inc. Not an acces
 $ax += cidrblock($address,'209.172.32.0/19','iWeb Technologies Inc. Not an access provider ISP (ASN-IWEB-24). ');
 
 
-// Reliable Hosting Services (updated 2016.01.20)
-// AS29713, AS33597
-$ax += cidrblock($address,'8.60.0.0/16','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-00). ');
-$ax += cidrblock($address,'8.111.0.0/16','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-01). ');
-$ax += cidrblock($address,'8.133.0.0/16','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-02). ');
-$ax += cidrblock($address,'8.150.0.0/16','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-03). ');
-$ax += cidrblock($address,'8.186.0.0/16','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-04). ');
-$ax += cidrblock($address,'8.189.0.0/16','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-05). ');
-$ax += cidrblock($address,'38.81.194.0/23','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-06). ');
-// $ax += cidrblock($address,'46.165.0.0/16','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-07). '); This CIDR should be dropped upon next updating this section (refer github.com/Maikuolan/zbb-badip-fork/issues/1)
-$ax += cidrblock($address,'61.55.145.0/24','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-08). ');
-$ax += cidrblock($address,'66.231.176.0/20','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-09). ');
-$ax += cidrblock($address,'67.208.64.0/19','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-10). ');
-$ax += cidrblock($address,'69.26.176.0/23','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-11). ');
-$ax += cidrblock($address,'69.26.178.0/24','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-12). ');
-$ax += cidrblock($address,'69.169.0.0/17','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-13). ');
-$ax += cidrblock($address,'70.33.160.0/19','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-14). ');
-$ax += cidrblock($address,'74.112.255.0/24','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-15). ');
-$ax += cidrblock($address,'113.160.0.0/16','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-16). ');
-$ax += cidrblock($address,'120.209.19.0/24','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-17). ');
-$ax += cidrblock($address,'123.173.125.0/24','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-18). ');
-$ax += cidrblock($address,'130.185.182.0/23','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-19). ');
-$ax += cidrblock($address,'173.45.0.0/18','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-20). ');
-$ax += cidrblock($address,'173.205.128.0/17','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-21). ');
-$ax += cidrblock($address,'173.245.104.0/22','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-22). ');
-$ax += cidrblock($address,'173.245.108.0/24','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-23). ');
-$ax += cidrblock($address,'174.128.128.0/18','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-24). ');
-$ax += cidrblock($address,'190.102.100.0/22','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-25). ');
-$ax += cidrblock($address,'192.82.109.0/24','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-26). ');
-$ax += cidrblock($address,'198.62.86.0/24','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-27). ');
-$ax += cidrblock($address,'199.15.248.0/21','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-28). ');
-$ax += cidrblock($address,'199.115.248.0/22','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-29). ');
-$ax += cidrblock($address,'199.167.224.0/24','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-30). ');
-$ax += cidrblock($address,'199.188.228.0/22','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-31). ');
-$ax += cidrblock($address,'205.251.0.0/17','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-32). ');
-$ax += cidrblock($address,'208.73.20.0/22','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-33). ');
-$ax += cidrblock($address,'208.94.144.0/24','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-34). ');
-$ax += cidrblock($address,'218.21.220.0/24','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-35). ');
+// Reliable Hosting Services (updated 2016.01.27)
+// AS29713
+$ax += cidrblock($address,'190.102.100.0/22','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-1). ');
+$ax += cidrblock($address,'192.82.109.0/24','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-2). ');
+$ax += cidrblock($address,'199.15.248.0/21','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-3). ');
+$ax += cidrblock($address,'208.73.20.0/22','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-4). ');
+
+
+// InfoRelay Online Systems, Inc. (updated 2016.01.27)
+// Split from "Reliable Hosting Services", 2015.01.27
+// AS33597
+$ax += cidrblock($address,'38.81.194.0/23','InfoRelay Online Systems. Not an access provider ISP (ASN-INRELAY-01). ');
+$ax += cidrblock($address,'66.231.176.0/20','InfoRelay Online Systems. Not an access provider ISP (ASN-INRELAY-02). ');
+$ax += cidrblock($address,'67.208.64.0/19','InfoRelay Online Systems. Not an access provider ISP (ASN-INRELAY-03). ');
+$ax += cidrblock($address,'69.26.176.0/23','InfoRelay Online Systems. Not an access provider ISP (ASN-INRELAY-04). ');
+$ax += cidrblock($address,'69.26.178.0/24','InfoRelay Online Systems. Not an access provider ISP (ASN-INRELAY-05). ');
+$ax += cidrblock($address,'69.169.0.0/17','InfoRelay Online Systems. Not an access provider ISP (ASN-INRELAY-06). ');
+$ax += cidrblock($address,'70.33.160.0/19','InfoRelay Online Systems. Not an access provider ISP (ASN-INRELAY-07). ');
+$ax += cidrblock($address,'74.112.255.0/24','InfoRelay Online Systems. Not an access provider ISP (ASN-INRELAY-08). ');
+$ax += cidrblock($address,'130.185.182.0/23','InfoRelay Online Systems. Not an access provider ISP (ASN-INRELAY-09). ');
+$ax += cidrblock($address,'173.45.0.0/18','InfoRelay Online Systems. Not an access provider ISP (ASN-INRELAY-10). ');
+$ax += cidrblock($address,'173.205.128.0/17','InfoRelay Online Systems. Not an access provider ISP (ASN-INRELAY-11). ');
+$ax += cidrblock($address,'173.245.104.0/22','InfoRelay Online Systems. Not an access provider ISP (ASN-INRELAY-12). ');
+$ax += cidrblock($address,'173.245.108.0/24','InfoRelay Online Systems. Not an access provider ISP (ASN-INRELAY-13). ');
+$ax += cidrblock($address,'174.128.128.0/18','InfoRelay Online Systems. Not an access provider ISP (ASN-INRELAY-14). ');
+$ax += cidrblock($address,'198.62.86.0/24','InfoRelay Online Systems. Not an access provider ISP (ASN-INRELAY-15). ');
+$ax += cidrblock($address,'199.115.248.0/22','InfoRelay Online Systems. Not an access provider ISP (ASN-INRELAY-16). ');
+$ax += cidrblock($address,'199.167.224.0/24','InfoRelay Online Systems. Not an access provider ISP (ASN-INRELAY-17). ');
+$ax += cidrblock($address,'199.188.228.0/22','InfoRelay Online Systems. Not an access provider ISP (ASN-INRELAY-18). ');
+$ax += cidrblock($address,'205.251.0.0/17','InfoRelay Online Systems. Not an access provider ISP (ASN-INRELAY-19). ');
+$ax += cidrblock($address,'208.94.144.0/24','InfoRelay Online Systems. Not an access provider ISP (ASN-INRELAY-20). ');
 
 
 // Westhost (updated 2016.01.20)

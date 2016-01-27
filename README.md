@@ -260,6 +260,11 @@ History (*change_log*) of this repository (and of those updates merged into it) 
 - Two ranges (one in the Reliable Hosting section and one in the Leaseweb section) have been commented out, due to being false positives. These sections now require updating again. The next update should contain proper fixes for these.
 - Repository updated with new changes.
 
+#####2016-01-27
+- Reliable Hosting and InfoRelay Online Systems split into two distinct sections and updated.
+- Leaseweb Network CIDRs updated again (a false positive detected and removed).
+- Repository updated with new changes.
+
 
 ---
 
