@@ -153,9 +153,6 @@ $ax += cidrblock($address,'213.184.124.0/24','Ecatel ASN29073 (ASN-ECATEL-22). '
 
 // Leaseweb Network (updated 2016.01.27)
 // AS16265, AS28753, AS30633, AS60781
-//
-// Possible human A/DSL range (should remove from future aggregates for this section): 46.165.192.0/18
-// Refer: github.com/Maikuolan/zbb-badip-fork/issues/1
 $ax += cidrblock($address,'5.44.144.0/22','Leaseweb Network (ASN-LEASEWEB-000). ');
 $ax += cidrblock($address,'5.61.32.0/20','Leaseweb Network (ASN-LEASEWEB-001). ');
 $ax += cidrblock($address,'5.79.64.0/18','Leaseweb Network (ASN-LEASEWEB-002). ');
@@ -172,6 +169,7 @@ $ax += cidrblock($address,'41.191.215.0/24','Leaseweb Network (ASN-LEASEWEB-012)
 $ax += cidrblock($address,'46.17.0.0/21','Leaseweb Network (ASN-LEASEWEB-013). ');
 $ax += cidrblock($address,'46.17.14.0/23','Leaseweb Network (ASN-LEASEWEB-014). ');
 $ax += cidrblock($address,'46.102.240.0/21','Leaseweb Network (ASN-LEASEWEB-015). ');
+$ax += cidrblock($address,'46.165.192.0/18','Leaseweb Network (ASN-LEASEWEB-016). '); // If there are future problems with this signature, refer to github.com/Maikuolan/zbb-badip-fork/issues/1
 $ax += cidrblock($address,'46.182.120.0/21','Leaseweb Network (ASN-LEASEWEB-017). ');
 $ax += cidrblock($address,'46.182.176.0/21','Leaseweb Network (ASN-LEASEWEB-018). ');
 $ax += cidrblock($address,'46.243.0.0/21','Leaseweb Network (ASN-LEASEWEB-019). ');

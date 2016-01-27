@@ -262,7 +262,6 @@ History (*change_log*) of this repository (and of those updates merged into it) 
 
 #####2016-01-27
 - Reliable Hosting and InfoRelay Online Systems split into two distinct sections and updated.
-- Leaseweb Network CIDRs updated again (a false positive detected and removed).
 - Repository updated with new changes.
 
 
