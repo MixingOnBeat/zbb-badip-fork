@@ -264,6 +264,10 @@ History (*change_log*) of this repository (and of those updates merged into it) 
 - Reliable Hosting and InfoRelay Online Systems split into two distinct sections and updated.
 - Repository updated with new changes.
 
+#####2016-02-05
+- A section added for Cogent Communications (however, this is a problematic ASN, so, the number of CIDRs populated into this section are very limited, and updates should follow the guidelines offered in the comment included above the new section, in the PHP file; need to be careful with this ASN).
+- Repository updated with new changes.
+
 
 ---
 
