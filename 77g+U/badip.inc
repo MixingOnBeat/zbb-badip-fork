@@ -20,7 +20,7 @@
  * @package Maikuolan/zbb-badip-fork
  */
 
-$zbbversion .= ' / BADIP-2016-01+U.12'; // Version number goes here. (product code)-(Year)-(Month)(issue letter)(+U = Unofficial fork, non-mainlined release).(Build number)
+$zbbversion .= ' / BADIP-2016-02+U'; // Version number goes here. (product code)-(Year)-(Month)(issue letter)(+U = Unofficial fork, non-mainlined release).(Build number)
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -2259,22 +2259,222 @@ $ax += cidrblock($address,'206.165.76.0/24','Trend Micro. Follows their users ar
 $ax += cidrblock($address,'216.99.128.0/20','Trend Micro. Follows their users around, and attempts to get into restricted/private parts of websites. Privacy risk & replay attack (ASN-TRENDM-12). ');
 $ax += cidrblock($address,'216.104.0.0/19','Trend Micro. Follows their users around, and attempts to get into restricted/private parts of websites. Privacy risk & replay attack (ASN-TRENDM-13). ');
 
-// Some of the old CIDRs included with the Trend Micro ranges prior to the 2016.01.20 update have ended up as part of
-// the Cogent ASN. Cogent seems to have a questionable history, from what I've been able to ascertain, and there are
-// definitely some bad actors among the CIDRs currently announced by their ASN ("Cogent Communications Group", AS174).
-// Due to losing those CIDRs from the Trend Micro ASN to the Cogent ASN and due to at least a handful of bad actors I
-// can spot on sight by looking at the Cogent CIDR announces, I'd -like- to write a signature block for the Cogent ASN.
-// However, unfortunately, there are also at least a handful of legitimate, innocent ISPs covered by their CIDRs, which
-// would be blocked if I were to write such a signature block, which would likely lead to numerous false positives and
-// problems for innocent users. That, and in addition, due to the significant fragmentation of their CIDRs, writing
-// such a signature block would likely lead to performance issues for ZB Block. As such, unfortunately, I think it
-// would be appropriate to leave them out. This has also been mentioned and covered by Zaphod in various posts to the
-// Spambot Security forums. -Maikuolan (2015.01.20).
-// Refer to these:
-// Wikipedia's page on Cogent: en.wikipedia.org/wiki/Cogent_Communications
-// Some references to the Cogent ASN in the past, made to the forums (search for "Cogent"):
-// spambotsecurity.com/forum/viewtopic.php?f=14&t=3014 and spambotsecurity.com/forum/viewtopic.php?f=7&t=1966
-// Cogent CIDRs, according to bgp.he.net (if you want to write your own signatures for them anyway): bgp.he.net/AS174
+
+/* AS174 ("Cogent Communications"): "Big Hosting Plus", "DME Hosting LLC", "EGIHosting", "FDCservers.net",
+"High Point Host", "Lunanode Hosting Inc.", "Pleasant Hosting", "Power Up Hosting, Inc.",
+"Rica Costa Hosting RCH, S.A.", "Sovremennie Techologii Biznesa", "FORTUNIX NETWORKS L.P." (this list of names may
+change as time passes, and may need continual adjustments in the future). Updated: 2016.02.05
+
+The community has seen and experienced a significant amount of unwanted traffic from their ASN in the past (hack
+attempts, spamming, scraping, various forms of general malicious activity, etc), and IPs sending out this type of
+traffic, usually, should definitely be blocked, but unfortunately, their ASN is very widely-encompassing and interlaces
+significantly with with a number of benign, innocent ISPs, human endpoint connections (DSL and ADSL connections, etc),
+as well as with backbone architecture and various IPs and CIDRs that we definitely shouldn't be blocking. As a
+compromise for this situation, I'm including a section in this signature file for their CIDRs, but, rather than simply
+including the entire ASN, I'm making a point of only including those CIDRs that I can confirm don't belong the human
+endpoint connections and those CIDRs that appear to be cloud services (ie, if they announce in a way that makes them
+appear to be a hosting service, server leaser, colocation service, etc).
+
+Wikipedia page about Cogent Communications: en.wikipedia.org/wiki/Cogent_Communications
+Refer bgpmon.net/large-scale-bgp-hijack-out-of-india/
+Refer forums.spybot.info/showthread.php?23632-SPAM-frauds-fakes-and-other-MALWARE-deliveries/page37
+Refer research.dyn.com/2013/11/mitm-internet-hijacking/
+Refer spambotsecurity.com/forum/viewtopic.php?f=14&t=3014
+Refer spambotsecurity.com/forum/viewtopic.php?f=7&t=1966
+HE Rank: 249; Refer sitevet.com/db/asn/AS174 */
+
+$ax += cidrblock($address,'23.27.15.0/24','Cogent. Not an access provider ISP (ASN-COGENT-000). ');
+$ax += cidrblock($address,'50.7.1.0/24','Cogent. Not an access provider ISP (ASN-COGENT-001). ');
+$ax += cidrblock($address,'50.7.2.0/23','Cogent. Not an access provider ISP (ASN-COGENT-002). ');
+$ax += cidrblock($address,'50.7.36.0/22','Cogent. Not an access provider ISP (ASN-COGENT-003). ');
+$ax += cidrblock($address,'50.7.40.0/21','Cogent. Not an access provider ISP (ASN-COGENT-004). ');
+$ax += cidrblock($address,'50.7.50.0/23','Cogent. Not an access provider ISP (ASN-COGENT-005). ');
+$ax += cidrblock($address,'50.7.60.0/22','Cogent. Not an access provider ISP (ASN-COGENT-006). ');
+$ax += cidrblock($address,'50.7.64.0/22','Cogent. Not an access provider ISP (ASN-COGENT-007). ');
+$ax += cidrblock($address,'50.7.80.0/20','Cogent. Not an access provider ISP (ASN-COGENT-008). ');
+$ax += cidrblock($address,'50.7.113.0/24','Cogent. Not an access provider ISP (ASN-COGENT-009). ');
+$ax += cidrblock($address,'50.7.114.0/23','Cogent. Not an access provider ISP (ASN-COGENT-010). ');
+$ax += cidrblock($address,'50.7.120.0/21','Cogent. Not an access provider ISP (ASN-COGENT-011). ');
+$ax += cidrblock($address,'50.7.128.0/21','Cogent. Not an access provider ISP (ASN-COGENT-012). ');
+$ax += cidrblock($address,'50.7.136.0/22','Cogent. Not an access provider ISP (ASN-COGENT-013). ');
+$ax += cidrblock($address,'50.7.144.0/21','Cogent. Not an access provider ISP (ASN-COGENT-014). ');
+$ax += cidrblock($address,'50.7.152.0/22','Cogent. Not an access provider ISP (ASN-COGENT-015). ');
+$ax += cidrblock($address,'50.7.160.0/22','Cogent. Not an access provider ISP (ASN-COGENT-016). ');
+$ax += cidrblock($address,'50.7.168.0/21','Cogent. Not an access provider ISP (ASN-COGENT-017). ');
+$ax += cidrblock($address,'50.7.180.0/22','Cogent. Not an access provider ISP (ASN-COGENT-018). ');
+$ax += cidrblock($address,'50.7.184.0/24','Cogent. Not an access provider ISP (ASN-COGENT-019). ');
+$ax += cidrblock($address,'66.90.82.0/24','Cogent. Not an access provider ISP (ASN-COGENT-020). ');
+$ax += cidrblock($address,'66.90.84.0/24','Cogent. Not an access provider ISP (ASN-COGENT-021). ');
+$ax += cidrblock($address,'66.90.91.0/24','Cogent. Not an access provider ISP (ASN-COGENT-022). ');
+$ax += cidrblock($address,'66.90.96.0/24','Cogent. Not an access provider ISP (ASN-COGENT-023). ');
+$ax += cidrblock($address,'66.90.98.0/23','Cogent. Not an access provider ISP (ASN-COGENT-024). ');
+$ax += cidrblock($address,'66.90.108.0/24','Cogent. Not an access provider ISP (ASN-COGENT-025). ');
+$ax += cidrblock($address,'66.90.119.0/24','Cogent. Not an access provider ISP (ASN-COGENT-026). ');
+$ax += cidrblock($address,'66.90.120.0/23','Cogent. Not an access provider ISP (ASN-COGENT-027). ');
+$ax += cidrblock($address,'66.90.122.0/24','Cogent. Not an access provider ISP (ASN-COGENT-028). ');
+$ax += cidrblock($address,'66.90.125.0/24','Cogent. Not an access provider ISP (ASN-COGENT-029). ');
+$ax += cidrblock($address,'67.159.0.0/23','Cogent. Not an access provider ISP (ASN-COGENT-030). ');
+$ax += cidrblock($address,'67.159.10.0/24','Cogent. Not an access provider ISP (ASN-COGENT-031). ');
+$ax += cidrblock($address,'67.159.13.0/24','Cogent. Not an access provider ISP (ASN-COGENT-032). ');
+$ax += cidrblock($address,'67.159.16.0/24','Cogent. Not an access provider ISP (ASN-COGENT-033). ');
+$ax += cidrblock($address,'67.159.19.0/24','Cogent. Not an access provider ISP (ASN-COGENT-034). ');
+$ax += cidrblock($address,'67.159.39.0/24','Cogent. Not an access provider ISP (ASN-COGENT-035). ');
+$ax += cidrblock($address,'67.159.40.0/21','Cogent. Not an access provider ISP (ASN-COGENT-036). ');
+$ax += cidrblock($address,'67.159.48.0/22','Cogent. Not an access provider ISP (ASN-COGENT-037). ');
+$ax += cidrblock($address,'67.159.52.0/23','Cogent. Not an access provider ISP (ASN-COGENT-038). ');
+$ax += cidrblock($address,'67.159.55.0/24','Cogent. Not an access provider ISP (ASN-COGENT-039). ');
+$ax += cidrblock($address,'67.159.56.0/23','Cogent. Not an access provider ISP (ASN-COGENT-040). ');
+$ax += cidrblock($address,'67.159.58.0/24','Cogent. Not an access provider ISP (ASN-COGENT-041). ');
+$ax += cidrblock($address,'69.1.227.0/24','Cogent. Not an access provider ISP (ASN-COGENT-042). ');
+$ax += cidrblock($address,'69.1.228.0/24','Cogent. Not an access provider ISP (ASN-COGENT-043). ');
+$ax += cidrblock($address,'74.63.64.0/21','Cogent. Not an access provider ISP (ASN-COGENT-044). ');
+$ax += cidrblock($address,'74.63.72.0/23','Cogent. Not an access provider ISP (ASN-COGENT-045). ');
+$ax += cidrblock($address,'74.63.75.0/24','Cogent. Not an access provider ISP (ASN-COGENT-046). ');
+$ax += cidrblock($address,'74.63.79.0/24','Cogent. Not an access provider ISP (ASN-COGENT-047). ');
+$ax += cidrblock($address,'74.63.84.0/22','Cogent. Not an access provider ISP (ASN-COGENT-048). ');
+$ax += cidrblock($address,'74.63.88.0/22','Cogent. Not an access provider ISP (ASN-COGENT-049). ');
+$ax += cidrblock($address,'74.63.92.0/23','Cogent. Not an access provider ISP (ASN-COGENT-050). ');
+$ax += cidrblock($address,'74.63.97.0/24','Cogent. Not an access provider ISP (ASN-COGENT-051). ');
+$ax += cidrblock($address,'74.63.99.0/24','Cogent. Not an access provider ISP (ASN-COGENT-052). ');
+$ax += cidrblock($address,'74.63.101.0/24','Cogent. Not an access provider ISP (ASN-COGENT-053). ');
+$ax += cidrblock($address,'74.63.105.0/24','Cogent. Not an access provider ISP (ASN-COGENT-054). ');
+$ax += cidrblock($address,'74.63.109.0/24','Cogent. Not an access provider ISP (ASN-COGENT-055). ');
+$ax += cidrblock($address,'74.63.111.0/24','Cogent. Not an access provider ISP (ASN-COGENT-056). ');
+$ax += cidrblock($address,'74.63.112.0/24','Cogent. Not an access provider ISP (ASN-COGENT-057). ');
+$ax += cidrblock($address,'74.63.116.0/23','Cogent. Not an access provider ISP (ASN-COGENT-058). ');
+$ax += cidrblock($address,'74.63.118.0/24','Cogent. Not an access provider ISP (ASN-COGENT-059). ');
+$ax += cidrblock($address,'74.63.122.0/23','Cogent. Not an access provider ISP (ASN-COGENT-060). ');
+$ax += cidrblock($address,'74.221.210.0/23','Cogent. Not an access provider ISP (ASN-COGENT-061). ');
+$ax += cidrblock($address,'74.221.212.0/22','Cogent. Not an access provider ISP (ASN-COGENT-062). ');
+$ax += cidrblock($address,'74.221.217.0/24','Cogent. Not an access provider ISP (ASN-COGENT-063). ');
+$ax += cidrblock($address,'74.221.219.0/24','Cogent. Not an access provider ISP (ASN-COGENT-064). ');
+$ax += cidrblock($address,'74.221.220.0/24','Cogent. Not an access provider ISP (ASN-COGENT-065). ');
+$ax += cidrblock($address,'74.221.222.0/23','Cogent. Not an access provider ISP (ASN-COGENT-066). ');
+$ax += cidrblock($address,'76.73.1.0/24','Cogent. Not an access provider ISP (ASN-COGENT-067). ');
+$ax += cidrblock($address,'76.73.2.0/23','Cogent. Not an access provider ISP (ASN-COGENT-068). ');
+$ax += cidrblock($address,'76.73.4.0/22','Cogent. Not an access provider ISP (ASN-COGENT-069). ');
+$ax += cidrblock($address,'76.73.8.0/22','Cogent. Not an access provider ISP (ASN-COGENT-070). ');
+$ax += cidrblock($address,'76.73.12.0/24','Cogent. Not an access provider ISP (ASN-COGENT-071). ');
+$ax += cidrblock($address,'76.73.19.0/24','Cogent. Not an access provider ISP (ASN-COGENT-072). ');
+$ax += cidrblock($address,'76.73.20.0/23','Cogent. Not an access provider ISP (ASN-COGENT-073). ');
+$ax += cidrblock($address,'76.73.22.0/24','Cogent. Not an access provider ISP (ASN-COGENT-074). ');
+$ax += cidrblock($address,'76.73.25.0/24','Cogent. Not an access provider ISP (ASN-COGENT-075). ');
+$ax += cidrblock($address,'76.73.26.0/23','Cogent. Not an access provider ISP (ASN-COGENT-076). ');
+$ax += cidrblock($address,'76.73.28.0/24','Cogent. Not an access provider ISP (ASN-COGENT-077). ');
+$ax += cidrblock($address,'76.73.30.0/23','Cogent. Not an access provider ISP (ASN-COGENT-078). ');
+$ax += cidrblock($address,'76.73.35.0/24','Cogent. Not an access provider ISP (ASN-COGENT-079). ');
+$ax += cidrblock($address,'76.73.36.0/22','Cogent. Not an access provider ISP (ASN-COGENT-080). ');
+$ax += cidrblock($address,'76.73.40.0/21','Cogent. Not an access provider ISP (ASN-COGENT-081). ');
+$ax += cidrblock($address,'76.73.48.0/23','Cogent. Not an access provider ISP (ASN-COGENT-082). ');
+$ax += cidrblock($address,'76.73.50.0/24','Cogent. Not an access provider ISP (ASN-COGENT-083). ');
+$ax += cidrblock($address,'76.73.52.0/24','Cogent. Not an access provider ISP (ASN-COGENT-084). ');
+$ax += cidrblock($address,'76.73.54.0/23','Cogent. Not an access provider ISP (ASN-COGENT-085). ');
+$ax += cidrblock($address,'76.73.57.0/24','Cogent. Not an access provider ISP (ASN-COGENT-086). ');
+$ax += cidrblock($address,'76.73.58.0/24','Cogent. Not an access provider ISP (ASN-COGENT-087). ');
+$ax += cidrblock($address,'76.73.62.0/24','Cogent. Not an access provider ISP (ASN-COGENT-088). ');
+$ax += cidrblock($address,'76.73.64.0/24','Cogent. Not an access provider ISP (ASN-COGENT-089). ');
+$ax += cidrblock($address,'76.73.66.0/23','Cogent. Not an access provider ISP (ASN-COGENT-090). ');
+$ax += cidrblock($address,'76.73.69.0/24','Cogent. Not an access provider ISP (ASN-COGENT-091). ');
+$ax += cidrblock($address,'76.73.71.0/24','Cogent. Not an access provider ISP (ASN-COGENT-092). ');
+$ax += cidrblock($address,'76.73.72.0/24','Cogent. Not an access provider ISP (ASN-COGENT-093). ');
+$ax += cidrblock($address,'76.73.74.0/23','Cogent. Not an access provider ISP (ASN-COGENT-094). ');
+$ax += cidrblock($address,'76.73.76.0/23','Cogent. Not an access provider ISP (ASN-COGENT-095). ');
+$ax += cidrblock($address,'76.73.78.0/24','Cogent. Not an access provider ISP (ASN-COGENT-096). ');
+$ax += cidrblock($address,'76.73.80.0/24','Cogent. Not an access provider ISP (ASN-COGENT-097). ');
+$ax += cidrblock($address,'76.73.82.0/23','Cogent. Not an access provider ISP (ASN-COGENT-098). ');
+$ax += cidrblock($address,'76.73.86.0/23','Cogent. Not an access provider ISP (ASN-COGENT-099). ');
+$ax += cidrblock($address,'76.73.88.0/22','Cogent. Not an access provider ISP (ASN-COGENT-100). ');
+$ax += cidrblock($address,'76.73.94.0/24','Cogent. Not an access provider ISP (ASN-COGENT-101). ');
+$ax += cidrblock($address,'76.73.101.0/24','Cogent. Not an access provider ISP (ASN-COGENT-102). ');
+$ax += cidrblock($address,'76.73.102.0/23','Cogent. Not an access provider ISP (ASN-COGENT-103). ');
+$ax += cidrblock($address,'76.73.104.0/24','Cogent. Not an access provider ISP (ASN-COGENT-104). ');
+$ax += cidrblock($address,'76.73.106.0/23','Cogent. Not an access provider ISP (ASN-COGENT-105). ');
+$ax += cidrblock($address,'76.73.108.0/23','Cogent. Not an access provider ISP (ASN-COGENT-106). ');
+$ax += cidrblock($address,'76.73.114.0/23','Cogent. Not an access provider ISP (ASN-COGENT-107). ');
+$ax += cidrblock($address,'76.73.116.0/23','Cogent. Not an access provider ISP (ASN-COGENT-108). ');
+$ax += cidrblock($address,'76.73.118.0/24','Cogent. Not an access provider ISP (ASN-COGENT-109). ');
+$ax += cidrblock($address,'76.73.122.0/23','Cogent. Not an access provider ISP (ASN-COGENT-110). ');
+$ax += cidrblock($address,'91.220.173.0/24','Cogent. Not an access provider ISP (ASN-COGENT-111). ');
+$ax += cidrblock($address,'104.37.56.0/23','Cogent. Not an access provider ISP (ASN-COGENT-112). ');
+$ax += cidrblock($address,'104.254.212.0/22','Cogent. Not an access provider ISP (ASN-COGENT-113). ');
+$ax += cidrblock($address,'162.244.8.0/21','Cogent. Not an access provider ISP (ASN-COGENT-114). ');
+$ax += cidrblock($address,'170.75.160.0/20','Cogent. Not an access provider ISP (ASN-COGENT-115). ');
+$ax += cidrblock($address,'172.81.176.0/21','Cogent. Not an access provider ISP (ASN-COGENT-116). ');
+$ax += cidrblock($address,'179.51.192.0/20','Cogent. Not an access provider ISP (ASN-COGENT-117). ');
+$ax += cidrblock($address,'192.240.98.0/23','Cogent. Not an access provider ISP (ASN-COGENT-118). ');
+$ax += cidrblock($address,'192.240.104.0/21','Cogent. Not an access provider ISP (ASN-COGENT-119). ');
+$ax += cidrblock($address,'192.240.112.0/22','Cogent. Not an access provider ISP (ASN-COGENT-120). ');
+$ax += cidrblock($address,'192.240.118.0/23','Cogent. Not an access provider ISP (ASN-COGENT-121). ');
+$ax += cidrblock($address,'192.240.120.0/23','Cogent. Not an access provider ISP (ASN-COGENT-122). ');
+$ax += cidrblock($address,'192.240.123.0/24','Cogent. Not an access provider ISP (ASN-COGENT-123). ');
+$ax += cidrblock($address,'192.240.124.0/22','Cogent. Not an access provider ISP (ASN-COGENT-124). ');
+$ax += cidrblock($address,'198.16.66.0/23','Cogent. Not an access provider ISP (ASN-COGENT-125). ');
+$ax += cidrblock($address,'198.16.68.0/22','Cogent. Not an access provider ISP (ASN-COGENT-126). ');
+$ax += cidrblock($address,'198.16.72.0/21','Cogent. Not an access provider ISP (ASN-COGENT-127). ');
+$ax += cidrblock($address,'198.16.80.0/21','Cogent. Not an access provider ISP (ASN-COGENT-128). ');
+$ax += cidrblock($address,'198.16.88.0/22','Cogent. Not an access provider ISP (ASN-COGENT-129). ');
+$ax += cidrblock($address,'198.16.92.0/23','Cogent. Not an access provider ISP (ASN-COGENT-130). ');
+$ax += cidrblock($address,'198.16.94.0/24','Cogent. Not an access provider ISP (ASN-COGENT-131). ');
+$ax += cidrblock($address,'198.16.127.0/24','Cogent. Not an access provider ISP (ASN-COGENT-132). ');
+$ax += cidrblock($address,'198.255.3.0/24','Cogent. Not an access provider ISP (ASN-COGENT-133). ');
+$ax += cidrblock($address,'198.255.4.0/22','Cogent. Not an access provider ISP (ASN-COGENT-134). ');
+$ax += cidrblock($address,'198.255.8.0/21','Cogent. Not an access provider ISP (ASN-COGENT-135). ');
+$ax += cidrblock($address,'198.255.16.0/22','Cogent. Not an access provider ISP (ASN-COGENT-136). ');
+$ax += cidrblock($address,'198.255.24.0/23','Cogent. Not an access provider ISP (ASN-COGENT-137). ');
+$ax += cidrblock($address,'198.255.44.0/22','Cogent. Not an access provider ISP (ASN-COGENT-138). ');
+$ax += cidrblock($address,'198.255.123.0/24','Cogent. Not an access provider ISP (ASN-COGENT-139). ');
+$ax += cidrblock($address,'198.255.127.0/24','Cogent. Not an access provider ISP (ASN-COGENT-140). ');
+$ax += cidrblock($address,'204.45.0.0/23','Cogent. Not an access provider ISP (ASN-COGENT-141). ');
+$ax += cidrblock($address,'204.45.2.0/24','Cogent. Not an access provider ISP (ASN-COGENT-142). ');
+$ax += cidrblock($address,'204.45.11.0/24','Cogent. Not an access provider ISP (ASN-COGENT-143). ');
+$ax += cidrblock($address,'204.45.12.0/24','Cogent. Not an access provider ISP (ASN-COGENT-144). ');
+$ax += cidrblock($address,'204.45.16.0/24','Cogent. Not an access provider ISP (ASN-COGENT-145). ');
+$ax += cidrblock($address,'204.45.18.0/24','Cogent. Not an access provider ISP (ASN-COGENT-146). ');
+$ax += cidrblock($address,'204.45.21.0/24','Cogent. Not an access provider ISP (ASN-COGENT-147). ');
+$ax += cidrblock($address,'204.45.22.0/24','Cogent. Not an access provider ISP (ASN-COGENT-148). ');
+$ax += cidrblock($address,'204.45.28.0/24','Cogent. Not an access provider ISP (ASN-COGENT-149). ');
+$ax += cidrblock($address,'204.45.33.0/24','Cogent. Not an access provider ISP (ASN-COGENT-150). ');
+$ax += cidrblock($address,'204.45.39.0/24','Cogent. Not an access provider ISP (ASN-COGENT-151). ');
+$ax += cidrblock($address,'204.45.41.0/24','Cogent. Not an access provider ISP (ASN-COGENT-152). ');
+$ax += cidrblock($address,'204.45.42.0/24','Cogent. Not an access provider ISP (ASN-COGENT-153). ');
+$ax += cidrblock($address,'204.45.46.0/24','Cogent. Not an access provider ISP (ASN-COGENT-154). ');
+$ax += cidrblock($address,'204.45.48.0/23','Cogent. Not an access provider ISP (ASN-COGENT-155). ');
+$ax += cidrblock($address,'204.45.52.0/24','Cogent. Not an access provider ISP (ASN-COGENT-156). ');
+$ax += cidrblock($address,'204.45.55.0/24','Cogent. Not an access provider ISP (ASN-COGENT-157). ');
+$ax += cidrblock($address,'204.45.56.0/22','Cogent. Not an access provider ISP (ASN-COGENT-158). ');
+$ax += cidrblock($address,'204.45.60.0/23','Cogent. Not an access provider ISP (ASN-COGENT-159). ');
+$ax += cidrblock($address,'204.45.63.0/24','Cogent. Not an access provider ISP (ASN-COGENT-160). ');
+$ax += cidrblock($address,'204.45.103.0/24','Cogent. Not an access provider ISP (ASN-COGENT-161). ');
+$ax += cidrblock($address,'204.45.105.0/24','Cogent. Not an access provider ISP (ASN-COGENT-162). ');
+$ax += cidrblock($address,'204.45.139.0/24','Cogent. Not an access provider ISP (ASN-COGENT-163). ');
+$ax += cidrblock($address,'204.45.207.0/24','Cogent. Not an access provider ISP (ASN-COGENT-164). ');
+$ax += cidrblock($address,'204.45.208.0/24','Cogent. Not an access provider ISP (ASN-COGENT-165). ');
+$ax += cidrblock($address,'204.45.211.0/24','Cogent. Not an access provider ISP (ASN-COGENT-166). ');
+$ax += cidrblock($address,'204.45.213.0/24','Cogent. Not an access provider ISP (ASN-COGENT-167). ');
+$ax += cidrblock($address,'204.45.216.0/24','Cogent. Not an access provider ISP (ASN-COGENT-168). ');
+$ax += cidrblock($address,'204.45.220.0/24','Cogent. Not an access provider ISP (ASN-COGENT-169). ');
+$ax += cidrblock($address,'204.45.227.0/24','Cogent. Not an access provider ISP (ASN-COGENT-170). ');
+$ax += cidrblock($address,'204.45.238.0/24','Cogent. Not an access provider ISP (ASN-COGENT-171). ');
+$ax += cidrblock($address,'204.45.244.0/24','Cogent. Not an access provider ISP (ASN-COGENT-172). ');
+$ax += cidrblock($address,'204.45.246.0/24','Cogent. Not an access provider ISP (ASN-COGENT-173). ');
+$ax += cidrblock($address,'204.45.248.0/24','Cogent. Not an access provider ISP (ASN-COGENT-174). ');
+$ax += cidrblock($address,'204.45.253.0/24','Cogent. Not an access provider ISP (ASN-COGENT-175). ');
+$ax += cidrblock($address,'204.45.254.0/24','Cogent. Not an access provider ISP (ASN-COGENT-176). ');
+$ax += cidrblock($address,'208.53.133.0/24','Cogent. Not an access provider ISP (ASN-COGENT-177). ');
+$ax += cidrblock($address,'208.53.149.0/24','Cogent. Not an access provider ISP (ASN-COGENT-178). ');
+$ax += cidrblock($address,'208.53.153.0/24','Cogent. Not an access provider ISP (ASN-COGENT-179). ');
+$ax += cidrblock($address,'208.53.154.0/24','Cogent. Not an access provider ISP (ASN-COGENT-180). ');
+$ax += cidrblock($address,'208.53.156.0/22','Cogent. Not an access provider ISP (ASN-COGENT-181). ');
+$ax += cidrblock($address,'208.53.164.0/24','Cogent. Not an access provider ISP (ASN-COGENT-182). ');
+$ax += cidrblock($address,'208.53.166.0/24','Cogent. Not an access provider ISP (ASN-COGENT-183). ');
+$ax += cidrblock($address,'208.53.168.0/24','Cogent. Not an access provider ISP (ASN-COGENT-184). ');
+$ax += cidrblock($address,'208.53.174.0/24','Cogent. Not an access provider ISP (ASN-COGENT-185). ');
+$ax += cidrblock($address,'208.53.177.0/24','Cogent. Not an access provider ISP (ASN-COGENT-186). ');
+$ax += cidrblock($address,'208.53.178.0/23','Cogent. Not an access provider ISP (ASN-COGENT-187). ');
+$ax += cidrblock($address,'208.53.183.0/24','Cogent. Not an access provider ISP (ASN-COGENT-188). ');
+$ax += cidrblock($address,'208.53.190.0/24','Cogent. Not an access provider ISP (ASN-COGENT-189). ');
+$ax += cidrblock($address,'209.73.140.0/24','Cogent. Not an access provider ISP (ASN-COGENT-190). ');
+$ax += cidrblock($address,'216.128.69.0/24','Cogent. Not an access provider ISP (ASN-COGENT-191). ');
 
 
 // Hetzner Online AG (updated 2016.01.20)
