@@ -20,7 +20,7 @@
  * @package Maikuolan/zbb-badip-fork
  */
 
-$zbbversion .= ' / BADIP-2016-02+U'; // Version number goes here. (product code)-(Year)-(Month)(issue letter)(+U = Unofficial fork, non-mainlined release).(Build number)
+$zbbversion .= ' / BADIP-2016-02+U.1'; // Version number goes here. (product code)-(Year)-(Month)(issue letter)(+U = Unofficial fork, non-mainlined release).(Build number)
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -2513,35 +2513,46 @@ $ax += cidrblock($address,'213.169.144.0/22','Hetzner (ASN-HETZ-30). ');
 $ax += cidrblock($address,'213.239.192.0/18','Hetzner (ASN-HETZ-31). ');
 
 
-// Digital Ocean, Inc. (updated 2016.01.22)
-// AS393406, AS14061, AS62567, AS46652, AS200130, AS394362
+// Digital Ocean, Inc. (updated 2016.02.06)
+// AS14061, AS46652, AS62567, AS65040, AS200130, AS202018, AS393406, AS394362
 $ax += cidrblock($address,'5.101.96.0/21','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-00). ');
 $ax += cidrblock($address,'5.101.104.0/22','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-01). ');
-$ax += cidrblock($address,'37.139.0.0/19','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-02). ');
-$ax += cidrblock($address,'45.55.0.0/18','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-03). ');
-$ax += cidrblock($address,'45.55.64.0/19','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-04). ');
-$ax += cidrblock($address,'45.55.96.0/20','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-05). ');
-$ax += cidrblock($address,'45.55.112.0/21','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-06). ');
-$ax += cidrblock($address,'45.55.128.0/17','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-07). ');
-$ax += cidrblock($address,'69.55.48.0/20','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-08). ');
-$ax += cidrblock($address,'141.0.168.0/21','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-09). ');
-$ax += cidrblock($address,'146.185.128.0/18','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-10). ');
-$ax += cidrblock($address,'159.203.0.0/17','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-11). ');
-$ax += cidrblock($address,'159.203.128.0/20','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-12). ');
-$ax += cidrblock($address,'159.203.144.0/21','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-13). ');
-$ax += cidrblock($address,'159.203.192.0/18','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-14). ');
-$ax += cidrblock($address,'162.243.0.0/16','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-15). ');
-$ax += cidrblock($address,'178.62.128.0/18','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-16). ');
-$ax += cidrblock($address,'185.14.184.0/22','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-17). ');
-$ax += cidrblock($address,'185.88.180.0/22','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-18). ');
-$ax += cidrblock($address,'188.166.128.0/22','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-19). ');
-$ax += cidrblock($address,'188.226.128.0/17','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-20). ');
-$ax += cidrblock($address,'192.34.56.0/21','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-21). ');
-$ax += cidrblock($address,'192.81.208.0/20','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-22). ');
-$ax += cidrblock($address,'192.241.128.0/17','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-23). ');
-$ax += cidrblock($address,'198.199.64.0/18','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-24). ');
-$ax += cidrblock($address,'198.211.96.0/19','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-25). ');
-$ax += cidrblock($address,'208.68.36.0/22','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-26). ');
+$ax += cidrblock($address,'5.101.110.0/24','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-02). ');
+$ax += cidrblock($address,'37.139.0.0/19','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-03). ');
+$ax += cidrblock($address,'45.55.0.0/18','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-04). ');
+$ax += cidrblock($address,'45.55.64.0/19','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-05). ');
+$ax += cidrblock($address,'45.55.96.0/20','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-06). ');
+$ax += cidrblock($address,'45.55.112.0/21','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-07). ');
+$ax += cidrblock($address,'45.55.128.0/17','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-08). ');
+$ax += cidrblock($address,'69.55.48.0/20','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-09). ');
+$ax += cidrblock($address,'80.240.128.0/20','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-10). ');
+$ax += cidrblock($address,'82.196.0.0/20','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-11). ');
+$ax += cidrblock($address,'95.85.0.0/18','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-12). ');
+$ax += cidrblock($address,'104.131.0.0/16','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-13). ');
+$ax += cidrblock($address,'104.236.0.0/16','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-14). ');
+$ax += cidrblock($address,'107.170.0.0/16','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-15). ');
+$ax += cidrblock($address,'128.199.32.0/19','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-16). ');
+$ax += cidrblock($address,'141.0.168.0/21','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-17). ');
+$ax += cidrblock($address,'146.185.128.0/18','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-18). ');
+$ax += cidrblock($address,'159.203.0.0/17','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-19). ');
+$ax += cidrblock($address,'159.203.128.0/20','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-20). ');
+$ax += cidrblock($address,'159.203.144.0/21','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-21). ');
+$ax += cidrblock($address,'159.203.160.0/20','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-22). ');
+$ax += cidrblock($address,'159.203.192.0/18','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-23). ');
+$ax += cidrblock($address,'162.243.0.0/16','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-24). ');
+$ax += cidrblock($address,'178.62.128.0/17','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-25). ');
+$ax += cidrblock($address,'185.14.184.0/22','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-26). ');
+$ax += cidrblock($address,'185.88.180.0/22','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-27). ');
+$ax += cidrblock($address,'188.166.0.0/17','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-28). ');
+$ax += cidrblock($address,'188.166.128.0/21','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-29). ');
+$ax += cidrblock($address,'188.166.200.0/22','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-30). ');
+$ax += cidrblock($address,'188.226.128.0/17','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-31). ');
+$ax += cidrblock($address,'192.34.56.0/21','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-32). ');
+$ax += cidrblock($address,'192.81.208.0/20','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-33). ');
+$ax += cidrblock($address,'192.241.128.0/17','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-34). ');
+$ax += cidrblock($address,'198.199.64.0/18','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-35). ');
+$ax += cidrblock($address,'198.211.96.0/19','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-36). ');
+$ax += cidrblock($address,'208.68.36.0/22','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-37). ');
 
 
 // Root SA (updated 2016.01.20)
