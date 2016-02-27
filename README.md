@@ -272,6 +272,13 @@ History (*change_log*) of this repository (and of those updates merged into it) 
 - Digital Ocean CIDRs updated (an additional ASN found).
 - Repository updated with new changes.
 
+#####2016-02-27
+- QuadraNet CIDRs updated (two new ASNs found; cheers to Agent Smith for noticing this).
+- ColoCrossing CIDRs updated.
+- Choopa CIDRs updated.
+- Psychz.net CIDRs updated.
+- Repository updated with new changes.
+
 
 ---
 
