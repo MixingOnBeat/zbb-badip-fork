@@ -279,6 +279,10 @@ History (*change_log*) of this repository (and of those updates merged into it) 
 - Psychz.net CIDRs updated.
 - Repository updated with new changes.
 
+#####2016-03-02
+- MYLOC CIDRs updated.
+- Repository updated with new changes.
+
 
 ---
 

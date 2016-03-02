@@ -20,7 +20,7 @@
  * @package Maikuolan/zbb-badip-fork
  */
 
-$zbbversion .= ' / BADIP-2016-02+U.3'; // Version number goes here. (product code)-(Year)-(Month)(issue letter)(+U = Unofficial fork, non-mainlined release).(Build number)
+$zbbversion .= ' / BADIP-2016-03+U.0'; // Version number goes here. (product code)-(Year)-(Month)(issue letter)(+U = Unofficial fork, non-mainlined release).(Build number)
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -124,7 +124,7 @@ $ax += lmatch($address,'78.158.11.226','Project Honey Pot rule-breaker, vulnerab
 $ax += cidrblock($address,'72.10.32.0/19','MediaTemple, illegal nameserver response on reverse lookup. Caught scraping (IP-099). ');
 
 
-// Ecatel (updated 2016.01.19)
+// Ecatel (updated 2016.01.19 / checked 2016.03.02)
 // AS29073
 $ax += cidrblock($address,'5.8.61.0/24','Ecatel ASN29073 (ASN-ECATEL-00). ');
 $ax += cidrblock($address,'46.243.146.0/24','Ecatel ASN29073 (ASN-ECATEL-01). ');
@@ -332,14 +332,14 @@ $ax += cidrblock($address,'217.20.112.0/20','Leaseweb Network (ASN-LEASEWEB-175)
 $ax += cidrblock($address,'217.73.56.0/21','Leaseweb Network (ASN-LEASEWEB-176). ');
 
 
-// HOSTING-AS Tehnologii Budushego LLC (updated 2016.01.18)
+// HOSTING-AS Tehnologii Budushego LLC (updated 2016.01.18 / checked 2016.03.02)
 // AS41665
 $ax += cidrblock($address,'78.109.16.0/20','AS41665 (AS-HATB-0). ');
 $ax += cidrblock($address,'194.54.88.0/22','AS41665 (AS-HATB-1). ');
 $ax += cidrblock($address,'213.155.0.0/19','AS41665 (AS-HATB-2). ');
 
 
-// MYLOC (updated 2016.01.18)
+// MYLOC (updated 2016.03.02)
 // AS24961
 $ax += cidrblock($address,'5.104.104.0/21','Myloc AS24961 (AS-MYLOC-00). ');
 $ax += cidrblock($address,'5.199.128.0/20','Myloc AS24961 (AS-MYLOC-01). ');
@@ -366,16 +366,32 @@ $ax += cidrblock($address,'91.194.84.0/23','Myloc AS24961 (AS-MYLOC-21). ');
 $ax += cidrblock($address,'91.212.85.0/24','Myloc AS24961 (AS-MYLOC-22). ');
 $ax += cidrblock($address,'91.242.212.0/24','Myloc AS24961 (AS-MYLOC-23). ');
 $ax += cidrblock($address,'93.186.192.0/20','Myloc AS24961 (AS-MYLOC-24). ');
+$ax += cidrblock($address,'141.8.244.0/22','Myloc AS24961 (AS-MYLOC-25). ');
+$ax += cidrblock($address,'141.8.248.0/24','Myloc AS24961 (AS-MYLOC-26). ');
+$ax += cidrblock($address,'146.0.32.0/20','Myloc AS24961 (AS-MYLOC-27). ');
+$ax += cidrblock($address,'185.15.244.0/22','Myloc AS24961 (AS-MYLOC-28). ');
+$ax += cidrblock($address,'185.97.5.0/24','Myloc AS24961 (AS-MYLOC-29). ');
+$ax += cidrblock($address,'185.114.108.0/24','Myloc AS24961 (AS-MYLOC-30). ');
+$ax += cidrblock($address,'188.214.93.0/24','Myloc AS24961 (AS-MYLOC-31). ');
+$ax += cidrblock($address,'191.96.66.0/24','Myloc AS24961 (AS-MYLOC-32). ');
+$ax += cidrblock($address,'193.22.251.0/24','Myloc AS24961 (AS-MYLOC-33). ');
+$ax += cidrblock($address,'193.41.200.0/24','Myloc AS24961 (AS-MYLOC-34). ');
+$ax += cidrblock($address,'193.47.99.0/24','Myloc AS24961 (AS-MYLOC-35). ');
+$ax += cidrblock($address,'193.111.136.0/21','Myloc AS24961 (AS-MYLOC-36). ');
+$ax += cidrblock($address,'193.111.198.0/23','Myloc AS24961 (AS-MYLOC-37). ');
+$ax += cidrblock($address,'199.201.240.0/24','Myloc AS24961 (AS-MYLOC-38). ');
+$ax += cidrblock($address,'213.202.208.0/20','Myloc AS24961 (AS-MYLOC-39). ');
+$ax += cidrblock($address,'217.79.176.0/20','Myloc AS24961 (AS-MYLOC-40). ');
 
 
-// INFOBOX (updated 2016.01.18)
+// INFOBOX (updated 2016.01.18 / checked 2016.03.02)
 // AS30968
 $ax += cidrblock($address,'77.221.128.0/19','INFOBOX AS30968 (AS-INFOBOX-0). ');
 $ax += cidrblock($address,'92.243.64.0/19','INFOBOX AS30968 (AS-INFOBOX-1). ');
 $ax += cidrblock($address,'109.120.128.0/18','INFOBOX AS30968 (AS-INFOBOX-2). ');
 
 
-// SEDO (updated 2016.01.18)
+// SEDO (updated 2016.01.18 / checked 2016.03.02)
 // AS47846
 $ax += cidrblock($address,'82.98.86.0/24','SEDO AS47846 (AS-SEDO-0). ');
 $ax += cidrblock($address,'82.98.99.0/24','SEDO AS47846 (AS-SEDO-1). ');
@@ -400,7 +416,7 @@ $ax += cidrblock($address,'185.53.176.0/22','Spamahost known range. '); //2016.0
 $ax += inmatch($hoster,'spamahost','Spamahost. '); //70c
 
 
-// HOSTKEY B.V. (updated 2016.01.18)
+// HOSTKEY B.V. (updated 2016.01.18 / checked 2016.03.02)
 // AS57043
 $ax += cidrblock($address,'5.39.216.0/21','HostKey Network (AS-57043-0). ');
 $ax += cidrblock($address,'31.192.109.0/24','HostKey Network (AS-57043-1). ');
@@ -4249,6 +4265,3 @@ $ax += iprange($address,'213.248.0.0','213.248.63.255','RBN. ');
 
 // Query Test
 $ax += (inmatch($query,'xbadipx','Test Trigger to test function BADIP. '));
-
-
-?>
