@@ -283,6 +283,11 @@ History (*change_log*) of this repository (and of those updates merged into it) 
 - MYLOC CIDRs updated.
 - Repository updated with new changes.
 
+#####2016-03-04
+- Internap CIDRs updated (+14 new ASNs added!).
+- CH-NET S.R.L. CIDRs updated.
+- Repository updated with new changes.
+
 
 ---
 

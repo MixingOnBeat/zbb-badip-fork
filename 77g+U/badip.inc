@@ -20,7 +20,7 @@
  * @package Maikuolan/zbb-badip-fork
  */
 
-$zbbversion .= ' / BADIP-2016-03+U.0'; // Version number goes here. (product code)-(Year)-(Month)(issue letter)(+U = Unofficial fork, non-mainlined release).(Build number)
+$zbbversion .= ' / BADIP-2016-03+U.1'; // Version number goes here. (product code)-(Year)-(Month)(issue letter)(+U = Unofficial fork, non-mainlined release).(Build number)
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -783,7 +783,7 @@ $ax += cidrblock($address,'209.249.0.0/16','Kintiskton LLC (ASN-KINT-18). ');
 $ax += cidrblock($address,'216.200.0.0/16','Kintiskton LLC (ASN-KINT-19). ');
 
 
-// Limestone networks, Hosts of hackforums.net (updated 2016.01.19)
+// Limestone networks, Hosts of hackforums.net (updated 2016.01.19 / checked 2016.03.04)
 // AS46475
 $ax += cidrblock($address,'63.143.32.0/19','Limestone Networks AS46475 (ASN-LSN-00). ');
 $ax += cidrblock($address,'64.31.0.0/18','Limestone Networks AS46475 (ASN-LSN-01). ');
@@ -799,7 +799,7 @@ $ax += cidrblock($address,'216.144.240.0/20','Limestone Networks AS46475 (ASN-LS
 $ax += cidrblock($address,'216.245.192.0/19','Limestone Networks AS46475 (ASN-LSN-11). ');
 
 
-// Redstation Network (updated 2016.01.19)
+// Redstation Network (updated 2016.01.19 / checked 2016.03.04)
 // AS35662
 $ax += cidrblock($address,'5.152.192.0/19','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-00). ');
 $ax += cidrblock($address,'31.3.224.0/19','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-01). ');
@@ -841,7 +841,7 @@ $ax += cidrblock($address,'188.227.160.0/19','Redstation Limited, not an access 
 $ax += cidrblock($address,'190.121.209.0/24','Redstation Limited, not an access provider ISP. (ASN-REDSTATION-37). ');
 
 
-// AnchorFree Ltd network (updated 2016.01.19)
+// AnchorFree Ltd network (updated 2016.01.19 / checked 2016.03.04)
 // AS26642
 $ax += cidrblock($address,'46.16.34.0/23','AnchorFree Ltd network (AS-AF-00). ');
 $ax += cidrblock($address,'74.115.3.0/24','AnchorFree Ltd network (AS-AF-01). ');
@@ -850,17 +850,19 @@ $ax += cidrblock($address,'85.237.197.0/24','AnchorFree Ltd network (AS-AF-03). 
 $ax += cidrblock($address,'85.237.222.0/24','AnchorFree Ltd network (AS-AF-04). ');
 
 
-// CH-NET S.R.L. (updated 2016.01.19)
+// CH-NET S.R.L. (updated 2016.03.04)
 // Romainian network trying to hack user accounts.
 // AS41011
 $ax += cidrblock($address,'89.41.172.0/23','Romainian network trying to hack user accounts (ASN-AS41011-00). ');
 $ax += cidrblock($address,'93.113.36.0/23','Romainian network trying to hack user accounts (ASN-AS41011-01). ');
 $ax += cidrblock($address,'93.115.240.0/23','Romainian network trying to hack user accounts (ASN-AS41011-02). ');
-$ax += cidrblock($address,'185.123.220.0/22','Romainian network trying to hack user accounts (ASN-AS41011-03). ');
-$ax += cidrblock($address,'188.208.32.0/23','Romainian network trying to hack user accounts (ASN-AS41011-04). ');
-$ax += cidrblock($address,'188.213.232.0/24','Romainian network trying to hack user accounts (ASN-AS41011-05). ');
-$ax += cidrblock($address,'188.214.159.0/24','Romainian network trying to hack user accounts (ASN-AS41011-06). ');
-$ax += cidrblock($address,'188.214.192.0/24','Romainian network trying to hack user accounts (ASN-AS41011-07). ');
+$ax += cidrblock($address,'93.188.205.0/24','Romainian network trying to hack user accounts (ASN-AS41011-03). ');
+$ax += cidrblock($address,'185.123.220.0/22','Romainian network trying to hack user accounts (ASN-AS41011-04). ');
+$ax += cidrblock($address,'185.125.192.0/22','Romainian network trying to hack user accounts (ASN-AS41011-05). ');
+$ax += cidrblock($address,'188.208.32.0/23','Romainian network trying to hack user accounts (ASN-AS41011-06). ');
+$ax += cidrblock($address,'188.213.232.0/24','Romainian network trying to hack user accounts (ASN-AS41011-07). ');
+$ax += cidrblock($address,'188.214.159.0/24','Romainian network trying to hack user accounts (ASN-AS41011-08). ');
+$ax += cidrblock($address,'188.214.192.0/24','Romainian network trying to hack user accounts (ASN-AS41011-09). ');
 
 
 // Swiftway / Botmaster Labs (updated 2016.01.19)
@@ -3006,56 +3008,287 @@ $ax += cidrblock($address,'194.28.172.0/22','Network known to associate with mal
 $ax += cidrblock($address,'195.248.234.0/23','Network known to associate with malware, source: http://www.google.com/safebrowsing/diagnostic?site=AS:42655&hl=en (ASN-BESTHOSTING-2). '); //75b
 
 
-// Internap (updated 2016.01.21)
-// AS12182, AS10912
-$ax += cidrblock($address,'5.104.242.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-00). ');
-$ax += cidrblock($address,'23.92.184.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-01). ');
-$ax += cidrblock($address,'63.251.100.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-02). ');
-$ax += cidrblock($address,'63.251.192.0/19','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-03). ');
-$ax += cidrblock($address,'64.7.192.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-04). ');
-$ax += cidrblock($address,'64.74.128.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-05). ');
-$ax += cidrblock($address,'64.74.160.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-06). ');
-$ax += cidrblock($address,'64.74.208.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-07). ');
-$ax += cidrblock($address,'64.94.96.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-08). ');
-$ax += cidrblock($address,'64.95.136.0/23','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-09). ');
-$ax += cidrblock($address,'64.95.140.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-10). ');
-$ax += cidrblock($address,'64.95.156.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-11). ');
-$ax += cidrblock($address,'66.150.144.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-12). ');
-$ax += cidrblock($address,'66.150.176.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-13). ');
-$ax += cidrblock($address,'66.151.48.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-14). ');
-$ax += cidrblock($address,'66.151.128.0/19','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-15). ');
-$ax += cidrblock($address,'69.25.56.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-16). ');
-$ax += cidrblock($address,'69.88.128.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-17). ');
-$ax += cidrblock($address,'70.42.128.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-18). ');
-$ax += cidrblock($address,'70.42.240.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-19). ');
-$ax += cidrblock($address,'72.5.3.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-20). ');
-$ax += cidrblock($address,'72.5.64.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-21). ');
-$ax += cidrblock($address,'72.5.224.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-22). ');
-$ax += cidrblock($address,'72.5.233.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-23). ');
-$ax += cidrblock($address,'74.91.118.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-24). ');
-$ax += cidrblock($address,'74.116.112.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-25). ');
-$ax += cidrblock($address,'74.118.48.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-26). ');
-$ax += cidrblock($address,'74.201.16.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-27). ');
-$ax += cidrblock($address,'74.201.64.0/19','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-28). ');
-$ax += cidrblock($address,'74.201.112.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-29). ');
-$ax += cidrblock($address,'74.217.24.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-30). ');
-$ax += cidrblock($address,'74.217.64.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-31). ');
-$ax += cidrblock($address,'74.217.96.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-32). ');
-$ax += cidrblock($address,'74.217.144.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-33). ');
-$ax += cidrblock($address,'74.217.187.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-34). ');
-$ax += cidrblock($address,'74.217.208.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-35). ');
-$ax += cidrblock($address,'75.98.0.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-36). ');
-$ax += cidrblock($address,'75.98.80.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-37). ');
-$ax += cidrblock($address,'107.150.144.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-38). ');
-$ax += cidrblock($address,'130.50.200.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-39). ');
-$ax += cidrblock($address,'192.43.206.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-40). ');
-$ax += cidrblock($address,'199.245.176.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-41). ');
-$ax += cidrblock($address,'204.153.219.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-42). ');
-$ax += cidrblock($address,'208.64.56.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-43). ');
-$ax += cidrblock($address,'216.52.28.0/23','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-44). ');
-$ax += cidrblock($address,'216.52.208.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-45). ');
-$ax += cidrblock($address,'216.52.224.0/19','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-46). ');
-$ax += cidrblock($address,'216.133.224.0/19','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-47). ');
+// Internap (updated 2016.03.04)
+// Refer to https://gist.github.com/Maikuolan/633f211dbe19b90ef944 for the ASN information for these listings.
+$ax += cidrblock($address,'5.104.242.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-000). ');
+$ax += cidrblock($address,'23.92.182.0/23','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-001). ');
+$ax += cidrblock($address,'23.92.184.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-002). ');
+$ax += cidrblock($address,'38.107.85.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-003). ');
+$ax += cidrblock($address,'38.107.87.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-004). ');
+$ax += cidrblock($address,'61.211.160.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-005). ');
+$ax += cidrblock($address,'63.223.80.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-006). ');
+$ax += cidrblock($address,'63.223.87.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-007). ');
+$ax += cidrblock($address,'63.223.88.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-008). ');
+$ax += cidrblock($address,'63.223.90.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-009). ');
+$ax += cidrblock($address,'63.251.0.0/19','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-010). ');
+$ax += cidrblock($address,'63.251.32.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-011). ');
+$ax += cidrblock($address,'63.251.64.0/19','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-012). ');
+$ax += cidrblock($address,'63.251.100.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-013). ');
+$ax += cidrblock($address,'63.251.128.0/18','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-014). ');
+$ax += cidrblock($address,'63.251.192.0/19','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-015). ');
+$ax += cidrblock($address,'64.7.192.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-016). ');
+$ax += cidrblock($address,'64.7.216.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-017). ');
+$ax += cidrblock($address,'64.7.223.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-018). ');
+$ax += cidrblock($address,'64.27.244.0/23','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-019). ');
+$ax += cidrblock($address,'64.71.227.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-020). ');
+$ax += cidrblock($address,'64.71.234.0/23','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-021). ');
+$ax += cidrblock($address,'64.74.0.0/19','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-022). ');
+$ax += cidrblock($address,'64.74.46.0/23','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-023). ');
+$ax += cidrblock($address,'64.74.48.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-024). ');
+$ax += cidrblock($address,'64.74.52.0/23','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-025). ');
+$ax += cidrblock($address,'64.74.64.0/23','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-026). ');
+$ax += cidrblock($address,'64.74.72.0/23','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-027). ');
+$ax += cidrblock($address,'64.74.78.0/23','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-028). ');
+$ax += cidrblock($address,'64.74.96.0/19','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-029). ');
+$ax += cidrblock($address,'64.74.128.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-030). ');
+$ax += cidrblock($address,'64.74.160.0/19','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-031). ');
+$ax += cidrblock($address,'64.74.192.0/18','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-032). ');
+$ax += cidrblock($address,'64.94.0.0/18','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-033). ');
+$ax += cidrblock($address,'64.94.72.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-034). ');
+$ax += cidrblock($address,'64.94.88.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-035). ');
+$ax += cidrblock($address,'64.94.96.0/19','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-036). ');
+$ax += cidrblock($address,'64.94.128.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-037). ');
+$ax += cidrblock($address,'64.94.144.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-038). ');
+$ax += cidrblock($address,'64.94.152.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-039). ');
+$ax += cidrblock($address,'64.94.158.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-040). ');
+$ax += cidrblock($address,'64.94.160.0/19','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-041). ');
+$ax += cidrblock($address,'64.94.220.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-042). ');
+$ax += cidrblock($address,'64.94.224.0/19','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-043). ');
+$ax += cidrblock($address,'64.95.28.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-044). ');
+$ax += cidrblock($address,'64.95.32.0/19','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-045). ');
+$ax += cidrblock($address,'64.95.64.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-046). ');
+$ax += cidrblock($address,'64.95.104.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-047). ');
+$ax += cidrblock($address,'64.95.136.0/23','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-048). ');
+$ax += cidrblock($address,'64.95.140.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-049). ');
+$ax += cidrblock($address,'64.95.144.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-050). ');
+$ax += cidrblock($address,'64.95.152.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-051). ');
+$ax += cidrblock($address,'64.95.156.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-052). ');
+$ax += cidrblock($address,'64.95.160.0/19','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-053). ');
+$ax += cidrblock($address,'64.95.192.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-054). ');
+$ax += cidrblock($address,'64.95.204.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-055). ');
+$ax += cidrblock($address,'64.95.240.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-056). ');
+$ax += cidrblock($address,'66.23.191.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-057). ');
+$ax += cidrblock($address,'66.150.0.0/19','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-058). ');
+$ax += cidrblock($address,'66.150.48.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-059). ');
+$ax += cidrblock($address,'66.150.96.0/19','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-060). ');
+$ax += cidrblock($address,'66.150.144.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-061). ');
+$ax += cidrblock($address,'66.150.160.0/19','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-062). ');
+$ax += cidrblock($address,'66.150.192.0/19','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-063). ');
+$ax += cidrblock($address,'66.151.0.0/18','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-064). ');
+$ax += cidrblock($address,'66.151.96.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-065). ');
+$ax += cidrblock($address,'66.151.128.0/18','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-066). ');
+$ax += cidrblock($address,'66.151.220.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-067). ');
+$ax += cidrblock($address,'66.151.224.0/19','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-068). ');
+$ax += cidrblock($address,'66.171.192.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-069). ');
+$ax += cidrblock($address,'67.20.50.0/23','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-070). ');
+$ax += cidrblock($address,'67.20.52.0/23','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-071). ');
+$ax += cidrblock($address,'67.20.57.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-072). ');
+$ax += cidrblock($address,'67.20.58.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-073). ');
+$ax += cidrblock($address,'67.20.61.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-074). ');
+$ax += cidrblock($address,'67.20.62.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-075). ');
+$ax += cidrblock($address,'67.215.161.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-076). ');
+$ax += cidrblock($address,'67.215.170.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-077). ');
+$ax += cidrblock($address,'67.215.173.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-078). ');
+$ax += cidrblock($address,'67.215.174.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-079). ');
+$ax += cidrblock($address,'67.215.177.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-080). ');
+$ax += cidrblock($address,'67.215.179.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-081). ');
+$ax += cidrblock($address,'67.215.180.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-082). ');
+$ax += cidrblock($address,'67.215.182.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-083). ');
+$ax += cidrblock($address,'67.215.186.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-084). ');
+$ax += cidrblock($address,'67.215.189.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-085). ');
+$ax += cidrblock($address,'69.25.0.0/18','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-086). ');
+$ax += cidrblock($address,'69.25.64.0/19','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-087). ');
+$ax += cidrblock($address,'69.25.101.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-088). ');
+$ax += cidrblock($address,'69.25.120.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-089). ');
+$ax += cidrblock($address,'69.25.128.0/18','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-090). ');
+$ax += cidrblock($address,'69.25.192.0/19','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-091). ');
+$ax += cidrblock($address,'69.25.224.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-092). ');
+$ax += cidrblock($address,'69.25.240.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-093). ');
+$ax += cidrblock($address,'69.52.134.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-094). ');
+$ax += cidrblock($address,'69.87.208.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-095). ');
+$ax += cidrblock($address,'69.88.128.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-096). ');
+$ax += cidrblock($address,'69.88.144.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-097). ');
+$ax += cidrblock($address,'69.88.152.0/23','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-098). ');
+$ax += cidrblock($address,'69.88.154.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-099). ');
+$ax += cidrblock($address,'69.88.158.0/23','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-100). ');
+$ax += cidrblock($address,'69.89.33.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-101). ');
+$ax += cidrblock($address,'70.42.8.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-102). ');
+$ax += cidrblock($address,'70.42.24.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-103). ');
+$ax += cidrblock($address,'70.42.32.0/19','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-104). ');
+$ax += cidrblock($address,'70.42.64.0/19','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-105). ');
+$ax += cidrblock($address,'70.42.128.0/19','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-106). ');
+$ax += cidrblock($address,'70.42.160.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-107). ');
+$ax += cidrblock($address,'70.42.176.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-108). ');
+$ax += cidrblock($address,'70.42.192.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-109). ');
+$ax += cidrblock($address,'70.42.216.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-110). ');
+$ax += cidrblock($address,'70.42.224.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-111). ');
+$ax += cidrblock($address,'70.42.240.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-112). ');
+$ax += cidrblock($address,'72.5.3.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-113). ');
+$ax += cidrblock($address,'72.5.16.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-114). ');
+$ax += cidrblock($address,'72.5.42.0/23','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-115). ');
+$ax += cidrblock($address,'72.5.48.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-116). ');
+$ax += cidrblock($address,'72.5.64.0/19','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-117). ');
+$ax += cidrblock($address,'72.5.96.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-118). ');
+$ax += cidrblock($address,'72.5.120.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-119). ');
+$ax += cidrblock($address,'72.5.130.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-120). ');
+$ax += cidrblock($address,'72.5.144.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-121). ');
+$ax += cidrblock($address,'72.5.184.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-122). ');
+$ax += cidrblock($address,'72.5.192.0/19','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-123). ');
+$ax += cidrblock($address,'72.5.224.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-124). ');
+$ax += cidrblock($address,'72.5.233.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-125). ');
+$ax += cidrblock($address,'72.5.248.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-126). ');
+$ax += cidrblock($address,'72.44.88.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-127). ');
+$ax += cidrblock($address,'72.44.93.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-128). ');
+$ax += cidrblock($address,'72.44.94.0/23','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-129). ');
+$ax += cidrblock($address,'74.91.112.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-130). ');
+$ax += cidrblock($address,'74.91.114.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-131). ');
+$ax += cidrblock($address,'74.91.116.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-132). ');
+$ax += cidrblock($address,'74.91.118.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-133). ');
+$ax += cidrblock($address,'74.91.120.0/23','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-134). ');
+$ax += cidrblock($address,'74.91.123.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-135). ');
+$ax += cidrblock($address,'74.91.126.0/23','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-136). ');
+$ax += cidrblock($address,'74.116.112.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-137). ');
+$ax += cidrblock($address,'74.118.48.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-138). ');
+$ax += cidrblock($address,'74.118.108.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-139). ');
+$ax += cidrblock($address,'74.201.0.0/16','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-140). ');
+$ax += cidrblock($address,'74.217.0.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-141). ');
+$ax += cidrblock($address,'74.217.24.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-142). ');
+$ax += cidrblock($address,'74.217.32.0/19','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-143). ');
+$ax += cidrblock($address,'74.217.64.0/19','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-144). ');
+$ax += cidrblock($address,'74.217.96.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-145). ');
+$ax += cidrblock($address,'74.217.112.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-146). ');
+$ax += cidrblock($address,'74.217.116.0/23','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-147). ');
+$ax += cidrblock($address,'74.217.120.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-148). ');
+$ax += cidrblock($address,'74.217.128.0/18','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-149). ');
+$ax += cidrblock($address,'74.217.208.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-150). ');
+$ax += cidrblock($address,'74.217.224.0/19','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-151). ');
+$ax += cidrblock($address,'75.98.0.0/18','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-152). ');
+$ax += cidrblock($address,'75.98.64.0/19','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-153). ');
+$ax += cidrblock($address,'95.172.77.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-154). ');
+$ax += cidrblock($address,'104.37.120.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-155). ');
+$ax += cidrblock($address,'104.152.224.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-156). ');
+$ax += cidrblock($address,'104.153.104.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-157). ');
+$ax += cidrblock($address,'104.153.106.0/23','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-158). ');
+$ax += cidrblock($address,'104.153.110.0/23','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-159). ');
+$ax += cidrblock($address,'104.193.148.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-160). ');
+$ax += cidrblock($address,'107.150.128.0/19','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-161). ');
+$ax += cidrblock($address,'107.180.128.0/19','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-162). ');
+$ax += cidrblock($address,'107.180.160.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-163). ');
+$ax += cidrblock($address,'107.180.192.0/18','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-164). ');
+$ax += cidrblock($address,'110.34.56.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-165). ');
+$ax += cidrblock($address,'119.59.72.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-166). ');
+$ax += cidrblock($address,'122.200.32.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-167). ');
+$ax += cidrblock($address,'123.108.0.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-168). ');
+$ax += cidrblock($address,'130.50.200.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-169). ');
+$ax += cidrblock($address,'138.36.16.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-170). ');
+$ax += cidrblock($address,'142.54.20.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-171). ');
+$ax += cidrblock($address,'142.75.16.0/23','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-172). ');
+$ax += cidrblock($address,'144.208.128.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-173). ');
+$ax += cidrblock($address,'149.114.0.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-174). ');
+$ax += cidrblock($address,'162.210.172.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-175). ');
+$ax += cidrblock($address,'162.210.174.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-176). ');
+$ax += cidrblock($address,'162.217.8.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-177). ');
+$ax += cidrblock($address,'162.248.89.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-178). ');
+$ax += cidrblock($address,'162.248.90.0/23','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-179). ');
+$ax += cidrblock($address,'162.248.95.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-180). ');
+$ax += cidrblock($address,'162.251.0.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-181). ');
+$ax += cidrblock($address,'167.173.201.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-182). ');
+$ax += cidrblock($address,'171.20.53.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-183). ');
+$ax += cidrblock($address,'171.20.54.0/23','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-184). ');
+$ax += cidrblock($address,'173.230.224.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-185). ');
+$ax += cidrblock($address,'173.230.230.0/23','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-186). ');
+$ax += cidrblock($address,'173.230.235.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-187). ');
+$ax += cidrblock($address,'173.230.238.0/23','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-188). ');
+$ax += cidrblock($address,'173.249.144.0/23','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-189). ');
+$ax += cidrblock($address,'173.249.149.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-190). ');
+$ax += cidrblock($address,'173.249.150.0/23','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-191). ');
+$ax += cidrblock($address,'173.249.152.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-192). ');
+$ax += cidrblock($address,'174.34.48.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-193). ');
+$ax += cidrblock($address,'178.22.10.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-194). ');
+$ax += cidrblock($address,'178.22.13.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-195). ');
+$ax += cidrblock($address,'181.225.136.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-196). ');
+$ax += cidrblock($address,'184.94.220.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-197). ');
+$ax += cidrblock($address,'185.100.40.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-198). ');
+$ax += cidrblock($address,'192.30.228.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-199). ');
+$ax += cidrblock($address,'192.43.206.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-200). ');
+$ax += cidrblock($address,'192.74.134.0/23','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-201). ');
+$ax += cidrblock($address,'192.92.8.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-202). ');
+$ax += cidrblock($address,'192.112.255.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-203). ');
+$ax += cidrblock($address,'192.163.20.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-204). ');
+$ax += cidrblock($address,'192.195.4.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-205). ');
+$ax += cidrblock($address,'192.203.198.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-206). ');
+$ax += cidrblock($address,'192.223.24.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-207). ');
+$ax += cidrblock($address,'192.223.27.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-208). ');
+$ax += cidrblock($address,'192.223.28.0/23','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-209). ');
+$ax += cidrblock($address,'192.223.31.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-210). ');
+$ax += cidrblock($address,'192.234.105.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-211). ');
+$ax += cidrblock($address,'198.72.80.0/23','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-212). ');
+$ax += cidrblock($address,'198.72.82.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-213). ');
+$ax += cidrblock($address,'199.19.124.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-214). ');
+$ax += cidrblock($address,'199.19.142.0/23','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-215). ');
+$ax += cidrblock($address,'199.19.187.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-216). ');
+$ax += cidrblock($address,'199.21.76.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-217). ');
+$ax += cidrblock($address,'199.21.80.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-218). ');
+$ax += cidrblock($address,'199.30.64.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-219). ');
+$ax += cidrblock($address,'199.48.252.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-220). ');
+$ax += cidrblock($address,'199.168.132.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-221). ');
+$ax += cidrblock($address,'199.233.179.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-222). ');
+$ax += cidrblock($address,'199.244.252.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-223). ');
+$ax += cidrblock($address,'199.245.176.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-224). ');
+$ax += cidrblock($address,'200.50.128.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-225). ');
+$ax += cidrblock($address,'202.56.8.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-226). ');
+$ax += cidrblock($address,'202.58.100.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-227). ');
+$ax += cidrblock($address,'203.169.8.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-228). ');
+$ax += cidrblock($address,'203.190.120.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-229). ');
+$ax += cidrblock($address,'204.9.43.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-230). ');
+$ax += cidrblock($address,'204.75.186.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-231). ');
+$ax += cidrblock($address,'204.145.96.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-232). ');
+$ax += cidrblock($address,'204.153.219.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-233). ');
+$ax += cidrblock($address,'204.227.65.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-234). ');
+$ax += cidrblock($address,'204.227.77.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-235). ');
+$ax += cidrblock($address,'204.238.150.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-236). ');
+$ax += cidrblock($address,'204.239.214.0/23','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-237). ');
+$ax += cidrblock($address,'206.191.128.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-238). ');
+$ax += cidrblock($address,'206.191.144.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-239). ');
+$ax += cidrblock($address,'206.191.160.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-240). ');
+$ax += cidrblock($address,'206.191.176.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-241). ');
+$ax += cidrblock($address,'206.251.192.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-242). ');
+$ax += cidrblock($address,'206.253.192.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-243). ');
+$ax += cidrblock($address,'206.253.208.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-244). ');
+$ax += cidrblock($address,'208.64.56.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-245). ');
+$ax += cidrblock($address,'208.75.208.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-246). ');
+$ax += cidrblock($address,'208.76.24.0/22','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-247). ');
+$ax += cidrblock($address,'208.95.255.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-248). ');
+$ax += cidrblock($address,'208.100.7.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-249). ');
+$ax += cidrblock($address,'208.100.55.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-250). ');
+$ax += cidrblock($address,'208.100.59.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-251). ');
+$ax += cidrblock($address,'208.146.32.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-252). ');
+$ax += cidrblock($address,'209.191.160.0/19','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-253). ');
+$ax += cidrblock($address,'210.193.64.0/18','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-254). ');
+$ax += cidrblock($address,'216.52.28.0/23','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-255). ');
+$ax += cidrblock($address,'216.52.32.0/19','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-256). ');
+$ax += cidrblock($address,'216.52.88.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-257). ');
+$ax += cidrblock($address,'216.52.112.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-258). ');
+$ax += cidrblock($address,'216.52.142.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-259). ');
+$ax += cidrblock($address,'216.52.158.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-260). ');
+$ax += cidrblock($address,'216.52.160.0/21','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-261). ');
+$ax += cidrblock($address,'216.52.176.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-262). ');
+$ax += cidrblock($address,'216.52.192.0/18','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-263). ');
+$ax += cidrblock($address,'216.82.95.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-264). ');
+$ax += cidrblock($address,'216.133.224.0/19','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-265). ');
+$ax += cidrblock($address,'216.162.205.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-266). ');
+$ax += cidrblock($address,'216.162.208.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-267). ');
+$ax += cidrblock($address,'216.162.211.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-268). ');
+$ax += cidrblock($address,'216.162.218.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-269). ');
+$ax += cidrblock($address,'216.223.0.0/19','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-270). ');
+$ax += cidrblock($address,'216.223.36.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-271). ');
+$ax += cidrblock($address,'216.228.228.0/23','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-272). ');
+$ax += cidrblock($address,'216.228.236.0/23','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-273). ');
+$ax += cidrblock($address,'216.245.17.0/24','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-274). ');
+$ax += cidrblock($address,'218.40.144.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-275). ');
+$ax += cidrblock($address,'218.216.96.0/20','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-276). ');
+$ax += cidrblock($address,'219.96.96.0/19','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-277). ');
+$ax += cidrblock($address,'219.113.0.0/19','Internap Network Services Corporation, Cloud and CDN, not an access provider (ASN-INAP-278). ');
 
 
 // WEBSUPPORT-SRO-SK-AS (updated 2016.01.21)
