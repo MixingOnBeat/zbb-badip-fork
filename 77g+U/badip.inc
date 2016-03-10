@@ -20,7 +20,7 @@
  * @package Maikuolan/zbb-badip-fork
  */
 
-$zbbversion .= ' / BADIP-2016-03+U.1'; // Version number goes here. (product code)-(Year)-(Month)(issue letter)(+U = Unofficial fork, non-mainlined release).(Build number)
+$zbbversion .= ' / BADIP-2016-03+U.2'; // Version number goes here. (product code)-(Year)-(Month)(issue letter)(+U = Unofficial fork, non-mainlined release).(Build number)
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -30,7 +30,6 @@ global $whyblockout, $ax;
 // *IPs and IP Ranges
 
 $ax += lmatch($address,'65.94.3.','Site Scraper (IP-001). ');
-$ax += lmatch($address,'115.124.102.24','Infected Machine (IP-002). ');
 $ax += lmatch($address,'122.221.10.234','Infected Machine (IP-003). ');
 $ax += lmatch($address,'188.40.98.199','EYE De UKRAINE, very aggressive spider (IP-004). ');
 $ax += lmatch($address,'188.40.42.199','YMC AG, very aggressive spider (IP-005). ');
@@ -47,7 +46,6 @@ $ax += iprange($address,'69.210.185.0','69.210.185.7','spunge.org (IP-019). ');
 $ax += iprange($address,'72.20.99.0','72.20.99.255','Content scraper for paid service (IP-020). ');
 $ax += iprange($address,'72.27.0.0','72.27.213.104','Jamaica Spammer Network (frittobay) (IP-021). '); //70a split
 $ax += iprange($address,'72.27.213.106','72.27.223.255','Jamaica Spammer Network (frittobay) (IP-022). '); //70a split
-$ax += iprange($address,'79.143.177.0','79.143.177.255','Netherlands Site Host (doesn\'t need access to other sites) (IP-023). ');
 $ax += iprange($address,'80.81.159.0','80.81.159.255','Problematic netblock (IP-024). ');
 $ax += iprange($address,'80.81.208.0','80.81.223.255','Problematic netblock (IP-025). ');
 $ax += iprange($address,'80.87.152.0','80.87.152.255','Server farm infected with grum spambot (IP-026). ');
@@ -62,7 +60,6 @@ $ax += iprange($address,'87.118.68.0','87.118.122.255','keyweb.de .ru (bothost) 
 $ax += iprange($address,'87.248.64.0','87.248.95.255','Polish Bad Block (IP-035). ');
 $ax += iprange($address,'87.248.162.0','87.248.189.255','Moldavia Bad Block (IP-036). ');
 $ax += iprange($address,'91.205.40.0','91.205.43.255','British Virgin Islands Spambots (IP-037). ');
-$ax += iprange($address,'91.214.44.0','91.214.45.255','Altushost bothost and/or Server Farm (IP-038). ');
 $ax += iprange($address,'95.24.0.0','95.24.255.255','Corbina.ru (IP-039). ');
 $ax += iprange($address,'113.160.0.0','113.191.255.255','localhost spoofing netblock (IP-044). ');
 $ax += cidrblock($address,'118.98.0.0/17','Spammy Indonesia Netblock (IP-045). '); // mod 71h
@@ -108,7 +105,6 @@ $ax += iprange($address,'210.0.160.0','210.0.255.255','Japanese servers on Hong 
 $ax += iprange($address,'211.43.0.0','211.45.191.255','Korean Suspicious (IP-090). ');
 $ax += iprange($address,'211.91.0.0','211.97.255.255','Chinese Bad Block (IP-091). ');
 $ax += iprange($address,'212.113.41.0','212.113.63.255','Ukraine Bad Block (IP-092). ');
-$ax += iprange($address,'212.117.188.0','212.117.188.255','Altushost bothost and/or Server Farm (IP-093). ');
 $ax += iprange($address,'212.178.0.0','212.178.29.255','Ukraine Bad Block (IP-094). ');
 $ax += iprange($address,'213.166.128.0','213.166.159.255','Saudi Arabia bothost (IP-095). ');
 $ax += iprange($address,'216.240.128.0','216.240.159.255','Abusive Network (IP-096). '); //71d
@@ -3727,7 +3723,7 @@ $ax += cidrblock($address,'207.210.239.0/24','Colocrossing Network, not an acces
 $ax += cidrblock($address,'207.210.254.0/24','Colocrossing Network, not an access provider ASN-36352-141). ');
 $ax += cidrblock($address,'216.170.112.0/20','Colocrossing Network, not an access provider ASN-36352-142). ');
 $ax += cidrblock($address,'216.246.49.0/24','Colocrossing Network, not an access provider ASN-36352-143). ');
-$ax += cidrblock($address,'216.246.108.0/23 ','Colocrossing Network, not an access provider ASN-36352-144). ');
+$ax += cidrblock($address,'216.246.108.0/23','Colocrossing Network, not an access provider ASN-36352-144). ');
 
 
 // Serveryou Network (updated 2016.01.22)
@@ -4406,19 +4402,218 @@ $ax += cidrblock($address,'212.187.246.0/23','Choopa Networks (ASN-CHOOPA-158). 
 $ax += cidrblock($address,'216.155.128.0/19','Choopa Networks (ASN-CHOOPA-159). ');
 $ax += cidrblock($address,'217.163.10.0/23','Choopa Networks (ASN-CHOOPA-160). ');
 $ax += cidrblock($address,'217.163.22.0/23','Choopa Networks (ASN-CHOOPA-161). ');
-$ax += cidrblock($address,'217.163.24.0/21 ','Choopa Networks (ASN-CHOOPA-162). ');
+$ax += cidrblock($address,'217.163.24.0/21','Choopa Networks (ASN-CHOOPA-162). ');
+
+
+// Krypt Technologies
+// Refer spambotsecurity.com/forum/viewtopic.php?f=7&t=3273
+// AS35908 (updated 2016.03.10)
+$ax += cidrblock($address,'23.91.192.0/19','Krypt Technologies (ASN-KRYPT-00). ');
+$ax += cidrblock($address,'23.251.0.0/19','Krypt Technologies (ASN-KRYPT-01). ');
+$ax += cidrblock($address,'63.251.215.0/24','Krypt Technologies (ASN-KRYPT-02). ');
+$ax += cidrblock($address,'66.186.32.0/19','Krypt Technologies (ASN-KRYPT-03). ');
+$ax += cidrblock($address,'67.43.144.0/20','Krypt Technologies (ASN-KRYPT-04). ');
+$ax += cidrblock($address,'67.198.128.0/17','Krypt Technologies (ASN-KRYPT-05). ');
+$ax += cidrblock($address,'67.229.0.0/16','Krypt Technologies (ASN-KRYPT-06). ');
+$ax += cidrblock($address,'74.222.128.0/18','Krypt Technologies (ASN-KRYPT-07). ');
+$ax += cidrblock($address,'96.62.0.0/16','Krypt Technologies (ASN-KRYPT-08). ');
+$ax += cidrblock($address,'98.126.0.0/16','Krypt Technologies (ASN-KRYPT-09). ');
+$ax += cidrblock($address,'100.43.128.0/18','Krypt Technologies (ASN-KRYPT-10). ');
+$ax += cidrblock($address,'103.233.81.0/24','Krypt Technologies (ASN-KRYPT-11). ');
+$ax += cidrblock($address,'103.233.82.0/24','Krypt Technologies (ASN-KRYPT-12). ');
+$ax += cidrblock($address,'104.200.192.0/19','Krypt Technologies (ASN-KRYPT-13). ');
+$ax += cidrblock($address,'107.6.192.0/18','Krypt Technologies (ASN-KRYPT-14). ');
+$ax += cidrblock($address,'110.34.128.0/17','Krypt Technologies (ASN-KRYPT-15). ');
+$ax += cidrblock($address,'146.82.146.0/23','Krypt Technologies (ASN-KRYPT-16). ');
+$ax += cidrblock($address,'173.214.0.0/17','Krypt Technologies (ASN-KRYPT-17). ');
+$ax += cidrblock($address,'174.139.0.0/16','Krypt Technologies (ASN-KRYPT-18). ');
+$ax += cidrblock($address,'184.75.176.0/20','Krypt Technologies (ASN-KRYPT-19). ');
+$ax += cidrblock($address,'184.83.0.0/16','Krypt Technologies (ASN-KRYPT-20). ');
+$ax += cidrblock($address,'184.164.192.0/19','Krypt Technologies (ASN-KRYPT-21). ');
+$ax += cidrblock($address,'192.155.160.0/20','Krypt Technologies (ASN-KRYPT-22). ');
+$ax += cidrblock($address,'192.174.96.0/19','Krypt Technologies (ASN-KRYPT-23). ');
+$ax += cidrblock($address,'192.250.192.0/20','Krypt Technologies (ASN-KRYPT-24). ');
+$ax += cidrblock($address,'192.250.240.0/20','Krypt Technologies (ASN-KRYPT-25). ');
+$ax += cidrblock($address,'198.61.96.0/19','Krypt Technologies (ASN-KRYPT-26). ');
+$ax += cidrblock($address,'209.11.240.0/20','Krypt Technologies (ASN-KRYPT-27). ');
+
+
+// Netinternet Bilgisayar ve Telekomunikasyon San. ve Tic. Ltd. Sti.
+// Refer spambotsecurity.com/forum/viewtopic.php?f=7&t=3553
+// AS51167 (updated 2016.03.10)
+$ax += cidrblock($address,'31.192.208.0/21','ASN not permitted here (ASN-51559-00). ');
+$ax += cidrblock($address,'91.227.4.0/23','ASN not permitted here (ASN-51559-01). ');
+$ax += cidrblock($address,'91.227.6.0/24','ASN not permitted here (ASN-51559-02). ');
+$ax += cidrblock($address,'91.229.35.0/24','ASN not permitted here (ASN-51559-03). ');
+$ax += cidrblock($address,'91.229.44.0/23','ASN not permitted here (ASN-51559-04). ');
+$ax += cidrblock($address,'94.102.0.0/20','ASN not permitted here (ASN-51559-05). ');
+$ax += cidrblock($address,'95.173.160.0/19','ASN not permitted here (ASN-51559-06). ');
+$ax += cidrblock($address,'159.253.32.0/20','ASN not permitted here (ASN-51559-07). ');
+$ax += cidrblock($address,'185.83.144.0/22','ASN not permitted here (ASN-51559-08). ');
+$ax += cidrblock($address,'185.95.84.0/22','ASN not permitted here (ASN-51559-09). ');
+$ax += cidrblock($address,'185.106.208.0/22','ASN not permitted here (ASN-51559-10). ');
+$ax += cidrblock($address,'185.126.216.0/23','ASN not permitted here (ASN-51559-11). ');
+$ax += cidrblock($address,'213.238.168.0/24','ASN not permitted here (ASN-51559-12). ');
+
+
+// Contabo GmbH (Cloud provider)
+// AS51167 (updated 2016.03.10)
+$ax += cidrblock($address,'5.189.128.0/18','Contabo GmbH, cloud provider (ASN-CONTABO-00). ');
+$ax += cidrblock($address,'37.139.52.0/24','Contabo GmbH, cloud provider (ASN-CONTABO-01). ');
+$ax += cidrblock($address,'79.143.176.0/20','Contabo GmbH, cloud provider (ASN-CONTABO-02). ');
+$ax += cidrblock($address,'80.241.208.0/20','Contabo GmbH, cloud provider (ASN-CONTABO-03). ');
+$ax += cidrblock($address,'91.194.90.0/23','Contabo GmbH, cloud provider (ASN-CONTABO-04). ');
+$ax += cidrblock($address,'91.198.138.0/24','Contabo GmbH, cloud provider (ASN-CONTABO-05). ');
+$ax += cidrblock($address,'91.205.172.0/22','Contabo GmbH, cloud provider (ASN-CONTABO-06). ');
+$ax += cidrblock($address,'95.212.0.0/17','Contabo GmbH, cloud provider (ASN-CONTABO-07). ');
+$ax += cidrblock($address,'95.212.208.0/20','Contabo GmbH, cloud provider (ASN-CONTABO-08). ');
+$ax += cidrblock($address,'95.212.224.0/19','Contabo GmbH, cloud provider (ASN-CONTABO-09). ');
+$ax += cidrblock($address,'177.85.96.0/24','Contabo GmbH, cloud provider (ASN-CONTABO-10). ');
+$ax += cidrblock($address,'177.85.101.0/24','Contabo GmbH, cloud provider (ASN-CONTABO-11). ');
+$ax += cidrblock($address,'177.85.102.0/23','Contabo GmbH, cloud provider (ASN-CONTABO-12). ');
+$ax += cidrblock($address,'178.238.224.0/20','Contabo GmbH, cloud provider (ASN-CONTABO-13). ');
+$ax += cidrblock($address,'185.2.100.0/22','Contabo GmbH, cloud provider (ASN-CONTABO-14). ');
+$ax += cidrblock($address,'185.36.64.0/22','Contabo GmbH, cloud provider (ASN-CONTABO-15). ');
+$ax += cidrblock($address,'193.34.144.0/23','Contabo GmbH, cloud provider (ASN-CONTABO-16). ');
+$ax += cidrblock($address,'193.37.152.0/24','Contabo GmbH, cloud provider (ASN-CONTABO-17). ');
+$ax += cidrblock($address,'193.164.131.0/24','Contabo GmbH, cloud provider (ASN-CONTABO-18). ');
+$ax += cidrblock($address,'193.164.132.0/23','Contabo GmbH, cloud provider (ASN-CONTABO-19). ');
+$ax += cidrblock($address,'193.200.241.0/24','Contabo GmbH, cloud provider (ASN-CONTABO-20). ');
+$ax += cidrblock($address,'213.136.64.0/19','Contabo GmbH, cloud provider (ASN-CONTABO-21). ');
+
+
+// AltusHost B.V. (Cloud provider)
+// AS51430 (updated 2016.03.10)
+$ax += cidrblock($address,'5.62.20.0/24','AltusHost B.V., cloud provider (ASN-ALTUS-00). ');
+$ax += cidrblock($address,'31.3.152.0/21','AltusHost B.V., cloud provider (ASN-ALTUS-01). ');
+$ax += cidrblock($address,'37.46.112.0/23','AltusHost B.V., cloud provider (ASN-ALTUS-02). ');
+$ax += cidrblock($address,'37.46.115.0/24','AltusHost B.V., cloud provider (ASN-ALTUS-03). ');
+$ax += cidrblock($address,'37.46.116.0/22','AltusHost B.V., cloud provider (ASN-ALTUS-04). ');
+$ax += cidrblock($address,'37.46.120.0/21','AltusHost B.V., cloud provider (ASN-ALTUS-05). ');
+$ax += cidrblock($address,'45.74.35.0/24','AltusHost B.V., cloud provider (ASN-ALTUS-06). ');
+$ax += cidrblock($address,'45.74.37.0/24','AltusHost B.V., cloud provider (ASN-ALTUS-07). ');
+$ax += cidrblock($address,'79.142.64.0/20','AltusHost B.V., cloud provider (ASN-ALTUS-08). ');
+$ax += cidrblock($address,'91.214.44.0/22','AltusHost B.V., cloud provider (ASN-ALTUS-09). ');
+$ax += cidrblock($address,'128.127.104.0/21','AltusHost B.V., cloud provider (ASN-ALTUS-10). ');
+$ax += cidrblock($address,'172.94.30.0/24','AltusHost B.V., cloud provider (ASN-ALTUS-11). ');
+$ax += cidrblock($address,'172.94.36.0/24','AltusHost B.V., cloud provider (ASN-ALTUS-12). ');
+$ax += cidrblock($address,'172.94.50.0/23','AltusHost B.V., cloud provider (ASN-ALTUS-13). ');
+$ax += cidrblock($address,'172.94.52.0/22','AltusHost B.V., cloud provider (ASN-ALTUS-14). ');
+$ax += cidrblock($address,'172.94.56.0/23','AltusHost B.V., cloud provider (ASN-ALTUS-15). ');
+$ax += cidrblock($address,'172.111.154.0/24','AltusHost B.V., cloud provider (ASN-ALTUS-16). ');
+$ax += cidrblock($address,'185.2.28.0/22','AltusHost B.V., cloud provider (ASN-ALTUS-17). ');
+$ax += cidrblock($address,'185.10.56.0/22','AltusHost B.V., cloud provider (ASN-ALTUS-18). ');
+$ax += cidrblock($address,'194.152.52.0/24','AltusHost B.V., cloud provider (ASN-ALTUS-19). ');
+$ax += cidrblock($address,'213.5.64.0/21','AltusHost B.V., cloud provider (ASN-ALTUS-20). ');
+
+
+// Unit-IS Ltd.
+// AS59564 (updated 2016.03.10)
+$ax += cidrblock($address,'46.243.140.0/24','Unit-IS Banned, 10HiT-IC 3a6opoHeHo (ASN-59564-0). ');
+$ax += cidrblock($address,'46.243.142.0/24','Unit-IS Banned, 10HiT-IC 3a6opoHeHo (ASN-59564-1). ');
+$ax += cidrblock($address,'188.72.101.0/24','Unit-IS Banned, 10HiT-IC 3a6opoHeHo (ASN-59564-2). ');
+$ax += cidrblock($address,'195.211.152.0/22','Unit-IS Banned, 10HiT-IC 3a6opoHeHo (ASN-59564-3). ');
+
+
+// Siftlogic LLC (updated 77g / checked 2016.03.10)
+$ax += cidrblock($address,'23.90.192.0/18','Siftlogic (NET-SIFT-0). ');
+$ax += cidrblock($address,'192.119.48.0/20','Siftlogic (NET-SIFT-1). ');
+$ax += cidrblock($address,'192.196.192.0/20','Siftlogic (NET-SIFT-2). ');
+
+
+// INFOKOM Ltd
+// AS48226 (updated 2016.03.10)
+$ax += cidrblock($address,'81.161.32.0/20','ASN not permitted here (ASN-48226-00). ');
+$ax += cidrblock($address,'91.241.68.0/23','ASN not permitted here (ASN-48226-01). ');
+
+
+// RAM Host and Total Server Solutions L.L.C.
+// AS46562, AS53841 (updated 2016.03.10)
+$ax += cidrblock($address,'66.71.240.0/20','RAM Host, cloud provider (ASN-RAMHOST-00). ');
+$ax += cidrblock($address,'67.210.254.0/24','RAM Host, cloud provider (ASN-RAMHOST-01). ');
+$ax += cidrblock($address,'74.116.0.0/23','RAM Host, cloud provider (ASN-RAMHOST-02). ');
+$ax += cidrblock($address,'74.119.144.0/22','RAM Host, cloud provider (ASN-RAMHOST-03). ');
+$ax += cidrblock($address,'98.142.208.0/20','RAM Host, cloud provider (ASN-RAMHOST-04). ');
+$ax += cidrblock($address,'104.153.72.0/22','RAM Host, cloud provider (ASN-RAMHOST-05). ');
+$ax += cidrblock($address,'104.200.129.0/24','RAM Host, cloud provider (ASN-RAMHOST-06). ');
+$ax += cidrblock($address,'104.200.130.0/23','RAM Host, cloud provider (ASN-RAMHOST-07). ');
+$ax += cidrblock($address,'104.200.132.0/24','RAM Host, cloud provider (ASN-RAMHOST-08). ');
+$ax += cidrblock($address,'104.200.134.0/23','RAM Host, cloud provider (ASN-RAMHOST-09). ');
+$ax += cidrblock($address,'104.200.136.0/22','RAM Host, cloud provider (ASN-RAMHOST-10). ');
+$ax += cidrblock($address,'104.200.141.0/24','RAM Host, cloud provider (ASN-RAMHOST-11). ');
+$ax += cidrblock($address,'104.200.142.0/23','RAM Host, cloud provider (ASN-RAMHOST-12). ');
+$ax += cidrblock($address,'104.200.144.0/21','RAM Host, cloud provider (ASN-RAMHOST-13). ');
+$ax += cidrblock($address,'104.200.152.0/24','RAM Host, cloud provider (ASN-RAMHOST-14). ');
+$ax += cidrblock($address,'104.200.154.0/24','RAM Host, cloud provider (ASN-RAMHOST-15). ');
+$ax += cidrblock($address,'104.200.159.0/24','RAM Host, cloud provider (ASN-RAMHOST-16). ');
+$ax += cidrblock($address,'107.152.96.0/20','RAM Host, cloud provider (ASN-RAMHOST-17). ');
+$ax += cidrblock($address,'107.181.160.0/21','RAM Host, cloud provider (ASN-RAMHOST-18). ');
+$ax += cidrblock($address,'107.181.168.0/23','RAM Host, cloud provider (ASN-RAMHOST-19). ');
+$ax += cidrblock($address,'107.181.172.0/22','RAM Host, cloud provider (ASN-RAMHOST-20). ');
+$ax += cidrblock($address,'107.181.176.0/21','RAM Host, cloud provider (ASN-RAMHOST-21). ');
+$ax += cidrblock($address,'107.181.184.0/22','RAM Host, cloud provider (ASN-RAMHOST-22). ');
+$ax += cidrblock($address,'107.181.190.0/23','RAM Host, cloud provider (ASN-RAMHOST-23). ');
+$ax += cidrblock($address,'130.185.170.0/23','RAM Host, cloud provider (ASN-RAMHOST-24). ');
+$ax += cidrblock($address,'162.211.66.0/24','RAM Host, cloud provider (ASN-RAMHOST-25). ');
+$ax += cidrblock($address,'162.216.44.0/22','RAM Host, cloud provider (ASN-RAMHOST-26). ');
+$ax += cidrblock($address,'162.253.177.0/24','RAM Host, cloud provider (ASN-RAMHOST-27). ');
+$ax += cidrblock($address,'166.63.255.0/24','RAM Host, cloud provider (ASN-RAMHOST-28). ');
+$ax += cidrblock($address,'172.98.64.0/22','RAM Host, cloud provider (ASN-RAMHOST-29). ');
+$ax += cidrblock($address,'172.98.70.0/23','RAM Host, cloud provider (ASN-RAMHOST-30). ');
+$ax += cidrblock($address,'172.98.72.0/21','RAM Host, cloud provider (ASN-RAMHOST-31). ');
+$ax += cidrblock($address,'172.98.80.0/23','RAM Host, cloud provider (ASN-RAMHOST-32). ');
+$ax += cidrblock($address,'172.98.84.0/22','RAM Host, cloud provider (ASN-RAMHOST-33). ');
+$ax += cidrblock($address,'172.98.88.0/23','RAM Host, cloud provider (ASN-RAMHOST-34). ');
+$ax += cidrblock($address,'172.98.90.0/24','RAM Host, cloud provider (ASN-RAMHOST-35). ');
+$ax += cidrblock($address,'172.98.92.0/22','RAM Host, cloud provider (ASN-RAMHOST-36). ');
+$ax += cidrblock($address,'181.114.240.0/20','RAM Host, cloud provider (ASN-RAMHOST-37). ');
+$ax += cidrblock($address,'184.170.240.0/20','RAM Host, cloud provider (ASN-RAMHOST-38). ');
+$ax += cidrblock($address,'185.67.24.0/22','RAM Host, cloud provider (ASN-RAMHOST-39). ');
+$ax += cidrblock($address,'185.89.248.0/22','RAM Host, cloud provider (ASN-RAMHOST-40). ');
+$ax += cidrblock($address,'192.40.56.0/22','RAM Host, cloud provider (ASN-RAMHOST-41). ');
+$ax += cidrblock($address,'192.111.128.0/22','RAM Host, cloud provider (ASN-RAMHOST-42). ');
+$ax += cidrblock($address,'192.111.133.0/24','RAM Host, cloud provider (ASN-RAMHOST-43). ');
+$ax += cidrblock($address,'192.111.134.0/23','RAM Host, cloud provider (ASN-RAMHOST-44). ');
+$ax += cidrblock($address,'192.111.136.0/21','RAM Host, cloud provider (ASN-RAMHOST-45). ');
+$ax += cidrblock($address,'192.223.10.0/23','RAM Host, cloud provider (ASN-RAMHOST-46). ');
+$ax += cidrblock($address,'192.252.208.0/21','RAM Host, cloud provider (ASN-RAMHOST-47). ');
+$ax += cidrblock($address,'192.252.216.0/22','RAM Host, cloud provider (ASN-RAMHOST-48). ');
+$ax += cidrblock($address,'192.252.220.0/24','RAM Host, cloud provider (ASN-RAMHOST-49). ');
+$ax += cidrblock($address,'192.252.222.0/23','RAM Host, cloud provider (ASN-RAMHOST-50). ');
+$ax += cidrblock($address,'198.8.80.0/20','RAM Host, cloud provider (ASN-RAMHOST-51). ');
+$ax += cidrblock($address,'198.147.20.0/22','RAM Host, cloud provider (ASN-RAMHOST-52). ');
+$ax += cidrblock($address,'199.36.220.0/22','RAM Host, cloud provider (ASN-RAMHOST-53). ');
+$ax += cidrblock($address,'199.58.184.0/22','RAM Host, cloud provider (ASN-RAMHOST-54). ');
+$ax += cidrblock($address,'199.116.112.0/21','RAM Host, cloud provider (ASN-RAMHOST-55). ');
+$ax += cidrblock($address,'199.168.160.0/22','RAM Host, cloud provider (ASN-RAMHOST-56). ');
+$ax += cidrblock($address,'199.168.164.0/23','RAM Host, cloud provider (ASN-RAMHOST-57). ');
+$ax += cidrblock($address,'199.180.248.0/22','RAM Host, cloud provider (ASN-RAMHOST-58). ');
+$ax += cidrblock($address,'199.180.252.0/23','RAM Host, cloud provider (ASN-RAMHOST-59). ');
+$ax += cidrblock($address,'199.187.208.0/22','RAM Host, cloud provider (ASN-RAMHOST-60). ');
+$ax += cidrblock($address,'199.229.248.0/23','RAM Host, cloud provider (ASN-RAMHOST-61). ');
+$ax += cidrblock($address,'199.229.251.0/24','RAM Host, cloud provider (ASN-RAMHOST-62). ');
+$ax += cidrblock($address,'199.229.252.0/24','RAM Host, cloud provider (ASN-RAMHOST-63). ');
+$ax += cidrblock($address,'199.229.254.0/23','RAM Host, cloud provider (ASN-RAMHOST-64). ');
+$ax += cidrblock($address,'206.40.160.0/20','RAM Host, cloud provider (ASN-RAMHOST-65). ');
+$ax += cidrblock($address,'206.206.89.0/24','RAM Host, cloud provider (ASN-RAMHOST-66). ');
+$ax += cidrblock($address,'206.220.172.0/22','RAM Host, cloud provider (ASN-RAMHOST-67). ');
+$ax += cidrblock($address,'207.66.105.0/24','RAM Host, cloud provider (ASN-RAMHOST-68). ');
+$ax += cidrblock($address,'207.66.117.0/24','RAM Host, cloud provider (ASN-RAMHOST-69). ');
+$ax += cidrblock($address,'207.66.120.0/24','RAM Host, cloud provider (ASN-RAMHOST-70). ');
+$ax += cidrblock($address,'207.188.179.0/24','RAM Host, cloud provider (ASN-RAMHOST-71). ');
+$ax += cidrblock($address,'208.78.40.0/22','RAM Host, cloud provider (ASN-RAMHOST-72). ');
+$ax += cidrblock($address,'208.84.152.0/22','RAM Host, cloud provider (ASN-RAMHOST-73). ');
+$ax += cidrblock($address,'208.93.192.0/22','RAM Host, cloud provider (ASN-RAMHOST-74). ');
+$ax += cidrblock($address,'209.113.128.0/22','RAM Host, cloud provider (ASN-RAMHOST-75). ');
+$ax += cidrblock($address,'209.140.20.0/24','RAM Host, cloud provider (ASN-RAMHOST-76). ');
+$ax += cidrblock($address,'216.41.48.0/22','RAM Host, cloud provider (ASN-RAMHOST-77). ');
 
 
 // *More, and smaller bad networks to avoid...
 $ax += cidrblock($address,'70.39.128.0/17','packetexchange is a cloud service, not an access provider. '); //75a
 $ax += cidrblock($address,'91.236.74.0/23','ELAN-AS Spamslingers (ELAN-AS). '); //75a
 $ax += cidrblock($address,'173.0.0.0/20','ProXPN, anonymous proxy/vpn network (ProXPN). '); //75a
-$ax += cidrblock($address,'23.90.192.0/18','Siftlogic (NET-SIFT-0). '); //77g
-$ax += cidrblock($address,'192.119.48.0/20','Siftlogic (NET-SIFT-1). '); //77g
-$ax += cidrblock($address,'192.196.192.0/20','Siftlogic (NET-SIFT-2). '); //77g
 $ax += cidrblock($address,'202.46.32.0/19','ShenZhen Sunrise Technology Co, bot like activity. '); //74a fixed 74c
-$ax += cidrblock($address,'67.198.128.0/20','Krypt Technologies. '); //72b
-$ax += cidrblock($address,'98.126.0.0/16','Krypt Technologies. '); //72b
 $ax += cidrblock($address,'31.170.16.0/21','Ad Technology SIA AS49191-1. '); //72d
 $ax += cidrblock($address,'188.92.72.0/21','Ad Technology SIA AS49191-2. '); //72d
 $ax += iprange($address,'195.216.160.0','195.216.191.255','a JUNIK. ');
@@ -4443,9 +4638,6 @@ $ax += iprange($address,'216.250.112.0','216.250.127.255','h Alchemy Communicati
 $ax += cidrblock($address,'46.229.160.0/20','Semrush Botnetwork (SEM-01). '); //74d
 $ax += cidrblock($address,'46.19.168.0/23','Network has ethical issues (ASN-6Li-2H-0). '); //74d
 $ax += cidrblock($address,'208.74.204.0/22','Network has ethical issues (ASN-6Li-2H-1). '); //74d
-$ax += cidrblock($address,'199.180.248.0/21','RAM Host (ASN-RAMHOST-0). '); //76d
-$ax += cidrblock($address,'81.161.32.0/20','Infokom Elektrindo (ASN-48226-0). '); //76f
-$ax += cidrblock($address,'195.211.152.0/22','Unit-is Banned, 10HiT-IC 3a6opoHeHo (ASN-59564-IS-001). '); //77a
 $ax += cidrblock($address,'38.99.82.0/24','Fieldtech Inc (BADNET-FTI). '); //77b
 $ax += cidrblock($address,'14.96.0.0/14','TATAINDICOM-IN (Site Scraper) (BADNET-TATA). '); //77g
 
