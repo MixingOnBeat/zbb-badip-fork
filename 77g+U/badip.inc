@@ -4440,7 +4440,7 @@ $ax += cidrblock($address,'209.11.240.0/20','Krypt Technologies (ASN-KRYPT-27). 
 
 // Netinternet Bilgisayar ve Telekomunikasyon San. ve Tic. Ltd. Sti.
 // Refer spambotsecurity.com/forum/viewtopic.php?f=7&t=3553
-// AS51167 (updated 2016.03.10)
+// AS51559 (updated 2016.03.10)
 $ax += cidrblock($address,'31.192.208.0/21','ASN not permitted here (ASN-51559-00). ');
 $ax += cidrblock($address,'91.227.4.0/23','ASN not permitted here (ASN-51559-01). ');
 $ax += cidrblock($address,'91.227.6.0/24','ASN not permitted here (ASN-51559-02). ');

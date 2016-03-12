@@ -271,11 +271,11 @@ History/Changelog of this repository (and of those updates merged into it) is as
 - Repository updated with new changes.
 
 #####2016-03-10
-- Krypt Technologies CIDRs updated.
-- Netinternet Bilgisayar CIDRs updated.
+- Krypt Technologies CIDRs added (merged some of the smaller, older IP blocks into this).
+- Netinternet Bilgisayar CIDRs added (old discovery, but not previously included in the fork; worth blocking).
 - Contabo GmbH CIDRs added (merged some of the smaller, older IP blocks into this).
 - AltusHost B.V. CIDRs added (merged some of the smaller, older IP blocks into this).
-- Unit-IS CIDRs updated.
-- INFOKOM Ltd CIDRs updated.
-- RAM Host CIDRs updated.
+- Unit-IS CIDRs added (merged some of the smaller, older IP blocks into this).
+- INFOKOM Ltd CIDRs added (merged some of the smaller, older IP blocks into this).
+- RAM Host CIDRs added (merged some of the smaller, older IP blocks into this).
 - Repository updated with new changes.
