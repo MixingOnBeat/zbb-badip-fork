@@ -282,12 +282,15 @@ History/Changelog of this repository (and of those updates merged into it) is as
 
 #####2016-03-13
 - WEBEXXPURTS CIDRs updated.
+- Eonix Corporation CIDRs updated.
 - Steadfast CIDRs updated.
+- PIN-AS CIDRs updated.
 - Root SA CIDRs updated.
 - Corpcolo CIDRs updated.
 - WestHost CIDRs updated.
 - Bezeq International CIDRs updated.
 - WholeSale Internet CIDRs updated.
 - Avante Hosting CIDRs updated.
+- InterNap CIDRs updated.
 - Private Layer CIDRs updated.
 - Repository updated with new changes.
