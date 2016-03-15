@@ -294,3 +294,11 @@ History/Changelog of this repository (and of those updates merged into it) is as
 - InterNap CIDRs updated.
 - Private Layer CIDRs updated.
 - Repository updated with new changes.
+
+#####2016-03-15
+- Typo found in the Avante Hosting section; Fixed.
+- Leaseweb CIDRs updated.
+- Removed all duplicates.
+- Removed Virpus Networks section (their network is dead; all CIDRs have been absorbed by other networks and their ASNs are no longer reporting).
+- WOWRACK CIDRs updated.
+- Repository updated with new changes.

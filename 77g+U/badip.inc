@@ -20,7 +20,7 @@
  * @package Maikuolan/zbb-badip-fork
  */
 
-$zbbversion .= ' / BADIP-2016-03+U.3'; // Version number goes here. (product code)-(Year)-(Month)(issue letter)(+U = Unofficial fork, non-mainlined release).(Build number)
+$zbbversion .= ' / BADIP-2016-03+U.4'; // Version number goes here. (product code)-(Year)-(Month)(issue letter)(+U = Unofficial fork, non-mainlined release).(Build number)
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -147,7 +147,7 @@ $ax += cidrblock($address,'213.184.117.0/24','Ecatel ASN29073 (ASN-ECATEL-21). '
 $ax += cidrblock($address,'213.184.124.0/24','Ecatel ASN29073 (ASN-ECATEL-22). ');
 
 
-// Leaseweb Network (updated 2016.01.27)
+// Leaseweb Network (updated 2016.03.15)
 // AS16265, AS28753, AS30633, AS60781
 $ax += cidrblock($address,'5.44.144.0/22','Leaseweb Network (ASN-LEASEWEB-000). ');
 $ax += cidrblock($address,'5.61.32.0/20','Leaseweb Network (ASN-LEASEWEB-001). ');
@@ -165,7 +165,7 @@ $ax += cidrblock($address,'41.191.215.0/24','Leaseweb Network (ASN-LEASEWEB-012)
 $ax += cidrblock($address,'46.17.0.0/21','Leaseweb Network (ASN-LEASEWEB-013). ');
 $ax += cidrblock($address,'46.17.14.0/23','Leaseweb Network (ASN-LEASEWEB-014). ');
 $ax += cidrblock($address,'46.102.240.0/21','Leaseweb Network (ASN-LEASEWEB-015). ');
-$ax += cidrblock($address,'46.165.192.0/18','Leaseweb Network (ASN-LEASEWEB-016). '); // If there are future problems with this signature, refer to github.com/Maikuolan/zbb-badip-fork/issues/1
+$ax += cidrblock($address,'46.165.192.0/18','Leaseweb Network (ASN-LEASEWEB-016). ');
 $ax += cidrblock($address,'46.182.120.0/21','Leaseweb Network (ASN-LEASEWEB-017). ');
 $ax += cidrblock($address,'46.182.176.0/21','Leaseweb Network (ASN-LEASEWEB-018). ');
 $ax += cidrblock($address,'46.243.0.0/21','Leaseweb Network (ASN-LEASEWEB-019). ');
@@ -180,124 +180,124 @@ $ax += cidrblock($address,'78.159.96.0/19','Leaseweb Network (ASN-LEASEWEB-027).
 $ax += cidrblock($address,'79.137.128.0/24','Leaseweb Network (ASN-LEASEWEB-028). ');
 $ax += cidrblock($address,'79.172.198.0/24','Leaseweb Network (ASN-LEASEWEB-029). ');
 $ax += cidrblock($address,'80.65.32.0/20','Leaseweb Network (ASN-LEASEWEB-030). ');
-$ax += cidrblock($address,'80.94.94.0/23','Leaseweb Network (ASN-LEASEWEB-031). ');
-$ax += cidrblock($address,'80.253.248.0/22','Leaseweb Network (ASN-LEASEWEB-032). ');
-$ax += cidrblock($address,'81.161.99.0/24','Leaseweb Network (ASN-LEASEWEB-033). ');
-$ax += cidrblock($address,'82.150.152.0/24','Leaseweb Network (ASN-LEASEWEB-034). ');
-$ax += cidrblock($address,'82.192.64.0/19','Leaseweb Network (ASN-LEASEWEB-035). ');
-$ax += cidrblock($address,'83.149.64.0/18','Leaseweb Network (ASN-LEASEWEB-036). ');
-$ax += cidrblock($address,'83.223.32.0/20','Leaseweb Network (ASN-LEASEWEB-037). ');
-$ax += cidrblock($address,'84.16.224.0/19','Leaseweb Network (ASN-LEASEWEB-038). ');
-$ax += cidrblock($address,'84.247.62.0/24','Leaseweb Network (ASN-LEASEWEB-039). ');
-$ax += cidrblock($address,'85.17.0.0/16','Leaseweb Network (ASN-LEASEWEB-040). ');
-$ax += cidrblock($address,'85.234.224.0/20','Leaseweb Network (ASN-LEASEWEB-041). ');
-$ax += cidrblock($address,'87.236.96.0/21','Leaseweb Network (ASN-LEASEWEB-042). ');
-$ax += cidrblock($address,'89.34.27.0/24','Leaseweb Network (ASN-LEASEWEB-043). ');
-$ax += cidrblock($address,'89.36.36.0/24','Leaseweb Network (ASN-LEASEWEB-044). ');
-$ax += cidrblock($address,'89.144.17.0/24','Leaseweb Network (ASN-LEASEWEB-045). ');
-$ax += cidrblock($address,'89.144.18.0/24','Leaseweb Network (ASN-LEASEWEB-046). ');
-$ax += cidrblock($address,'89.149.192.0/18','Leaseweb Network (ASN-LEASEWEB-047). ');
-$ax += cidrblock($address,'91.109.16.0/20','Leaseweb Network (ASN-LEASEWEB-048). ');
-$ax += cidrblock($address,'91.184.46.0/23','Leaseweb Network (ASN-LEASEWEB-049). ');
-$ax += cidrblock($address,'91.184.48.0/20','Leaseweb Network (ASN-LEASEWEB-050). ');
-$ax += cidrblock($address,'91.195.118.0/23','Leaseweb Network (ASN-LEASEWEB-051). ');
-$ax += cidrblock($address,'91.217.72.0/23','Leaseweb Network (ASN-LEASEWEB-052). ');
-$ax += cidrblock($address,'92.114.86.0/23','Leaseweb Network (ASN-LEASEWEB-053). ');
-$ax += cidrblock($address,'93.176.128.0/23','Leaseweb Network (ASN-LEASEWEB-054). ');
-$ax += cidrblock($address,'93.190.220.0/22','Leaseweb Network (ASN-LEASEWEB-055). ');
-$ax += cidrblock($address,'94.75.192.0/18','Leaseweb Network (ASN-LEASEWEB-056). ');
-$ax += cidrblock($address,'94.177.98.0/23','Leaseweb Network (ASN-LEASEWEB-057). ');
-$ax += cidrblock($address,'94.177.146.0/24','Leaseweb Network (ASN-LEASEWEB-058). ');
-$ax += cidrblock($address,'95.168.160.0/19','Leaseweb Network (ASN-LEASEWEB-059). ');
-$ax += cidrblock($address,'95.211.0.0/16','Leaseweb Network (ASN-LEASEWEB-060). ');
-$ax += cidrblock($address,'103.41.176.0/23','Leaseweb Network (ASN-LEASEWEB-061). ');
-$ax += cidrblock($address,'108.59.0.0/20','Leaseweb Network (ASN-LEASEWEB-062). ');
-$ax += cidrblock($address,'109.69.56.0/22','Leaseweb Network (ASN-LEASEWEB-063). ');
-$ax += cidrblock($address,'109.70.0.0/21','Leaseweb Network (ASN-LEASEWEB-064). ');
-$ax += cidrblock($address,'109.70.9.0/24','Leaseweb Network (ASN-LEASEWEB-065). ');
-$ax += cidrblock($address,'109.70.10.0/23','Leaseweb Network (ASN-LEASEWEB-066). ');
-$ax += cidrblock($address,'109.70.12.0/22','Leaseweb Network (ASN-LEASEWEB-067). ');
-$ax += cidrblock($address,'109.120.175.0/24','Leaseweb Network (ASN-LEASEWEB-068). ');
-$ax += cidrblock($address,'109.120.176.0/24','Leaseweb Network (ASN-LEASEWEB-069). ');
-$ax += cidrblock($address,'109.120.180.0/22','Leaseweb Network (ASN-LEASEWEB-070). ');
-$ax += cidrblock($address,'128.140.216.0/22','Leaseweb Network (ASN-LEASEWEB-071). ');
-$ax += cidrblock($address,'145.255.128.0/21','Leaseweb Network (ASN-LEASEWEB-072). ');
-$ax += cidrblock($address,'154.16.156.0/23','Leaseweb Network (ASN-LEASEWEB-073). ');
-$ax += cidrblock($address,'159.255.192.0/22','Leaseweb Network (ASN-LEASEWEB-074). ');
-$ax += cidrblock($address,'162.210.192.0/21','Leaseweb Network (ASN-LEASEWEB-075). ');
-$ax += cidrblock($address,'162.219.212.0/22','Leaseweb Network (ASN-LEASEWEB-076). ');
-$ax += cidrblock($address,'178.18.20.0/22','Leaseweb Network (ASN-LEASEWEB-077). ');
-$ax += cidrblock($address,'178.18.24.0/23','Leaseweb Network (ASN-LEASEWEB-078). ');
-$ax += cidrblock($address,'178.18.30.0/23','Leaseweb Network (ASN-LEASEWEB-079). ');
-$ax += cidrblock($address,'178.162.128.0/17','Leaseweb Network (ASN-LEASEWEB-080). ');
-$ax += cidrblock($address,'178.250.16.0/24','Leaseweb Network (ASN-LEASEWEB-081). ');
-$ax += cidrblock($address,'178.250.18.0/24','Leaseweb Network (ASN-LEASEWEB-082). ');
-$ax += cidrblock($address,'181.214.35.0/24','Leaseweb Network (ASN-LEASEWEB-083). ');
-$ax += cidrblock($address,'181.214.50.0/24','Leaseweb Network (ASN-LEASEWEB-084). ');
-$ax += cidrblock($address,'185.16.84.0/24','Leaseweb Network (ASN-LEASEWEB-085). ');
-$ax += cidrblock($address,'185.17.32.0/22','Leaseweb Network (ASN-LEASEWEB-086). ');
-$ax += cidrblock($address,'185.17.120.0/22','Leaseweb Network (ASN-LEASEWEB-087). ');
-$ax += cidrblock($address,'185.17.144.0/22','Leaseweb Network (ASN-LEASEWEB-088). ');
-$ax += cidrblock($address,'185.17.184.0/22','Leaseweb Network (ASN-LEASEWEB-089). ');
-$ax += cidrblock($address,'185.22.4.0/22','Leaseweb Network (ASN-LEASEWEB-090). ');
-$ax += cidrblock($address,'185.24.172.0/22','Leaseweb Network (ASN-LEASEWEB-091). ');
-$ax += cidrblock($address,'185.24.240.0/24','Leaseweb Network (ASN-LEASEWEB-092). ');
-$ax += cidrblock($address,'185.27.140.0/22','Leaseweb Network (ASN-LEASEWEB-093). ');
-$ax += cidrblock($address,'185.28.68.0/22','Leaseweb Network (ASN-LEASEWEB-094). ');
-$ax += cidrblock($address,'185.30.232.0/22','Leaseweb Network (ASN-LEASEWEB-095). ');
-$ax += cidrblock($address,'185.32.14.0/23','Leaseweb Network (ASN-LEASEWEB-096). ');
-$ax += cidrblock($address,'185.34.68.0/22','Leaseweb Network (ASN-LEASEWEB-097). ');
-$ax += cidrblock($address,'185.38.185.0/24','Leaseweb Network (ASN-LEASEWEB-098). ');
-$ax += cidrblock($address,'185.38.187.0/24','Leaseweb Network (ASN-LEASEWEB-099). ');
-$ax += cidrblock($address,'185.44.22.0/23','Leaseweb Network (ASN-LEASEWEB-100). ');
-$ax += cidrblock($address,'185.46.180.0/24','Leaseweb Network (ASN-LEASEWEB-101). ');
-$ax += cidrblock($address,'185.46.232.0/24','Leaseweb Network (ASN-LEASEWEB-102). ');
-$ax += cidrblock($address,'185.49.68.0/22','Leaseweb Network (ASN-LEASEWEB-103). ');
-$ax += cidrblock($address,'185.51.192.0/22','Leaseweb Network (ASN-LEASEWEB-104). ');
-$ax += cidrblock($address,'185.63.56.0/24','Leaseweb Network (ASN-LEASEWEB-105). ');
-$ax += cidrblock($address,'185.63.152.0/22','Leaseweb Network (ASN-LEASEWEB-106). ');
-$ax += cidrblock($address,'185.71.60.0/22','Leaseweb Network (ASN-LEASEWEB-107). ');
-$ax += cidrblock($address,'185.71.224.0/22','Leaseweb Network (ASN-LEASEWEB-108). ');
-$ax += cidrblock($address,'185.72.178.0/23','Leaseweb Network (ASN-LEASEWEB-109). ');
-$ax += cidrblock($address,'185.73.32.0/23','Leaseweb Network (ASN-LEASEWEB-110). ');
-$ax += cidrblock($address,'185.79.40.0/22','Leaseweb Network (ASN-LEASEWEB-111). ');
-$ax += cidrblock($address,'185.83.96.0/22','Leaseweb Network (ASN-LEASEWEB-112). ');
-$ax += cidrblock($address,'185.85.160.0/22','Leaseweb Network (ASN-LEASEWEB-113). ');
-$ax += cidrblock($address,'185.85.240.0/22','Leaseweb Network (ASN-LEASEWEB-114). ');
-$ax += cidrblock($address,'185.89.4.0/22','Leaseweb Network (ASN-LEASEWEB-115). ');
-$ax += cidrblock($address,'185.95.164.0/22','Leaseweb Network (ASN-LEASEWEB-116). ');
-$ax += cidrblock($address,'185.96.140.0/24','Leaseweb Network (ASN-LEASEWEB-117). ');
-$ax += cidrblock($address,'185.99.96.0/22','Leaseweb Network (ASN-LEASEWEB-118). ');
-$ax += cidrblock($address,'185.101.107.0/24','Leaseweb Network (ASN-LEASEWEB-119). ');
-$ax += cidrblock($address,'185.102.27.0/24','Leaseweb Network (ASN-LEASEWEB-120). ');
-$ax += cidrblock($address,'185.108.84.0/23','Leaseweb Network (ASN-LEASEWEB-121). ');
-$ax += cidrblock($address,'185.113.88.0/22','Leaseweb Network (ASN-LEASEWEB-122). ');
-$ax += cidrblock($address,'185.114.60.0/22','Leaseweb Network (ASN-LEASEWEB-123). ');
-$ax += cidrblock($address,'185.114.140.0/22','Leaseweb Network (ASN-LEASEWEB-124). ');
-$ax += cidrblock($address,'185.117.228.0/22','Leaseweb Network (ASN-LEASEWEB-125). ');
-$ax += cidrblock($address,'185.122.164.0/22','Leaseweb Network (ASN-LEASEWEB-126). ');
-$ax += cidrblock($address,'185.122.168.0/22','Leaseweb Network (ASN-LEASEWEB-127). ');
-$ax += cidrblock($address,'185.124.200.0/22','Leaseweb Network (ASN-LEASEWEB-128). ');
-$ax += cidrblock($address,'185.126.64.0/22','Leaseweb Network (ASN-LEASEWEB-129). ');
-$ax += cidrblock($address,'185.131.24.0/22','Leaseweb Network (ASN-LEASEWEB-130). ');
-$ax += cidrblock($address,'188.72.192.0/18','Leaseweb Network (ASN-LEASEWEB-131). ');
-$ax += cidrblock($address,'188.208.38.0/23','Leaseweb Network (ASN-LEASEWEB-132). ');
-$ax += cidrblock($address,'188.211.239.0/24','Leaseweb Network (ASN-LEASEWEB-133). ');
-$ax += cidrblock($address,'188.215.35.0/24','Leaseweb Network (ASN-LEASEWEB-134). ');
-$ax += cidrblock($address,'188.241.65.0/24','Leaseweb Network (ASN-LEASEWEB-135). ');
-$ax += cidrblock($address,'190.105.193.0/24','Leaseweb Network (ASN-LEASEWEB-136). ');
-$ax += cidrblock($address,'190.105.195.0/24','Leaseweb Network (ASN-LEASEWEB-137). ');
-$ax += cidrblock($address,'191.96.112.0/24','Leaseweb Network (ASN-LEASEWEB-138). ');
-$ax += cidrblock($address,'191.96.115.0/24','Leaseweb Network (ASN-LEASEWEB-139). ');
-$ax += cidrblock($address,'191.101.16.0/24','Leaseweb Network (ASN-LEASEWEB-140). ');
-$ax += cidrblock($address,'192.36.61.0/24','Leaseweb Network (ASN-LEASEWEB-141). ');
-$ax += cidrblock($address,'192.96.200.0/21','Leaseweb Network (ASN-LEASEWEB-142). ');
-$ax += cidrblock($address,'192.162.138.0/24','Leaseweb Network (ASN-LEASEWEB-143). ');
-$ax += cidrblock($address,'193.25.180.0/23','Leaseweb Network (ASN-LEASEWEB-144). ');
-$ax += cidrblock($address,'193.27.72.0/23','Leaseweb Network (ASN-LEASEWEB-145). ');
-$ax += cidrblock($address,'193.43.92.0/24','Leaseweb Network (ASN-LEASEWEB-146). ');
-$ax += cidrblock($address,'193.104.219.0/24','Leaseweb Network (ASN-LEASEWEB-147). ');
-$ax += cidrblock($address,'193.151.91.0/24','Leaseweb Network (ASN-LEASEWEB-148). ');
+$ax += cidrblock($address,'80.253.248.0/22','Leaseweb Network (ASN-LEASEWEB-031). ');
+$ax += cidrblock($address,'81.161.99.0/24','Leaseweb Network (ASN-LEASEWEB-032). ');
+$ax += cidrblock($address,'82.150.152.0/24','Leaseweb Network (ASN-LEASEWEB-033). ');
+$ax += cidrblock($address,'82.192.64.0/19','Leaseweb Network (ASN-LEASEWEB-034). ');
+$ax += cidrblock($address,'83.149.64.0/18','Leaseweb Network (ASN-LEASEWEB-035). ');
+$ax += cidrblock($address,'83.223.32.0/20','Leaseweb Network (ASN-LEASEWEB-036). ');
+$ax += cidrblock($address,'84.16.224.0/19','Leaseweb Network (ASN-LEASEWEB-037). ');
+$ax += cidrblock($address,'84.247.62.0/24','Leaseweb Network (ASN-LEASEWEB-038). ');
+$ax += cidrblock($address,'85.17.0.0/16','Leaseweb Network (ASN-LEASEWEB-039). ');
+$ax += cidrblock($address,'85.234.224.0/20','Leaseweb Network (ASN-LEASEWEB-040). ');
+$ax += cidrblock($address,'87.236.96.0/21','Leaseweb Network (ASN-LEASEWEB-041). ');
+$ax += cidrblock($address,'89.34.27.0/24','Leaseweb Network (ASN-LEASEWEB-042). ');
+$ax += cidrblock($address,'89.36.36.0/24','Leaseweb Network (ASN-LEASEWEB-043). ');
+$ax += cidrblock($address,'89.38.38.0/24','Leaseweb Network (ASN-LEASEWEB-044). ');
+$ax += cidrblock($address,'89.46.46.0/24','Leaseweb Network (ASN-LEASEWEB-045). ');
+$ax += cidrblock($address,'89.144.17.0/24','Leaseweb Network (ASN-LEASEWEB-046). ');
+$ax += cidrblock($address,'89.144.18.0/24','Leaseweb Network (ASN-LEASEWEB-047). ');
+$ax += cidrblock($address,'89.149.192.0/18','Leaseweb Network (ASN-LEASEWEB-048). ');
+$ax += cidrblock($address,'89.255.254.0/23','Leaseweb Network (ASN-LEASEWEB-049). ');
+$ax += cidrblock($address,'91.109.16.0/20','Leaseweb Network (ASN-LEASEWEB-050). ');
+$ax += cidrblock($address,'91.184.46.0/23','Leaseweb Network (ASN-LEASEWEB-051). ');
+$ax += cidrblock($address,'91.184.48.0/20','Leaseweb Network (ASN-LEASEWEB-052). ');
+$ax += cidrblock($address,'91.195.118.0/23','Leaseweb Network (ASN-LEASEWEB-053). ');
+$ax += cidrblock($address,'92.114.86.0/23','Leaseweb Network (ASN-LEASEWEB-054). ');
+$ax += cidrblock($address,'93.176.128.0/23','Leaseweb Network (ASN-LEASEWEB-055). ');
+$ax += cidrblock($address,'93.190.220.0/22','Leaseweb Network (ASN-LEASEWEB-056). ');
+$ax += cidrblock($address,'94.75.192.0/18','Leaseweb Network (ASN-LEASEWEB-057). ');
+$ax += cidrblock($address,'94.177.98.0/23','Leaseweb Network (ASN-LEASEWEB-058). ');
+$ax += cidrblock($address,'94.177.146.0/24','Leaseweb Network (ASN-LEASEWEB-059). ');
+$ax += cidrblock($address,'95.168.160.0/19','Leaseweb Network (ASN-LEASEWEB-060). ');
+$ax += cidrblock($address,'95.211.0.0/16','Leaseweb Network (ASN-LEASEWEB-061). ');
+$ax += cidrblock($address,'103.41.176.0/23','Leaseweb Network (ASN-LEASEWEB-062). ');
+$ax += cidrblock($address,'108.59.0.0/20','Leaseweb Network (ASN-LEASEWEB-063). ');
+$ax += cidrblock($address,'109.69.56.0/22','Leaseweb Network (ASN-LEASEWEB-064). ');
+$ax += cidrblock($address,'109.70.0.0/21','Leaseweb Network (ASN-LEASEWEB-065). ');
+$ax += cidrblock($address,'109.70.9.0/24','Leaseweb Network (ASN-LEASEWEB-066). ');
+$ax += cidrblock($address,'109.70.10.0/23','Leaseweb Network (ASN-LEASEWEB-067). ');
+$ax += cidrblock($address,'109.70.12.0/22','Leaseweb Network (ASN-LEASEWEB-068). ');
+$ax += cidrblock($address,'109.120.175.0/24','Leaseweb Network (ASN-LEASEWEB-069). ');
+$ax += cidrblock($address,'109.120.176.0/24','Leaseweb Network (ASN-LEASEWEB-070). ');
+$ax += cidrblock($address,'109.120.180.0/22','Leaseweb Network (ASN-LEASEWEB-071). ');
+$ax += cidrblock($address,'128.140.216.0/22','Leaseweb Network (ASN-LEASEWEB-072). ');
+$ax += cidrblock($address,'145.255.128.0/21','Leaseweb Network (ASN-LEASEWEB-073). ');
+$ax += cidrblock($address,'154.16.156.0/23','Leaseweb Network (ASN-LEASEWEB-074). ');
+$ax += cidrblock($address,'159.255.192.0/22','Leaseweb Network (ASN-LEASEWEB-075). ');
+$ax += cidrblock($address,'162.210.192.0/21','Leaseweb Network (ASN-LEASEWEB-076). ');
+$ax += cidrblock($address,'162.219.212.0/22','Leaseweb Network (ASN-LEASEWEB-077). ');
+$ax += cidrblock($address,'178.18.20.0/22','Leaseweb Network (ASN-LEASEWEB-078). ');
+$ax += cidrblock($address,'178.18.24.0/23','Leaseweb Network (ASN-LEASEWEB-079). ');
+$ax += cidrblock($address,'178.18.30.0/23','Leaseweb Network (ASN-LEASEWEB-080). ');
+$ax += cidrblock($address,'178.162.128.0/17','Leaseweb Network (ASN-LEASEWEB-081). ');
+$ax += cidrblock($address,'178.250.16.0/24','Leaseweb Network (ASN-LEASEWEB-082). ');
+$ax += cidrblock($address,'178.250.18.0/24','Leaseweb Network (ASN-LEASEWEB-083). ');
+$ax += cidrblock($address,'181.214.35.0/24','Leaseweb Network (ASN-LEASEWEB-084). ');
+$ax += cidrblock($address,'181.214.50.0/24','Leaseweb Network (ASN-LEASEWEB-085). ');
+$ax += cidrblock($address,'185.16.84.0/24','Leaseweb Network (ASN-LEASEWEB-086). ');
+$ax += cidrblock($address,'185.17.32.0/22','Leaseweb Network (ASN-LEASEWEB-087). ');
+$ax += cidrblock($address,'185.17.120.0/22','Leaseweb Network (ASN-LEASEWEB-088). ');
+$ax += cidrblock($address,'185.17.144.0/22','Leaseweb Network (ASN-LEASEWEB-089). ');
+$ax += cidrblock($address,'185.17.184.0/22','Leaseweb Network (ASN-LEASEWEB-090). ');
+$ax += cidrblock($address,'185.22.4.0/22','Leaseweb Network (ASN-LEASEWEB-091). ');
+$ax += cidrblock($address,'185.24.172.0/23','Leaseweb Network (ASN-LEASEWEB-092). ');
+$ax += cidrblock($address,'185.24.174.0/24','Leaseweb Network (ASN-LEASEWEB-093). ');
+$ax += cidrblock($address,'185.24.240.0/24','Leaseweb Network (ASN-LEASEWEB-094). ');
+$ax += cidrblock($address,'185.27.140.0/22','Leaseweb Network (ASN-LEASEWEB-095). ');
+$ax += cidrblock($address,'185.28.68.0/22','Leaseweb Network (ASN-LEASEWEB-096). ');
+$ax += cidrblock($address,'185.30.232.0/22','Leaseweb Network (ASN-LEASEWEB-097). ');
+$ax += cidrblock($address,'185.32.14.0/23','Leaseweb Network (ASN-LEASEWEB-098). ');
+$ax += cidrblock($address,'185.34.68.0/22','Leaseweb Network (ASN-LEASEWEB-099). ');
+$ax += cidrblock($address,'185.38.185.0/24','Leaseweb Network (ASN-LEASEWEB-100). ');
+$ax += cidrblock($address,'185.38.187.0/24','Leaseweb Network (ASN-LEASEWEB-101). ');
+$ax += cidrblock($address,'185.44.22.0/23','Leaseweb Network (ASN-LEASEWEB-102). ');
+$ax += cidrblock($address,'185.46.180.0/23','Leaseweb Network (ASN-LEASEWEB-103). ');
+$ax += cidrblock($address,'185.46.232.0/24','Leaseweb Network (ASN-LEASEWEB-104). ');
+$ax += cidrblock($address,'185.49.68.0/22','Leaseweb Network (ASN-LEASEWEB-105). ');
+$ax += cidrblock($address,'185.51.192.0/22','Leaseweb Network (ASN-LEASEWEB-106). ');
+$ax += cidrblock($address,'185.63.56.0/24','Leaseweb Network (ASN-LEASEWEB-107). ');
+$ax += cidrblock($address,'185.63.152.0/22','Leaseweb Network (ASN-LEASEWEB-108). ');
+$ax += cidrblock($address,'185.71.60.0/22','Leaseweb Network (ASN-LEASEWEB-109). ');
+$ax += cidrblock($address,'185.71.224.0/22','Leaseweb Network (ASN-LEASEWEB-110). ');
+$ax += cidrblock($address,'185.72.178.0/23','Leaseweb Network (ASN-LEASEWEB-111). ');
+$ax += cidrblock($address,'185.73.32.0/23','Leaseweb Network (ASN-LEASEWEB-112). ');
+$ax += cidrblock($address,'185.79.40.0/22','Leaseweb Network (ASN-LEASEWEB-113). ');
+$ax += cidrblock($address,'185.83.96.0/22','Leaseweb Network (ASN-LEASEWEB-114). ');
+$ax += cidrblock($address,'185.85.160.0/22','Leaseweb Network (ASN-LEASEWEB-115). ');
+$ax += cidrblock($address,'185.85.240.0/22','Leaseweb Network (ASN-LEASEWEB-116). ');
+$ax += cidrblock($address,'185.89.4.0/22','Leaseweb Network (ASN-LEASEWEB-117). ');
+$ax += cidrblock($address,'185.95.164.0/22','Leaseweb Network (ASN-LEASEWEB-118). ');
+$ax += cidrblock($address,'185.96.140.0/24','Leaseweb Network (ASN-LEASEWEB-119). ');
+$ax += cidrblock($address,'185.99.96.0/22','Leaseweb Network (ASN-LEASEWEB-120). ');
+$ax += cidrblock($address,'185.101.107.0/24','Leaseweb Network (ASN-LEASEWEB-121). ');
+$ax += cidrblock($address,'185.102.27.0/24','Leaseweb Network (ASN-LEASEWEB-122). ');
+$ax += cidrblock($address,'185.108.84.0/23','Leaseweb Network (ASN-LEASEWEB-123). ');
+$ax += cidrblock($address,'185.113.88.0/22','Leaseweb Network (ASN-LEASEWEB-124). ');
+$ax += cidrblock($address,'185.114.60.0/22','Leaseweb Network (ASN-LEASEWEB-125). ');
+$ax += cidrblock($address,'185.114.140.0/22','Leaseweb Network (ASN-LEASEWEB-126). ');
+$ax += cidrblock($address,'185.117.228.0/22','Leaseweb Network (ASN-LEASEWEB-127). ');
+$ax += cidrblock($address,'185.122.164.0/22','Leaseweb Network (ASN-LEASEWEB-128). ');
+$ax += cidrblock($address,'185.122.168.0/22','Leaseweb Network (ASN-LEASEWEB-129). ');
+$ax += cidrblock($address,'185.124.200.0/22','Leaseweb Network (ASN-LEASEWEB-130). ');
+$ax += cidrblock($address,'185.126.64.0/22','Leaseweb Network (ASN-LEASEWEB-131). ');
+$ax += cidrblock($address,'185.131.24.0/22','Leaseweb Network (ASN-LEASEWEB-132). ');
+$ax += cidrblock($address,'185.142.100.0/22','Leaseweb Network (ASN-LEASEWEB-133). ');
+$ax += cidrblock($address,'188.72.192.0/18','Leaseweb Network (ASN-LEASEWEB-134). ');
+$ax += cidrblock($address,'188.208.38.0/23','Leaseweb Network (ASN-LEASEWEB-135). ');
+$ax += cidrblock($address,'188.211.239.0/24','Leaseweb Network (ASN-LEASEWEB-136). ');
+$ax += cidrblock($address,'188.215.35.0/24','Leaseweb Network (ASN-LEASEWEB-137). ');
+$ax += cidrblock($address,'188.241.65.0/24','Leaseweb Network (ASN-LEASEWEB-138). ');
+$ax += cidrblock($address,'190.105.193.0/24','Leaseweb Network (ASN-LEASEWEB-139). ');
+$ax += cidrblock($address,'190.105.195.0/24','Leaseweb Network (ASN-LEASEWEB-140). ');
+$ax += cidrblock($address,'191.96.112.0/24','Leaseweb Network (ASN-LEASEWEB-141). ');
+$ax += cidrblock($address,'191.96.115.0/24','Leaseweb Network (ASN-LEASEWEB-142). ');
+$ax += cidrblock($address,'191.101.16.0/24','Leaseweb Network (ASN-LEASEWEB-143). ');
+$ax += cidrblock($address,'192.36.61.0/24','Leaseweb Network (ASN-LEASEWEB-144). ');
+$ax += cidrblock($address,'192.96.200.0/21','Leaseweb Network (ASN-LEASEWEB-145). ');
+$ax += cidrblock($address,'193.27.72.0/23','Leaseweb Network (ASN-LEASEWEB-146). ');
+$ax += cidrblock($address,'193.43.92.0/24','Leaseweb Network (ASN-LEASEWEB-147). ');
+$ax += cidrblock($address,'193.104.219.0/24','Leaseweb Network (ASN-LEASEWEB-148). ');
 $ax += cidrblock($address,'193.239.4.0/22','Leaseweb Network (ASN-LEASEWEB-149). ');
 $ax += cidrblock($address,'193.242.108.0/24','Leaseweb Network (ASN-LEASEWEB-150). ');
 $ax += cidrblock($address,'194.0.197.0/24','Leaseweb Network (ASN-LEASEWEB-151). ');
@@ -305,27 +305,28 @@ $ax += cidrblock($address,'194.60.71.0/24','Leaseweb Network (ASN-LEASEWEB-152).
 $ax += cidrblock($address,'195.14.2.0/24','Leaseweb Network (ASN-LEASEWEB-153). ');
 $ax += cidrblock($address,'195.14.21.0/24','Leaseweb Network (ASN-LEASEWEB-154). ');
 $ax += cidrblock($address,'195.140.240.0/22','Leaseweb Network (ASN-LEASEWEB-155). ');
-$ax += cidrblock($address,'195.200.82.0/23','Leaseweb Network (ASN-LEASEWEB-156). ');
-$ax += cidrblock($address,'195.242.98.0/23','Leaseweb Network (ASN-LEASEWEB-157). ');
-$ax += cidrblock($address,'198.7.56.0/21','Leaseweb Network (ASN-LEASEWEB-158). ');
-$ax += cidrblock($address,'199.58.84.0/22','Leaseweb Network (ASN-LEASEWEB-159). ');
-$ax += cidrblock($address,'199.115.112.0/21','Leaseweb Network (ASN-LEASEWEB-160). ');
-$ax += cidrblock($address,'207.244.64.0/18','Leaseweb Network (ASN-LEASEWEB-161). ');
-$ax += cidrblock($address,'208.64.45.0/24','Leaseweb Network (ASN-LEASEWEB-162). ');
-$ax += cidrblock($address,'209.192.128.0/17','Leaseweb Network (ASN-LEASEWEB-163). ');
-$ax += cidrblock($address,'212.7.192.0/21','Leaseweb Network (ASN-LEASEWEB-164). ');
-$ax += cidrblock($address,'212.7.200.0/24','Leaseweb Network (ASN-LEASEWEB-165). ');
-$ax += cidrblock($address,'212.7.202.0/24','Leaseweb Network (ASN-LEASEWEB-166). ');
-$ax += cidrblock($address,'212.7.204.0/22','Leaseweb Network (ASN-LEASEWEB-167). ');
-$ax += cidrblock($address,'212.7.208.0/21','Leaseweb Network (ASN-LEASEWEB-168). ');
-$ax += cidrblock($address,'212.19.235.0/24','Leaseweb Network (ASN-LEASEWEB-169). ');
-$ax += cidrblock($address,'212.19.236.0/24','Leaseweb Network (ASN-LEASEWEB-170). ');
-$ax += cidrblock($address,'212.95.32.0/19','Leaseweb Network (ASN-LEASEWEB-171). ');
-$ax += cidrblock($address,'213.142.132.0/22','Leaseweb Network (ASN-LEASEWEB-172). ');
-$ax += cidrblock($address,'213.142.136.0/21','Leaseweb Network (ASN-LEASEWEB-173). ');
-$ax += cidrblock($address,'213.142.144.0/22','Leaseweb Network (ASN-LEASEWEB-174). ');
-$ax += cidrblock($address,'217.20.112.0/20','Leaseweb Network (ASN-LEASEWEB-175). ');
-$ax += cidrblock($address,'217.73.56.0/21','Leaseweb Network (ASN-LEASEWEB-176). ');
+$ax += cidrblock($address,'195.190.146.0/24','Leaseweb Network (ASN-LEASEWEB-156). ');
+$ax += cidrblock($address,'195.200.82.0/23','Leaseweb Network (ASN-LEASEWEB-157). ');
+$ax += cidrblock($address,'195.242.98.0/23','Leaseweb Network (ASN-LEASEWEB-158). ');
+$ax += cidrblock($address,'198.7.56.0/21','Leaseweb Network (ASN-LEASEWEB-159). ');
+$ax += cidrblock($address,'199.58.84.0/22','Leaseweb Network (ASN-LEASEWEB-160). ');
+$ax += cidrblock($address,'199.115.112.0/21','Leaseweb Network (ASN-LEASEWEB-161). ');
+$ax += cidrblock($address,'207.244.64.0/18','Leaseweb Network (ASN-LEASEWEB-162). ');
+$ax += cidrblock($address,'208.64.45.0/24','Leaseweb Network (ASN-LEASEWEB-163). ');
+$ax += cidrblock($address,'209.192.128.0/17','Leaseweb Network (ASN-LEASEWEB-164). ');
+$ax += cidrblock($address,'212.7.192.0/21','Leaseweb Network (ASN-LEASEWEB-165). ');
+$ax += cidrblock($address,'212.7.200.0/24','Leaseweb Network (ASN-LEASEWEB-166). ');
+$ax += cidrblock($address,'212.7.202.0/24','Leaseweb Network (ASN-LEASEWEB-167). ');
+$ax += cidrblock($address,'212.7.204.0/22','Leaseweb Network (ASN-LEASEWEB-168). ');
+$ax += cidrblock($address,'212.7.208.0/21','Leaseweb Network (ASN-LEASEWEB-169). ');
+$ax += cidrblock($address,'212.19.235.0/24','Leaseweb Network (ASN-LEASEWEB-170). ');
+$ax += cidrblock($address,'212.19.236.0/24','Leaseweb Network (ASN-LEASEWEB-171). ');
+$ax += cidrblock($address,'212.95.32.0/19','Leaseweb Network (ASN-LEASEWEB-172). ');
+$ax += cidrblock($address,'213.142.132.0/22','Leaseweb Network (ASN-LEASEWEB-173). ');
+$ax += cidrblock($address,'213.142.136.0/21','Leaseweb Network (ASN-LEASEWEB-174). ');
+$ax += cidrblock($address,'213.142.144.0/22','Leaseweb Network (ASN-LEASEWEB-175). ');
+$ax += cidrblock($address,'217.20.112.0/20','Leaseweb Network (ASN-LEASEWEB-176). ');
+$ax += cidrblock($address,'217.73.56.0/21','Leaseweb Network (ASN-LEASEWEB-177). ');
 
 
 // HOSTING-AS Tehnologii Budushego LLC (updated 2016.01.18 / checked 2016.03.02)
@@ -1693,7 +1694,6 @@ $ax += cidrblock($address,'192.81.128.0/21','Hurricane Electric (ASN-HE1-065). '
 $ax += cidrblock($address,'192.81.196.0/22','Hurricane Electric (ASN-HE1-066). ');
 $ax += cidrblock($address,'192.81.248.0/22','Hurricane Electric (ASN-HE1-067). ');
 $ax += cidrblock($address,'192.88.99.0/24','Hurricane Electric (ASN-HE1-068). ');
-// $ax += cidrblock($address,'192.126.120.0/22','Hurricane Electric (ASN-HE1-069). '); Duplicate of ASN-26484-39
 $ax += cidrblock($address,'192.132.94.0/24','Hurricane Electric (ASN-HE1-070). ');
 $ax += cidrblock($address,'192.136.112.0/24','Hurricane Electric (ASN-HE1-071). ');
 $ax += cidrblock($address,'192.155.80.0/21','Hurricane Electric (ASN-HE1-072). ');
@@ -1728,9 +1728,7 @@ $ax += cidrblock($address,'207.171.226.0/24','Hurricane Electric (ASN-HE1-100). 
 $ax += cidrblock($address,'208.75.96.0/21','Hurricane Electric (ASN-HE1-101). ');
 $ax += cidrblock($address,'209.51.160.0/19','Hurricane Electric (ASN-HE1-102). ');
 $ax += cidrblock($address,'209.150.160.0/19','Hurricane Electric (ASN-HE1-103). ');
-// $ax += cidrblock($address,'213.52.131.0/24','Hurricane Electric (ASN-HE1-104). '); Duplicate of ASN-SLTP-430.
 $ax += cidrblock($address,'216.66.0.0/18','Hurricane Electric (ASN-HE1-105). ');
-// $ax += cidrblock($address,'216.66.64.0/19','Hurricane Electric (ASN-HE1-106). '); Possible access provider (can we confirm this?)
 $ax += cidrblock($address,'216.105.164.0/22','Hurricane Electric (ASN-HE1-107). ');
 $ax += cidrblock($address,'216.126.60.0/22','Hurricane Electric (ASN-HE1-108). ');
 $ax += cidrblock($address,'216.152.64.0/20','Hurricane Electric (ASN-HE1-109). ');
@@ -1758,17 +1756,6 @@ if (((inmatch($whyblockout,'(ASN-HE1-)','')) || (inmatch($whyblockout,'(ASN-HE1-
 	$zbamz += inmatch($useragent,'Feedly',' Feedly bypass. ' ); //74c
 	if ($zbamz > 0){$ax -= 1;}
 }
-
-
-// Virpus Networks, not an access provider ISP. (updated 2016.01.19)
-// AS32875
-$ax += cidrblock($address,'50.115.160.0/20','Virpus Networks (ASN-VP-0). ');
-$ax += cidrblock($address,'173.0.48.0/20','Virpus Networks (ASN-VP-1). ');
-$ax += cidrblock($address,'198.167.136.0/21','Virpus Networks (ASN-VP-2). ');
-$ax += cidrblock($address,'198.175.124.0/22','Virpus Networks (ASN-VP-3). ');
-$ax += cidrblock($address,'199.119.224.0/22','Virpus Networks (ASN-VP-4). ');
-$ax += cidrblock($address,'199.180.128.0/21','Virpus Networks (ASN-VP-5). ');
-$ax += cidrblock($address,'208.89.208.0/21','Virpus Networks (ASN-VP-6). ');
 
 
 // Eonix Corporation, not an access provider ISP. (updated 2016.03.13)
@@ -2517,7 +2504,6 @@ $ax += cidrblock($address,'185.107.52.0/22','Hetzner (ASN-HETZ-16). ');
 $ax += cidrblock($address,'185.126.28.0/22','Hetzner (ASN-HETZ-17). ');
 $ax += cidrblock($address,'188.40.0.0/16','Hetzner (ASN-HETZ-18). ');
 $ax += cidrblock($address,'193.25.170.0/23','Hetzner (ASN-HETZ-19). ');
-$ax += cidrblock($address,'193.47.99.0/24','Hetzner (ASN-HETZ-20). ');
 $ax += cidrblock($address,'193.110.6.0/23','Hetzner (ASN-HETZ-21). ');
 $ax += cidrblock($address,'193.223.77.0/24','Hetzner (ASN-HETZ-22). ');
 $ax += cidrblock($address,'194.42.180.0/22','Hetzner (ASN-HETZ-23). ');
@@ -2870,11 +2856,11 @@ $ax += cidrblock($address,'208.33.13.0/24','Known hostile network (ASN-CSI-7). '
 
 // Avante Hosting (updated 2016.03.13)
 // AS36137
-$ax += cidrblock($address,'66.248.192.0/19 Deny Cloud','Avante Hosting, not an access provider (ASN-AVANTE-0). ');
-$ax += cidrblock($address,'192.119.148.0/24 Deny Cloud','Avante Hosting, not an access provider (ASN-AVANTE-1). ');
-$ax += cidrblock($address,'192.241.8.0/21 Deny Cloud','Avante Hosting, not an access provider (ASN-AVANTE-2). ');
-$ax += cidrblock($address,'198.52.128.0/17 Deny Cloud','Avante Hosting, not an access provider (ASN-AVANTE-3). ');
-$ax += cidrblock($address,'199.195.156.0/22 Deny Cloud','Avante Hosting, not an access provider (ASN-AVANTE-4). ');
+$ax += cidrblock($address,'66.248.192.0/19','Avante Hosting, not an access provider (ASN-AVANTE-0). ');
+$ax += cidrblock($address,'192.119.148.0/24','Avante Hosting, not an access provider (ASN-AVANTE-1). ');
+$ax += cidrblock($address,'192.241.8.0/21','Avante Hosting, not an access provider (ASN-AVANTE-2). ');
+$ax += cidrblock($address,'198.52.128.0/17','Avante Hosting, not an access provider (ASN-AVANTE-3). ');
+$ax += cidrblock($address,'199.195.156.0/22','Avante Hosting, not an access provider (ASN-AVANTE-4). ');
 
 
 // Tex-Link Communications, Inc. (updated 2016.01.21 / checked 2016.03.13)
@@ -3315,32 +3301,25 @@ $ax += cidrblock($address,'198.154.192.0/18','Unified Layer/Hostmonster (ASN-UNI
 // WOWRACK Routing from Hyper to Wowrack
 // Should not be contacting servers outside of routing purposes,
 // but is participating in attacks nonetheless.
-// AS23033 HE Rank: 1163 (updated 2016.01.22)
-$ax += cidrblock($address,'50.115.170.0/23','Wowrack AS23033 (ASN-WOWRACK-00). ');
-$ax += cidrblock($address,'50.115.172.0/23','Wowrack AS23033 (ASN-WOWRACK-01). ');
-$ax += cidrblock($address,'74.121.184.0/21','Wowrack AS23033 (ASN-WOWRACK-02). ');
-$ax += cidrblock($address,'76.191.81.0/24','Wowrack AS23033 (ASN-WOWRACK-03). ');
-$ax += cidrblock($address,'76.191.82.0/23','Wowrack AS23033 (ASN-WOWRACK-04). ');
-$ax += cidrblock($address,'173.0.51.0/24','Wowrack AS23033 (ASN-WOWRACK-05). ');
-$ax += cidrblock($address,'173.0.52.0/24','Wowrack AS23033 (ASN-WOWRACK-06). ');
-$ax += cidrblock($address,'173.0.63.0/24','Wowrack AS23033 (ASN-WOWRACK-07). ');
-$ax += cidrblock($address,'192.34.108.0/22','Wowrack AS23033 (ASN-WOWRACK-08). ');
-$ax += cidrblock($address,'192.251.193.0/24','Wowrack AS23033 (ASN-WOWRACK-09). ');
-$ax += cidrblock($address,'198.167.136.0/23','Wowrack AS23033 (ASN-WOWRACK-10). ');
-$ax += cidrblock($address,'198.167.139.0/24','Wowrack AS23033 (ASN-WOWRACK-11). ');
-$ax += cidrblock($address,'198.167.140.0/22','Wowrack AS23033 (ASN-WOWRACK-12). ');
-$ax += cidrblock($address,'198.175.126.0/23','Wowrack AS23033 (ASN-WOWRACK-13). ');
-$ax += cidrblock($address,'199.180.128.0/24','Wowrack AS23033 (ASN-WOWRACK-14). ');
-$ax += cidrblock($address,'199.180.133.0/24','Wowrack AS23033 (ASN-WOWRACK-15). ');
-$ax += cidrblock($address,'199.180.134.0/24','Wowrack AS23033 (ASN-WOWRACK-16). ');
-$ax += cidrblock($address,'207.244.144.0/20','Wowrack AS23033 (ASN-WOWRACK-17). ');
-$ax += cidrblock($address,'208.89.211.0/24','Wowrack AS23033 (ASN-WOWRACK-18). ');
-$ax += cidrblock($address,'208.89.215.0/24','Wowrack AS23033 (ASN-WOWRACK-19). ');
-$ax += cidrblock($address,'208.115.96.0/19','Wowrack AS23033 (ASN-WOWRACK-20). ');
-$ax += cidrblock($address,'209.40.200.0/24','Wowrack AS23033 (ASN-WOWRACK-21). ');
-$ax += cidrblock($address,'209.90.224.0/20','Wowrack AS23033 (ASN-WOWRACK-22). ');
-$ax += cidrblock($address,'216.176.176.0/20','Wowrack AS23033 (ASN-WOWRACK-23). ');
-$ax += cidrblock($address,'216.244.64.0/19','Wowrack AS23033 (ASN-WOWRACK-24). ');
+// AS23033 HE Rank: 1163 (updated 2016.03.15)
+$ax += cidrblock($address,'50.115.160.0/20','Wowrack AS23033 (ASN-WOWRACK-00). ');
+$ax += cidrblock($address,'74.121.184.0/21','Wowrack AS23033 (ASN-WOWRACK-01). ');
+$ax += cidrblock($address,'76.191.81.0/24','Wowrack AS23033 (ASN-WOWRACK-02). ');
+$ax += cidrblock($address,'76.191.82.0/23','Wowrack AS23033 (ASN-WOWRACK-03). ');
+$ax += cidrblock($address,'173.0.48.0/20','Wowrack AS23033 (ASN-WOWRACK-04). ');
+$ax += cidrblock($address,'192.34.108.0/22','Wowrack AS23033 (ASN-WOWRACK-05). ');
+$ax += cidrblock($address,'192.251.193.0/24','Wowrack AS23033 (ASN-WOWRACK-06). ');
+$ax += cidrblock($address,'198.167.136.0/21','Wowrack AS23033 (ASN-WOWRACK-07). ');
+$ax += cidrblock($address,'198.175.124.0/22','Wowrack AS23033 (ASN-WOWRACK-08). ');
+$ax += cidrblock($address,'199.119.224.0/22','Wowrack AS23033 (ASN-WOWRACK-09). ');
+$ax += cidrblock($address,'199.180.128.0/21','Wowrack AS23033 (ASN-WOWRACK-10). ');
+$ax += cidrblock($address,'207.244.144.0/20','Wowrack AS23033 (ASN-WOWRACK-11). ');
+$ax += cidrblock($address,'208.89.208.0/21','Wowrack AS23033 (ASN-WOWRACK-12). ');
+$ax += cidrblock($address,'208.115.96.0/19','Wowrack AS23033 (ASN-WOWRACK-13). ');
+$ax += cidrblock($address,'209.40.200.0/24','Wowrack AS23033 (ASN-WOWRACK-14). ');
+$ax += cidrblock($address,'209.90.224.0/20','Wowrack AS23033 (ASN-WOWRACK-15). ');
+$ax += cidrblock($address,'216.176.176.0/20','Wowrack AS23033 (ASN-WOWRACK-16). ');
+$ax += cidrblock($address,'216.244.64.0/19','Wowrack AS23033 (ASN-WOWRACK-17). ');
 
 
 // HyperHosting (updated 2016.01.21 / checked 2016.03.13)
@@ -3395,7 +3374,7 @@ $ax += cidrblock($address,'213.238.178.0/23','iDeal Hosting (ASN-iDEAL-18). ');
 
 
 // CyberVerse (Colocated Data Centers)
-// AS11051 (updated 2016.01.22)
+// AS11051 (updated 2016.01.22 / checked 2016.03.15)
 $ax += cidrblock($address,'66.172.0.0/18','CyberVerse (ASN-CBRVRS-0). ');
 $ax += cidrblock($address,'66.180.192.0/20','CyberVerse (ASN-CBRVRS-1). ');
 $ax += cidrblock($address,'76.8.16.0/20','CyberVerse (ASN-CBRVRS-2). ');
@@ -3405,7 +3384,7 @@ $ax += cidrblock($address,'209.151.224.0/19','CyberVerse (ASN-CBRVRS-5). ');
 $ax += cidrblock($address,'216.176.192.0/20','CyberVerse (ASN-CBRVRS-6). ');
 
 
-// Black Lotus Communications (updated 2016.01.22)
+// Black Lotus Communications (updated 2016.01.22 / checked 2016.03.15)
 // Only needed if you use their reverse proxy service. Ask for bypass.
 // ** Next two lines to watch for 'cleaning up'
 // http://sitevet.com/db/asn/AS54489
@@ -4044,7 +4023,6 @@ $ax += cidrblock($address,'172.94.26.0/24','Not authorized to access this site (
 $ax += cidrblock($address,'172.94.31.0/24','Not authorized to access this site (ASN-PSYCHZ-070). ');
 $ax += cidrblock($address,'172.94.32.0/24','Not authorized to access this site (ASN-PSYCHZ-071). ');
 $ax += cidrblock($address,'172.94.34.0/23','Not authorized to access this site (ASN-PSYCHZ-072). ');
-$ax += cidrblock($address,'172.94.36.0/24','Not authorized to access this site (ASN-PSYCHZ-073). ');
 $ax += cidrblock($address,'172.94.38.0/24','Not authorized to access this site (ASN-PSYCHZ-074). ');
 $ax += cidrblock($address,'172.98.213.0/24','Not authorized to access this site (ASN-PSYCHZ-075). ');
 $ax += cidrblock($address,'172.106.0.0/20','Not authorized to access this site (ASN-PSYCHZ-076). ');
@@ -4340,7 +4318,6 @@ $ax += cidrblock($address,'108.61.249.0/24','Choopa Networks (ASN-CHOOPA-111). '
 $ax += cidrblock($address,'108.61.250.0/23','Choopa Networks (ASN-CHOOPA-112). ');
 $ax += cidrblock($address,'108.61.252.0/22','Choopa Networks (ASN-CHOOPA-113). ');
 $ax += cidrblock($address,'131.221.45.0/24','Choopa Networks (ASN-CHOOPA-114). ');
-// $ax += cidrblock($address,'141.95.4.0/24','Choopa Networks (ASN-CHOOPA-115). '); Duplicate of ASN-PSYCHZ-051
 $ax += cidrblock($address,'162.220.219.0/24','Choopa Networks (ASN-CHOOPA-116). ');
 $ax += cidrblock($address,'162.253.176.0/24','Choopa Networks (ASN-CHOOPA-117). ');
 $ax += cidrblock($address,'172.86.144.0/24','Choopa Networks (ASN-CHOOPA-118). ');
