@@ -302,3 +302,23 @@ History/Changelog of this repository (and of those updates merged into it) is as
 - Removed Virpus Networks section (their network is dead; all CIDRs have been absorbed by other networks and their ASNs are no longer reporting).
 - WOWRACK CIDRs updated.
 - Repository updated with new changes.
+
+#####2016-03-18
+- Hostspace Networks CIDRs updated.
+
+#####2016-03-28
+- Unified Layer CIDRs updated.
+- iDeal Hosting CIDRs updated.
+- Nobis Technology Group CIDRs updated.
+
+#####2016-04-01
+- Micfo LLC CIDRs added.
+
+#####2016-04-03
+- CoreSpace, Inc. CIDRs updated.
+- Black Lotus Communications CIDRs updated.
+- MULTACOM CORPORATION CIDRs added.
+- Versaweb, LLC CIDRs updated.
+- Rose Hosting CIDRs added.
+- Latisys-Irvine, LLC CIDRs added.
+- Repository updated with new changes.
