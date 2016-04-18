@@ -322,3 +322,18 @@ History/Changelog of this repository (and of those updates merged into it) is as
 - Rose Hosting CIDRs added.
 - Latisys-Irvine, LLC CIDRs added.
 - Repository updated with new changes.
+
+#####2016-04-13
+- Kintiskton LLC CIDRs updated.
+
+#####2016-04-14
+- PCCW Global CIDRs added.
+
+#####2016-04-17
+- ViaEuropa CIDRs added.
+- Media Temple CIDRs added.
+- Telewings/AHBR CIDRs added.
+- Some of the "minor" CIDRs updated.
+
+#####2016-04-18
+- Repository updated with new changes.

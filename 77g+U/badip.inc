@@ -16,11 +16,9 @@
  *
  * COPYRIGHT 2008-2016 GNU/GPL V.2 BY MIKE H.
  * FOR USE WITH ZB BLOCK OR ANY GNU/GPL V.2 COMPLIANT DERIVATIVE
- *
- * @package Maikuolan/zbb-badip-fork
  */
 
-$zbbversion .= ' / BADIP-2016-04+U.0'; // Version number goes here. (product code)-(Year)-(Month)(issue letter)(+U = Unofficial fork, non-mainlined release).(Build number)
+$zbbversion .= ' / BADIP-2016-04+U.1'; // Version number goes here. (product code)-(Year)-(Month)(issue letter)(+U = Unofficial fork, non-mainlined release).(Build number)
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -29,20 +27,60 @@ global $whyblockout, $ax;
 
 // *IPs and IP Ranges
 
-$ax += lmatch($address,'65.94.3.','Site Scraper (IP-001). ');
-$ax += lmatch($address,'122.221.10.234','Infected Machine (IP-003). ');
-$ax += lmatch($address,'188.40.98.199','EYE De UKRAINE, very aggressive spider (IP-004). ');
-$ax += lmatch($address,'188.40.42.199','YMC AG, very aggressive spider (IP-005). ');
-$ax += iprange($address,'4.78.243.0','4.78.243.255','Quantcast banned network (IP-006). ');
-$ax += iprange($address,'41.210.192.0','41.210.255.255','Movicel Telecomunicacoes LDA Angola (IP-007). ');
+$ax += cidrblock($address,'108.3.64.0/18','Cyberterrorist hiding in this netblock of 16384 IPs (IP-100). '); //71g
+$ax += cidrblock($address,'118.98.0.0/17','Spammy Indonesia Netblock (IP-045). '); // mod 71h
+$ax += cidrblock($address,'178.239.48.0/20','Hostile Belize Block (IP-050). '); //69f
+$ax += cidrblock($address,'194.71.222.0/23','ERRSY-NET: Proxy services for scrapers and SEOs (IP-105). '); // Checked: 2016.04.17 (Not sure if valid; New ASN, "BinaryGrid Industries AB"; "ERRSY-NET" no longer listed); AS24668
+$ax += cidrblock($address,'203.160.0.0/23','Vietnam Junk Mailer/Forum Spammer (Spoofed as 203.160.1.49 localhost!) (IP-069). '); // Updated: 2016.04.17
+$ax += iprange($address,'113.160.0.0','113.191.255.255','localhost spoofing netblock (IP-044). '); // Checked: 2016.04.17 (Not spoofing localhost anymore; On probation; May eventually phase out, or, if new/more problems are encountered, remove this comment).
+$ax += iprange($address,'118.175.254.0','118.175.255.255','Bangkok Attack prone 512 address block (IP-046). ');
+$ax += iprange($address,'122.182.2.0','122.182.2.255','India spammer/malware host (IP-047). ');
+$ax += iprange($address,'124.123.0.0','124.125.255.255','Indian hackers - 192K address netblock is bad (IP-048). ');
+$ax += iprange($address,'141.11.0.0','141.11.255.255','technicolor.c0m (IP-049). '); //69d
+$ax += iprange($address,'173.45.65.155','173.45.65.158','Bot not obeying nofollow (IP-052). '); //71f
+$ax += iprange($address,'187.32.0.0','187.32.255.255','Problematic Brazilian netblock (IP-051). ');
+$ax += iprange($address,'189.112.0.0','189.112.255.255','Problematic Brazilian netblock (IP-056). ');
+$ax += iprange($address,'189.15.0.0','189.15.255.255','Problematic Brazilian netblock (IP-054). ');
+$ax += iprange($address,'189.41.0.0','189.41.255.255','Problematic Brazilian netblock (IP-055). ');
+$ax += iprange($address,'193.200.150.0','193.200.150.255','Anonymizing proxy network, hacker\'s paradise (IP-057). '); // Checked: 2016.04.13 (Good); www.anonymouse.org
+$ax += iprange($address,'194.8.74.0','194.8.75.255','British Virgin Islands Spambots (IP-058). ');
+$ax += iprange($address,'195.238.38.0','195.238.71.255','Problematic netblock (IP-060). ');
+$ax += iprange($address,'195.238.95.0','195.238.118.255','Problematic netblock (IP-061). ');
+$ax += iprange($address,'195.87.102.0','195.87.102.255','Comment spammer netblock (IP-059). ');
+$ax += iprange($address,'200.146.192.0','200.146.255.255','Problematic Brazilian netblock (IP-063). ');
+$ax += iprange($address,'200.170.128.0','200.170.255.255','Problematic Brazilian netblock (IP-064). ');
+$ax += iprange($address,'200.225.192.0','200.225.255.255','Problematic Brazilian netblock (IP-065). ');
+$ax += iprange($address,'200.233.128.0','200.233.255.255','Problematic Brazilian netblock (IP-066). ');
+$ax += iprange($address,'200.63.42.0','200.63.47.255','panamaserver.com .ru (IP-062). ');
+$ax += iprange($address,'201.16.128.0','201.16.255.255','Problematic Brazilian netblock (IP-067). ');
+$ax += iprange($address,'201.48.0.0','201.48.255.255','Problematic Brazilian netblock (IP-068). ');
+$ax += iprange($address,'204.11.16.0','204.11.19.255','onestop.net (IP-071). ');
+$ax += iprange($address,'204.124.180.0','204.124.183.255','Comment spammer netblock (IP-074). ');
+$ax += iprange($address,'204.244.109.240','204.244.109.247','Tynt, Evil Proxy (IP-075). ');
+$ax += iprange($address,'204.244.120.176','204.244.120.183','Tynt, Evil Proxy (IP-076). ');
+$ax += iprange($address,'206.161.0.0','206.161.255.255','Questionable Hosts, some malicious. Do not need access to your site (IP-077). ');
+$ax += iprange($address,'208.115.111.240','208.115.111.255','Dotbot - Paid Service SEO Service (Keyword Spamming Aides) (IP-085). ');
+$ax += iprange($address,'209.135.34.0','209.135.157.255','Questionable Hosts, some malicious. Do not need access to your site (IP-087). ');
+$ax += iprange($address,'209.249.0.0','209.249.255.255','HUGE block of spam-mail servers, and scanbots (IP-088). ');
+$ax += iprange($address,'209.62.96.0','209.62.127.255','Questionable Hosts, some malicious. Do not need access to your site (IP-086). ');
+$ax += iprange($address,'210.0.160.0','210.0.255.255','Japanese servers on Hong Kong netblock, suspicious (IP-089). ');
+$ax += iprange($address,'211.43.0.0','211.45.191.255','Korean Suspicious (IP-090). ');
+$ax += iprange($address,'211.91.0.0','211.97.255.255','Chinese Bad Block (IP-091). ');
+$ax += iprange($address,'212.113.41.0','212.113.63.255','Ukraine Bad Block (IP-092). ');
+$ax += iprange($address,'212.178.0.0','212.178.29.255','Ukraine Bad Block (IP-094). ');
+$ax += iprange($address,'213.166.128.0','213.166.159.255','Saudi Arabia bothost (IP-095). ');
+$ax += iprange($address,'216.240.128.0','216.240.159.255','Abusive Network (IP-096). '); //71d
+$ax += iprange($address,'218.56.21.0','218.56.21.255','Chinese Bad Block (IP-097). ');
+$ax += iprange($address,'222.124.31.0','222.124.255.255','India Bad Block (IP-098). ');
+$ax += iprange($address,'5.135.18.160','5.135.18.191','Leak ID scraper. (IP-102). '); //71
 $ax += iprange($address,'59.93.0.0','59.93.255.255','India bad block (IP-008). ');
 $ax += iprange($address,'65.208.151.112','65.208.151.119','Jarvis Universal Purchase Company (IP-011). ');
 $ax += iprange($address,'67.215.230.0','67.215.230.255','Email harvester from India (setooz.com) (IP-014). ');
 $ax += iprange($address,'68.168.216.0','68.168.216.255','Attacking /24 (IP-015). ');
+$ax += iprange($address,'69.210.185.0','69.210.185.7','spunge.org (IP-019). ');
 $ax += iprange($address,'69.36.0.0','69.36.15.255','3IX / host-care (IP-016). ');
 $ax += iprange($address,'69.72.128.0','69.72.159.255','Hacker/Spammer Hosts (IP-017). ');
 $ax += iprange($address,'69.89.16.0','69.89.31.255','Hacker/Spammer Hosts (IP-018). ');
-$ax += iprange($address,'69.210.185.0','69.210.185.7','spunge.org (IP-019). ');
 $ax += iprange($address,'72.20.99.0','72.20.99.255','Content scraper for paid service (IP-020). ');
 $ax += iprange($address,'72.27.0.0','72.27.213.104','Jamaica Spammer Network (frittobay) (IP-021). '); //70a split
 $ax += iprange($address,'72.27.213.106','72.27.223.255','Jamaica Spammer Network (frittobay) (IP-022). '); //70a split
@@ -57,62 +95,39 @@ $ax += iprange($address,'84.201.224.0','84.201.239.255','Spam network (IP-031). 
 $ax += iprange($address,'85.131.188.0','85.131.191.255','.de hosts (IP-032). ');
 $ax += iprange($address,'87.101.0.0','87.101.15.255','PureHosting.nl, a possible extention of keyweb.de .ru (bothost) (IP-033). ');
 $ax += iprange($address,'87.118.68.0','87.118.122.255','keyweb.de .ru (bothost) (IP-034). ');
-$ax += iprange($address,'87.248.64.0','87.248.95.255','Polish Bad Block (IP-035). ');
 $ax += iprange($address,'87.248.162.0','87.248.189.255','Moldavia Bad Block (IP-036). ');
+$ax += iprange($address,'87.248.64.0','87.248.95.255','Polish Bad Block (IP-035). ');
 $ax += iprange($address,'91.205.40.0','91.205.43.255','British Virgin Islands Spambots (IP-037). ');
-$ax += iprange($address,'95.24.0.0','95.24.255.255','Corbina.ru (IP-039). ');
-$ax += iprange($address,'113.160.0.0','113.191.255.255','localhost spoofing netblock (IP-044). ');
-$ax += cidrblock($address,'118.98.0.0/17','Spammy Indonesia Netblock (IP-045). '); // mod 71h
-$ax += iprange($address,'118.175.254.0','118.175.255.255','Bangkok Attack prone 512 address block (IP-046). ');
-$ax += iprange($address,'122.182.2.0','122.182.2.255','India spammer/malware host (IP-047). ');
-$ax += iprange($address,'124.123.0.0','124.125.255.255','Indian hackers - 192K address netblock is bad (IP-048). ');
-$ax += iprange($address,'141.11.0.0','141.11.255.255','technicolor.c0m (IP-049). '); //69d
-$ax += cidrblock($address,'178.239.48.0/20','Hostile Belize Block (IP-050). '); //69f
-$ax += iprange($address,'187.32.0.0','187.32.255.255','Problematic Brazilian netblock (IP-051). ');
-$ax += iprange($address,'173.45.65.155','173.45.65.158','Bot not obeying nofollow (IP-052). '); //71f
-$ax += iprange($address,'189.15.0.0','189.15.255.255','Problematic Brazilian netblock (IP-054). ');
-$ax += iprange($address,'189.41.0.0','189.41.255.255','Problematic Brazilian netblock (IP-055). ');
-$ax += iprange($address,'189.112.0.0','189.112.255.255','Problematic Brazilian netblock (IP-056). ');
-$ax += iprange($address,'193.200.150.0','193.200.150.255','Anonymizing proxy network, hacker\'s paradise (IP-057). ');
-$ax += iprange($address,'194.8.74.0','194.8.75.255','British Virgin Islands Spambots (IP-058). ');
-$ax += iprange($address,'195.87.102.0','195.87.102.255','Comment spammer netblock (IP-059). ');
-$ax += iprange($address,'195.238.38.0','195.238.71.255','Problematic netblock (IP-060). ');
-$ax += iprange($address,'195.238.95.0','195.238.118.255','Problematic netblock (IP-061). ');
-$ax += iprange($address,'200.63.42.0','200.63.47.255','panamaserver.com .ru (IP-062). ');
-$ax += iprange($address,'200.146.192.0','200.146.255.255','Problematic Brazilian netblock (IP-063). ');
-$ax += iprange($address,'200.170.128.0','200.170.255.255','Problematic Brazilian netblock (IP-064). ');
-$ax += iprange($address,'200.225.192.0','200.225.255.255','Problematic Brazilian netblock (IP-065). ');
-$ax += iprange($address,'200.233.128.0','200.233.255.255','Problematic Brazilian netblock (IP-066). ');
-$ax += iprange($address,'201.16.128.0','201.16.255.255','Problematic Brazilian netblock (IP-067). ');
-$ax += iprange($address,'201.48.0.0','201.48.255.255','Problematic Brazilian netblock (IP-068). ');
-$ax += iprange($address,'203.160.1.0','203.160.1.255','Vietnam Junk Mailer/Forum Spammer (Spoofed as 203.160.1.49 localhost!) (IP-069). ');
-$ax += iprange($address,'204.11.16.0','204.11.19.255','onestop.net (IP-071). ');
-$ax += iprange($address,'204.124.180.0','204.124.183.255','Comment spammer netblock (IP-074). ');
-$ax += iprange($address,'204.244.109.240','204.244.109.247','Tynt, Evil Proxy (IP-075). ');
-$ax += iprange($address,'204.244.120.176','204.244.120.183','Tynt, Evil Proxy (IP-076). ');
-$ax += iprange($address,'206.161.0.0','206.161.255.255','Questionable Hosts, some malicious. Do not need access to your site (IP-077). ');
-$ax += iprange($address,'207.226.88.0','207.226.95.255','many sitehosts - questionable behavior (IP-080). ');
-$ax += iprange($address,'208.115.111.240','208.115.111.255','Dotbot - Paid Service SEO Service (Keyword Spamming Aides) (IP-085). ');
-$ax += iprange($address,'209.62.96.0','209.62.127.255','Questionable Hosts, some malicious. Do not need access to your site (IP-086). ');
-$ax += iprange($address,'209.135.34.0','209.135.157.255','Questionable Hosts, some malicious. Do not need access to your site (IP-087). ');
-$ax += iprange($address,'209.249.0.0','209.249.255.255','HUGE block of spam-mail servers, and scanbots (IP-088). ');
-$ax += iprange($address,'210.0.160.0','210.0.255.255','Japanese servers on Hong Kong netblock, suspicious (IP-089). ');
-$ax += iprange($address,'211.43.0.0','211.45.191.255','Korean Suspicious (IP-090). ');
-$ax += iprange($address,'211.91.0.0','211.97.255.255','Chinese Bad Block (IP-091). ');
-$ax += iprange($address,'212.113.41.0','212.113.63.255','Ukraine Bad Block (IP-092). ');
-$ax += iprange($address,'212.178.0.0','212.178.29.255','Ukraine Bad Block (IP-094). ');
-$ax += iprange($address,'213.166.128.0','213.166.159.255','Saudi Arabia bothost (IP-095). ');
-$ax += iprange($address,'216.240.128.0','216.240.159.255','Abusive Network (IP-096). '); //71d
-$ax += iprange($address,'218.56.21.0','218.56.21.255','Chinese Bad Block (IP-097). ');
-$ax += iprange($address,'222.124.31.0','222.124.255.255','India Bad Block (IP-098). ');
-$ax += cidrblock($address,'108.3.64.0/18','Cyberterrorist hiding in this netblock of 16384 IPs (IP-100). '); //71g
-$ax += cidrblock($address,'93.182.128.0/18','Heavy abuse Swedish VPN VIAEU-AS47155 (IP-101). '); //71
-$ax += iprange($address,'5.135.18.160','5.135.18.191','Leak ID scraper. (IP-102). '); //71
-$ax += cidrblock($address,'5.144.176.0/24','HSHNetworkInternational (IP-103). '); //71
-$ax += cidrblock($address,'194.71.222.0/23','ERRSY-NET: Proxy services for scrapers and SEOs (IP-105). '); //72b
-$ax += cidrblock($address,'178.238.232.0/21','ice2solutions , known dangerous host/network (IP-106). '); //74c
-$ax += lmatch($address,'78.158.11.226','Project Honey Pot rule-breaker, vulnerability scanner (IP-107). ');
-$ax += cidrblock($address,'72.10.32.0/19','MediaTemple, illegal nameserver response on reverse lookup. Caught scraping (IP-099). ');
+$ax += iprange($address,'95.24.0.0','95.24.255.255','Corbina.ru (IP-039). '); // Checked: 2016.04.17 (Valid and a very high spam risk, but belongs to a DSL provider, and doesn't cover the whole ASN; could be nixed or expanded, pending on preference); AS8402
+$ax += lmatch($address,'78.158.11.226','Project Honey Pot rule-breaker, vulnerability scanner (IP-107). '); // Checked: 2016.04.17 (Good); AS43700
+
+
+// ahbr company limited (updated 2016.04.17)
+// AS30938
+$ax += cidrblock($address,'5.39.248.0/21','Telewings/AHBR, data center and source of spam (ASN-AHBR-00). ');
+$ax += cidrblock($address,'5.144.176.0/21','Telewings/AHBR, data center and source of spam (ASN-AHBR-01). ');
+$ax += cidrblock($address,'5.178.96.0/21','Telewings/AHBR, data center and source of spam (ASN-AHBR-02). ');
+$ax += cidrblock($address,'5.178.104.0/24','Telewings/AHBR, data center and source of spam (ASN-AHBR-03). ');
+$ax += cidrblock($address,'5.178.108.0/22','Telewings/AHBR, data center and source of spam (ASN-AHBR-04). ');
+$ax += cidrblock($address,'31.192.240.0/21','Telewings/AHBR, data center and source of spam (ASN-AHBR-05). ');
+$ax += cidrblock($address,'185.5.36.0/22','Telewings/AHBR, data center and source of spam (ASN-AHBR-06). ');
+
+
+// Media Temple, Inc. Illegal nameserver response on reverse lookup. Caught scraping (updated 2016.04.17)
+// AS31815
+$ax += cidrblock($address,'64.13.192.0/18','Media Temple, Inc. Illegal nameserver response on reverse lookup. Caught scraping (ASN-MEDIATEMPLE-00). ');
+$ax += cidrblock($address,'64.207.128.0/18','Media Temple, Inc. Illegal nameserver response on reverse lookup. Caught scraping (ASN-MEDIATEMPLE-01). ');
+$ax += cidrblock($address,'70.32.64.0/18','Media Temple, Inc. Illegal nameserver response on reverse lookup. Caught scraping (ASN-MEDIATEMPLE-02). ');
+$ax += cidrblock($address,'72.10.32.0/19','Media Temple, Inc. Illegal nameserver response on reverse lookup. Caught scraping (ASN-MEDIATEMPLE-03). ');
+$ax += cidrblock($address,'72.47.192.0/18','Media Temple, Inc. Illegal nameserver response on reverse lookup. Caught scraping (ASN-MEDIATEMPLE-04). ');
+$ax += cidrblock($address,'205.186.128.0/18','Media Temple, Inc. Illegal nameserver response on reverse lookup. Caught scraping (ASN-MEDIATEMPLE-05). ');
+$ax += cidrblock($address,'216.70.64.0/18','Media Temple, Inc. Illegal nameserver response on reverse lookup. Caught scraping (ASN-MEDIATEMPLE-06). ');
+
+
+// ViaEuropa i Lund AB (updated 2016.04.17)
+// AS47155
+$ax += cidrblock($address,'93.182.128.0/18','Heavy abuse Swedish VPN (ASN-VIAEU-00). ');
+$ax += cidrblock($address,'185.123.228.0/22','Heavy abuse Swedish VPN (ASN-VIAEU-01). ');
 
 
 // Ecatel (updated 2016.01.19 / checked 2016.03.02)
@@ -751,27 +766,8 @@ $ax += cidrblock($address,'203.135.58.0/24','Pakistan Telecom AS45595 (ASN-PkT-3
 $ax += cidrblock($address,'203.135.61.0/24','Pakistan Telecom AS45595 (ASN-PkT-39). ');
 
 
-// Kintiskton LLC, Mark Manager copyright check bot (abusive history) (updated 2016.01.22)
-$ax += cidrblock($address,'63.110.158.0/24','Kintiskton LLC (ASN-KINT-00). ');
+// Kintiskton LLC, Mark Manager copyright check bot (abusive history) (updated 2016.04.13)
 $ax += cidrblock($address,'63.110.187.0/24','Kintiskton LLC (ASN-KINT-01). ');
-$ax += cidrblock($address,'64.124.0.0/15','Kintiskton LLC (ASN-KINT-02). ');
-$ax += cidrblock($address,'65.200.47.0/24','Kintiskton LLC (ASN-KINT-03). ');
-$ax += cidrblock($address,'65.200.90.0/24','Kintiskton LLC (ASN-KINT-04). ');
-$ax += cidrblock($address,'65.208.151.0/24','Kintiskton LLC (ASN-KINT-05). ');
-$ax += cidrblock($address,'65.208.174.0/24','Kintiskton LLC (ASN-KINT-06). ');
-$ax += cidrblock($address,'65.208.181.0/24','Kintiskton LLC (ASN-KINT-07). ');
-$ax += cidrblock($address,'65.208.185.0/24','Kintiskton LLC (ASN-KINT-08). ');
-$ax += cidrblock($address,'65.208.189.0/24','Kintiskton LLC (ASN-KINT-09). ');
-$ax += cidrblock($address,'65.211.195.0/24','Kintiskton LLC (ASN-KINT-10). ');
-$ax += cidrblock($address,'70.42.144.0/23','Kintiskton LLC (ASN-KINT-11). ');
-$ax += cidrblock($address,'76.216.100.0/24','Kintiskton LLC (ASN-KINT-12). ');
-$ax += cidrblock($address,'128.177.0.0/16','Kintiskton LLC (ASN-KINT-13). ');
-$ax += cidrblock($address,'207.126.96.0/19','Kintiskton LLC (ASN-KINT-14). ');
-$ax += cidrblock($address,'208.184.0.0/15','Kintiskton LLC (ASN-KINT-15). ');
-$ax += cidrblock($address,'209.66.64.0/18','Kintiskton LLC (ASN-KINT-16). ');
-$ax += cidrblock($address,'209.133.0.0/17','Kintiskton LLC (ASN-KINT-17). ');
-$ax += cidrblock($address,'209.249.0.0/16','Kintiskton LLC (ASN-KINT-18). ');
-$ax += cidrblock($address,'216.200.0.0/16','Kintiskton LLC (ASN-KINT-19). ');
 
 
 // Limestone networks, Hosts of hackforums.net (updated 2016.01.19 / checked 2016.03.04)
@@ -1364,13 +1360,13 @@ $ax += cidrblock($address,'216.239.104.0/24','Softlayer/ThePlanet/Everyone/Reach
 //Bypasses for (ASN-SLTP)
 
 if ((inmatch($whyblockout,'(ASN-SLTP-','')) && ($ax > 0)){
-	$zbamz = 0;
-	$zbamz += inmatch($lcuseragent,'showyoubot','ShowyouBot bypass. '); //72b
-	$zbamz += inmatch($lcuseragent,'disqus','Disqus bypass. '); //74a
-	$zbamz += inmatch($useragent,'Feedspot http://www.feedspot.com','Feedspot bypass. '); //74c
-	$zbamz += inmatch($useragent,'Superfeedr bot/2.0','Superfeedr bypass. '); //74c
-	$zbamz += inmatch($useragent,'Feedbot','Feedbot bypass. '); //74c	
-	if ($zbamz > 0){$ax -= 1;}
+    $zbamz = 0;
+    $zbamz += inmatch($lcuseragent,'showyoubot','ShowyouBot bypass. '); //72b
+    $zbamz += inmatch($lcuseragent,'disqus','Disqus bypass. '); //74a
+    $zbamz += inmatch($useragent,'Feedspot http://www.feedspot.com','Feedspot bypass. '); //74c
+    $zbamz += inmatch($useragent,'Superfeedr bot/2.0','Superfeedr bypass. '); //74c
+    $zbamz += inmatch($useragent,'Feedbot','Feedbot bypass. '); //74c    
+    if ($zbamz > 0){$ax -= 1;}
 }
 
 // Prolexic Technologies DDoS mitigation services. (updated 2016.01.20)
@@ -1743,11 +1739,11 @@ $ax += cidrblock($address,'216.229.96.0/20','Hurricane Electric (ASN-HE1-122). '
 //Bypasses for (ASN-HEx) (mod 74d 77g 2016.01.23/BADIP-2016-01+U.9)
 
 if (((inmatch($whyblockout,'(ASN-HE1-)','')) || (inmatch($whyblockout,'(ASN-HE1-019)',''))) && ($ax > 0)){
-	$zbamz = 0;
-	$zbamz += rmatch($lcuseragent,'.getpebble.com','Nice enough to ask bypass. '); //74e
+    $zbamz = 0;
+    $zbamz += rmatch($lcuseragent,'.getpebble.com','Nice enough to ask bypass. '); //74e
     $zbamz += inmatch($useragent,'Feedspot http://www.feedspot.com',' Feedspot bypass. ' ); //74c
-	$zbamz += inmatch($useragent,'Feedly',' Feedly bypass. ' ); //74c
-	if ($zbamz > 0){$ax -= 1;}
+    $zbamz += inmatch($useragent,'Feedly',' Feedly bypass. ' ); //74c
+    if ($zbamz > 0){$ax -= 1;}
 }
 
 
@@ -4788,6 +4784,79 @@ $ax += cidrblock($address,'216.158.96.0/20','Latisys-Irvine (ASN-LIRV-14). ');
 $ax += cidrblock($address,'216.211.226.0/23','Latisys-Irvine (ASN-LIRV-15). ');
 $ax += cidrblock($address,'216.211.237.0/24','Latisys-Irvine (ASN-LIRV-16). ');
 $ax += cidrblock($address,'216.211.238.0/24','Latisys-Irvine (ASN-LIRV-17). ');
+
+
+// PCCW Global
+// AS5693 (updated 2016.04.14)
+$ax += cidrblock($address,'23.32.176.0/20','PCCW Global (ASN-PCCW-00). ');
+$ax += cidrblock($address,'23.33.44.0/22','PCCW Global (ASN-PCCW-01). ');
+$ax += cidrblock($address,'23.33.80.0/20','PCCW Global (ASN-PCCW-02). ');
+$ax += cidrblock($address,'23.46.16.0/23','PCCW Global (ASN-PCCW-03). ');
+$ax += cidrblock($address,'23.60.78.0/23','PCCW Global (ASN-PCCW-04). ');
+$ax += cidrblock($address,'23.60.112.0/20','PCCW Global (ASN-PCCW-05). ');
+$ax += cidrblock($address,'23.60.128.0/20','PCCW Global (ASN-PCCW-06). ');
+$ax += cidrblock($address,'23.60.144.0/22','PCCW Global (ASN-PCCW-07). ');
+$ax += cidrblock($address,'41.79.244.0/22','PCCW Global (ASN-PCCW-08). ');
+$ax += cidrblock($address,'41.79.248.0/23','PCCW Global (ASN-PCCW-09). ');
+$ax += cidrblock($address,'41.221.208.0/20','PCCW Global (ASN-PCCW-10). ');
+$ax += cidrblock($address,'63.216.0.0/13','PCCW Global (ASN-PCCW-11). ');
+$ax += cidrblock($address,'65.72.64.0/20','PCCW Global (ASN-PCCW-12). ');
+$ax += cidrblock($address,'69.1.66.0/24','PCCW Global (ASN-PCCW-13). ');
+$ax += cidrblock($address,'69.1.80.0/24','PCCW Global (ASN-PCCW-14). ');
+$ax += cidrblock($address,'69.1.86.0/23','PCCW Global (ASN-PCCW-15). ');
+$ax += cidrblock($address,'69.1.88.0/24','PCCW Global (ASN-PCCW-16). ');
+$ax += cidrblock($address,'103.17.116.0/22','PCCW Global (ASN-PCCW-17). ');
+$ax += cidrblock($address,'103.20.192.0/22','PCCW Global (ASN-PCCW-18). ');
+$ax += cidrblock($address,'103.24.92.0/22','PCCW Global (ASN-PCCW-19). ');
+$ax += cidrblock($address,'103.27.176.0/22','PCCW Global (ASN-PCCW-20). ');
+$ax += cidrblock($address,'103.30.4.0/22','PCCW Global (ASN-PCCW-21). ');
+$ax += cidrblock($address,'103.36.52.0/22','PCCW Global (ASN-PCCW-22). ');
+$ax += cidrblock($address,'103.41.16.0/22','PCCW Global (ASN-PCCW-23). ');
+$ax += cidrblock($address,'103.56.136.0/22','PCCW Global (ASN-PCCW-24). ');
+$ax += cidrblock($address,'103.226.152.0/22','PCCW Global (ASN-PCCW-25). ');
+$ax += cidrblock($address,'103.230.108.0/22','PCCW Global (ASN-PCCW-26). ');
+$ax += cidrblock($address,'103.234.96.0/22','PCCW Global (ASN-PCCW-27). ');
+$ax += cidrblock($address,'103.244.148.0/22','PCCW Global (ASN-PCCW-28). ');
+$ax += cidrblock($address,'104.95.20.0/22','PCCW Global (ASN-PCCW-29). ');
+$ax += cidrblock($address,'104.95.24.0/21','PCCW Global (ASN-PCCW-30). ');
+$ax += cidrblock($address,'104.95.32.0/19','PCCW Global (ASN-PCCW-31). ');
+$ax += cidrblock($address,'104.95.64.0/19','PCCW Global (ASN-PCCW-32). ');
+$ax += cidrblock($address,'104.99.60.0/22','PCCW Global (ASN-PCCW-33). ');
+$ax += cidrblock($address,'104.99.96.0/19','PCCW Global (ASN-PCCW-34). ');
+$ax += cidrblock($address,'104.99.128.0/23','PCCW Global (ASN-PCCW-35). ');
+$ax += cidrblock($address,'112.78.49.0/24','PCCW Global (ASN-PCCW-36). ');
+$ax += cidrblock($address,'112.121.42.0/24','PCCW Global (ASN-PCCW-37). ');
+$ax += cidrblock($address,'116.66.216.0/21','PCCW Global (ASN-PCCW-38). ');
+$ax += cidrblock($address,'121.50.191.0/24','PCCW Global (ASN-PCCW-39). ');
+$ax += cidrblock($address,'122.10.203.0/24','PCCW Global (ASN-PCCW-40). ');
+$ax += cidrblock($address,'123.108.119.0/24','PCCW Global (ASN-PCCW-41). ');
+$ax += cidrblock($address,'146.222.18.0/24','PCCW Global (ASN-PCCW-42). ');
+$ax += cidrblock($address,'146.222.35.0/24','PCCW Global (ASN-PCCW-43). ');
+$ax += cidrblock($address,'146.222.187.0/24','PCCW Global (ASN-PCCW-44). ');
+$ax += cidrblock($address,'146.222.194.0/24','PCCW Global (ASN-PCCW-45). ');
+$ax += cidrblock($address,'149.134.175.0/24','PCCW Global (ASN-PCCW-46). ');
+$ax += cidrblock($address,'169.239.144.0/22','PCCW Global (ASN-PCCW-47). ');
+$ax += cidrblock($address,'185.10.106.0/24','PCCW Global (ASN-PCCW-48). ');
+$ax += cidrblock($address,'192.221.77.0/24','PCCW Global (ASN-PCCW-49). ');
+$ax += cidrblock($address,'196.216.156.0/24','PCCW Global (ASN-PCCW-50). ');
+$ax += cidrblock($address,'198.69.128.0/20','PCCW Global (ASN-PCCW-51). ');
+$ax += cidrblock($address,'199.0.216.0/21','PCCW Global (ASN-PCCW-52). ');
+$ax += cidrblock($address,'202.183.39.0/24','PCCW Global (ASN-PCCW-53). ');
+$ax += cidrblock($address,'203.5.148.0/24','PCCW Global (ASN-PCCW-54). ');
+$ax += cidrblock($address,'203.30.26.0/23','PCCW Global (ASN-PCCW-55). ');
+$ax += cidrblock($address,'204.180.160.0/19','PCCW Global (ASN-PCCW-56). ');
+$ax += cidrblock($address,'205.161.96.0/20','PCCW Global (ASN-PCCW-57). ');
+$ax += cidrblock($address,'205.177.0.0/16','PCCW Global (ASN-PCCW-58). ');
+$ax += cidrblock($address,'205.252.0.0/16','PCCW Global (ASN-PCCW-59). ');
+$ax += cidrblock($address,'206.161.0.0/16','PCCW Global (ASN-PCCW-60). ');
+$ax += cidrblock($address,'207.176.0.0/17','PCCW Global (ASN-PCCW-61). ');
+$ax += cidrblock($address,'207.226.0.0/16','PCCW Global (ASN-PCCW-62). ');
+$ax += cidrblock($address,'209.8.0.0/15','PCCW Global (ASN-PCCW-63). ');
+$ax += cidrblock($address,'209.170.64.0/23','PCCW Global (ASN-PCCW-64). ');
+$ax += cidrblock($address,'213.248.118.0/23','PCCW Global (ASN-PCCW-65). ');
+$ax += cidrblock($address,'213.248.120.0/23','PCCW Global (ASN-PCCW-66). ');
+$ax += cidrblock($address,'217.113.64.0/19','PCCW Global (ASN-PCCW-67). ');
+$ax += cidrblock($address,'217.156.160.0/21','PCCW Global (ASN-PCCW-68). ');
 
 
 // *More, and smaller bad networks to avoid...
