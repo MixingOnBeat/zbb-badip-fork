@@ -18,7 +18,7 @@
  * FOR USE WITH ZB BLOCK OR ANY GNU/GPL V.2 COMPLIANT DERIVATIVE
  */
 
-$zbbversion .= ' / BADIP-2016-04+U.1'; // Version number goes here. (product code)-(Year)-(Month)(issue letter)(+U = Unofficial fork, non-mainlined release).(Build number)
+$zbbversion .= ' / BADIP-2016-04+U.2'; // Version number goes here. (product code)-(Year)-(Month)(issue letter)(+U = Unofficial fork, non-mainlined release).(Build number)
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -346,7 +346,7 @@ $ax += cidrblock($address,'194.54.88.0/22','AS41665 (AS-HATB-1). ');
 $ax += cidrblock($address,'213.155.0.0/19','AS41665 (AS-HATB-2). ');
 
 
-// MYLOC (updated 2016.03.02)
+// MYLOC (updated 2016.04.23)
 // AS24961
 $ax += cidrblock($address,'5.104.104.0/21','Myloc AS24961 (AS-MYLOC-00). ');
 $ax += cidrblock($address,'5.199.128.0/20','Myloc AS24961 (AS-MYLOC-01). ');
@@ -379,16 +379,17 @@ $ax += cidrblock($address,'146.0.32.0/20','Myloc AS24961 (AS-MYLOC-27). ');
 $ax += cidrblock($address,'185.15.244.0/22','Myloc AS24961 (AS-MYLOC-28). ');
 $ax += cidrblock($address,'185.97.5.0/24','Myloc AS24961 (AS-MYLOC-29). ');
 $ax += cidrblock($address,'185.114.108.0/24','Myloc AS24961 (AS-MYLOC-30). ');
-$ax += cidrblock($address,'188.214.93.0/24','Myloc AS24961 (AS-MYLOC-31). ');
-$ax += cidrblock($address,'191.96.66.0/24','Myloc AS24961 (AS-MYLOC-32). ');
-$ax += cidrblock($address,'193.22.251.0/24','Myloc AS24961 (AS-MYLOC-33). ');
-$ax += cidrblock($address,'193.41.200.0/24','Myloc AS24961 (AS-MYLOC-34). ');
-$ax += cidrblock($address,'193.47.99.0/24','Myloc AS24961 (AS-MYLOC-35). ');
-$ax += cidrblock($address,'193.111.136.0/21','Myloc AS24961 (AS-MYLOC-36). ');
-$ax += cidrblock($address,'193.111.198.0/23','Myloc AS24961 (AS-MYLOC-37). ');
-$ax += cidrblock($address,'199.201.240.0/24','Myloc AS24961 (AS-MYLOC-38). ');
-$ax += cidrblock($address,'213.202.208.0/20','Myloc AS24961 (AS-MYLOC-39). ');
-$ax += cidrblock($address,'217.79.176.0/20','Myloc AS24961 (AS-MYLOC-40). ');
+$ax += cidrblock($address,'185.144.236.0/22','Myloc AS24961 (AS-MYLOC-31). ');
+$ax += cidrblock($address,'188.214.93.0/24','Myloc AS24961 (AS-MYLOC-32). ');
+$ax += cidrblock($address,'191.96.66.0/24','Myloc AS24961 (AS-MYLOC-33). ');
+$ax += cidrblock($address,'193.22.251.0/24','Myloc AS24961 (AS-MYLOC-34). ');
+$ax += cidrblock($address,'193.41.200.0/24','Myloc AS24961 (AS-MYLOC-35). ');
+$ax += cidrblock($address,'193.47.99.0/24','Myloc AS24961 (AS-MYLOC-36). ');
+$ax += cidrblock($address,'193.111.136.0/21','Myloc AS24961 (AS-MYLOC-37). ');
+$ax += cidrblock($address,'193.111.198.0/23','Myloc AS24961 (AS-MYLOC-38). ');
+$ax += cidrblock($address,'199.201.240.0/24','Myloc AS24961 (AS-MYLOC-39). ');
+$ax += cidrblock($address,'213.202.208.0/20','Myloc AS24961 (AS-MYLOC-40). ');
+$ax += cidrblock($address,'217.79.176.0/20','Myloc AS24961 (AS-MYLOC-41). ');
 
 
 // INFOBOX (updated 2016.01.18 / checked 2016.03.02)
@@ -852,46 +853,46 @@ $ax += cidrblock($address,'188.214.159.0/24','Romainian network trying to hack u
 $ax += cidrblock($address,'188.214.192.0/24','Romainian network trying to hack user accounts (ASN-AS41011-09). ');
 
 
-// Swiftway / Botmaster Labs (updated 2016.01.19)
+// Swiftway / Botmaster Labs (updated 2016.04.23)
 // AS35017
 $ax += cidrblock($address,'5.56.133.0/24','Swiftway / Botmaster Labs AS35017 (ASN-SFT-00). ');
-$ax += cidrblock($address,'5.61.28.0/24','Swiftway / Botmaster Labs AS35017 (ASN-SFT-01). ');
-$ax += cidrblock($address,'23.227.192.0/20','Swiftway / Botmaster Labs AS35017 (ASN-SFT-02). ');
-$ax += cidrblock($address,'31.187.78.0/24','Swiftway / Botmaster Labs AS35017 (ASN-SFT-03). ');
-$ax += cidrblock($address,'37.1.208.0/21','Swiftway / Botmaster Labs AS35017 (ASN-SFT-04). ');
-$ax += cidrblock($address,'37.72.168.0/21','Swiftway / Botmaster Labs AS35017 (ASN-SFT-05). ');
-$ax += cidrblock($address,'38.69.204.0/22','Swiftway / Botmaster Labs AS35017 (ASN-SFT-06). ');
-$ax += cidrblock($address,'45.74.17.0/24','Swiftway / Botmaster Labs AS35017 (ASN-SFT-07). ');
-$ax += cidrblock($address,'45.74.18.0/23','Swiftway / Botmaster Labs AS35017 (ASN-SFT-08). ');
-$ax += cidrblock($address,'45.74.20.0/22','Swiftway / Botmaster Labs AS35017 (ASN-SFT-09). ');
-$ax += cidrblock($address,'45.74.24.0/21','Swiftway / Botmaster Labs AS35017 (ASN-SFT-10). ');
-$ax += cidrblock($address,'45.74.32.0/23','Swiftway / Botmaster Labs AS35017 (ASN-SFT-11). ');
-$ax += cidrblock($address,'45.74.34.0/24','Swiftway / Botmaster Labs AS35017 (ASN-SFT-12). ');
-$ax += cidrblock($address,'45.74.40.0/24','Swiftway / Botmaster Labs AS35017 (ASN-SFT-13). ');
-$ax += cidrblock($address,'45.74.47.0/24','Swiftway / Botmaster Labs AS35017 (ASN-SFT-14). ');
-$ax += cidrblock($address,'45.74.48.0/21','Swiftway / Botmaster Labs AS35017 (ASN-SFT-15). ');
-$ax += cidrblock($address,'45.74.56.0/24','Swiftway / Botmaster Labs AS35017 (ASN-SFT-16). ');
-$ax += cidrblock($address,'46.21.144.0/20','Swiftway / Botmaster Labs AS35017 (ASN-SFT-17). ');
-$ax += cidrblock($address,'46.243.150.0/24','Swiftway / Botmaster Labs AS35017 (ASN-SFT-18). ');
-$ax += cidrblock($address,'69.1.69.0/24','Swiftway / Botmaster Labs AS35017 (ASN-SFT-19). ');
-$ax += cidrblock($address,'89.233.104.0/21','Swiftway / Botmaster Labs AS35017 (ASN-SFT-20). ');
-$ax += cidrblock($address,'91.199.45.0/24','Swiftway / Botmaster Labs AS35017 (ASN-SFT-21). ');
-$ax += cidrblock($address,'91.239.64.0/23','Swiftway / Botmaster Labs AS35017 (ASN-SFT-22). ');
-$ax += cidrblock($address,'94.100.16.0/20','Swiftway / Botmaster Labs AS35017 (ASN-SFT-23). ');
-$ax += cidrblock($address,'104.143.32.0/20','Swiftway / Botmaster Labs AS35017 (ASN-SFT-24). ');
-$ax += cidrblock($address,'104.243.251.0/24','Swiftway / Botmaster Labs AS35017 (ASN-SFT-25). ');
-$ax += cidrblock($address,'104.250.160.0/23','Swiftway / Botmaster Labs AS35017 (ASN-SFT-26). ');
-$ax += cidrblock($address,'114.31.208.0/23','Swiftway / Botmaster Labs AS35017 (ASN-SFT-27). ');
-$ax += cidrblock($address,'114.31.210.0/24','Swiftway / Botmaster Labs AS35017 (ASN-SFT-28). ');
-$ax += cidrblock($address,'114.141.112.0/21','Swiftway / Botmaster Labs AS35017 (ASN-SFT-29). ');
-$ax += cidrblock($address,'149.154.158.0/24','Swiftway / Botmaster Labs AS35017 (ASN-SFT-30). ');
-$ax += cidrblock($address,'149.255.32.0/21','Swiftway / Botmaster Labs AS35017 (ASN-SFT-31). ');
-$ax += cidrblock($address,'151.236.16.0/24','Swiftway / Botmaster Labs AS35017 (ASN-SFT-32). ');
-$ax += cidrblock($address,'151.236.22.0/24','Swiftway / Botmaster Labs AS35017 (ASN-SFT-33). ');
-$ax += cidrblock($address,'158.255.213.0/24','Swiftway / Botmaster Labs AS35017 (ASN-SFT-34). ');
-$ax += cidrblock($address,'162.252.172.0/22','Swiftway / Botmaster Labs AS35017 (ASN-SFT-35). ');
-$ax += cidrblock($address,'172.94.10.0/24','Swiftway / Botmaster Labs AS35017 (ASN-SFT-36). ');
-$ax += cidrblock($address,'172.94.19.0/24','Swiftway / Botmaster Labs AS35017 (ASN-SFT-37). ');
+$ax += cidrblock($address,'23.227.192.0/20','Swiftway / Botmaster Labs AS35017 (ASN-SFT-01). ');
+$ax += cidrblock($address,'31.187.78.0/24','Swiftway / Botmaster Labs AS35017 (ASN-SFT-02). ');
+$ax += cidrblock($address,'37.1.208.0/21','Swiftway / Botmaster Labs AS35017 (ASN-SFT-03). ');
+$ax += cidrblock($address,'37.72.168.0/21','Swiftway / Botmaster Labs AS35017 (ASN-SFT-04). ');
+$ax += cidrblock($address,'38.69.204.0/22','Swiftway / Botmaster Labs AS35017 (ASN-SFT-05). ');
+$ax += cidrblock($address,'45.74.17.0/24','Swiftway / Botmaster Labs AS35017 (ASN-SFT-06). ');
+$ax += cidrblock($address,'45.74.18.0/23','Swiftway / Botmaster Labs AS35017 (ASN-SFT-07). ');
+$ax += cidrblock($address,'45.74.20.0/22','Swiftway / Botmaster Labs AS35017 (ASN-SFT-08). ');
+$ax += cidrblock($address,'45.74.24.0/21','Swiftway / Botmaster Labs AS35017 (ASN-SFT-09). ');
+$ax += cidrblock($address,'45.74.32.0/23','Swiftway / Botmaster Labs AS35017 (ASN-SFT-10). ');
+$ax += cidrblock($address,'45.74.34.0/24','Swiftway / Botmaster Labs AS35017 (ASN-SFT-11). ');
+$ax += cidrblock($address,'45.74.40.0/24','Swiftway / Botmaster Labs AS35017 (ASN-SFT-12). ');
+$ax += cidrblock($address,'45.74.47.0/24','Swiftway / Botmaster Labs AS35017 (ASN-SFT-13). ');
+$ax += cidrblock($address,'45.74.48.0/21','Swiftway / Botmaster Labs AS35017 (ASN-SFT-14). ');
+$ax += cidrblock($address,'45.74.56.0/24','Swiftway / Botmaster Labs AS35017 (ASN-SFT-15). ');
+$ax += cidrblock($address,'46.21.144.0/20','Swiftway / Botmaster Labs AS35017 (ASN-SFT-16). ');
+$ax += cidrblock($address,'46.243.150.0/24','Swiftway / Botmaster Labs AS35017 (ASN-SFT-17). ');
+$ax += cidrblock($address,'69.1.69.0/24','Swiftway / Botmaster Labs AS35017 (ASN-SFT-18). ');
+$ax += cidrblock($address,'89.233.104.0/21','Swiftway / Botmaster Labs AS35017 (ASN-SFT-19). ');
+$ax += cidrblock($address,'91.199.45.0/24','Swiftway / Botmaster Labs AS35017 (ASN-SFT-20). ');
+$ax += cidrblock($address,'91.239.64.0/23','Swiftway / Botmaster Labs AS35017 (ASN-SFT-21). ');
+$ax += cidrblock($address,'94.100.16.0/20','Swiftway / Botmaster Labs AS35017 (ASN-SFT-22). ');
+$ax += cidrblock($address,'104.143.32.0/20','Swiftway / Botmaster Labs AS35017 (ASN-SFT-23). ');
+$ax += cidrblock($address,'104.243.251.0/24','Swiftway / Botmaster Labs AS35017 (ASN-SFT-24). ');
+$ax += cidrblock($address,'104.250.160.0/23','Swiftway / Botmaster Labs AS35017 (ASN-SFT-25). ');
+$ax += cidrblock($address,'114.31.208.0/23','Swiftway / Botmaster Labs AS35017 (ASN-SFT-26). ');
+$ax += cidrblock($address,'114.31.210.0/24','Swiftway / Botmaster Labs AS35017 (ASN-SFT-27). ');
+$ax += cidrblock($address,'114.141.112.0/21','Swiftway / Botmaster Labs AS35017 (ASN-SFT-28). ');
+$ax += cidrblock($address,'149.154.158.0/24','Swiftway / Botmaster Labs AS35017 (ASN-SFT-29). ');
+$ax += cidrblock($address,'149.255.32.0/21','Swiftway / Botmaster Labs AS35017 (ASN-SFT-30). ');
+$ax += cidrblock($address,'151.236.16.0/24','Swiftway / Botmaster Labs AS35017 (ASN-SFT-31). ');
+$ax += cidrblock($address,'151.236.22.0/24','Swiftway / Botmaster Labs AS35017 (ASN-SFT-32). ');
+$ax += cidrblock($address,'158.255.213.0/24','Swiftway / Botmaster Labs AS35017 (ASN-SFT-33). ');
+$ax += cidrblock($address,'162.252.172.0/22','Swiftway / Botmaster Labs AS35017 (ASN-SFT-34). ');
+$ax += cidrblock($address,'172.94.10.0/24','Swiftway / Botmaster Labs AS35017 (ASN-SFT-35). ');
+$ax += cidrblock($address,'172.94.19.0/24','Swiftway / Botmaster Labs AS35017 (ASN-SFT-36). ');
+$ax += cidrblock($address,'172.94.21.0/24','Swiftway / Botmaster Labs AS35017 (ASN-SFT-37). ');
 $ax += cidrblock($address,'172.94.28.0/24','Swiftway / Botmaster Labs AS35017 (ASN-SFT-38). ');
 $ax += cidrblock($address,'172.94.64.0/24','Swiftway / Botmaster Labs AS35017 (ASN-SFT-39). ');
 $ax += cidrblock($address,'172.94.67.0/24','Swiftway / Botmaster Labs AS35017 (ASN-SFT-40). ');
@@ -1365,7 +1366,7 @@ if ((inmatch($whyblockout,'(ASN-SLTP-','')) && ($ax > 0)){
     $zbamz += inmatch($lcuseragent,'disqus','Disqus bypass. '); //74a
     $zbamz += inmatch($useragent,'Feedspot http://www.feedspot.com','Feedspot bypass. '); //74c
     $zbamz += inmatch($useragent,'Superfeedr bot/2.0','Superfeedr bypass. '); //74c
-    $zbamz += inmatch($useragent,'Feedbot','Feedbot bypass. '); //74c    
+    $zbamz += inmatch($useragent,'Feedbot','Feedbot bypass. '); //74c
     if ($zbamz > 0){$ax -= 1;}
 }
 
@@ -1960,7 +1961,7 @@ $ax += cidrblock($address,'195.2.240.0/23','ASN pinspb.ru (ASN-PINAS-63). ');
 $ax += cidrblock($address,'195.211.124.0/22','ASN pinspb.ru (ASN-PINAS-64). ');
 
 
-// OVH Networks (updated 2016.01.20)
+// OVH Networks (updated 2016.04.18)
 // Not an access provider, allows rampant abuse, hosts badware/bad services.
 // AS16276
 $ax += cidrblock($address,'5.39.0.0/17','OVH Networks (ASN-OVH-00). ');
@@ -1988,32 +1989,33 @@ $ax += cidrblock($address,'62.245.0.0/19','OVH Networks (ASN-OVH-21). ');
 $ax += cidrblock($address,'87.98.128.0/17','OVH Networks (ASN-OVH-22). ');
 $ax += cidrblock($address,'91.90.88.0/21','OVH Networks (ASN-OVH-23). ');
 $ax += cidrblock($address,'91.121.0.0/16','OVH Networks (ASN-OVH-24). ');
-$ax += cidrblock($address,'92.222.0.0/16','OVH Networks (ASN-OVH-25). ');
-$ax += cidrblock($address,'94.23.0.0/16','OVH Networks (ASN-OVH-26). ');
-$ax += cidrblock($address,'103.5.12.0/22','OVH Networks (ASN-OVH-27). ');
-$ax += cidrblock($address,'142.4.192.0/19','OVH Networks (ASN-OVH-28). ');
-$ax += cidrblock($address,'149.56.0.0/16','OVH Networks (ASN-OVH-29). ');
-$ax += cidrblock($address,'149.202.0.0/16','OVH Networks (ASN-OVH-30). ');
-$ax += cidrblock($address,'151.80.0.0/16','OVH Networks (ASN-OVH-31). ');
-$ax += cidrblock($address,'158.69.0.0/16','OVH Networks (ASN-OVH-32). ');
-$ax += cidrblock($address,'164.132.0.0/16','OVH Networks (ASN-OVH-33). ');
-$ax += cidrblock($address,'167.114.0.0/16','OVH Networks (ASN-OVH-34). ');
-$ax += cidrblock($address,'176.31.0.0/16','OVH Networks (ASN-OVH-35). ');
-$ax += cidrblock($address,'178.32.0.0/15','OVH Networks (ASN-OVH-36). ');
-$ax += cidrblock($address,'185.12.32.0/23','OVH Networks (ASN-OVH-37). ');
-$ax += cidrblock($address,'188.165.0.0/16','OVH Networks (ASN-OVH-38). ');
-$ax += cidrblock($address,'192.95.0.0/18','OVH Networks (ASN-OVH-39). ');
-$ax += cidrblock($address,'192.99.0.0/16','OVH Networks (ASN-OVH-40). ');
-$ax += cidrblock($address,'193.104.19.0/24','OVH Networks (ASN-OVH-41). ');
-$ax += cidrblock($address,'193.109.63.0/24','OVH Networks (ASN-OVH-42). ');
-$ax += cidrblock($address,'195.110.30.0/23','OVH Networks (ASN-OVH-43). ');
-$ax += cidrblock($address,'195.246.232.0/23','OVH Networks (ASN-OVH-44). ');
-$ax += cidrblock($address,'198.27.64.0/18','OVH Networks (ASN-OVH-45). ');
-$ax += cidrblock($address,'198.50.128.0/17','OVH Networks (ASN-OVH-46). ');
-$ax += cidrblock($address,'198.100.144.0/20','OVH Networks (ASN-OVH-47). ');
-$ax += cidrblock($address,'198.245.48.0/20','OVH Networks (ASN-OVH-48). ');
-$ax += cidrblock($address,'213.186.32.0/19','OVH Networks (ASN-OVH-49). ');
-$ax += cidrblock($address,'213.251.128.0/18','OVH Networks (ASN-OVH-50). ');
+$ax += cidrblock($address,'91.134.0.0/16','OVH Networks (ASN-OVH-25). ');
+$ax += cidrblock($address,'92.222.0.0/16','OVH Networks (ASN-OVH-26). ');
+$ax += cidrblock($address,'94.23.0.0/16','OVH Networks (ASN-OVH-27). ');
+$ax += cidrblock($address,'103.5.12.0/22','OVH Networks (ASN-OVH-28). ');
+$ax += cidrblock($address,'142.4.192.0/19','OVH Networks (ASN-OVH-29). ');
+$ax += cidrblock($address,'149.56.0.0/16','OVH Networks (ASN-OVH-30). ');
+$ax += cidrblock($address,'149.202.0.0/16','OVH Networks (ASN-OVH-31). ');
+$ax += cidrblock($address,'151.80.0.0/16','OVH Networks (ASN-OVH-32). ');
+$ax += cidrblock($address,'158.69.0.0/16','OVH Networks (ASN-OVH-33). ');
+$ax += cidrblock($address,'164.132.0.0/16','OVH Networks (ASN-OVH-34). ');
+$ax += cidrblock($address,'167.114.0.0/16','OVH Networks (ASN-OVH-35). ');
+$ax += cidrblock($address,'176.31.0.0/16','OVH Networks (ASN-OVH-36). ');
+$ax += cidrblock($address,'178.32.0.0/15','OVH Networks (ASN-OVH-37). ');
+$ax += cidrblock($address,'185.12.32.0/23','OVH Networks (ASN-OVH-38). ');
+$ax += cidrblock($address,'188.165.0.0/16','OVH Networks (ASN-OVH-39). ');
+$ax += cidrblock($address,'192.95.0.0/18','OVH Networks (ASN-OVH-40). ');
+$ax += cidrblock($address,'192.99.0.0/16','OVH Networks (ASN-OVH-41). ');
+$ax += cidrblock($address,'193.104.19.0/24','OVH Networks (ASN-OVH-42). ');
+$ax += cidrblock($address,'193.109.63.0/24','OVH Networks (ASN-OVH-43). ');
+$ax += cidrblock($address,'195.110.30.0/23','OVH Networks (ASN-OVH-44). ');
+$ax += cidrblock($address,'195.246.232.0/23','OVH Networks (ASN-OVH-45). ');
+$ax += cidrblock($address,'198.27.64.0/18','OVH Networks (ASN-OVH-46). ');
+$ax += cidrblock($address,'198.50.128.0/17','OVH Networks (ASN-OVH-47). ');
+$ax += cidrblock($address,'198.100.144.0/20','OVH Networks (ASN-OVH-48). ');
+$ax += cidrblock($address,'198.245.48.0/20','OVH Networks (ASN-OVH-49). ');
+$ax += cidrblock($address,'213.186.32.0/19','OVH Networks (ASN-OVH-50). ');
+$ax += cidrblock($address,'213.251.128.0/18','OVH Networks (ASN-OVH-51). ');
 
 
 // TEST: Reprieve for possible human clusters on OVH DSL (started: APR-04-14)
@@ -2023,123 +2025,125 @@ if (($ax == 1) && (inmatch($whyblockout,'(ASN-OVH-','')) && (rmatch($hoster,'.ds
 
 // IOMart and *RapidSwitch (Crimeware Friendly ISP; hpHosts Blog warned us about this one).
 // Hosting Death by Captcha .com and .eu CAPTCHA cracking services.
-// AS20860 (updated 2016.01.18)
-$ax += cidrblock($address,'5.62.4.0/23','IOMart, Privax, RapidSwitch (AS-20860-000). ');
-$ax += cidrblock($address,'5.62.8.0/21','IOMart, Privax, RapidSwitch (AS-20860-001). ');
-$ax += cidrblock($address,'5.62.22.0/23','IOMart, Privax, RapidSwitch (AS-20860-002). ');
-$ax += cidrblock($address,'5.62.24.0/21','IOMart, Privax, RapidSwitch (AS-20860-003). ');
-$ax += cidrblock($address,'5.77.32.0/19','IOMart, Privax, RapidSwitch (AS-20860-004). ');
-$ax += cidrblock($address,'5.133.176.0/21','IOMart, Privax, RapidSwitch (AS-20860-005). ');
-$ax += cidrblock($address,'31.24.39.0/24','IOMart, Privax, RapidSwitch (AS-20860-006). ');
-$ax += cidrblock($address,'31.187.70.0/23','IOMart, Privax, RapidSwitch (AS-20860-007). ');
-$ax += cidrblock($address,'31.216.48.0/24','IOMart, Privax, RapidSwitch (AS-20860-008). ');
-$ax += cidrblock($address,'31.216.52.0/24','IOMart, Privax, RapidSwitch (AS-20860-009). ');
-$ax += cidrblock($address,'37.235.124.0/22','IOMart, Privax, RapidSwitch (AS-20860-010). ');
-$ax += cidrblock($address,'37.247.116.0/23','IOMart, Privax, RapidSwitch (AS-20860-011). ');
-$ax += cidrblock($address,'46.20.236.0/24','IOMart, Privax, RapidSwitch (AS-20860-012). ');
-$ax += cidrblock($address,'46.102.106.0/24','IOMart, Privax, RapidSwitch (AS-20860-013). ');
-$ax += cidrblock($address,'62.128.192.0/19','IOMart, Privax, RapidSwitch (AS-20860-014). ');
-$ax += cidrblock($address,'62.233.64.0/18','IOMart, Privax, RapidSwitch (AS-20860-015). ');
-$ax += cidrblock($address,'64.64.123.0/24','IOMart, Privax, RapidSwitch (AS-20860-016). ');
-$ax += cidrblock($address,'78.129.128.0/17','IOMart, Privax, RapidSwitch (AS-20860-017). ');
-$ax += cidrblock($address,'79.171.32.0/21','IOMart, Privax, RapidSwitch (AS-20860-018). ');
-$ax += cidrblock($address,'80.75.64.0/20','IOMart, Privax, RapidSwitch (AS-20860-019). ');
-$ax += cidrblock($address,'80.84.49.0/24','IOMart, Privax, RapidSwitch (AS-20860-020). ');
-$ax += cidrblock($address,'81.94.192.0/24','IOMart, Privax, RapidSwitch (AS-20860-021). ');
-$ax += cidrblock($address,'82.102.8.0/21','IOMart, Privax, RapidSwitch (AS-20860-022). ');
-$ax += cidrblock($address,'82.145.32.0/19','IOMart, Privax, RapidSwitch (AS-20860-023). ');
-$ax += cidrblock($address,'83.142.224.0/21','IOMart, Privax, RapidSwitch (AS-20860-024). ');
-$ax += cidrblock($address,'84.22.160.0/19','IOMart, Privax, RapidSwitch (AS-20860-025). ');
-$ax += cidrblock($address,'85.232.32.0/19','IOMart, Privax, RapidSwitch (AS-20860-026). ');
-$ax += cidrblock($address,'86.105.235.0/24','IOMart, Privax, RapidSwitch (AS-20860-027). ');
-$ax += cidrblock($address,'86.107.22.0/24','IOMart, Privax, RapidSwitch (AS-20860-028). ');
-$ax += cidrblock($address,'86.107.42.0/24','IOMart, Privax, RapidSwitch (AS-20860-029). ');
-$ax += cidrblock($address,'87.117.192.0/18','IOMart, Privax, RapidSwitch (AS-20860-030). ');
-$ax += cidrblock($address,'88.150.137.0/24','IOMart, Privax, RapidSwitch (AS-20860-031). ');
-$ax += cidrblock($address,'88.150.140.0/22','IOMart, Privax, RapidSwitch (AS-20860-032). ');
-$ax += cidrblock($address,'88.150.144.0/22','IOMart, Privax, RapidSwitch (AS-20860-033). ');
-$ax += cidrblock($address,'88.150.154.0/24','IOMart, Privax, RapidSwitch (AS-20860-034). ');
-$ax += cidrblock($address,'88.150.156.0/22','IOMart, Privax, RapidSwitch (AS-20860-035). ');
-$ax += cidrblock($address,'88.150.160.0/21','IOMart, Privax, RapidSwitch (AS-20860-036). ');
-$ax += cidrblock($address,'88.150.168.0/22','IOMart, Privax, RapidSwitch (AS-20860-037). ');
-$ax += cidrblock($address,'88.150.206.0/24','IOMart, Privax, RapidSwitch (AS-20860-038). ');
-$ax += cidrblock($address,'88.150.230.0/24','IOMart, Privax, RapidSwitch (AS-20860-039). ');
-$ax += cidrblock($address,'88.150.240.0/23','IOMart, Privax, RapidSwitch (AS-20860-040). ');
-$ax += cidrblock($address,'88.150.252.0/23','IOMart, Privax, RapidSwitch (AS-20860-041). ');
-$ax += cidrblock($address,'89.34.2.0/24','IOMart, Privax, RapidSwitch (AS-20860-042). ');
-$ax += cidrblock($address,'89.39.71.0/24','IOMart, Privax, RapidSwitch (AS-20860-043). ');
-$ax += cidrblock($address,'89.39.81.0/24','IOMart, Privax, RapidSwitch (AS-20860-044). ');
-$ax += cidrblock($address,'89.39.213.0/24','IOMart, Privax, RapidSwitch (AS-20860-045). ');
-$ax += cidrblock($address,'89.40.203.0/24','IOMart, Privax, RapidSwitch (AS-20860-046). ');
-$ax += cidrblock($address,'89.42.12.0/24','IOMart, Privax, RapidSwitch (AS-20860-047). ');
-$ax += cidrblock($address,'89.207.168.0/21','IOMart, Privax, RapidSwitch (AS-20860-048). ');
-$ax += cidrblock($address,'91.199.151.0/24','IOMart, Privax, RapidSwitch (AS-20860-049). ');
-$ax += cidrblock($address,'91.207.220.0/23','IOMart, Privax, RapidSwitch (AS-20860-050). ');
-$ax += cidrblock($address,'91.212.93.0/24','IOMart, Privax, RapidSwitch (AS-20860-051). ');
-$ax += cidrblock($address,'91.215.180.0/22','IOMart, Privax, RapidSwitch (AS-20860-052). ');
-$ax += cidrblock($address,'91.245.218.0/24','IOMart, Privax, RapidSwitch (AS-20860-053). ');
-$ax += cidrblock($address,'93.113.56.0/24','IOMart, Privax, RapidSwitch (AS-20860-054). ');
-$ax += cidrblock($address,'93.113.159.0/24','IOMart, Privax, RapidSwitch (AS-20860-055). ');
-$ax += cidrblock($address,'93.117.65.0/24','IOMart, Privax, RapidSwitch (AS-20860-056). ');
-$ax += cidrblock($address,'93.117.174.0/24','IOMart, Privax, RapidSwitch (AS-20860-057). ');
-$ax += cidrblock($address,'93.174.10.0/24','IOMart, Privax, RapidSwitch (AS-20860-058). ');
-$ax += cidrblock($address,'95.129.104.0/21','IOMart, Privax, RapidSwitch (AS-20860-059). ');
-$ax += cidrblock($address,'95.154.192.0/18','IOMart, Privax, RapidSwitch (AS-20860-060). ');
-$ax += cidrblock($address,'109.75.160.0/21','IOMart, Privax, RapidSwitch (AS-20860-061). ');
-$ax += cidrblock($address,'109.169.0.0/18','IOMart, Privax, RapidSwitch (AS-20860-062). ');
-$ax += cidrblock($address,'109.169.64.0/19','IOMart, Privax, RapidSwitch (AS-20860-063). ');
-$ax += cidrblock($address,'109.200.30.0/24','IOMart, Privax, RapidSwitch (AS-20860-064). ');
-$ax += cidrblock($address,'109.203.103.0/24','IOMart, Privax, RapidSwitch (AS-20860-065). ');
-$ax += cidrblock($address,'109.203.110.0/24','IOMart, Privax, RapidSwitch (AS-20860-066). ');
-$ax += cidrblock($address,'109.203.117.0/24','IOMart, Privax, RapidSwitch (AS-20860-067). ');
-$ax += cidrblock($address,'109.203.127.0/24','IOMart, Privax, RapidSwitch (AS-20860-068). ');
-$ax += cidrblock($address,'130.185.144.0/21','IOMart, Privax, RapidSwitch (AS-20860-069). ');
-$ax += cidrblock($address,'149.255.96.0/20','IOMart, Privax, RapidSwitch (AS-20860-070). ');
-$ax += cidrblock($address,'159.255.208.0/21','IOMart, Privax, RapidSwitch (AS-20860-071). ');
-$ax += cidrblock($address,'172.93.122.0/24','IOMart, Privax, RapidSwitch (AS-20860-072). ');
-$ax += cidrblock($address,'172.111.165.0/24','IOMart, Privax, RapidSwitch (AS-20860-073). ');
-$ax += cidrblock($address,'172.111.166.0/24','IOMart, Privax, RapidSwitch (AS-20860-074). ');
-$ax += cidrblock($address,'182.54.237.0/24','IOMart, Privax, RapidSwitch (AS-20860-075). ');
-$ax += cidrblock($address,'185.17.148.0/22','IOMart, Privax, RapidSwitch (AS-20860-076). ');
-$ax += cidrblock($address,'185.19.16.0/22','IOMart, Privax, RapidSwitch (AS-20860-077). ');
-$ax += cidrblock($address,'185.20.48.0/24','IOMart, Privax, RapidSwitch (AS-20860-078). ');
-$ax += cidrblock($address,'185.25.243.0/24','IOMart, Privax, RapidSwitch (AS-20860-079). ');
-$ax += cidrblock($address,'185.26.148.0/23','IOMart, Privax, RapidSwitch (AS-20860-080). ');
-$ax += cidrblock($address,'185.32.109.0/24','IOMart, Privax, RapidSwitch (AS-20860-081). ');
-$ax += cidrblock($address,'185.32.110.0/24','IOMart, Privax, RapidSwitch (AS-20860-082). ');
-$ax += cidrblock($address,'185.35.77.0/24','IOMart, Privax, RapidSwitch (AS-20860-083). ');
-$ax += cidrblock($address,'185.35.79.0/24','IOMart, Privax, RapidSwitch (AS-20860-084). ');
-$ax += cidrblock($address,'185.37.178.0/23','IOMart, Privax, RapidSwitch (AS-20860-085). ');
-$ax += cidrblock($address,'185.57.188.0/22','IOMart, Privax, RapidSwitch (AS-20860-086). ');
-$ax += cidrblock($address,'185.91.76.0/22','IOMart, Privax, RapidSwitch (AS-20860-087). ');
-$ax += cidrblock($address,'185.92.252.0/22','IOMart, Privax, RapidSwitch (AS-20860-088). ');
-$ax += cidrblock($address,'185.116.212.0/22','IOMart, Privax, RapidSwitch (AS-20860-089). ');
-$ax += cidrblock($address,'185.131.8.0/23','IOMart, Privax, RapidSwitch (AS-20860-090). ');
-$ax += cidrblock($address,'188.208.111.0/24','IOMart, Privax, RapidSwitch (AS-20860-091). ');
-$ax += cidrblock($address,'188.210.255.0/24','IOMart, Privax, RapidSwitch (AS-20860-092). ');
-$ax += cidrblock($address,'188.214.198.0/24','IOMart, Privax, RapidSwitch (AS-20860-093). ');
-$ax += cidrblock($address,'188.215.32.0/24','IOMart, Privax, RapidSwitch (AS-20860-094). ');
-$ax += cidrblock($address,'188.227.169.0/24','IOMart, Privax, RapidSwitch (AS-20860-095). ');
-$ax += cidrblock($address,'188.227.170.0/24','IOMart, Privax, RapidSwitch (AS-20860-096). ');
-$ax += cidrblock($address,'188.227.186.0/24','IOMart, Privax, RapidSwitch (AS-20860-097). ');
-$ax += cidrblock($address,'192.121.166.0/23','IOMart, Privax, RapidSwitch (AS-20860-098). ');
-$ax += cidrblock($address,'192.253.244.0/24','IOMart, Privax, RapidSwitch (AS-20860-099). ');
-$ax += cidrblock($address,'193.200.98.0/23','IOMart, Privax, RapidSwitch (AS-20860-100). ');
-$ax += cidrblock($address,'193.201.200.0/23','IOMart, Privax, RapidSwitch (AS-20860-101). ');
-$ax += cidrblock($address,'194.1.150.0/24','IOMart, Privax, RapidSwitch (AS-20860-102). ');
-$ax += cidrblock($address,'194.6.235.0/24','IOMart, Privax, RapidSwitch (AS-20860-103). ');
-$ax += cidrblock($address,'195.24.230.0/23','IOMart, Privax, RapidSwitch (AS-20860-104). ');
-$ax += cidrblock($address,'195.62.10.0/23','IOMart, Privax, RapidSwitch (AS-20860-105). ');
-$ax += cidrblock($address,'195.177.192.0/23','IOMart, Privax, RapidSwitch (AS-20860-106). ');
-$ax += cidrblock($address,'198.52.160.0/23','IOMart, Privax, RapidSwitch (AS-20860-107). ');
-$ax += cidrblock($address,'206.187.52.0/22','IOMart, Privax, RapidSwitch (AS-20860-108). ');
-$ax += cidrblock($address,'212.38.160.0/19','IOMart, Privax, RapidSwitch (AS-20860-109). ');
-$ax += cidrblock($address,'212.84.160.0/19','IOMart, Privax, RapidSwitch (AS-20860-110). ');
-$ax += cidrblock($address,'217.19.1.0/24','IOMart, Privax, RapidSwitch (AS-20860-111). ');
-$ax += cidrblock($address,'217.26.232.0/21','IOMart, Privax, RapidSwitch (AS-20860-112). ');
-$ax += cidrblock($address,'217.77.176.0/20','IOMart, Privax, RapidSwitch (AS-20860-113). ');
-$ax += cidrblock($address,'217.147.80.0/20','IOMart, Privax, RapidSwitch (AS-20860-114). ');
-$ax += cidrblock($address,'217.194.208.0/20','IOMart, Privax, RapidSwitch (AS-20860-115). ');
+// AS20860, AS21130 (updated 2016.04.25)
+$ax += cidrblock($address,'5.62.4.0/23','IOMart, Privax, RapidSwitch (ASN-IOMART-000). ');
+$ax += cidrblock($address,'5.62.8.0/21','IOMart, Privax, RapidSwitch (ASN-IOMART-001). ');
+$ax += cidrblock($address,'5.62.22.0/23','IOMart, Privax, RapidSwitch (ASN-IOMART-002). ');
+$ax += cidrblock($address,'5.62.24.0/21','IOMart, Privax, RapidSwitch (ASN-IOMART-003). ');
+$ax += cidrblock($address,'5.77.32.0/19','IOMart, Privax, RapidSwitch (ASN-IOMART-004). ');
+$ax += cidrblock($address,'5.133.176.0/21','IOMart, Privax, RapidSwitch (ASN-IOMART-005). ');
+$ax += cidrblock($address,'31.24.39.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-006). ');
+$ax += cidrblock($address,'31.187.70.0/23','IOMart, Privax, RapidSwitch (ASN-IOMART-007). ');
+$ax += cidrblock($address,'31.216.48.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-008). ');
+$ax += cidrblock($address,'37.235.124.0/22','IOMart, Privax, RapidSwitch (ASN-IOMART-009). ');
+$ax += cidrblock($address,'37.247.116.0/23','IOMart, Privax, RapidSwitch (ASN-IOMART-010). ');
+$ax += cidrblock($address,'46.20.236.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-011). ');
+$ax += cidrblock($address,'46.102.106.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-012). ');
+$ax += cidrblock($address,'62.128.192.0/19','IOMart, Privax, RapidSwitch (ASN-IOMART-013). ');
+$ax += cidrblock($address,'62.233.64.0/18','IOMart, Privax, RapidSwitch (ASN-IOMART-014). ');
+$ax += cidrblock($address,'64.64.123.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-015). ');
+$ax += cidrblock($address,'78.129.128.0/17','IOMart, Privax, RapidSwitch (ASN-IOMART-016). ');
+$ax += cidrblock($address,'79.171.32.0/21','IOMart, Privax, RapidSwitch (ASN-IOMART-017). ');
+$ax += cidrblock($address,'80.75.64.0/20','IOMart, Privax, RapidSwitch (ASN-IOMART-018). ');
+$ax += cidrblock($address,'80.84.49.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-019). ');
+$ax += cidrblock($address,'81.94.192.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-020). ');
+$ax += cidrblock($address,'82.102.8.0/21','IOMart, Privax, RapidSwitch (ASN-IOMART-021). ');
+$ax += cidrblock($address,'82.145.32.0/19','IOMart, Privax, RapidSwitch (ASN-IOMART-022). ');
+$ax += cidrblock($address,'83.142.224.0/21','IOMart, Privax, RapidSwitch (ASN-IOMART-023). ');
+$ax += cidrblock($address,'84.22.160.0/19','IOMart, Privax, RapidSwitch (ASN-IOMART-024). ');
+$ax += cidrblock($address,'85.232.32.0/19','IOMart, Privax, RapidSwitch (ASN-IOMART-025). ');
+$ax += cidrblock($address,'86.105.235.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-026). ');
+$ax += cidrblock($address,'86.107.22.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-027). ');
+$ax += cidrblock($address,'86.107.42.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-028). ');
+$ax += cidrblock($address,'87.117.192.0/18','IOMart, Privax, RapidSwitch (ASN-IOMART-029). ');
+$ax += cidrblock($address,'88.150.137.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-030). ');
+$ax += cidrblock($address,'88.150.140.0/22','IOMart, Privax, RapidSwitch (ASN-IOMART-031). ');
+$ax += cidrblock($address,'88.150.144.0/22','IOMart, Privax, RapidSwitch (ASN-IOMART-032). ');
+$ax += cidrblock($address,'88.150.154.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-033). ');
+$ax += cidrblock($address,'88.150.156.0/22','IOMart, Privax, RapidSwitch (ASN-IOMART-034). ');
+$ax += cidrblock($address,'88.150.160.0/21','IOMart, Privax, RapidSwitch (ASN-IOMART-035). ');
+$ax += cidrblock($address,'88.150.168.0/22','IOMart, Privax, RapidSwitch (ASN-IOMART-036). ');
+$ax += cidrblock($address,'88.150.206.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-037). ');
+$ax += cidrblock($address,'88.150.230.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-038). ');
+$ax += cidrblock($address,'88.150.240.0/23','IOMart, Privax, RapidSwitch (ASN-IOMART-039). ');
+$ax += cidrblock($address,'88.150.252.0/23','IOMart, Privax, RapidSwitch (ASN-IOMART-040). ');
+$ax += cidrblock($address,'89.34.2.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-041). ');
+$ax += cidrblock($address,'89.39.71.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-042). ');
+$ax += cidrblock($address,'89.39.81.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-043). ');
+$ax += cidrblock($address,'89.39.213.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-044). ');
+$ax += cidrblock($address,'89.40.203.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-045). ');
+$ax += cidrblock($address,'89.42.12.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-046). ');
+$ax += cidrblock($address,'89.207.168.0/21','IOMart, Privax, RapidSwitch (ASN-IOMART-047). ');
+$ax += cidrblock($address,'91.199.151.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-048). ');
+$ax += cidrblock($address,'91.207.220.0/23','IOMart, Privax, RapidSwitch (ASN-IOMART-049). ');
+$ax += cidrblock($address,'91.212.93.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-050). ');
+$ax += cidrblock($address,'91.215.180.0/22','IOMart, Privax, RapidSwitch (ASN-IOMART-051). ');
+$ax += cidrblock($address,'91.245.218.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-052). ');
+$ax += cidrblock($address,'93.113.56.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-053). ');
+$ax += cidrblock($address,'93.113.159.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-054). ');
+$ax += cidrblock($address,'93.117.65.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-055). ');
+$ax += cidrblock($address,'93.117.174.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-056). ');
+$ax += cidrblock($address,'93.174.10.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-057). ');
+$ax += cidrblock($address,'95.129.104.0/21','IOMart, Privax, RapidSwitch (ASN-IOMART-058). ');
+$ax += cidrblock($address,'95.154.192.0/18','IOMart, Privax, RapidSwitch (ASN-IOMART-059). ');
+$ax += cidrblock($address,'104.237.241.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-060). ');
+$ax += cidrblock($address,'109.75.160.0/21','IOMart, Privax, RapidSwitch (ASN-IOMART-061). ');
+$ax += cidrblock($address,'109.169.0.0/18','IOMart, Privax, RapidSwitch (ASN-IOMART-062). ');
+$ax += cidrblock($address,'109.169.64.0/19','IOMart, Privax, RapidSwitch (ASN-IOMART-063). ');
+$ax += cidrblock($address,'109.200.30.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-064). ');
+$ax += cidrblock($address,'109.203.103.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-065). ');
+$ax += cidrblock($address,'109.203.110.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-066). ');
+$ax += cidrblock($address,'109.203.117.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-067). ');
+$ax += cidrblock($address,'109.203.127.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-068). ');
+$ax += cidrblock($address,'130.185.144.0/21','IOMart, Privax, RapidSwitch (ASN-IOMART-069). ');
+$ax += cidrblock($address,'149.255.96.0/20','IOMart, Privax, RapidSwitch (ASN-IOMART-070). ');
+$ax += cidrblock($address,'159.255.208.0/21','IOMart, Privax, RapidSwitch (ASN-IOMART-071). ');
+$ax += cidrblock($address,'172.93.122.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-072). ');
+$ax += cidrblock($address,'172.111.165.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-073). ');
+$ax += cidrblock($address,'172.111.166.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-074). ');
+$ax += cidrblock($address,'182.54.237.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-075). ');
+$ax += cidrblock($address,'185.17.148.0/22','IOMart, Privax, RapidSwitch (ASN-IOMART-076). ');
+$ax += cidrblock($address,'185.19.16.0/22','IOMart, Privax, RapidSwitch (ASN-IOMART-077). ');
+$ax += cidrblock($address,'185.20.48.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-078). ');
+$ax += cidrblock($address,'185.25.243.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-079). ');
+$ax += cidrblock($address,'185.26.148.0/23','IOMart, Privax, RapidSwitch (ASN-IOMART-080). ');
+$ax += cidrblock($address,'185.32.109.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-081). ');
+$ax += cidrblock($address,'185.32.110.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-082). ');
+$ax += cidrblock($address,'185.35.77.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-083). ');
+$ax += cidrblock($address,'185.35.79.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-084). ');
+$ax += cidrblock($address,'185.37.178.0/23','IOMart, Privax, RapidSwitch (ASN-IOMART-085). ');
+$ax += cidrblock($address,'185.57.188.0/22','IOMart, Privax, RapidSwitch (ASN-IOMART-086). ');
+$ax += cidrblock($address,'185.91.76.0/22','IOMart, Privax, RapidSwitch (ASN-IOMART-087). ');
+$ax += cidrblock($address,'185.116.212.0/22','IOMart, Privax, RapidSwitch (ASN-IOMART-088). ');
+$ax += cidrblock($address,'185.131.8.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-089). ');
+$ax += cidrblock($address,'185.141.192.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-090). ');
+$ax += cidrblock($address,'185.145.156.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-091). ');
+$ax += cidrblock($address,'188.208.111.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-092). ');
+$ax += cidrblock($address,'188.210.255.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-093). ');
+$ax += cidrblock($address,'188.214.198.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-094). ');
+$ax += cidrblock($address,'188.215.32.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-095). ');
+$ax += cidrblock($address,'188.227.169.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-096). ');
+$ax += cidrblock($address,'188.227.170.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-097). ');
+$ax += cidrblock($address,'188.227.174.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-098). ');
+$ax += cidrblock($address,'188.227.186.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-099). ');
+$ax += cidrblock($address,'192.121.166.0/23','IOMart, Privax, RapidSwitch (ASN-IOMART-100). ');
+$ax += cidrblock($address,'192.253.244.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-101). ');
+$ax += cidrblock($address,'193.200.98.0/23','IOMart, Privax, RapidSwitch (ASN-IOMART-102). ');
+$ax += cidrblock($address,'193.201.200.0/23','IOMart, Privax, RapidSwitch (ASN-IOMART-103). ');
+$ax += cidrblock($address,'194.1.150.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-104). ');
+$ax += cidrblock($address,'194.6.235.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-105). ');
+$ax += cidrblock($address,'195.24.230.0/23','IOMart, Privax, RapidSwitch (ASN-IOMART-106). ');
+$ax += cidrblock($address,'195.62.10.0/23','IOMart, Privax, RapidSwitch (ASN-IOMART-107). ');
+$ax += cidrblock($address,'195.177.192.0/23','IOMart, Privax, RapidSwitch (ASN-IOMART-108). ');
+$ax += cidrblock($address,'198.52.160.0/23','IOMart, Privax, RapidSwitch (ASN-IOMART-109). ');
+$ax += cidrblock($address,'206.187.52.0/22','IOMart, Privax, RapidSwitch (ASN-IOMART-110). ');
+$ax += cidrblock($address,'212.38.160.0/19','IOMart, Privax, RapidSwitch (ASN-IOMART-111). ');
+$ax += cidrblock($address,'212.84.160.0/19','IOMart, Privax, RapidSwitch (ASN-IOMART-112). ');
+$ax += cidrblock($address,'217.19.1.0/24','IOMart, Privax, RapidSwitch (ASN-IOMART-113). ');
+$ax += cidrblock($address,'217.26.232.0/21','IOMart, Privax, RapidSwitch (ASN-IOMART-114). ');
+$ax += cidrblock($address,'217.77.176.0/20','IOMart, Privax, RapidSwitch (ASN-IOMART-115). ');
+$ax += cidrblock($address,'217.147.80.0/20','IOMart, Privax, RapidSwitch (ASN-IOMART-116). ');
+$ax += cidrblock($address,'217.194.208.0/20','IOMart, Privax, RapidSwitch (ASN-IOMART-117). ');
 
 
 // Bytemark Anonymous Proxies (updated 2016.01.20 / checked 2016.03.12)
@@ -2506,46 +2510,61 @@ $ax += cidrblock($address,'213.169.144.0/22','Hetzner (ASN-HETZ-30). ');
 $ax += cidrblock($address,'213.239.192.0/18','Hetzner (ASN-HETZ-31). ');
 
 
-// Digital Ocean, Inc. (updated 2016.02.06)
-// AS14061, AS46652, AS62567, AS65040, AS200130, AS202018, AS393406, AS394362
+// Digital Ocean, Inc. (updated 2016.04.25)
+// AS14061, AS46652, AS62567, AS65040, AS133165, AS200130, AS201229, AS202018, AS202109, AS393406, AS394362.
 $ax += cidrblock($address,'5.101.96.0/21','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-00). ');
 $ax += cidrblock($address,'5.101.104.0/22','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-01). ');
-$ax += cidrblock($address,'5.101.110.0/24','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-02). ');
-$ax += cidrblock($address,'37.139.0.0/19','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-03). ');
-$ax += cidrblock($address,'45.55.0.0/18','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-04). ');
-$ax += cidrblock($address,'45.55.64.0/19','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-05). ');
-$ax += cidrblock($address,'45.55.96.0/20','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-06). ');
-$ax += cidrblock($address,'45.55.112.0/21','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-07). ');
-$ax += cidrblock($address,'45.55.128.0/17','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-08). ');
-$ax += cidrblock($address,'69.55.48.0/20','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-09). ');
-$ax += cidrblock($address,'80.240.128.0/20','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-10). ');
-$ax += cidrblock($address,'82.196.0.0/20','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-11). ');
-$ax += cidrblock($address,'95.85.0.0/18','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-12). ');
-$ax += cidrblock($address,'104.131.0.0/16','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-13). ');
-$ax += cidrblock($address,'104.236.0.0/16','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-14). ');
-$ax += cidrblock($address,'107.170.0.0/16','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-15). ');
-$ax += cidrblock($address,'128.199.32.0/19','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-16). ');
-$ax += cidrblock($address,'141.0.168.0/21','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-17). ');
-$ax += cidrblock($address,'146.185.128.0/18','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-18). ');
-$ax += cidrblock($address,'159.203.0.0/17','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-19). ');
-$ax += cidrblock($address,'159.203.128.0/20','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-20). ');
-$ax += cidrblock($address,'159.203.144.0/21','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-21). ');
-$ax += cidrblock($address,'159.203.160.0/20','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-22). ');
-$ax += cidrblock($address,'159.203.192.0/18','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-23). ');
-$ax += cidrblock($address,'162.243.0.0/16','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-24). ');
-$ax += cidrblock($address,'178.62.128.0/17','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-25). ');
-$ax += cidrblock($address,'185.14.184.0/22','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-26). ');
-$ax += cidrblock($address,'185.88.180.0/22','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-27). ');
-$ax += cidrblock($address,'188.166.0.0/17','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-28). ');
-$ax += cidrblock($address,'188.166.128.0/21','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-29). ');
-$ax += cidrblock($address,'188.166.200.0/22','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-30). ');
-$ax += cidrblock($address,'188.226.128.0/17','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-31). ');
-$ax += cidrblock($address,'192.34.56.0/21','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-32). ');
-$ax += cidrblock($address,'192.81.208.0/20','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-33). ');
-$ax += cidrblock($address,'192.241.128.0/17','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-34). ');
-$ax += cidrblock($address,'198.199.64.0/18','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-35). ');
-$ax += cidrblock($address,'198.211.96.0/19','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-36). ');
-$ax += cidrblock($address,'208.68.36.0/22','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-37). ');
+$ax += cidrblock($address,'5.101.109.0/24','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-02). ');
+$ax += cidrblock($address,'5.101.110.0/23','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-03). ');
+$ax += cidrblock($address,'37.139.0.0/19','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-04). ');
+$ax += cidrblock($address,'45.55.0.0/16','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-05). ');
+$ax += cidrblock($address,'46.101.0.0/16','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-06). ');
+$ax += cidrblock($address,'69.55.48.0/20','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-07). ');
+$ax += cidrblock($address,'80.240.128.0/20','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-08). ');
+$ax += cidrblock($address,'82.196.0.0/20','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-09). ');
+$ax += cidrblock($address,'95.85.0.0/18','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-10). ');
+$ax += cidrblock($address,'103.253.144.0/22','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-11). ');
+$ax += cidrblock($address,'104.131.0.0/16','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-12). ');
+$ax += cidrblock($address,'104.236.0.0/16','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-13). ');
+$ax += cidrblock($address,'107.170.0.0/16','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-14). ');
+$ax += cidrblock($address,'128.199.32.0/19','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-15). ');
+$ax += cidrblock($address,'128.199.64.0/18','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-16). ');
+$ax += cidrblock($address,'128.199.128.0/17','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-17). ');
+$ax += cidrblock($address,'138.68.0.0/20','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-18). ');
+$ax += cidrblock($address,'138.68.32.0/24','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-19). ');
+$ax += cidrblock($address,'138.68.192.0/22','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-20). ');
+$ax += cidrblock($address,'139.59.128.0/20','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-21). ');
+$ax += cidrblock($address,'139.59.160.0/19','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-22). ');
+$ax += cidrblock($address,'139.59.192.0/21','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-23). ');
+$ax += cidrblock($address,'139.59.204.0/22','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-24). ');
+$ax += cidrblock($address,'139.59.224.0/19','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-25). ');
+$ax += cidrblock($address,'141.0.168.0/21','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-26). ');
+$ax += cidrblock($address,'146.185.128.0/18','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-27). ');
+$ax += cidrblock($address,'159.203.0.0/17','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-28). ');
+$ax += cidrblock($address,'159.203.128.0/20','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-29). ');
+$ax += cidrblock($address,'159.203.144.0/21','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-30). ');
+$ax += cidrblock($address,'159.203.152.0/22','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-31). ');
+$ax += cidrblock($address,'159.203.160.0/20','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-32). ');
+$ax += cidrblock($address,'159.203.192.0/18','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-33). ');
+$ax += cidrblock($address,'162.243.0.0/16','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-34). ');
+$ax += cidrblock($address,'163.47.8.0/22','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-35). ');
+$ax += cidrblock($address,'178.62.0.0/16','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-36). ');
+$ax += cidrblock($address,'185.14.184.0/22','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-37). ');
+$ax += cidrblock($address,'185.88.180.0/22','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-38). ');
+$ax += cidrblock($address,'188.166.0.0/17','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-39). ');
+$ax += cidrblock($address,'188.166.128.0/18','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-40). ');
+$ax += cidrblock($address,'188.166.192.0/22','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-41). ');
+$ax += cidrblock($address,'188.166.200.0/21','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-42). ');
+$ax += cidrblock($address,'188.166.208.0/20','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-43). ');
+$ax += cidrblock($address,'188.166.224.0/19','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-44). ');
+$ax += cidrblock($address,'188.226.128.0/17','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-45). ');
+$ax += cidrblock($address,'192.34.56.0/21','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-46). ');
+$ax += cidrblock($address,'192.81.208.0/20','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-47). ');
+$ax += cidrblock($address,'192.241.128.0/17','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-48). ');
+$ax += cidrblock($address,'198.199.64.0/18','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-49). ');
+$ax += cidrblock($address,'198.211.96.0/19','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-50). ');
+$ax += cidrblock($address,'208.68.36.0/22','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-51). ');
+$ax += cidrblock($address,'218.208.39.0/24','Digital Ocean, Inc. Not an access provider ISP (ASN-DOGROUP-52). ');
 
 
 // Root SA (updated 2016.03.13)
@@ -2567,68 +2586,116 @@ $ax += cidrblock($address,'212.117.160.0/19','Root SA (ASN-ROOTSA-13). ');
 $ax += cidrblock($address,'217.73.56.0/24','Root SA (ASN-ROOTSA-14). ');
 
 
-// XEEX network (updated 2016.01.19)
+// XEEX network (updated 2016.04.25)
 // AS27524
 $ax += cidrblock($address,'69.26.160.0/19','XEEX (ASN-27524-0). ');
 $ax += cidrblock($address,'113.212.64.0/19','XEEX (ASN-27524-1). ');
 $ax += cidrblock($address,'162.213.128.0/22','XEEX (ASN-27524-2). ');
-$ax += cidrblock($address,'199.249.179.0/24','XEEX (ASN-27524-3). ');
-$ax += cidrblock($address,'199.249.180.0/23','XEEX (ASN-27524-4). ');
-$ax += cidrblock($address,'209.242.192.0/19','XEEX (ASN-27524-5). ');
-$ax += cidrblock($address,'216.151.128.0/19','XEEX (ASN-27524-6). ');
-$ax += cidrblock($address,'216.152.240.0/20','XEEX (ASN-27524-7). ');
+$ax += cidrblock($address,'216.151.128.0/19','XEEX (ASN-27524-3). ');
+$ax += cidrblock($address,'216.152.240.0/20','XEEX (ASN-27524-4). ');
 
 
-// ColoGuys (updated 2016.01.19)
-// AS40775
-$ax += cidrblock($address,'64.209.56.0/21','ColoGuys (ASN-40775-0). ');
-$ax += cidrblock($address,'64.209.68.0/22','ColoGuys (ASN-40775-0). ');
-$ax += cidrblock($address,'64.214.184.0/21','ColoGuys (ASN-40775-0). ');
-$ax += cidrblock($address,'66.207.160.0/20','ColoGuys (ASN-40775-0). ');
-$ax += cidrblock($address,'67.43.48.0/20','ColoGuys (ASN-40775-0). ');
-$ax += cidrblock($address,'103.6.219.0/24','ColoGuys (ASN-40775-0). ');
-$ax += cidrblock($address,'173.242.48.0/20','ColoGuys (ASN-40775-0). ');
-$ax += cidrblock($address,'199.115.176.0/21','ColoGuys (ASN-40775-0). ');
-$ax += cidrblock($address,'207.126.64.0/19','ColoGuys (ASN-40775-0). ');
-$ax += cidrblock($address,'209.130.152.0/22','ColoGuys (ASN-40775-0). ');
-$ax += cidrblock($address,'209.135.0.0/19','ColoGuys (ASN-40775-0). ');
+// ColoGuys (updated 2016.01.19 / checked 2016.04.25)
+// AS25643
+$ax += cidrblock($address,'64.209.56.0/21','ColoGuys (ASN-25643-00). ');
+$ax += cidrblock($address,'64.209.68.0/22','ColoGuys (ASN-25643-01). ');
+$ax += cidrblock($address,'64.214.184.0/21','ColoGuys (ASN-25643-02). ');
+$ax += cidrblock($address,'66.207.160.0/20','ColoGuys (ASN-25643-03). ');
+$ax += cidrblock($address,'67.43.48.0/20','ColoGuys (ASN-25643-04). ');
+$ax += cidrblock($address,'103.6.219.0/24','ColoGuys (ASN-25643-05). ');
+$ax += cidrblock($address,'173.242.48.0/20','ColoGuys (ASN-25643-06). ');
+$ax += cidrblock($address,'199.115.176.0/21','ColoGuys (ASN-25643-07). ');
+$ax += cidrblock($address,'207.126.64.0/19','ColoGuys (ASN-25643-08). ');
+$ax += cidrblock($address,'209.130.152.0/22','ColoGuys (ASN-25643-09). ');
+$ax += cidrblock($address,'209.135.0.0/19','ColoGuys (ASN-25643-10). ');
 
 
-// Tzulo Inc (updated 2016.01.19)
+// Tzulo Inc (updated 2016.04.25)
 // AS11878
 $ax += cidrblock($address,'23.234.64.0/18','Tzulo Inc (ASN-11878-00). ');
 $ax += cidrblock($address,'23.255.0.0/17','Tzulo Inc (ASN-11878-01). ');
-$ax += cidrblock($address,'68.235.32.0/19','Tzulo Inc (ASN-11878-02). ');
-$ax += cidrblock($address,'107.152.32.0/20','Tzulo Inc (ASN-11878-03). ');
-$ax += cidrblock($address,'154.16.97.0/24','Tzulo Inc (ASN-11878-04). ');
-$ax += cidrblock($address,'154.16.98.0/23','Tzulo Inc (ASN-11878-05). ');
-$ax += cidrblock($address,'154.16.100.0/22','Tzulo Inc (ASN-11878-06). ');
-$ax += cidrblock($address,'162.208.8.0/22','Tzulo Inc (ASN-11878-07). ');
-$ax += cidrblock($address,'162.212.152.0/21','Tzulo Inc (ASN-11878-08). ');
-$ax += cidrblock($address,'173.231.192.0/18','Tzulo Inc (ASN-11878-09). ');
-$ax += cidrblock($address,'173.249.192.0/18','Tzulo Inc (ASN-11878-10). ');
-$ax += cidrblock($address,'173.253.0.0/17','Tzulo Inc (ASN-11878-11). ');
-$ax += cidrblock($address,'181.214.128.0/19','Tzulo Inc (ASN-11878-12). ');
-$ax += cidrblock($address,'181.214.206.0/23','Tzulo Inc (ASN-11878-13). ');
-$ax += cidrblock($address,'181.215.199.0/24','Tzulo Inc (ASN-11878-14). ');
-$ax += cidrblock($address,'181.215.200.0/21','Tzulo Inc (ASN-11878-15). ');
-$ax += cidrblock($address,'181.215.208.0/22','Tzulo Inc (ASN-11878-16). ');
-$ax += cidrblock($address,'181.215.212.0/23','Tzulo Inc (ASN-11878-17). ');
-$ax += cidrblock($address,'181.215.215.0/24','Tzulo Inc (ASN-11878-18). ');
-$ax += cidrblock($address,'181.215.216.0/21','Tzulo Inc (ASN-11878-19). ');
-$ax += cidrblock($address,'181.215.224.0/21','Tzulo Inc (ASN-11878-20). ');
-$ax += cidrblock($address,'181.215.232.0/23','Tzulo Inc (ASN-11878-21). ');
-$ax += cidrblock($address,'181.215.234.0/24','Tzulo Inc (ASN-11878-22). ');
-$ax += cidrblock($address,'191.96.27.0/24','Tzulo Inc (ASN-11878-23). ');
-$ax += cidrblock($address,'191.96.38.0/24','Tzulo Inc (ASN-11878-24). ');
-$ax += cidrblock($address,'191.101.202.0/23','Tzulo Inc (ASN-11878-25). ');
-$ax += cidrblock($address,'192.196.224.0/20','Tzulo Inc (ASN-11878-26). ');
-$ax += cidrblock($address,'192.243.96.0/20','Tzulo Inc (ASN-11878-27). ');
-$ax += cidrblock($address,'198.44.128.0/19','Tzulo Inc (ASN-11878-28). ');
-$ax += cidrblock($address,'198.54.128.0/21','Tzulo Inc (ASN-11878-29). ');
-$ax += cidrblock($address,'199.175.48.0/21','Tzulo Inc (ASN-11878-30). ');
-$ax += cidrblock($address,'206.226.64.0/18','Tzulo Inc (ASN-11878-31). ');
-$ax += cidrblock($address,'208.77.16.0/21','Tzulo Inc (ASN-11878-32). ');
+$ax += cidrblock($address,'43.239.250.0/24','Tzulo Inc (ASN-11878-02). ');
+$ax += cidrblock($address,'68.235.32.0/19','Tzulo Inc (ASN-11878-03). ');
+$ax += cidrblock($address,'107.152.32.0/20','Tzulo Inc (ASN-11878-04). ');
+$ax += cidrblock($address,'154.16.71.0/24','Tzulo Inc (ASN-11878-05). ');
+$ax += cidrblock($address,'154.16.75.0/24','Tzulo Inc (ASN-11878-06). ');
+$ax += cidrblock($address,'154.16.77.0/24','Tzulo Inc (ASN-11878-07). ');
+$ax += cidrblock($address,'154.16.95.0/24','Tzulo Inc (ASN-11878-08). ');
+$ax += cidrblock($address,'154.16.97.0/24','Tzulo Inc (ASN-11878-09). ');
+$ax += cidrblock($address,'154.16.98.0/23','Tzulo Inc (ASN-11878-10). ');
+$ax += cidrblock($address,'154.16.100.0/22','Tzulo Inc (ASN-11878-11). ');
+$ax += cidrblock($address,'154.16.105.0/24','Tzulo Inc (ASN-11878-12). ');
+$ax += cidrblock($address,'154.16.106.0/23','Tzulo Inc (ASN-11878-13). ');
+$ax += cidrblock($address,'154.16.120.0/22','Tzulo Inc (ASN-11878-14). ');
+$ax += cidrblock($address,'154.16.137.0/24','Tzulo Inc (ASN-11878-15). ');
+$ax += cidrblock($address,'161.123.201.0/24','Tzulo Inc (ASN-11878-16). ');
+$ax += cidrblock($address,'161.123.203.0/24','Tzulo Inc (ASN-11878-17). ');
+$ax += cidrblock($address,'161.213.205.0/24','Tzulo Inc (ASN-11878-18). ');
+$ax += cidrblock($address,'161.213.207.0/24','Tzulo Inc (ASN-11878-19). ');
+$ax += cidrblock($address,'161.213.209.0/24','Tzulo Inc (ASN-11878-20). ');
+$ax += cidrblock($address,'162.208.8.0/22','Tzulo Inc (ASN-11878-21). ');
+$ax += cidrblock($address,'162.212.152.0/21','Tzulo Inc (ASN-11878-22). ');
+$ax += cidrblock($address,'173.231.192.0/18','Tzulo Inc (ASN-11878-23). ');
+$ax += cidrblock($address,'173.249.192.0/18','Tzulo Inc (ASN-11878-24). ');
+$ax += cidrblock($address,'173.253.0.0/17','Tzulo Inc (ASN-11878-25). ');
+$ax += cidrblock($address,'179.61.197.0/24','Tzulo Inc (ASN-11878-26). ');
+$ax += cidrblock($address,'179.61.199.0/24','Tzulo Inc (ASN-11878-27). ');
+$ax += cidrblock($address,'179.61.210.0/24','Tzulo Inc (ASN-11878-28). ');
+$ax += cidrblock($address,'179.61.217.0/24','Tzulo Inc (ASN-11878-29). ');
+$ax += cidrblock($address,'179.61.232.0/24','Tzulo Inc (ASN-11878-30). ');
+$ax += cidrblock($address,'179.61.238.0/24','Tzulo Inc (ASN-11878-31). ');
+$ax += cidrblock($address,'179.61.245.0/24','Tzulo Inc (ASN-11878-32). ');
+$ax += cidrblock($address,'181.214.92.0/23','Tzulo Inc (ASN-11878-33). ');
+$ax += cidrblock($address,'181.214.128.0/19','Tzulo Inc (ASN-11878-34). ');
+$ax += cidrblock($address,'181.214.206.0/23','Tzulo Inc (ASN-11878-35). ');
+$ax += cidrblock($address,'181.214.244.0/22','Tzulo Inc (ASN-11878-36). ');
+$ax += cidrblock($address,'181.214.248.0/23','Tzulo Inc (ASN-11878-37). ');
+$ax += cidrblock($address,'181.214.251.0/24','Tzulo Inc (ASN-11878-38). ');
+$ax += cidrblock($address,'181.215.176.0/20','Tzulo Inc (ASN-11878-39). ');
+$ax += cidrblock($address,'181.215.199.0/24','Tzulo Inc (ASN-11878-40). ');
+$ax += cidrblock($address,'181.215.200.0/21','Tzulo Inc (ASN-11878-41). ');
+$ax += cidrblock($address,'181.215.208.0/22','Tzulo Inc (ASN-11878-42). ');
+$ax += cidrblock($address,'181.215.212.0/23','Tzulo Inc (ASN-11878-43). ');
+$ax += cidrblock($address,'181.215.215.0/24','Tzulo Inc (ASN-11878-44). ');
+$ax += cidrblock($address,'181.215.216.0/21','Tzulo Inc (ASN-11878-45). ');
+$ax += cidrblock($address,'181.215.224.0/21','Tzulo Inc (ASN-11878-46). ');
+$ax += cidrblock($address,'181.215.232.0/23','Tzulo Inc (ASN-11878-47). ');
+$ax += cidrblock($address,'181.215.234.0/24','Tzulo Inc (ASN-11878-48). ');
+$ax += cidrblock($address,'181.215.244.0/22','Tzulo Inc (ASN-11878-49). ');
+$ax += cidrblock($address,'191.96.14.0/24','Tzulo Inc (ASN-11878-50). ');
+$ax += cidrblock($address,'191.96.27.0/24','Tzulo Inc (ASN-11878-51). ');
+$ax += cidrblock($address,'191.96.31.0/24','Tzulo Inc (ASN-11878-52). ');
+$ax += cidrblock($address,'191.96.38.0/24','Tzulo Inc (ASN-11878-53). ');
+$ax += cidrblock($address,'191.96.48.0/24','Tzulo Inc (ASN-11878-54). ');
+$ax += cidrblock($address,'191.96.68.0/24','Tzulo Inc (ASN-11878-55). ');
+$ax += cidrblock($address,'191.96.93.0/24','Tzulo Inc (ASN-11878-56). ');
+$ax += cidrblock($address,'191.96.131.0/24','Tzulo Inc (ASN-11878-57). ');
+$ax += cidrblock($address,'191.96.188.0/24','Tzulo Inc (ASN-11878-58). ');
+$ax += cidrblock($address,'191.96.195.0/24','Tzulo Inc (ASN-11878-59). ');
+$ax += cidrblock($address,'191.96.202.0/24','Tzulo Inc (ASN-11878-60). ');
+$ax += cidrblock($address,'191.96.207.0/24','Tzulo Inc (ASN-11878-61). ');
+$ax += cidrblock($address,'191.96.211.0/24','Tzulo Inc (ASN-11878-62). ');
+$ax += cidrblock($address,'191.96.215.0/24','Tzulo Inc (ASN-11878-63). ');
+$ax += cidrblock($address,'191.96.220.0/24','Tzulo Inc (ASN-11878-64). ');
+$ax += cidrblock($address,'191.96.224.0/24','Tzulo Inc (ASN-11878-65). ');
+$ax += cidrblock($address,'191.96.230.0/24','Tzulo Inc (ASN-11878-66). ');
+$ax += cidrblock($address,'191.96.233.0/24','Tzulo Inc (ASN-11878-67). ');
+$ax += cidrblock($address,'191.96.238.0/24','Tzulo Inc (ASN-11878-68). ');
+$ax += cidrblock($address,'191.96.245.0/24','Tzulo Inc (ASN-11878-69). ');
+$ax += cidrblock($address,'191.96.254.0/23','Tzulo Inc (ASN-11878-70). ');
+$ax += cidrblock($address,'191.101.33.0/24','Tzulo Inc (ASN-11878-71). ');
+$ax += cidrblock($address,'191.101.162.0/23','Tzulo Inc (ASN-11878-72). ');
+$ax += cidrblock($address,'191.101.164.0/22','Tzulo Inc (ASN-11878-73). ');
+$ax += cidrblock($address,'191.101.202.0/23','Tzulo Inc (ASN-11878-74). ');
+$ax += cidrblock($address,'191.101.212.0/22','Tzulo Inc (ASN-11878-75). ');
+$ax += cidrblock($address,'191.101.241.0/24','Tzulo Inc (ASN-11878-76). ');
+$ax += cidrblock($address,'192.196.224.0/20','Tzulo Inc (ASN-11878-77). ');
+$ax += cidrblock($address,'192.243.96.0/20','Tzulo Inc (ASN-11878-78). ');
+$ax += cidrblock($address,'198.44.128.0/19','Tzulo Inc (ASN-11878-79). ');
+$ax += cidrblock($address,'198.54.128.0/21','Tzulo Inc (ASN-11878-80). ');
+$ax += cidrblock($address,'199.175.48.0/21','Tzulo Inc (ASN-11878-81). ');
+$ax += cidrblock($address,'206.226.64.0/18','Tzulo Inc (ASN-11878-82). ');
+$ax += cidrblock($address,'208.77.16.0/21','Tzulo Inc (ASN-11878-83). ');
 
 
 // Corpcolo (updated 2016.03.13)
@@ -2867,7 +2934,6 @@ $ax += cidrblock($address,'208.99.0.0/18','Tex-Link Communications, not an acces
 $ax += cidrblock($address,'45.125.192.0/22','Ready Server, not an access provider (ASN-RSDSH-0). ');
 $ax += cidrblock($address,'103.47.208.0/22','Ready Server, not an access provider (ASN-RSDSH-1). ');
 $ax += cidrblock($address,'103.195.151.0/24','Ready Server, not an access provider (ASN-RSDSH-2). ');
-$ax += cidrblock($address,'154.16.95.0/24','Ready Server, not an access provider (ASN-RSDSH-3). ');
 $ax += cidrblock($address,'192.241.8.0/24','Ready Server, not an access provider (ASN-RSDSH-4). ');
 
 
@@ -4061,15 +4127,16 @@ $ax += cidrblock($address,'216.99.144.0/20','Not authorized to access this site 
 $ax += cidrblock($address,'218.246.140.0/22','Not authorized to access this site (ASN-PSYCHZ-108). ');
 
 
-// ALNET-AS PP SKS-Lugan (updated 2016.01.18)
+// ALNET-AS PP SKS-Lugan (updated 2016.04.25)
 // AS35804
 $ax += cidrblock($address,'91.200.12.0/22','ALNET SKS-Lugan (ASN-ALNET-0). ');
 $ax += cidrblock($address,'91.202.212.0/22','ALNET SKS-Lugan (ASN-ALNET-1). ');
-$ax += cidrblock($address,'193.110.144.0/24','ALNET SKS-Lugan (ASN-ALNET-2). ');
-$ax += cidrblock($address,'193.110.168.0/23','ALNET SKS-Lugan (ASN-ALNET-3). ');
-$ax += cidrblock($address,'194.79.60.0/22','ALNET SKS-Lugan (ASN-ALNET-4). ');
-$ax += cidrblock($address,'194.145.220.0/23','ALNET SKS-Lugan (ASN-ALNET-5). ');
-$ax += cidrblock($address,'213.111.128.0/18','ALNET SKS-Lugan (ASN-ALNET-6). ');
+$ax += cidrblock($address,'91.210.31.0/24','ALNET SKS-Lugan (ASN-ALNET-2). ');
+$ax += cidrblock($address,'193.110.144.0/24','ALNET SKS-Lugan (ASN-ALNET-3). ');
+$ax += cidrblock($address,'193.110.168.0/23','ALNET SKS-Lugan (ASN-ALNET-4). ');
+$ax += cidrblock($address,'194.79.60.0/22','ALNET SKS-Lugan (ASN-ALNET-5). ');
+$ax += cidrblock($address,'194.145.220.0/23','ALNET SKS-Lugan (ASN-ALNET-6). ');
+$ax += cidrblock($address,'213.111.128.0/18','ALNET SKS-Lugan (ASN-ALNET-7). ');
 
 
 // MTS-INDIA-IN (updated 2016.01.22 / checked 2016.03.13)
@@ -4859,13 +4926,45 @@ $ax += cidrblock($address,'217.113.64.0/19','PCCW Global (ASN-PCCW-67). ');
 $ax += cidrblock($address,'217.156.160.0/21','PCCW Global (ASN-PCCW-68). ');
 
 
+// Drake Holdings LLC
+// AS62540 (updated 2016.04.25)
+$ax += cidrblock($address,'192.92.196.0/24','Drake Holdings; Access denied (ASN-AS5693-00). ');
+$ax += cidrblock($address,'204.79.180.0/24','Drake Holdings; Access denied (ASN-AS5693-01). ');
+
+
+// Sia Nano IT
+// AS43513 (updated 2016.04.25)
+$ax += cidrblock($address,'31.170.16.0/21','Sia Nano IT; Access denied (ASN-SIANANO-00). ');
+$ax += cidrblock($address,'46.19.144.0/21','Sia Nano IT; Access denied (ASN-SIANANO-01). ');
+$ax += cidrblock($address,'80.250.48.0/20','Sia Nano IT; Access denied (ASN-SIANANO-02). ');
+$ax += cidrblock($address,'85.31.96.0/21','Sia Nano IT; Access denied (ASN-SIANANO-03). ');
+$ax += cidrblock($address,'85.254.5.0/24','Sia Nano IT; Access denied (ASN-SIANANO-04). ');
+$ax += cidrblock($address,'85.254.16.0/22','Sia Nano IT; Access denied (ASN-SIANANO-05). ');
+$ax += cidrblock($address,'85.254.24.0/22','Sia Nano IT; Access denied (ASN-SIANANO-06). ');
+$ax += cidrblock($address,'85.254.32.0/21','Sia Nano IT; Access denied (ASN-SIANANO-07). ');
+$ax += cidrblock($address,'85.254.142.0/23','Sia Nano IT; Access denied (ASN-SIANANO-08). ');
+$ax += cidrblock($address,'85.254.145.0/24','Sia Nano IT; Access denied (ASN-SIANANO-09). ');
+$ax += cidrblock($address,'86.63.160.0/19','Sia Nano IT; Access denied (ASN-SIANANO-10). ');
+$ax += cidrblock($address,'87.246.128.0/20','Sia Nano IT; Access denied (ASN-SIANANO-11). ');
+$ax += cidrblock($address,'89.248.80.0/20','Sia Nano IT; Access denied (ASN-SIANANO-12). ');
+$ax += cidrblock($address,'91.203.68.0/22','Sia Nano IT; Access denied (ASN-SIANANO-13). ');
+$ax += cidrblock($address,'141.136.0.0/21','Sia Nano IT; Access denied (ASN-SIANANO-14). ');
+$ax += cidrblock($address,'159.148.102.0/24','Sia Nano IT; Access denied (ASN-SIANANO-15). ');
+$ax += cidrblock($address,'159.148.198.0/23','Sia Nano IT; Access denied (ASN-SIANANO-16). ');
+$ax += cidrblock($address,'159.148.200.0/24','Sia Nano IT; Access denied (ASN-SIANANO-17). ');
+$ax += cidrblock($address,'178.249.32.0/21','Sia Nano IT; Access denied (ASN-SIANANO-18). ');
+$ax += cidrblock($address,'185.71.128.0/22','Sia Nano IT; Access denied (ASN-SIANANO-19). ');
+$ax += cidrblock($address,'185.72.84.0/22','Sia Nano IT; Access denied (ASN-SIANANO-20). ');
+$ax += cidrblock($address,'185.80.236.0/22','Sia Nano IT; Access denied (ASN-SIANANO-21). ');
+$ax += cidrblock($address,'188.92.72.0/21','Sia Nano IT; Access denied (ASN-SIANANO-22). ');
+$ax += cidrblock($address,'193.46.236.0/24','Sia Nano IT; Access denied (ASN-SIANANO-23). ');
+
+
 // *More, and smaller bad networks to avoid...
 $ax += cidrblock($address,'70.39.128.0/17','packetexchange is a cloud service, not an access provider. '); //75a
 $ax += cidrblock($address,'91.236.74.0/23','ELAN-AS Spamslingers (ELAN-AS). '); //75a
 $ax += cidrblock($address,'173.0.0.0/20','ProXPN, anonymous proxy/vpn network (ProXPN). '); //75a
 $ax += cidrblock($address,'202.46.32.0/19','ShenZhen Sunrise Technology Co, bot like activity. '); //74a fixed 74c
-$ax += cidrblock($address,'31.170.16.0/21','Ad Technology SIA AS49191-1. '); //72d
-$ax += cidrblock($address,'188.92.72.0/21','Ad Technology SIA AS49191-2. '); //72d
 $ax += iprange($address,'195.216.160.0','195.216.191.255','a JUNIK. ');
 $ax += iprange($address,'213.182.192.0','213.182.223.255','b JUNIK. ');
 $ax += iprange($address,'87.245.192.0','87.245.255.255','RETN. ');

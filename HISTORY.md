@@ -337,3 +337,20 @@ History/Changelog of this repository (and of those updates merged into it) is as
 
 #####2016-04-18
 - Repository updated with new changes.
+
+#####2016-04-18
+- Repository updated with new changes.
+- OVH Networks CIDRs updated.
+
+#####2016-04-23
+- Swiftway CIDRs updated.
+- MYLOC CIDRs updated.
+
+#####2016-04-25
+- Digital Ocean CIDRs updated.
+- Drake Holdings CIDRs added.
+- Sia Nano IT CIDRs added.
+- IOMart CIDRs updated.
+- ALNET-AS PP SKS-Lugan CIDRs updated.
+- XEEX CIDRs updated.
+- Tzulo Inc CIDRs updated.
