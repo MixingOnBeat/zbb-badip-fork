@@ -354,3 +354,13 @@ History/Changelog of this repository (and of those updates merged into it) is as
 - ALNET-AS PP SKS-Lugan CIDRs updated.
 - XEEX CIDRs updated.
 - Tzulo Inc CIDRs updated.
+- Repository updated with new changes.
+
+#####2016-04-27
+- Rackspace CIDRs updated.
+- Mir Telematiki CIDRs added.
+- Pakistan Telecom CIDRs updated.
+- Spamahost CIDRs updated.
+- CyberBunker CIDRs updated.
+- Pegasus Web Technology CIDRs updated.
+- Repository updated with new changes.
