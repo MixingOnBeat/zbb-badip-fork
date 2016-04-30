@@ -364,3 +364,7 @@ History/Changelog of this repository (and of those updates merged into it) is as
 - CyberBunker CIDRs updated.
 - Pegasus Web Technology CIDRs updated.
 - Repository updated with new changes.
+
+#####2016-04-30
+- Eonix Corporation CIDRs updated.
+- Repository updated with new changes.

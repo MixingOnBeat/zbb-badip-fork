@@ -18,7 +18,7 @@
  * FOR USE WITH ZB BLOCK OR ANY GNU/GPL V.2 COMPLIANT DERIVATIVE
  */
 
-$zbbversion .= ' / BADIP-2016-04+U.3'; // Version number goes here. (product code)-(Year)-(Month)(issue letter)(+U = Unofficial fork, non-mainlined release).(Build number)
+$zbbversion .= ' / BADIP-2016-04+U.4'; // Version number goes here. (product code)-(Year)-(Month)(issue letter)(+U = Unofficial fork, non-mainlined release).(Build number)
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -1790,49 +1790,30 @@ if (((inmatch($whyblockout,'(ASN-HE1-)','')) || (inmatch($whyblockout,'(ASN-HE1-
 }
 
 
-// Eonix Corporation, not an access provider ISP. (updated 2016.03.13)
+// Eonix Corporation, not an access provider ISP. (updated 2016.04.30)
 // Many improper ASN records. Known attack vector.
-// AS30693
-$ax += cidrblock($address,'23.90.0.0/18','EONIX Network (ASN-EONIX-00). ');
-$ax += cidrblock($address,'23.231.0.0/17','EONIX Network (ASN-EONIX-01). ');
-$ax += cidrblock($address,'23.252.16.0/20','EONIX Network (ASN-EONIX-02). ');
-$ax += cidrblock($address,'50.2.0.0/15','EONIX Network (ASN-EONIX-03). ');
-$ax += cidrblock($address,'75.75.224.0/19','EONIX Network (ASN-EONIX-04). ');
-$ax += cidrblock($address,'104.140.0.0/18','EONIX Network (ASN-EONIX-05). ');
-$ax += cidrblock($address,'104.140.64.0/22','EONIX Network (ASN-EONIX-06). ');
-$ax += cidrblock($address,'104.140.72.0/21','EONIX Network (ASN-EONIX-07). ');
-$ax += cidrblock($address,'104.140.84.0/22','EONIX Network (ASN-EONIX-08). ');
-$ax += cidrblock($address,'104.140.88.0/21','EONIX Network (ASN-EONIX-09). ');
-$ax += cidrblock($address,'104.140.96.0/21','EONIX Network (ASN-EONIX-10). ');
-$ax += cidrblock($address,'104.140.108.0/22','EONIX Network (ASN-EONIX-11). ');
-$ax += cidrblock($address,'104.140.112.0/20','EONIX Network (ASN-EONIX-12). ');
-$ax += cidrblock($address,'104.140.128.0/21','EONIX Network (ASN-EONIX-13). ');
-$ax += cidrblock($address,'104.140.136.0/22','EONIX Network (ASN-EONIX-14). ');
-$ax += cidrblock($address,'104.140.144.0/20','EONIX Network (ASN-EONIX-15). ');
-$ax += cidrblock($address,'104.140.160.0/20','EONIX Network (ASN-EONIX-16). ');
-$ax += cidrblock($address,'104.140.176.0/21','EONIX Network (ASN-EONIX-17). ');
-$ax += cidrblock($address,'104.140.188.0/22','EONIX Network (ASN-EONIX-18). ');
-$ax += cidrblock($address,'104.140.192.0/21','EONIX Network (ASN-EONIX-19). ');
-$ax += cidrblock($address,'104.140.204.0/22','EONIX Network (ASN-EONIX-20). ');
-$ax += cidrblock($address,'104.140.208.0/21','EONIX Network (ASN-EONIX-21). ');
-$ax += cidrblock($address,'104.140.217.0/24','EONIX Network (ASN-EONIX-22). ');
-$ax += cidrblock($address,'104.140.218.0/23','EONIX Network (ASN-EONIX-23). ');
-$ax += cidrblock($address,'104.140.220.0/23','EONIX Network (ASN-EONIX-24). ');
-$ax += cidrblock($address,'104.140.222.0/24','EONIX Network (ASN-EONIX-25). ');
-$ax += cidrblock($address,'104.140.224.0/20','EONIX Network (ASN-EONIX-26). ');
-$ax += cidrblock($address,'104.140.240.0/21','EONIX Network (ASN-EONIX-27). ');
-$ax += cidrblock($address,'104.140.248.0/22','EONIX Network (ASN-EONIX-28). ');
-$ax += cidrblock($address,'104.206.0.0/16','EONIX Network (ASN-EONIX-29). ');
-$ax += cidrblock($address,'107.158.0.0/16','EONIX Network (ASN-EONIX-30). ');
-$ax += cidrblock($address,'170.130.0.0/16','EONIX Network (ASN-EONIX-31). ');
-$ax += cidrblock($address,'172.94.93.0/24','EONIX Network (ASN-EONIX-32). ');
-$ax += cidrblock($address,'173.44.128.0/17','EONIX Network (ASN-EONIX-33). ');
-$ax += cidrblock($address,'173.213.64.0/18','EONIX Network (ASN-EONIX-34). ');
-$ax += cidrblock($address,'173.232.0.0/16','EONIX Network (ASN-EONIX-35). ');
-$ax += cidrblock($address,'192.157.60.0/22','EONIX Network (ASN-EONIX-36). ');
-$ax += cidrblock($address,'192.230.144.0/20','EONIX Network (ASN-EONIX-37). ');
-$ax += cidrblock($address,'206.214.64.0/19','EONIX Network (ASN-EONIX-38). ');
-$ax += cidrblock($address,'208.89.216.0/21','EONIX Network (ASN-EONIX-39). ');
+// AS30693, AS49532, AS62904
+$ax += cidrblock($address,'23.90.0.0/18','Eonix Corporation (ASN-EONIX-00). ');
+$ax += cidrblock($address,'23.231.0.0/17','Eonix Corporation (ASN-EONIX-01). ');
+$ax += cidrblock($address,'50.2.0.0/15','Eonix Corporation (ASN-EONIX-02). ');
+$ax += cidrblock($address,'75.75.224.0/19','Eonix Corporation (ASN-EONIX-03). ');
+$ax += cidrblock($address,'104.140.0.0/16','Eonix Corporation (ASN-EONIX-04). ');
+$ax += cidrblock($address,'104.193.40.0/22','Eonix Corporation (ASN-EONIX-05). ');
+$ax += cidrblock($address,'104.206.0.0/16','Eonix Corporation (ASN-EONIX-06). ');
+$ax += cidrblock($address,'104.218.232.0/21','Eonix Corporation (ASN-EONIX-07). ');
+$ax += cidrblock($address,'107.158.0.0/16','Eonix Corporation (ASN-EONIX-08). ');
+$ax += cidrblock($address,'170.130.0.0/16','Eonix Corporation (ASN-EONIX-09). ');
+$ax += cidrblock($address,'172.94.93.0/24','Eonix Corporation (ASN-EONIX-10). ');
+$ax += cidrblock($address,'173.44.128.0/17','Eonix Corporation (ASN-EONIX-11). ');
+$ax += cidrblock($address,'173.213.64.0/18','Eonix Corporation (ASN-EONIX-12). ');
+$ax += cidrblock($address,'173.232.0.0/16','Eonix Corporation (ASN-EONIX-13). ');
+$ax += cidrblock($address,'185.137.136.0/22','Eonix Corporation (ASN-EONIX-14). ');
+$ax += cidrblock($address,'192.157.60.0/22','Eonix Corporation (ASN-EONIX-15). ');
+$ax += cidrblock($address,'192.230.144.0/20','Eonix Corporation (ASN-EONIX-16). ');
+$ax += cidrblock($address,'199.66.112.0/22','Eonix Corporation (ASN-EONIX-17). ');
+$ax += cidrblock($address,'199.127.72.0/21','Eonix Corporation (ASN-EONIX-18). ');
+$ax += cidrblock($address,'206.214.64.0/19','Eonix Corporation (ASN-EONIX-19). ');
+$ax += cidrblock($address,'208.89.216.0/21','Eonix Corporation (ASN-EONIX-20). ');
 
 
 // Pegasus Web Technology / Fortress ITX, Not an access provider. (updated 2016.04.27)
