@@ -368,3 +368,46 @@ History/Changelog of this repository (and of those updates merged into it) is as
 #####2016-04-30
 - Eonix Corporation CIDRs updated.
 - Repository updated with new changes.
+
+#####2016-05-15
+- Elos Host CIDRs added.
+- Repository updated with new changes.
+
+#####2016-05-20
+- Sharktech CIDRs added.
+- Sun Network CIDRs added.
+- HT CIDRs added.
+- VpsQuan L.L.C CIDRs added.
+- Trellian Pty. Limited CIDRs added.
+- INTERIA.PL CIDRs added.
+- ShangHai AnchNet Tec CIDRs added.
+- Computer Network Information Center CIDRs added.
+- Take 2 Hosting, Inc CIDRs added.
+- Global Frag Networks CIDRs added.
+- Royal Network Technology and Rainbow Network Ltd CIDRs added.
+- CommuniLink Internet CIDRs added.
+- 1&1 Internet SE CIDRs updated.
+- Çizgi Telekomünikasyon CIDRs added.
+
+#####2016-05-21
+- Unified Layer CIDRs updated.
+- Confluence Networks Inc CIDRs added.
+- Hetzner Online GmbH CIDRs updated.
+- PVNT Networks CIDRs removed (no announces for nearly 6 months; seems to be a dead ASN).
+- Some previously commented-out optional signatures removed (better to share these separately to the forums or to include as separate files; users shouldn't need to modify the core signature files to enable optional blocks).
+- Agava Ltd CIDRs added.
+- SoftLayer Technologies CIDRs updated.
+- IQHost Ltd CIDRs added.
+- Netinternet Bilgisayar ve Telekomunikasyon CIDRs updated.
+- Avesta Networks LLC CIDRs added.
+- Hosting Operator eServer.ru Ltd CIDRs added.
+- Webzilla B.V. CIDRs added.
+- Aerotek Bilisim Taahhut Sanayi ve Ticaret Limited Sirketi CIDRs added.
+- CJSC Registrar R01 CIDRs added.
+- Redstation Network CIDRs updated.
+- Inter Connects Inc (formerly: WEBXXPERTS) CIDRs updated.
+- WholeSale Internet, Inc CIDRs split from DataShack, LC CIDRs; both updated.
+- Init7 CIDRs added.
+- K SERVERS LTD CIDRs added.
+- WorldStream CIDRs updated.
+- Repository updated with new changes.
