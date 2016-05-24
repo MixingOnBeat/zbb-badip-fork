@@ -411,3 +411,20 @@ History/Changelog of this repository (and of those updates merged into it) is as
 - K SERVERS LTD CIDRs added.
 - WorldStream CIDRs updated.
 - Repository updated with new changes.
+
+#####2016-05-22
+- Pulsant (Scotland) Ltd CIDRs updated.
+
+#####2016-05-24
+- RamNode LLC CIDRs added.
+- RouteLabel V.O.F. CIDRs added.
+- MnogoByte LLC CIDRs added.
+- Biznes-Host.pl CIDRs added.
+- Yes Networks Unlimited Ltd CIDRs added.
+- Staminus Communications CIDRs added.
+- Enzu Inc CIDRs added.
+- EGIHosting CIDRs added.
+- Hosting Solutions International, Inc CIDRs added.
+- ONLINE S.A.S. CIDRs added.
+- HZ Hosting Ltd (formerly: Fortunix Networks L.P.) CIDRs added.
+- Repository updated with new changes.
