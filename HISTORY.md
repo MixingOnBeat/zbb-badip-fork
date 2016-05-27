@@ -428,3 +428,23 @@ History/Changelog of this repository (and of those updates merged into it) is as
 - ONLINE S.A.S. CIDRs added.
 - HZ Hosting Ltd (formerly: Fortunix Networks L.P.) CIDRs added.
 - Repository updated with new changes.
+
+#####2016-05-26
+- FranTech Solutions CIDRs added.
+- Contina CIDRs added.
+- Micfo, LLC. CIDRs updated.
+- Continuum Data Centers, LLC CIDRs added.
+- ESDS Software Solution CIDRs added.
+- QuickPacket, LLC CIDRs added.
+
+#####2016-05-27
+- ScaleUp Technologies CIDRs added.
+- HIVELOCITY VENTURES CORP CIDRs added.
+- XT GLOBAL NETWORKS LTD CIDRs added.
+- Datacenter IP, LLC CIDRs added.
+- MBA DATACENTERS S.L. CIDRs added.
+- CachedNet LLC CIDRs added.
+- Hawk Host Inc CIDRs added.
+- CariNet, Inc CIDRs added.
+- Proxy Pipe, Inc CIDRs added.
+- Repository updated with new changes.
