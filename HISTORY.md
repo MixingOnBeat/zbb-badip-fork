@@ -448,3 +448,21 @@ History/Changelog of this repository (and of those updates merged into it) is as
 - CariNet, Inc CIDRs added.
 - Proxy Pipe, Inc CIDRs added.
 - Repository updated with new changes.
+
+#####2016-05-30
+- UK-2 Limited CIDRs added.
+- Reasonnet IP Networks B.V. CIDRs added.
+- IT7 Networks Inc CIDRs added.
+- OPTICAL TECHNOLOGIES S.A.C. CIDRs added.
+- Hosting Services Inc CIDRs added.
+- Awareness Software Limited CIDRs added.
+- Incero LLC CIDRs added.
+- Linode, LLC CIDRs added.
+
+#####2016-05-31
+- Prolexic section split in half between JPMorgan Chase & Co and Akamai (Akamai section/CIDRs added, JPMorgan section/CIDRs added, Prolexic section removed).
+
+#####2016-06-02
+- Connexions4London Ltd CIDRs updated.
+- SingleHop, Inc CIDRs updated.
+- Repository updated with new changes.
