@@ -18,7 +18,7 @@
  * FOR USE WITH ZB BLOCK OR ANY GNU/GPL V.2 COMPLIANT DERIVATIVE
  */
 
-$zbbversion .= ' / BADIP-2016-06+U.0'; // Version number goes here. (product code)-(Year)-(Month)(issue letter)(+U = Unofficial fork, non-mainlined release).(Build number)
+$zbbversion .= ' / BADIP-2016-06+U.1'; // Version number goes here. (product code)-(Year)-(Month)(issue letter)(+U = Unofficial fork, non-mainlined release).(Build number)
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -87,7 +87,6 @@ $ax += iprange($address,'80.81.159.0','80.81.159.255','Problematic netblock (IP-
 $ax += iprange($address,'80.81.208.0','80.81.223.255','Problematic netblock (IP-025). ');
 $ax += iprange($address,'80.87.152.0','80.87.152.255','Server farm infected with grum spambot (IP-026). ');
 $ax += iprange($address,'80.93.122.0','80.93.122.255','Ukrainian Attack Prone Netblock (IP-027). ');
-$ax += iprange($address,'81.21.74.0','81.21.74.255','webfusion.co.uk (IP-028). ');
 $ax += iprange($address,'81.223.254.0','81.223.254.127','smartservercontrol.com (IP-029). ');
 $ax += iprange($address,'83.233.30.0','83.233.33.255','Multiple referer spam block (IP-030). ');
 $ax += iprange($address,'84.201.224.0','84.201.239.255','Spam network (IP-031). ');
@@ -1865,140 +1864,122 @@ $ax += cidrblock($address,'196.196.37.0/24','Inter Connects Inc, not an access p
 $ax += cidrblock($address,'196.196.39.0/24','Inter Connects Inc, not an access provider ISP (ASN-INTERCONNECTS-52). ');
 
 
-// Hurricane Electric, not an access provider ISP. (updated 2016.01.23)
+// Hurricane Electric, not an access provider ISP.
 // Too many infected and hostile servers. Good folks otherwise (Free DYN-DNS service SBS enjoys)
-// AS6939
-$ax += cidrblock($address,'5.152.177.0/24','Hurricane Electric (ASN-HE1-000). ');
-$ax += cidrblock($address,'5.152.179.0/24','Hurricane Electric (ASN-HE1-001). ');
-$ax += cidrblock($address,'5.152.180.0/22','Hurricane Electric (ASN-HE1-002). ');
-$ax += cidrblock($address,'23.92.24.0/22','Hurricane Electric (ASN-HE1-003). ');
-$ax += cidrblock($address,'23.239.0.0/21','Hurricane Electric (ASN-HE1-004). ');
-$ax += cidrblock($address,'23.239.20.0/22','Hurricane Electric (ASN-HE1-005). ');
-$ax += cidrblock($address,'27.50.32.0/21','Hurricane Electric (ASN-HE1-006). ');
-$ax += cidrblock($address,'37.16.72.0/21','Hurricane Electric (ASN-HE1-007). ');
-$ax += cidrblock($address,'45.33.32.0/19','Hurricane Electric (ASN-HE1-008). ');
-$ax += cidrblock($address,'45.33.104.0/21','Hurricane Electric (ASN-HE1-009). ');
-$ax += cidrblock($address,'45.33.128.0/20','Hurricane Electric (ASN-HE1-010). ');
-$ax += cidrblock($address,'45.56.80.0/20','Hurricane Electric (ASN-HE1-011). ');
-$ax += cidrblock($address,'45.79.64.0/18','Hurricane Electric (ASN-HE1-012). ');
-$ax += cidrblock($address,'45.79.224.0/19','Hurricane Electric (ASN-HE1-013). ');
-$ax += cidrblock($address,'50.116.0.0/20','Hurricane Electric (ASN-HE1-014). ');
-$ax += cidrblock($address,'64.62.128.0/17','Hurricane Electric (ASN-HE1-015). ');
-$ax += cidrblock($address,'64.71.128.0/18','Hurricane Electric (ASN-HE1-016). ');
-$ax += cidrblock($address,'64.187.96.0/19','Hurricane Electric (ASN-HE1-017). ');
-$ax += cidrblock($address,'65.19.128.0/18','Hurricane Electric (ASN-HE1-018). ');
-$ax += cidrblock($address,'65.49.0.0/17','Hurricane Electric (ASN-HE1-019). ');
-if ((cidrblock($address,'65.49.67.0/24','')) && ($ax == 1) && (inmatch($whyblockout,'(ASN-HE1-019)',''))){$ax = 0; $whyblockout .= 'Access provider block bypass (BYP-ASN-HE1-019-01)';} //77f modified 2016.01.23/BADIP-2016-01+U.9
-$ax += cidrblock($address,'66.160.128.0/18','Hurricane Electric (ASN-HE1-020). ');
-$ax += cidrblock($address,'66.160.192.0/20','Hurricane Electric (ASN-HE1-021). ');
-$ax += cidrblock($address,'66.175.216.0/21','Hurricane Electric (ASN-HE1-022). ');
-$ax += cidrblock($address,'66.178.176.0/20','Hurricane Electric (ASN-HE1-023). ');
-$ax += cidrblock($address,'66.220.0.0/19','Hurricane Electric (ASN-HE1-024). ');
-$ax += cidrblock($address,'70.35.16.0/21','Hurricane Electric (ASN-HE1-025). ');
-$ax += cidrblock($address,'72.52.64.0/18','Hurricane Electric (ASN-HE1-026). ');
-$ax += cidrblock($address,'74.82.0.0/18','Hurricane Electric (ASN-HE1-027). ');
-$ax += cidrblock($address,'74.113.40.0/24','Hurricane Electric (ASN-HE1-028). ');
-$ax += cidrblock($address,'74.113.42.0/24','Hurricane Electric (ASN-HE1-029). ');
-$ax += cidrblock($address,'74.113.44.0/24','Hurricane Electric (ASN-HE1-030). ');
-$ax += cidrblock($address,'74.113.46.0/23','Hurricane Electric (ASN-HE1-031). ');
-$ax += cidrblock($address,'74.113.68.0/22','Hurricane Electric (ASN-HE1-032). ');
-$ax += cidrblock($address,'74.121.104.0/22','Hurricane Electric (ASN-HE1-033). ');
-$ax += cidrblock($address,'74.207.240.0/20','Hurricane Electric (ASN-HE1-034). ');
-$ax += cidrblock($address,'96.126.96.0/21','Hurricane Electric (ASN-HE1-035). ');
-$ax += cidrblock($address,'98.158.224.0/20','Hurricane Electric (ASN-HE1-036). ');
-$ax += cidrblock($address,'103.193.186.0/23','Hurricane Electric (ASN-HE1-037). ');
-$ax += cidrblock($address,'103.249.0.0/24','Hurricane Electric (ASN-HE1-038). ');
-$ax += cidrblock($address,'104.36.120.0/22','Hurricane Electric (ASN-HE1-039). ');
-$ax += cidrblock($address,'104.129.240.0/20','Hurricane Electric (ASN-HE1-040). ');
-$ax += cidrblock($address,'104.193.248.0/22','Hurricane Electric (ASN-HE1-041). ');
-$ax += cidrblock($address,'104.200.24.0/22','Hurricane Electric (ASN-HE1-042). ');
-$ax += cidrblock($address,'104.218.36.0/22','Hurricane Electric (ASN-HE1-043). ');
-$ax += cidrblock($address,'104.219.136.0/21','Hurricane Electric (ASN-HE1-044). ');
-$ax += cidrblock($address,'104.237.152.0/21','Hurricane Electric (ASN-HE1-045). ');
-$ax += cidrblock($address,'104.255.240.0/21','Hurricane Electric (ASN-HE1-046). ');
-$ax += cidrblock($address,'107.178.32.0/20','Hurricane Electric (ASN-HE1-047). ');
-$ax += cidrblock($address,'124.252.252.0/24','Hurricane Electric (ASN-HE1-048). ');
-$ax += cidrblock($address,'148.51.0.0/16','Hurricane Electric (ASN-HE1-049). ');
-$ax += cidrblock($address,'161.123.225.0/24','Hurricane Electric (ASN-HE1-050). ');
-$ax += cidrblock($address,'162.219.48.0/23','Hurricane Electric (ASN-HE1-051). ');
-$ax += cidrblock($address,'162.219.50.0/24','Hurricane Electric (ASN-HE1-052). ');
-$ax += cidrblock($address,'162.247.12.0/22','Hurricane Electric (ASN-HE1-053). ');
-$ax += cidrblock($address,'162.249.152.0/22','Hurricane Electric (ASN-HE1-054). ');
-$ax += cidrblock($address,'173.230.144.0/20','Hurricane Electric (ASN-HE1-055). ');
-$ax += cidrblock($address,'173.255.208.0/20','Hurricane Electric (ASN-HE1-056). ');
-$ax += cidrblock($address,'173.255.240.0/20','Hurricane Electric (ASN-HE1-057). ');
-$ax += cidrblock($address,'184.75.240.0/21','Hurricane Electric (ASN-HE1-058). ');
-$ax += cidrblock($address,'184.104.0.0/15','Hurricane Electric (ASN-HE1-059). ');
-$ax += cidrblock($address,'185.101.97.0/24','Hurricane Electric (ASN-HE1-060). ');
-$ax += cidrblock($address,'185.114.36.0/24','Hurricane Electric (ASN-HE1-061). ');
-$ax += cidrblock($address,'191.101.245.0/24','Hurricane Electric (ASN-HE1-062). ');
-$ax += cidrblock($address,'192.52.69.0/24','Hurricane Electric (ASN-HE1-063). ');
-$ax += cidrblock($address,'192.52.250.0/23','Hurricane Electric (ASN-HE1-064). ');
-$ax += cidrblock($address,'192.81.128.0/21','Hurricane Electric (ASN-HE1-065). ');
-$ax += cidrblock($address,'192.81.196.0/22','Hurricane Electric (ASN-HE1-066). ');
-$ax += cidrblock($address,'192.81.248.0/22','Hurricane Electric (ASN-HE1-067). ');
-$ax += cidrblock($address,'192.88.99.0/24','Hurricane Electric (ASN-HE1-068). ');
-$ax += cidrblock($address,'192.132.94.0/24','Hurricane Electric (ASN-HE1-070). ');
-$ax += cidrblock($address,'192.136.112.0/24','Hurricane Electric (ASN-HE1-071). ');
-$ax += cidrblock($address,'192.155.80.0/21','Hurricane Electric (ASN-HE1-072). ');
-$ax += cidrblock($address,'192.156.200.0/24','Hurricane Electric (ASN-HE1-073). ');
-$ax += cidrblock($address,'192.190.255.0/24','Hurricane Electric (ASN-HE1-074). ');
-$ax += cidrblock($address,'193.142.62.0/24','Hurricane Electric (ASN-HE1-075). ');
-$ax += cidrblock($address,'198.36.120.0/21','Hurricane Electric (ASN-HE1-076). ');
-$ax += cidrblock($address,'198.74.48.0/22','Hurricane Electric (ASN-HE1-077). ');
-$ax += cidrblock($address,'198.102.73.0/24','Hurricane Electric (ASN-HE1-078). ');
-$ax += cidrblock($address,'199.4.150.0/24','Hurricane Electric (ASN-HE1-079). ');
-$ax += cidrblock($address,'199.16.200.0/21','Hurricane Electric (ASN-HE1-080). ');
-$ax += cidrblock($address,'199.34.120.0/21','Hurricane Electric (ASN-HE1-081). ');
-$ax += cidrblock($address,'199.74.248.0/24','Hurricane Electric (ASN-HE1-082). ');
-$ax += cidrblock($address,'199.88.158.0/24','Hurricane Electric (ASN-HE1-083). ');
-$ax += cidrblock($address,'199.233.90.0/24','Hurricane Electric (ASN-HE1-084). ');
-$ax += cidrblock($address,'199.233.198.0/23','Hurricane Electric (ASN-HE1-085). ');
-$ax += cidrblock($address,'199.245.105.0/24','Hurricane Electric (ASN-HE1-086). ');
-$ax += cidrblock($address,'203.12.6.0/24','Hurricane Electric (ASN-HE1-087). ');
-$ax += cidrblock($address,'203.99.142.0/24','Hurricane Electric (ASN-HE1-088). ');
-$ax += cidrblock($address,'204.10.104.0/21','Hurricane Electric (ASN-HE1-089). ');
-$ax += cidrblock($address,'204.14.104.0/21','Hurricane Electric (ASN-HE1-090). ');
-$ax += cidrblock($address,'204.187.91.0/24','Hurricane Electric (ASN-HE1-091). ');
-$ax += cidrblock($address,'204.238.49.0/24','Hurricane Electric (ASN-HE1-092). ');
-$ax += cidrblock($address,'205.159.239.0/24','Hurricane Electric (ASN-HE1-093). ');
-$ax += cidrblock($address,'205.166.121.0/24','Hurricane Electric (ASN-HE1-094). ');
-$ax += cidrblock($address,'206.108.49.0/24','Hurricane Electric (ASN-HE1-095). ');
-$ax += cidrblock($address,'206.108.51.0/24','Hurricane Electric (ASN-HE1-096). ');
-$ax += cidrblock($address,'206.108.55.0/24','Hurricane Electric (ASN-HE1-097). ');
-$ax += cidrblock($address,'206.144.144.0/20','Hurricane Electric (ASN-HE1-098). ');
-$ax += cidrblock($address,'207.171.210.0/23','Hurricane Electric (ASN-HE1-099). ');
-$ax += cidrblock($address,'207.171.226.0/24','Hurricane Electric (ASN-HE1-100). ');
-$ax += cidrblock($address,'208.75.96.0/21','Hurricane Electric (ASN-HE1-101). ');
-$ax += cidrblock($address,'209.51.160.0/19','Hurricane Electric (ASN-HE1-102). ');
-$ax += cidrblock($address,'209.150.160.0/19','Hurricane Electric (ASN-HE1-103). ');
-$ax += cidrblock($address,'216.66.0.0/18','Hurricane Electric (ASN-HE1-105). ');
-$ax += cidrblock($address,'216.105.164.0/22','Hurricane Electric (ASN-HE1-107). ');
-$ax += cidrblock($address,'216.126.60.0/22','Hurricane Electric (ASN-HE1-108). ');
-$ax += cidrblock($address,'216.152.64.0/20','Hurricane Electric (ASN-HE1-109). ');
-$ax += cidrblock($address,'216.163.108.0/24','Hurricane Electric (ASN-HE1-110). ');
-$ax += cidrblock($address,'216.171.192.0/23','Hurricane Electric (ASN-HE1-111). ');
-$ax += cidrblock($address,'216.171.196.0/24','Hurricane Electric (ASN-HE1-112). ');
-$ax += cidrblock($address,'216.171.201.0/24','Hurricane Electric (ASN-HE1-113). ');
-$ax += cidrblock($address,'216.171.202.0/24','Hurricane Electric (ASN-HE1-114). ');
-$ax += cidrblock($address,'216.171.204.0/23','Hurricane Electric (ASN-HE1-115). ');
-$ax += cidrblock($address,'216.171.206.0/24','Hurricane Electric (ASN-HE1-116). ');
-$ax += cidrblock($address,'216.171.208.0/24','Hurricane Electric (ASN-HE1-117). ');
-$ax += cidrblock($address,'216.171.218.0/24','Hurricane Electric (ASN-HE1-118). ');
-$ax += cidrblock($address,'216.171.220.0/23','Hurricane Electric (ASN-HE1-119). ');
-$ax += cidrblock($address,'216.218.128.0/17','Hurricane Electric (ASN-HE1-120). ');
-$ax += cidrblock($address,'216.224.64.0/19','Hurricane Electric (ASN-HE1-121). ');
-$ax += cidrblock($address,'216.229.96.0/20','Hurricane Electric (ASN-HE1-122). ');
+// AS6939 (updated 2016.06.09)
+$ax += cidrblock($address,'5.152.177.0/24','Hurricane Electric (ASN-HE1-00). ');
+$ax += cidrblock($address,'5.152.179.0/24','Hurricane Electric (ASN-HE1-01). ');
+$ax += cidrblock($address,'5.152.180.0/22','Hurricane Electric (ASN-HE1-02). ');
+$ax += cidrblock($address,'27.50.32.0/21','Hurricane Electric (ASN-HE1-03). ');
+$ax += cidrblock($address,'37.16.72.0/21','Hurricane Electric (ASN-HE1-04). ');
+$ax += cidrblock($address,'45.33.128.0/20','Hurricane Electric (ASN-HE1-05). ');
+$ax += cidrblock($address,'45.40.96.0/19','Hurricane Electric (ASN-HE1-06). ');
+$ax += cidrblock($address,'64.62.128.0/17','Hurricane Electric (ASN-HE1-07). ');
+$ax += cidrblock($address,'64.71.128.0/18','Hurricane Electric (ASN-HE1-08). ');
+$ax += cidrblock($address,'64.187.96.0/19','Hurricane Electric (ASN-HE1-09). ');
+$ax += cidrblock($address,'65.19.128.0/18','Hurricane Electric (ASN-HE1-10). ');
+$ax += cidrblock($address,'65.49.0.0/17','Hurricane Electric (ASN-HE1-11). ');
+if (cidrblock($address,'65.49.67.0/24','') && $ax === 1 && inmatch($whyblockout,'(ASN-HE1-11)','')) {
+    $ax = 0;
+    $whyblockout .= 'Access provider block bypass (BYP-ASN-HE1-11). ';
+}
+$ax += cidrblock($address,'66.160.128.0/18','Hurricane Electric (ASN-HE1-12). ');
+$ax += cidrblock($address,'66.160.192.0/20','Hurricane Electric (ASN-HE1-13). ');
+$ax += cidrblock($address,'66.178.176.0/20','Hurricane Electric (ASN-HE1-14). ');
+$ax += cidrblock($address,'66.220.0.0/19','Hurricane Electric (ASN-HE1-15). ');
+$ax += cidrblock($address,'70.35.16.0/21','Hurricane Electric (ASN-HE1-16). ');
+$ax += cidrblock($address,'72.52.64.0/18','Hurricane Electric (ASN-HE1-17). ');
+$ax += cidrblock($address,'74.82.0.0/18','Hurricane Electric (ASN-HE1-18). ');
+$ax += cidrblock($address,'74.113.68.0/22','Hurricane Electric (ASN-HE1-19). ');
+$ax += cidrblock($address,'74.121.104.0/22','Hurricane Electric (ASN-HE1-20). ');
+$ax += cidrblock($address,'98.158.224.0/20','Hurricane Electric (ASN-HE1-21). ');
+$ax += cidrblock($address,'103.193.186.0/23','Hurricane Electric (ASN-HE1-22). ');
+$ax += cidrblock($address,'103.249.0.0/24','Hurricane Electric (ASN-HE1-23). ');
+$ax += cidrblock($address,'104.36.120.0/22','Hurricane Electric (ASN-HE1-24). ');
+$ax += cidrblock($address,'104.129.240.0/20','Hurricane Electric (ASN-HE1-25). ');
+$ax += cidrblock($address,'104.193.248.0/22','Hurricane Electric (ASN-HE1-26). ');
+$ax += cidrblock($address,'104.218.36.0/22','Hurricane Electric (ASN-HE1-27). ');
+$ax += cidrblock($address,'104.255.240.0/21','Hurricane Electric (ASN-HE1-28). ');
+$ax += cidrblock($address,'107.178.32.0/20','Hurricane Electric (ASN-HE1-29). ');
+$ax += cidrblock($address,'124.252.252.0/23','Hurricane Electric (ASN-HE1-30). ');
+$ax += cidrblock($address,'148.51.0.0/16','Hurricane Electric (ASN-HE1-31). ');
+$ax += cidrblock($address,'157.52.32.0/20','Hurricane Electric (ASN-HE1-32). ');
+$ax += cidrblock($address,'162.219.48.0/23','Hurricane Electric (ASN-HE1-33). ');
+$ax += cidrblock($address,'162.219.50.0/24','Hurricane Electric (ASN-HE1-34). ');
+$ax += cidrblock($address,'162.247.12.0/22','Hurricane Electric (ASN-HE1-35). ');
+$ax += cidrblock($address,'162.247.75.0/24','Hurricane Electric (ASN-HE1-36). ');
+$ax += cidrblock($address,'162.249.152.0/22','Hurricane Electric (ASN-HE1-37). ');
+$ax += cidrblock($address,'172.96.112.0/24','Hurricane Electric (ASN-HE1-38). ');
+$ax += cidrblock($address,'184.75.240.0/21','Hurricane Electric (ASN-HE1-39). ');
+$ax += cidrblock($address,'184.104.0.0/15','Hurricane Electric (ASN-HE1-40). ');
+$ax += cidrblock($address,'185.101.97.0/24','Hurricane Electric (ASN-HE1-41). ');
+$ax += cidrblock($address,'185.114.36.0/24','Hurricane Electric (ASN-HE1-42). ');
+$ax += cidrblock($address,'191.101.245.0/24','Hurricane Electric (ASN-HE1-43). ');
+$ax += cidrblock($address,'192.52.69.0/24','Hurricane Electric (ASN-HE1-44). ');
+$ax += cidrblock($address,'192.52.250.0/23','Hurricane Electric (ASN-HE1-45). ');
+$ax += cidrblock($address,'192.81.196.0/22','Hurricane Electric (ASN-HE1-46). ');
+$ax += cidrblock($address,'192.88.99.0/24','Hurricane Electric (ASN-HE1-47). ');
+$ax += cidrblock($address,'192.132.94.0/24','Hurricane Electric (ASN-HE1-49). ');
+$ax += cidrblock($address,'192.136.112.0/24','Hurricane Electric (ASN-HE1-50). ');
+$ax += cidrblock($address,'192.156.200.0/24','Hurricane Electric (ASN-HE1-51). ');
+$ax += cidrblock($address,'192.190.255.0/24','Hurricane Electric (ASN-HE1-52). ');
+$ax += cidrblock($address,'193.142.62.0/24','Hurricane Electric (ASN-HE1-53). ');
+$ax += cidrblock($address,'198.36.120.0/21','Hurricane Electric (ASN-HE1-54). ');
+$ax += cidrblock($address,'198.102.73.0/24','Hurricane Electric (ASN-HE1-55). ');
+$ax += cidrblock($address,'199.4.150.0/24','Hurricane Electric (ASN-HE1-56). ');
+$ax += cidrblock($address,'199.16.200.0/21','Hurricane Electric (ASN-HE1-57). ');
+$ax += cidrblock($address,'199.34.120.0/21','Hurricane Electric (ASN-HE1-58). ');
+$ax += cidrblock($address,'199.74.248.0/24','Hurricane Electric (ASN-HE1-59). ');
+$ax += cidrblock($address,'199.88.158.0/24','Hurricane Electric (ASN-HE1-60). ');
+$ax += cidrblock($address,'199.233.90.0/24','Hurricane Electric (ASN-HE1-61). ');
+$ax += cidrblock($address,'199.233.198.0/23','Hurricane Electric (ASN-HE1-62). ');
+$ax += cidrblock($address,'199.245.105.0/24','Hurricane Electric (ASN-HE1-63). ');
+$ax += cidrblock($address,'203.12.6.0/24','Hurricane Electric (ASN-HE1-64). ');
+$ax += cidrblock($address,'203.99.142.0/24','Hurricane Electric (ASN-HE1-65). ');
+$ax += cidrblock($address,'204.10.104.0/21','Hurricane Electric (ASN-HE1-66). ');
+$ax += cidrblock($address,'204.14.104.0/21','Hurricane Electric (ASN-HE1-67). ');
+$ax += cidrblock($address,'204.187.91.0/24','Hurricane Electric (ASN-HE1-68). ');
+$ax += cidrblock($address,'204.238.49.0/24','Hurricane Electric (ASN-HE1-69). ');
+$ax += cidrblock($address,'205.159.239.0/24','Hurricane Electric (ASN-HE1-70). ');
+$ax += cidrblock($address,'205.166.121.0/24','Hurricane Electric (ASN-HE1-71). ');
+$ax += cidrblock($address,'206.108.49.0/24','Hurricane Electric (ASN-HE1-72). ');
+$ax += cidrblock($address,'206.108.51.0/24','Hurricane Electric (ASN-HE1-73). ');
+$ax += cidrblock($address,'206.108.55.0/24','Hurricane Electric (ASN-HE1-74). ');
+$ax += cidrblock($address,'206.144.144.0/20','Hurricane Electric (ASN-HE1-75). ');
+$ax += cidrblock($address,'207.171.210.0/23','Hurricane Electric (ASN-HE1-76). ');
+$ax += cidrblock($address,'207.171.226.0/24','Hurricane Electric (ASN-HE1-77). ');
+$ax += cidrblock($address,'208.75.96.0/21','Hurricane Electric (ASN-HE1-78). ');
+$ax += cidrblock($address,'209.51.160.0/19','Hurricane Electric (ASN-HE1-79). ');
+$ax += cidrblock($address,'209.150.160.0/19','Hurricane Electric (ASN-HE1-80). ');
+$ax += cidrblock($address,'216.66.0.0/18','Hurricane Electric (ASN-HE1-81). ');
+$ax += cidrblock($address,'216.66.64.0/19','Hurricane Electric (ASN-HE1-82). ');
+$ax += cidrblock($address,'216.105.164.0/22','Hurricane Electric (ASN-HE1-83). ');
+$ax += cidrblock($address,'216.126.60.0/22','Hurricane Electric (ASN-HE1-84). ');
+$ax += cidrblock($address,'216.152.64.0/20','Hurricane Electric (ASN-HE1-85). ');
+$ax += cidrblock($address,'216.163.108.0/24','Hurricane Electric (ASN-HE1-86). ');
+$ax += cidrblock($address,'216.171.192.0/23','Hurricane Electric (ASN-HE1-87). ');
+$ax += cidrblock($address,'216.171.196.0/24','Hurricane Electric (ASN-HE1-88). ');
+$ax += cidrblock($address,'216.171.201.0/24','Hurricane Electric (ASN-HE1-89). ');
+$ax += cidrblock($address,'216.171.202.0/23','Hurricane Electric (ASN-HE1-90). ');
+$ax += cidrblock($address,'216.171.204.0/23','Hurricane Electric (ASN-HE1-91). ');
+$ax += cidrblock($address,'216.171.206.0/24','Hurricane Electric (ASN-HE1-92). ');
+$ax += cidrblock($address,'216.171.208.0/24','Hurricane Electric (ASN-HE1-93). ');
+$ax += cidrblock($address,'216.171.218.0/24','Hurricane Electric (ASN-HE1-94). ');
+$ax += cidrblock($address,'216.171.220.0/23','Hurricane Electric (ASN-HE1-95). ');
+$ax += cidrblock($address,'216.218.128.0/17','Hurricane Electric (ASN-HE1-96). ');
+$ax += cidrblock($address,'216.224.64.0/19','Hurricane Electric (ASN-HE1-97). ');
+$ax += cidrblock($address,'216.229.96.0/20','Hurricane Electric (ASN-HE1-98). ');
 
 
-//Bypasses for (ASN-HEx) (mod 74d 77g 2016.01.23/BADIP-2016-01+U.9)
-
-if (((inmatch($whyblockout,'(ASN-HE1-)','')) || (inmatch($whyblockout,'(ASN-HE1-019)',''))) && ($ax > 0)){
+// Bypasses for Hurricane Electric (updated 2016.06.09)
+if (inmatch($whyblockout,'(ASN-HE1-)','') && $ax > 0) {
     $zbamz = 0;
     $zbamz += rmatch($lcuseragent,'.getpebble.com','Nice enough to ask bypass. '); //74e
     $zbamz += inmatch($useragent,'Feedspot http://www.feedspot.com',' Feedspot bypass. ' ); //74c
     $zbamz += inmatch($useragent,'Feedly',' Feedly bypass. ' ); //74c
-    if ($zbamz > 0){$ax -= 1;}
+    if ($zbamz > 0) {
+        $ax -= 1;
+    }
 }
 
 
@@ -2402,11 +2383,11 @@ $ax += cidrblock($address,'212.110.160.0/19','Bytemark Anonymous Proxies (ASN-BY
 $ax += cidrblock($address,'213.138.96.0/19','Bytemark Anonymous Proxies (ASN-BYTEMARK-13). ');
 
 
-// Plus Server, not an access provider (updated 2016.01.25)
+// Plus Server, not an access provider (updated 2016.06.09)
 // AS8972, AS25074
 $ax += cidrblock($address,'5.1.120.0/21','Plus Server, not an access provider (ASN-PLSSRV-00). ');
 $ax += cidrblock($address,'46.22.32.0/20','Plus Server, not an access provider (ASN-PLSSRV-01). ');
-$ax += cidrblock($address,'46.229.47.0/24','Plus Server, not an access provider (ASN-PLSSRV-02). ');
+$ax += cidrblock($address,'46.229.46.0/23','Plus Server, not an access provider (ASN-PLSSRV-02). ');
 $ax += cidrblock($address,'46.231.88.0/21','Plus Server, not an access provider (ASN-PLSSRV-03). ');
 $ax += cidrblock($address,'62.67.211.0/24','Plus Server, not an access provider (ASN-PLSSRV-04). ');
 $ax += cidrblock($address,'62.67.212.0/23','Plus Server, not an access provider (ASN-PLSSRV-05). ');
@@ -2432,50 +2413,45 @@ $ax += cidrblock($address,'85.93.88.0/21','Plus Server, not an access provider (
 $ax += cidrblock($address,'87.119.192.0/19','Plus Server, not an access provider (ASN-PLSSRV-25). ');
 $ax += cidrblock($address,'89.19.224.0/19','Plus Server, not an access provider (ASN-PLSSRV-26). ');
 $ax += cidrblock($address,'91.194.132.0/23','Plus Server, not an access provider (ASN-PLSSRV-27). ');
-$ax += cidrblock($address,'91.198.250.0/24','Plus Server, not an access provider (ASN-PLSSRV-28). ');
-$ax += cidrblock($address,'91.217.174.0/23','Plus Server, not an access provider (ASN-PLSSRV-29). ');
-$ax += cidrblock($address,'91.223.20.0/24','Plus Server, not an access provider (ASN-PLSSRV-30). ');
-$ax += cidrblock($address,'95.174.80.0/21','Plus Server, not an access provider (ASN-PLSSRV-31). ');
-$ax += cidrblock($address,'109.234.248.0/21','Plus Server, not an access provider (ASN-PLSSRV-32). ');
-$ax += cidrblock($address,'185.5.24.0/23','Plus Server, not an access provider (ASN-PLSSRV-33). ');
-$ax += cidrblock($address,'185.5.27.0/24','Plus Server, not an access provider (ASN-PLSSRV-34). ');
-$ax += cidrblock($address,'188.138.0.0/17','Plus Server, not an access provider (ASN-PLSSRV-35). ');
-$ax += cidrblock($address,'194.30.185.0/24','Plus Server, not an access provider (ASN-PLSSRV-36). ');
-$ax += cidrblock($address,'194.145.192.0/23','Plus Server, not an access provider (ASN-PLSSRV-37). ');
-$ax += cidrblock($address,'194.150.228.0/23','Plus Server, not an access provider (ASN-PLSSRV-38). ');
-$ax += cidrblock($address,'195.10.208.0/24','Plus Server, not an access provider (ASN-PLSSRV-39). ');
-$ax += cidrblock($address,'195.66.102.0/24','Plus Server, not an access provider (ASN-PLSSRV-40). ');
-$ax += cidrblock($address,'195.122.141.0/24','Plus Server, not an access provider (ASN-PLSSRV-41). ');
-$ax += cidrblock($address,'195.137.212.0/23','Plus Server, not an access provider (ASN-PLSSRV-42). ');
-$ax += cidrblock($address,'195.149.74.0/24','Plus Server, not an access provider (ASN-PLSSRV-43). ');
-$ax += cidrblock($address,'212.40.160.0/24','Plus Server, not an access provider (ASN-PLSSRV-44). ');
-$ax += cidrblock($address,'212.40.163.0/24','Plus Server, not an access provider (ASN-PLSSRV-45). ');
-$ax += cidrblock($address,'212.40.164.0/24','Plus Server, not an access provider (ASN-PLSSRV-46). ');
-$ax += cidrblock($address,'212.40.166.0/23','Plus Server, not an access provider (ASN-PLSSRV-47). ');
-$ax += cidrblock($address,'212.40.168.0/24','Plus Server, not an access provider (ASN-PLSSRV-48). ');
-$ax += cidrblock($address,'212.40.171.0/24','Plus Server, not an access provider (ASN-PLSSRV-49). ');
-$ax += cidrblock($address,'212.40.172.0/23','Plus Server, not an access provider (ASN-PLSSRV-50). ');
-$ax += cidrblock($address,'212.40.174.0/24','Plus Server, not an access provider (ASN-PLSSRV-51). ');
-$ax += cidrblock($address,'212.40.176.0/21','Plus Server, not an access provider (ASN-PLSSRV-52). ');
-$ax += cidrblock($address,'212.40.185.0/24','Plus Server, not an access provider (ASN-PLSSRV-53). ');
-$ax += cidrblock($address,'212.40.186.0/24','Plus Server, not an access provider (ASN-PLSSRV-54). ');
-$ax += cidrblock($address,'212.40.189.0/24','Plus Server, not an access provider (ASN-PLSSRV-55). ');
-$ax += cidrblock($address,'212.48.74.0/24','Plus Server, not an access provider (ASN-PLSSRV-56). ');
-$ax += cidrblock($address,'212.48.90.0/24','Plus Server, not an access provider (ASN-PLSSRV-57). ');
-$ax += cidrblock($address,'212.48.93.0/24','Plus Server, not an access provider (ASN-PLSSRV-58). ');
-$ax += cidrblock($address,'212.162.12.0/22','Plus Server, not an access provider (ASN-PLSSRV-59). ');
-$ax += cidrblock($address,'212.162.52.0/23','Plus Server, not an access provider (ASN-PLSSRV-60). ');
-$ax += cidrblock($address,'212.162.56.0/23','Plus Server, not an access provider (ASN-PLSSRV-61). ');
-$ax += cidrblock($address,'213.131.224.0/19','Plus Server, not an access provider (ASN-PLSSRV-62). ');
-$ax += cidrblock($address,'213.174.32.0/19','Plus Server, not an access provider (ASN-PLSSRV-63). ');
-$ax += cidrblock($address,'213.203.192.0/18','Plus Server, not an access provider (ASN-PLSSRV-64). ');
-$ax += cidrblock($address,'217.118.16.0/20','Plus Server, not an access provider (ASN-PLSSRV-65). ');
-$ax += cidrblock($address,'217.119.49.0/24','Plus Server, not an access provider (ASN-PLSSRV-66). ');
-$ax += cidrblock($address,'217.119.50.0/23','Plus Server, not an access provider (ASN-PLSSRV-67). ');
-$ax += cidrblock($address,'217.119.52.0/22','Plus Server, not an access provider (ASN-PLSSRV-68). ');
-$ax += cidrblock($address,'217.119.56.0/22','Plus Server, not an access provider (ASN-PLSSRV-69). ');
-$ax += cidrblock($address,'217.119.63.0/24','Plus Server, not an access provider (ASN-PLSSRV-70). ');
-$ax += cidrblock($address,'217.172.160.0/19','Plus Server, not an access provider (ASN-PLSSRV-71). ');
+$ax += cidrblock($address,'95.174.80.0/21','Plus Server, not an access provider (ASN-PLSSRV-28). ');
+$ax += cidrblock($address,'109.234.248.0/21','Plus Server, not an access provider (ASN-PLSSRV-29). ');
+$ax += cidrblock($address,'185.5.24.0/23','Plus Server, not an access provider (ASN-PLSSRV-30). ');
+$ax += cidrblock($address,'185.5.27.0/24','Plus Server, not an access provider (ASN-PLSSRV-31). ');
+$ax += cidrblock($address,'188.138.0.0/17','Plus Server, not an access provider (ASN-PLSSRV-32). ');
+$ax += cidrblock($address,'194.30.185.0/24','Plus Server, not an access provider (ASN-PLSSRV-33). ');
+$ax += cidrblock($address,'194.150.228.0/23','Plus Server, not an access provider (ASN-PLSSRV-34). ');
+$ax += cidrblock($address,'195.66.102.0/24','Plus Server, not an access provider (ASN-PLSSRV-35). ');
+$ax += cidrblock($address,'195.122.141.0/24','Plus Server, not an access provider (ASN-PLSSRV-36). ');
+$ax += cidrblock($address,'195.137.212.0/23','Plus Server, not an access provider (ASN-PLSSRV-37). ');
+$ax += cidrblock($address,'195.149.74.0/24','Plus Server, not an access provider (ASN-PLSSRV-38). ');
+$ax += cidrblock($address,'212.40.160.0/24','Plus Server, not an access provider (ASN-PLSSRV-39). ');
+$ax += cidrblock($address,'212.40.163.0/24','Plus Server, not an access provider (ASN-PLSSRV-40). ');
+$ax += cidrblock($address,'212.40.164.0/24','Plus Server, not an access provider (ASN-PLSSRV-41). ');
+$ax += cidrblock($address,'212.40.166.0/23','Plus Server, not an access provider (ASN-PLSSRV-42). ');
+$ax += cidrblock($address,'212.40.168.0/24','Plus Server, not an access provider (ASN-PLSSRV-43). ');
+$ax += cidrblock($address,'212.40.171.0/24','Plus Server, not an access provider (ASN-PLSSRV-44). ');
+$ax += cidrblock($address,'212.40.172.0/23','Plus Server, not an access provider (ASN-PLSSRV-45). ');
+$ax += cidrblock($address,'212.40.174.0/24','Plus Server, not an access provider (ASN-PLSSRV-46). ');
+$ax += cidrblock($address,'212.40.176.0/21','Plus Server, not an access provider (ASN-PLSSRV-47). ');
+$ax += cidrblock($address,'212.40.185.0/24','Plus Server, not an access provider (ASN-PLSSRV-48). ');
+$ax += cidrblock($address,'212.40.186.0/24','Plus Server, not an access provider (ASN-PLSSRV-49). ');
+$ax += cidrblock($address,'212.40.189.0/24','Plus Server, not an access provider (ASN-PLSSRV-50). ');
+$ax += cidrblock($address,'212.48.74.0/24','Plus Server, not an access provider (ASN-PLSSRV-51). ');
+$ax += cidrblock($address,'212.48.90.0/24','Plus Server, not an access provider (ASN-PLSSRV-52). ');
+$ax += cidrblock($address,'212.48.93.0/24','Plus Server, not an access provider (ASN-PLSSRV-53). ');
+$ax += cidrblock($address,'212.162.12.0/22','Plus Server, not an access provider (ASN-PLSSRV-54). ');
+$ax += cidrblock($address,'212.162.52.0/23','Plus Server, not an access provider (ASN-PLSSRV-55). ');
+$ax += cidrblock($address,'212.162.56.0/23','Plus Server, not an access provider (ASN-PLSSRV-56). ');
+$ax += cidrblock($address,'213.131.224.0/19','Plus Server, not an access provider (ASN-PLSSRV-57). ');
+$ax += cidrblock($address,'213.174.32.0/19','Plus Server, not an access provider (ASN-PLSSRV-58). ');
+$ax += cidrblock($address,'213.203.192.0/18','Plus Server, not an access provider (ASN-PLSSRV-59). ');
+$ax += cidrblock($address,'217.118.16.0/20','Plus Server, not an access provider (ASN-PLSSRV-60). ');
+$ax += cidrblock($address,'217.119.49.0/24','Plus Server, not an access provider (ASN-PLSSRV-61). ');
+$ax += cidrblock($address,'217.119.50.0/23','Plus Server, not an access provider (ASN-PLSSRV-62). ');
+$ax += cidrblock($address,'217.119.52.0/22','Plus Server, not an access provider (ASN-PLSSRV-63). ');
+$ax += cidrblock($address,'217.119.56.0/22','Plus Server, not an access provider (ASN-PLSSRV-64). ');
+$ax += cidrblock($address,'217.119.63.0/24','Plus Server, not an access provider (ASN-PLSSRV-65). ');
+$ax += cidrblock($address,'217.172.160.0/19','Plus Server, not an access provider (ASN-PLSSRV-66). ');
 
 
 // Trend Micro (updated 2016.01.20 / checked 2016.03.12)
@@ -2864,92 +2840,59 @@ $ax += cidrblock($address,'209.130.152.0/22','ColoGuys (ASN-25643-09). ');
 $ax += cidrblock($address,'209.135.0.0/19','ColoGuys (ASN-25643-10). ');
 
 
-// Tzulo Inc (updated 2016.04.25)
-// AS11878
+// Tzulo Inc
+// AS11878 (updated 2016.06.09)
 $ax += cidrblock($address,'23.234.64.0/18','Tzulo Inc (ASN-11878-00). ');
 $ax += cidrblock($address,'23.255.0.0/17','Tzulo Inc (ASN-11878-01). ');
 $ax += cidrblock($address,'43.239.250.0/24','Tzulo Inc (ASN-11878-02). ');
 $ax += cidrblock($address,'68.235.32.0/19','Tzulo Inc (ASN-11878-03). ');
 $ax += cidrblock($address,'107.152.32.0/20','Tzulo Inc (ASN-11878-04). ');
-$ax += cidrblock($address,'154.16.71.0/24','Tzulo Inc (ASN-11878-05). ');
-$ax += cidrblock($address,'154.16.75.0/24','Tzulo Inc (ASN-11878-06). ');
-$ax += cidrblock($address,'154.16.77.0/24','Tzulo Inc (ASN-11878-07). ');
-$ax += cidrblock($address,'154.16.95.0/24','Tzulo Inc (ASN-11878-08). ');
-$ax += cidrblock($address,'154.16.97.0/24','Tzulo Inc (ASN-11878-09). ');
-$ax += cidrblock($address,'154.16.98.0/23','Tzulo Inc (ASN-11878-10). ');
-$ax += cidrblock($address,'154.16.100.0/22','Tzulo Inc (ASN-11878-11). ');
-$ax += cidrblock($address,'154.16.105.0/24','Tzulo Inc (ASN-11878-12). ');
-$ax += cidrblock($address,'154.16.106.0/23','Tzulo Inc (ASN-11878-13). ');
-$ax += cidrblock($address,'154.16.120.0/22','Tzulo Inc (ASN-11878-14). ');
-$ax += cidrblock($address,'154.16.137.0/24','Tzulo Inc (ASN-11878-15). ');
-$ax += cidrblock($address,'161.123.201.0/24','Tzulo Inc (ASN-11878-16). ');
-$ax += cidrblock($address,'161.123.203.0/24','Tzulo Inc (ASN-11878-17). ');
-$ax += cidrblock($address,'161.213.205.0/24','Tzulo Inc (ASN-11878-18). ');
-$ax += cidrblock($address,'161.213.207.0/24','Tzulo Inc (ASN-11878-19). ');
-$ax += cidrblock($address,'161.213.209.0/24','Tzulo Inc (ASN-11878-20). ');
-$ax += cidrblock($address,'162.208.8.0/22','Tzulo Inc (ASN-11878-21). ');
-$ax += cidrblock($address,'162.212.152.0/21','Tzulo Inc (ASN-11878-22). ');
-$ax += cidrblock($address,'173.231.192.0/18','Tzulo Inc (ASN-11878-23). ');
-$ax += cidrblock($address,'173.249.192.0/18','Tzulo Inc (ASN-11878-24). ');
-$ax += cidrblock($address,'173.253.0.0/17','Tzulo Inc (ASN-11878-25). ');
-$ax += cidrblock($address,'179.61.197.0/24','Tzulo Inc (ASN-11878-26). ');
-$ax += cidrblock($address,'179.61.199.0/24','Tzulo Inc (ASN-11878-27). ');
-$ax += cidrblock($address,'179.61.210.0/24','Tzulo Inc (ASN-11878-28). ');
-$ax += cidrblock($address,'179.61.217.0/24','Tzulo Inc (ASN-11878-29). ');
-$ax += cidrblock($address,'179.61.232.0/24','Tzulo Inc (ASN-11878-30). ');
-$ax += cidrblock($address,'179.61.238.0/24','Tzulo Inc (ASN-11878-31). ');
-$ax += cidrblock($address,'179.61.245.0/24','Tzulo Inc (ASN-11878-32). ');
-$ax += cidrblock($address,'181.214.92.0/23','Tzulo Inc (ASN-11878-33). ');
-$ax += cidrblock($address,'181.214.128.0/19','Tzulo Inc (ASN-11878-34). ');
-$ax += cidrblock($address,'181.214.206.0/23','Tzulo Inc (ASN-11878-35). ');
-$ax += cidrblock($address,'181.214.244.0/22','Tzulo Inc (ASN-11878-36). ');
-$ax += cidrblock($address,'181.214.248.0/23','Tzulo Inc (ASN-11878-37). ');
-$ax += cidrblock($address,'181.214.251.0/24','Tzulo Inc (ASN-11878-38). ');
-$ax += cidrblock($address,'181.215.176.0/20','Tzulo Inc (ASN-11878-39). ');
-$ax += cidrblock($address,'181.215.199.0/24','Tzulo Inc (ASN-11878-40). ');
-$ax += cidrblock($address,'181.215.200.0/21','Tzulo Inc (ASN-11878-41). ');
-$ax += cidrblock($address,'181.215.208.0/22','Tzulo Inc (ASN-11878-42). ');
-$ax += cidrblock($address,'181.215.212.0/23','Tzulo Inc (ASN-11878-43). ');
-$ax += cidrblock($address,'181.215.215.0/24','Tzulo Inc (ASN-11878-44). ');
-$ax += cidrblock($address,'181.215.216.0/21','Tzulo Inc (ASN-11878-45). ');
-$ax += cidrblock($address,'181.215.224.0/21','Tzulo Inc (ASN-11878-46). ');
-$ax += cidrblock($address,'181.215.232.0/23','Tzulo Inc (ASN-11878-47). ');
-$ax += cidrblock($address,'181.215.234.0/24','Tzulo Inc (ASN-11878-48). ');
-$ax += cidrblock($address,'181.215.244.0/22','Tzulo Inc (ASN-11878-49). ');
-$ax += cidrblock($address,'191.96.14.0/24','Tzulo Inc (ASN-11878-50). ');
-$ax += cidrblock($address,'191.96.27.0/24','Tzulo Inc (ASN-11878-51). ');
-$ax += cidrblock($address,'191.96.31.0/24','Tzulo Inc (ASN-11878-52). ');
-$ax += cidrblock($address,'191.96.38.0/24','Tzulo Inc (ASN-11878-53). ');
-$ax += cidrblock($address,'191.96.48.0/24','Tzulo Inc (ASN-11878-54). ');
-$ax += cidrblock($address,'191.96.68.0/24','Tzulo Inc (ASN-11878-55). ');
-$ax += cidrblock($address,'191.96.93.0/24','Tzulo Inc (ASN-11878-56). ');
-$ax += cidrblock($address,'191.96.131.0/24','Tzulo Inc (ASN-11878-57). ');
-$ax += cidrblock($address,'191.96.188.0/24','Tzulo Inc (ASN-11878-58). ');
-$ax += cidrblock($address,'191.96.195.0/24','Tzulo Inc (ASN-11878-59). ');
-$ax += cidrblock($address,'191.96.202.0/24','Tzulo Inc (ASN-11878-60). ');
-$ax += cidrblock($address,'191.96.207.0/24','Tzulo Inc (ASN-11878-61). ');
-$ax += cidrblock($address,'191.96.211.0/24','Tzulo Inc (ASN-11878-62). ');
-$ax += cidrblock($address,'191.96.215.0/24','Tzulo Inc (ASN-11878-63). ');
-$ax += cidrblock($address,'191.96.220.0/24','Tzulo Inc (ASN-11878-64). ');
-$ax += cidrblock($address,'191.96.224.0/24','Tzulo Inc (ASN-11878-65). ');
-$ax += cidrblock($address,'191.96.230.0/24','Tzulo Inc (ASN-11878-66). ');
-$ax += cidrblock($address,'191.96.233.0/24','Tzulo Inc (ASN-11878-67). ');
-$ax += cidrblock($address,'191.96.238.0/24','Tzulo Inc (ASN-11878-68). ');
-$ax += cidrblock($address,'191.96.245.0/24','Tzulo Inc (ASN-11878-69). ');
-$ax += cidrblock($address,'191.96.254.0/23','Tzulo Inc (ASN-11878-70). ');
-$ax += cidrblock($address,'191.101.33.0/24','Tzulo Inc (ASN-11878-71). ');
-$ax += cidrblock($address,'191.101.162.0/23','Tzulo Inc (ASN-11878-72). ');
-$ax += cidrblock($address,'191.101.164.0/22','Tzulo Inc (ASN-11878-73). ');
-$ax += cidrblock($address,'191.101.202.0/23','Tzulo Inc (ASN-11878-74). ');
-$ax += cidrblock($address,'191.101.212.0/22','Tzulo Inc (ASN-11878-75). ');
-$ax += cidrblock($address,'191.101.241.0/24','Tzulo Inc (ASN-11878-76). ');
-$ax += cidrblock($address,'192.196.224.0/20','Tzulo Inc (ASN-11878-77). ');
-$ax += cidrblock($address,'192.243.96.0/20','Tzulo Inc (ASN-11878-78). ');
-$ax += cidrblock($address,'198.44.128.0/19','Tzulo Inc (ASN-11878-79). ');
-$ax += cidrblock($address,'198.54.128.0/21','Tzulo Inc (ASN-11878-80). ');
-$ax += cidrblock($address,'199.175.48.0/21','Tzulo Inc (ASN-11878-81). ');
-$ax += cidrblock($address,'206.226.64.0/18','Tzulo Inc (ASN-11878-82). ');
-$ax += cidrblock($address,'208.77.16.0/21','Tzulo Inc (ASN-11878-83). ');
+$ax += cidrblock($address,'154.16.97.0/24','Tzulo Inc (ASN-11878-05). ');
+$ax += cidrblock($address,'154.16.98.0/23','Tzulo Inc (ASN-11878-06). ');
+$ax += cidrblock($address,'154.16.100.0/22','Tzulo Inc (ASN-11878-07). ');
+$ax += cidrblock($address,'154.16.105.0/24','Tzulo Inc (ASN-11878-08). ');
+$ax += cidrblock($address,'154.16.106.0/24','Tzulo Inc (ASN-11878-09). ');
+$ax += cidrblock($address,'154.16.248.0/24','Tzulo Inc (ASN-11878-10). ');
+$ax += cidrblock($address,'161.213.205.0/24','Tzulo Inc (ASN-11878-11). ');
+$ax += cidrblock($address,'161.213.207.0/24','Tzulo Inc (ASN-11878-12). ');
+$ax += cidrblock($address,'161.213.209.0/24','Tzulo Inc (ASN-11878-13). ');
+$ax += cidrblock($address,'162.208.8.0/22','Tzulo Inc (ASN-11878-14). ');
+$ax += cidrblock($address,'162.212.152.0/21','Tzulo Inc (ASN-11878-15). ');
+$ax += cidrblock($address,'173.231.192.0/18','Tzulo Inc (ASN-11878-16). ');
+$ax += cidrblock($address,'173.249.192.0/18','Tzulo Inc (ASN-11878-17). ');
+$ax += cidrblock($address,'173.253.0.0/17','Tzulo Inc (ASN-11878-18). ');
+$ax += cidrblock($address,'181.214.128.0/19','Tzulo Inc (ASN-11878-19). ');
+$ax += cidrblock($address,'181.214.206.0/23','Tzulo Inc (ASN-11878-20). ');
+$ax += cidrblock($address,'181.214.244.0/22','Tzulo Inc (ASN-11878-21). ');
+$ax += cidrblock($address,'181.214.248.0/23','Tzulo Inc (ASN-11878-22). ');
+$ax += cidrblock($address,'181.215.176.0/20','Tzulo Inc (ASN-11878-23). ');
+$ax += cidrblock($address,'181.215.199.0/24','Tzulo Inc (ASN-11878-24). ');
+$ax += cidrblock($address,'181.215.200.0/21','Tzulo Inc (ASN-11878-25). ');
+$ax += cidrblock($address,'181.215.208.0/22','Tzulo Inc (ASN-11878-26). ');
+$ax += cidrblock($address,'181.215.212.0/23','Tzulo Inc (ASN-11878-27). ');
+$ax += cidrblock($address,'181.215.215.0/24','Tzulo Inc (ASN-11878-28). ');
+$ax += cidrblock($address,'181.215.216.0/21','Tzulo Inc (ASN-11878-29). ');
+$ax += cidrblock($address,'181.215.224.0/21','Tzulo Inc (ASN-11878-30). ');
+$ax += cidrblock($address,'181.215.232.0/23','Tzulo Inc (ASN-11878-31). ');
+$ax += cidrblock($address,'181.215.234.0/24','Tzulo Inc (ASN-11878-32). ');
+$ax += cidrblock($address,'181.215.244.0/22','Tzulo Inc (ASN-11878-33). ');
+$ax += cidrblock($address,'191.96.27.0/24','Tzulo Inc (ASN-11878-34). ');
+$ax += cidrblock($address,'191.96.38.0/24','Tzulo Inc (ASN-11878-35). ');
+$ax += cidrblock($address,'191.96.48.0/24','Tzulo Inc (ASN-11878-36). ');
+$ax += cidrblock($address,'191.96.68.0/24','Tzulo Inc (ASN-11878-37). ');
+$ax += cidrblock($address,'191.96.93.0/24','Tzulo Inc (ASN-11878-38). ');
+$ax += cidrblock($address,'191.96.188.0/24','Tzulo Inc (ASN-11878-39). ');
+$ax += cidrblock($address,'191.101.162.0/23','Tzulo Inc (ASN-11878-40). ');
+$ax += cidrblock($address,'191.101.164.0/22','Tzulo Inc (ASN-11878-41). ');
+$ax += cidrblock($address,'191.101.202.0/23','Tzulo Inc (ASN-11878-42). ');
+$ax += cidrblock($address,'191.101.212.0/22','Tzulo Inc (ASN-11878-43). ');
+$ax += cidrblock($address,'192.196.224.0/20','Tzulo Inc (ASN-11878-44). ');
+$ax += cidrblock($address,'192.243.96.0/20','Tzulo Inc (ASN-11878-45). ');
+$ax += cidrblock($address,'198.44.128.0/19','Tzulo Inc (ASN-11878-46). ');
+$ax += cidrblock($address,'198.54.128.0/21','Tzulo Inc (ASN-11878-47). ');
+$ax += cidrblock($address,'199.175.48.0/21','Tzulo Inc (ASN-11878-48). ');
+$ax += cidrblock($address,'206.226.64.0/18','Tzulo Inc (ASN-11878-49). ');
+$ax += cidrblock($address,'208.77.16.0/21','Tzulo Inc (ASN-11878-50). ');
 
 
 // Corpcolo (updated 2016.03.13)
@@ -3019,12 +2962,24 @@ $ax += cidrblock($address,'206.123.20.0/23','iWeb Technologies Inc. Not an acces
 $ax += cidrblock($address,'209.172.32.0/19','iWeb Technologies Inc. Not an access provider ISP (ASN-IWEB-24). ');
 
 
-// Reliable Hosting Services (updated 2016.01.27)
-// AS29713
-$ax += cidrblock($address,'190.102.100.0/22','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-1). ');
-$ax += cidrblock($address,'192.82.109.0/24','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-2). ');
-$ax += cidrblock($address,'199.15.248.0/21','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-3). ');
-$ax += cidrblock($address,'208.73.20.0/22','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-4). ');
+// Reliable Hosting Services (updated 2016.06.09)
+// AS13926, AS22781, AS29713, AS54203, AS62651, AS63128
+$ax += cidrblock($address,'68.68.32.0/20','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-00). ');
+$ax += cidrblock($address,'98.158.112.0/20','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-01). ');
+$ax += cidrblock($address,'104.36.176.0/21','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-02). ');
+$ax += cidrblock($address,'108.171.96.0/19','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-03). ');
+$ax += cidrblock($address,'173.195.0.0/20','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-04). ');
+$ax += cidrblock($address,'173.255.160.0/19','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-05). ');
+$ax += cidrblock($address,'190.102.100.0/22','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-06). ');
+$ax += cidrblock($address,'192.82.109.0/24','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-07). ');
+$ax += cidrblock($address,'192.200.144.0/20','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-08). ');
+$ax += cidrblock($address,'199.15.248.0/21','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-09). ');
+$ax += cidrblock($address,'199.127.248.0/21','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-10). ');
+$ax += cidrblock($address,'207.204.224.0/19','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-11). ');
+$ax += cidrblock($address,'208.73.20.0/22','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-12). ');
+$ax += cidrblock($address,'216.131.64.0/18','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-13). ');
+$ax += cidrblock($address,'216.151.184.0/24','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-14). ');
+$ax += cidrblock($address,'216.169.128.0/20','Reliable Hosting Services. Not an access provider ISP (ASN-RELIA-15). ');
 
 
 // InfoRelay Online Systems, Inc. (updated 2016.01.27 / checked 2016.03.13)
@@ -3674,140 +3629,139 @@ $ax += cidrblock($address,'216.21.4.0/24','Black Lotus Communications (ASN-BLACK
 $ax += cidrblock($address,'216.21.6.0/24','Black Lotus Communications (ASN-BLACKLOTUS-17). ');
 
 
-// Quadranet (updated 2016.02.27)
-// AS7185, AS8100, AS29761, AS62639
+// Quadranet (updated 2016.06.09)
+// AS8100, AS29761, AS62639
 $ax += cidrblock($address,'23.92.52.0/22','Quadranet, not an access provider (ASN-QUADRA-000). ');
-$ax += cidrblock($address,'23.226.128.0/20','Quadranet, not an access provider (ASN-QUADRA-001). ');
-$ax += cidrblock($address,'43.229.18.0/23','Quadranet, not an access provider (ASN-QUADRA-002). ');
-$ax += cidrblock($address,'43.251.8.0/22','Quadranet, not an access provider (ASN-QUADRA-003). ');
-$ax += cidrblock($address,'45.41.140.0/22','Quadranet, not an access provider (ASN-QUADRA-004). ');
-$ax += cidrblock($address,'45.56.144.0/22','Quadranet, not an access provider (ASN-QUADRA-005). ');
-$ax += cidrblock($address,'45.61.112.0/20','Quadranet, not an access provider (ASN-QUADRA-006). ');
-$ax += cidrblock($address,'45.62.96.0/20','Quadranet, not an access provider (ASN-QUADRA-007). ');
-$ax += cidrblock($address,'45.118.124.0/22','Quadranet, not an access provider (ASN-QUADRA-008). ');
-$ax += cidrblock($address,'45.120.4.0/22','Quadranet, not an access provider (ASN-QUADRA-009). ');
-$ax += cidrblock($address,'45.127.206.0/23','Quadranet, not an access provider (ASN-QUADRA-010). ');
-$ax += cidrblock($address,'59.153.60.0/22','Quadranet, not an access provider (ASN-QUADRA-011). ');
-$ax += cidrblock($address,'63.142.240.0/22','Quadranet, not an access provider (ASN-QUADRA-012). ');
-$ax += cidrblock($address,'63.142.248.0/23','Quadranet, not an access provider (ASN-QUADRA-013). ');
-$ax += cidrblock($address,'64.57.132.0/24','Quadranet, not an access provider (ASN-QUADRA-014). ');
-$ax += cidrblock($address,'64.110.129.0/24','Quadranet, not an access provider (ASN-QUADRA-015). ');
-$ax += cidrblock($address,'64.110.130.0/24','Quadranet, not an access provider (ASN-QUADRA-016). ');
-$ax += cidrblock($address,'66.55.76.0/24','Quadranet, not an access provider (ASN-QUADRA-017). ');
-$ax += cidrblock($address,'66.63.160.0/19','Quadranet, not an access provider (ASN-QUADRA-018). ');
-$ax += cidrblock($address,'66.85.26.0/23','Quadranet, not an access provider (ASN-QUADRA-019). ');
-$ax += cidrblock($address,'66.154.96.0/19','Quadranet, not an access provider (ASN-QUADRA-020). ');
-$ax += cidrblock($address,'66.212.16.0/20','Quadranet, not an access provider (ASN-QUADRA-021). ');
-$ax += cidrblock($address,'67.215.224.0/19','Quadranet, not an access provider (ASN-QUADRA-022). ');
-$ax += cidrblock($address,'69.12.64.0/19','Quadranet, not an access provider (ASN-QUADRA-023). ');
-$ax += cidrblock($address,'69.174.96.0/21','Quadranet, not an access provider (ASN-QUADRA-024). ');
-$ax += cidrblock($address,'72.11.128.0/19','Quadranet, not an access provider (ASN-QUADRA-025). ');
-$ax += cidrblock($address,'96.44.128.0/18','Quadranet, not an access provider (ASN-QUADRA-026). ');
-$ax += cidrblock($address,'96.47.224.0/20','Quadranet, not an access provider (ASN-QUADRA-027). ');
-$ax += cidrblock($address,'98.143.144.0/20','Quadranet, not an access provider (ASN-QUADRA-028). ');
-$ax += cidrblock($address,'103.21.208.0/22','Quadranet, not an access provider (ASN-QUADRA-029). ');
-$ax += cidrblock($address,'103.58.176.0/22','Quadranet, not an access provider (ASN-QUADRA-030). ');
-$ax += cidrblock($address,'103.60.64.0/22','Quadranet, not an access provider (ASN-QUADRA-031). ');
-$ax += cidrblock($address,'103.235.4.0/24','Quadranet, not an access provider (ASN-QUADRA-032). ');
-$ax += cidrblock($address,'103.236.221.0/24','Quadranet, not an access provider (ASN-QUADRA-033). ');
-$ax += cidrblock($address,'103.236.222.0/23','Quadranet, not an access provider (ASN-QUADRA-034). ');
-$ax += cidrblock($address,'103.238.80.0/22','Quadranet, not an access provider (ASN-QUADRA-035). ');
-$ax += cidrblock($address,'104.37.0.0/24','Quadranet, not an access provider (ASN-QUADRA-036). ');
-$ax += cidrblock($address,'104.37.4.0/24','Quadranet, not an access provider (ASN-QUADRA-037). ');
-$ax += cidrblock($address,'104.37.59.0/24','Quadranet, not an access provider (ASN-QUADRA-038). ');
-$ax += cidrblock($address,'104.128.84.0/22','Quadranet, not an access provider (ASN-QUADRA-039). ');
-$ax += cidrblock($address,'104.128.88.0/21','Quadranet, not an access provider (ASN-QUADRA-040). ');
-$ax += cidrblock($address,'104.129.0.0/18','Quadranet, not an access provider (ASN-QUADRA-041). ');
+$ax += cidrblock($address,'23.152.0.0/24','Quadranet, not an access provider (ASN-QUADRA-001). ');
+$ax += cidrblock($address,'23.226.128.0/20','Quadranet, not an access provider (ASN-QUADRA-002). ');
+$ax += cidrblock($address,'23.249.240.0/20','Quadranet, not an access provider (ASN-QUADRA-003). ');
+$ax += cidrblock($address,'43.229.18.0/23','Quadranet, not an access provider (ASN-QUADRA-004). ');
+$ax += cidrblock($address,'43.251.8.0/22','Quadranet, not an access provider (ASN-QUADRA-005). ');
+$ax += cidrblock($address,'45.41.140.0/22','Quadranet, not an access provider (ASN-QUADRA-006). ');
+$ax += cidrblock($address,'45.56.144.0/22','Quadranet, not an access provider (ASN-QUADRA-007). ');
+$ax += cidrblock($address,'45.61.112.0/20','Quadranet, not an access provider (ASN-QUADRA-008). ');
+$ax += cidrblock($address,'45.62.96.0/20','Quadranet, not an access provider (ASN-QUADRA-009). ');
+$ax += cidrblock($address,'45.118.124.0/22','Quadranet, not an access provider (ASN-QUADRA-010). ');
+$ax += cidrblock($address,'45.120.4.0/22','Quadranet, not an access provider (ASN-QUADRA-011). ');
+$ax += cidrblock($address,'59.153.62.0/24','Quadranet, not an access provider (ASN-QUADRA-012). ');
+$ax += cidrblock($address,'63.142.240.0/22','Quadranet, not an access provider (ASN-QUADRA-013). ');
+$ax += cidrblock($address,'63.142.248.0/23','Quadranet, not an access provider (ASN-QUADRA-014). ');
+$ax += cidrblock($address,'64.57.132.0/24','Quadranet, not an access provider (ASN-QUADRA-015). ');
+$ax += cidrblock($address,'64.110.129.0/24','Quadranet, not an access provider (ASN-QUADRA-016). ');
+$ax += cidrblock($address,'64.110.130.0/24','Quadranet, not an access provider (ASN-QUADRA-017). ');
+$ax += cidrblock($address,'66.55.76.0/24','Quadranet, not an access provider (ASN-QUADRA-018). ');
+$ax += cidrblock($address,'66.63.160.0/19','Quadranet, not an access provider (ASN-QUADRA-019). ');
+$ax += cidrblock($address,'66.85.26.0/23','Quadranet, not an access provider (ASN-QUADRA-020). ');
+$ax += cidrblock($address,'66.154.96.0/19','Quadranet, not an access provider (ASN-QUADRA-021). ');
+$ax += cidrblock($address,'66.212.16.0/20','Quadranet, not an access provider (ASN-QUADRA-022). ');
+$ax += cidrblock($address,'67.215.224.0/19','Quadranet, not an access provider (ASN-QUADRA-023). ');
+$ax += cidrblock($address,'69.12.64.0/19','Quadranet, not an access provider (ASN-QUADRA-024). ');
+$ax += cidrblock($address,'69.174.96.0/21','Quadranet, not an access provider (ASN-QUADRA-025). ');
+$ax += cidrblock($address,'72.11.128.0/19','Quadranet, not an access provider (ASN-QUADRA-026). ');
+$ax += cidrblock($address,'96.44.128.0/18','Quadranet, not an access provider (ASN-QUADRA-027). ');
+$ax += cidrblock($address,'96.47.224.0/20','Quadranet, not an access provider (ASN-QUADRA-028). ');
+$ax += cidrblock($address,'98.143.144.0/20','Quadranet, not an access provider (ASN-QUADRA-029). ');
+$ax += cidrblock($address,'103.21.208.0/22','Quadranet, not an access provider (ASN-QUADRA-030). ');
+$ax += cidrblock($address,'103.58.176.0/22','Quadranet, not an access provider (ASN-QUADRA-031). ');
+$ax += cidrblock($address,'103.60.64.0/22','Quadranet, not an access provider (ASN-QUADRA-032). ');
+$ax += cidrblock($address,'103.235.4.0/24','Quadranet, not an access provider (ASN-QUADRA-033). ');
+$ax += cidrblock($address,'103.236.221.0/24','Quadranet, not an access provider (ASN-QUADRA-034). ');
+$ax += cidrblock($address,'103.236.222.0/23','Quadranet, not an access provider (ASN-QUADRA-035). ');
+$ax += cidrblock($address,'103.238.80.0/22','Quadranet, not an access provider (ASN-QUADRA-036). ');
+$ax += cidrblock($address,'104.37.0.0/24','Quadranet, not an access provider (ASN-QUADRA-037). ');
+$ax += cidrblock($address,'104.37.4.0/24','Quadranet, not an access provider (ASN-QUADRA-038). ');
+$ax += cidrblock($address,'104.37.59.0/24','Quadranet, not an access provider (ASN-QUADRA-039). ');
+$ax += cidrblock($address,'104.129.0.0/18','Quadranet, not an access provider (ASN-QUADRA-040). ');
+$ax += cidrblock($address,'104.143.33.0/24','Quadranet, not an access provider (ASN-QUADRA-041). ');
 $ax += cidrblock($address,'104.143.88.0/22','Quadranet, not an access provider (ASN-QUADRA-042). ');
-$ax += cidrblock($address,'104.160.40.0/21','Quadranet, not an access provider (ASN-QUADRA-043). ');
-$ax += cidrblock($address,'104.192.28.0/22','Quadranet, not an access provider (ASN-QUADRA-044). ');
-$ax += cidrblock($address,'104.194.64.0/19','Quadranet, not an access provider (ASN-QUADRA-045). ');
-$ax += cidrblock($address,'104.194.192.0/22','Quadranet, not an access provider (ASN-QUADRA-046). ');
-$ax += cidrblock($address,'104.200.160.0/20','Quadranet, not an access provider (ASN-QUADRA-047). ');
-$ax += cidrblock($address,'104.223.0.0/17','Quadranet, not an access provider (ASN-QUADRA-048). ');
-$ax += cidrblock($address,'104.224.128.0/21','Quadranet, not an access provider (ASN-QUADRA-049). ');
-$ax += cidrblock($address,'104.224.152.0/21','Quadranet, not an access provider (ASN-QUADRA-050). ');
-$ax += cidrblock($address,'104.224.160.0/21','Quadranet, not an access provider (ASN-QUADRA-051). ');
-$ax += cidrblock($address,'104.224.176.0/20','Quadranet, not an access provider (ASN-QUADRA-052). ');
-$ax += cidrblock($address,'104.238.33.0/24','Quadranet, not an access provider (ASN-QUADRA-053). ');
-$ax += cidrblock($address,'104.238.46.0/23','Quadranet, not an access provider (ASN-QUADRA-054). ');
-$ax += cidrblock($address,'104.243.246.0/24','Quadranet, not an access provider (ASN-QUADRA-055). ');
-$ax += cidrblock($address,'104.244.7.0/24','Quadranet, not an access provider (ASN-QUADRA-056). ');
-$ax += cidrblock($address,'104.244.157.0/24','Quadranet, not an access provider (ASN-QUADRA-057). ');
-$ax += cidrblock($address,'104.245.240.0/21','Quadranet, not an access provider (ASN-QUADRA-058). ');
-$ax += cidrblock($address,'104.250.163.0/24','Quadranet, not an access provider (ASN-QUADRA-059). ');
-$ax += cidrblock($address,'104.250.174.0/24','Quadranet, not an access provider (ASN-QUADRA-060). ');
-$ax += cidrblock($address,'104.250.178.0/24','Quadranet, not an access provider (ASN-QUADRA-061). ');
-$ax += cidrblock($address,'104.251.180.0/22','Quadranet, not an access provider (ASN-QUADRA-062). ');
-$ax += cidrblock($address,'104.251.186.0/23','Quadranet, not an access provider (ASN-QUADRA-063). ');
-$ax += cidrblock($address,'104.251.208.0/23','Quadranet, not an access provider (ASN-QUADRA-064). ');
-$ax += cidrblock($address,'104.254.56.0/24','Quadranet, not an access provider (ASN-QUADRA-065). ');
-$ax += cidrblock($address,'104.254.61.0/24','Quadranet, not an access provider (ASN-QUADRA-066). ');
-$ax += cidrblock($address,'104.255.220.0/22','Quadranet, not an access provider (ASN-QUADRA-067). ');
-$ax += cidrblock($address,'104.255.225.0/24','Quadranet, not an access provider (ASN-QUADRA-068). ');
-$ax += cidrblock($address,'107.150.0.0/20','Quadranet, not an access provider (ASN-QUADRA-069). ');
-$ax += cidrblock($address,'107.150.16.0/22','Quadranet, not an access provider (ASN-QUADRA-070). ');
-$ax += cidrblock($address,'107.150.20.0/23','Quadranet, not an access provider (ASN-QUADRA-071). ');
-$ax += cidrblock($address,'107.150.25.0/24','Quadranet, not an access provider (ASN-QUADRA-072). ');
-$ax += cidrblock($address,'107.150.26.0/24','Quadranet, not an access provider (ASN-QUADRA-073). ');
-$ax += cidrblock($address,'107.150.30.0/23','Quadranet, not an access provider (ASN-QUADRA-074). ');
-$ax += cidrblock($address,'107.161.80.0/20','Quadranet, not an access provider (ASN-QUADRA-075). ');
-$ax += cidrblock($address,'107.167.32.0/19','Quadranet, not an access provider (ASN-QUADRA-076). ');
-$ax += cidrblock($address,'107.178.140.0/22','Quadranet, not an access provider (ASN-QUADRA-077). ');
-$ax += cidrblock($address,'107.181.77.0/24','Quadranet, not an access provider (ASN-QUADRA-078). ');
-$ax += cidrblock($address,'107.182.180.0/22','Quadranet, not an access provider (ASN-QUADRA-079). ');
-$ax += cidrblock($address,'107.182.184.0/21','Quadranet, not an access provider (ASN-QUADRA-080). ');
-$ax += cidrblock($address,'138.128.192.0/20','Quadranet, not an access provider (ASN-QUADRA-081). ');
-$ax += cidrblock($address,'138.128.220.0/22','Quadranet, not an access provider (ASN-QUADRA-082). ');
-$ax += cidrblock($address,'146.71.32.0/20','Quadranet, not an access provider (ASN-QUADRA-083). ');
-$ax += cidrblock($address,'146.148.160.0/21','Quadranet, not an access provider (ASN-QUADRA-084). ');
-$ax += cidrblock($address,'155.94.128.0/17','Quadranet, not an access provider (ASN-QUADRA-085). ');
-$ax += cidrblock($address,'155.254.38.0/24','Quadranet, not an access provider (ASN-QUADRA-086). ');
-$ax += cidrblock($address,'162.211.65.0/24','Quadranet, not an access provider (ASN-QUADRA-087). ');
-$ax += cidrblock($address,'162.218.208.0/22','Quadranet, not an access provider (ASN-QUADRA-088). ');
-$ax += cidrblock($address,'162.220.8.0/21','Quadranet, not an access provider (ASN-QUADRA-089). ');
-$ax += cidrblock($address,'162.220.244.0/24','Quadranet, not an access provider (ASN-QUADRA-090). ');
+$ax += cidrblock($address,'104.192.28.0/22','Quadranet, not an access provider (ASN-QUADRA-043). ');
+$ax += cidrblock($address,'104.194.76.0/22','Quadranet, not an access provider (ASN-QUADRA-044). ');
+$ax += cidrblock($address,'104.194.192.0/22','Quadranet, not an access provider (ASN-QUADRA-045). ');
+$ax += cidrblock($address,'104.200.160.0/20','Quadranet, not an access provider (ASN-QUADRA-046). ');
+$ax += cidrblock($address,'104.223.0.0/17','Quadranet, not an access provider (ASN-QUADRA-047). ');
+$ax += cidrblock($address,'104.224.128.0/21','Quadranet, not an access provider (ASN-QUADRA-048). ');
+$ax += cidrblock($address,'104.224.152.0/21','Quadranet, not an access provider (ASN-QUADRA-049). ');
+$ax += cidrblock($address,'104.224.160.0/21','Quadranet, not an access provider (ASN-QUADRA-050). ');
+$ax += cidrblock($address,'104.238.33.0/24','Quadranet, not an access provider (ASN-QUADRA-051). ');
+$ax += cidrblock($address,'104.238.46.0/23','Quadranet, not an access provider (ASN-QUADRA-052). ');
+$ax += cidrblock($address,'104.243.246.0/24','Quadranet, not an access provider (ASN-QUADRA-053). ');
+$ax += cidrblock($address,'104.244.7.0/24','Quadranet, not an access provider (ASN-QUADRA-054). ');
+$ax += cidrblock($address,'104.245.240.0/21','Quadranet, not an access provider (ASN-QUADRA-055). ');
+$ax += cidrblock($address,'104.250.163.0/24','Quadranet, not an access provider (ASN-QUADRA-056). ');
+$ax += cidrblock($address,'104.250.174.0/24','Quadranet, not an access provider (ASN-QUADRA-057). ');
+$ax += cidrblock($address,'104.250.178.0/24','Quadranet, not an access provider (ASN-QUADRA-058). ');
+$ax += cidrblock($address,'104.251.180.0/22','Quadranet, not an access provider (ASN-QUADRA-059). ');
+$ax += cidrblock($address,'104.251.186.0/23','Quadranet, not an access provider (ASN-QUADRA-060). ');
+$ax += cidrblock($address,'104.251.208.0/23','Quadranet, not an access provider (ASN-QUADRA-061). ');
+$ax += cidrblock($address,'104.254.61.0/24','Quadranet, not an access provider (ASN-QUADRA-062). ');
+$ax += cidrblock($address,'104.255.220.0/22','Quadranet, not an access provider (ASN-QUADRA-063). ');
+$ax += cidrblock($address,'104.255.225.0/24','Quadranet, not an access provider (ASN-QUADRA-064). ');
+$ax += cidrblock($address,'107.150.0.0/20','Quadranet, not an access provider (ASN-QUADRA-065). ');
+$ax += cidrblock($address,'107.150.16.0/22','Quadranet, not an access provider (ASN-QUADRA-066). ');
+$ax += cidrblock($address,'107.150.20.0/23','Quadranet, not an access provider (ASN-QUADRA-067). ');
+$ax += cidrblock($address,'107.150.25.0/24','Quadranet, not an access provider (ASN-QUADRA-068). ');
+$ax += cidrblock($address,'107.150.26.0/24','Quadranet, not an access provider (ASN-QUADRA-069). ');
+$ax += cidrblock($address,'107.150.30.0/23','Quadranet, not an access provider (ASN-QUADRA-070). ');
+$ax += cidrblock($address,'107.161.80.0/20','Quadranet, not an access provider (ASN-QUADRA-071). ');
+$ax += cidrblock($address,'107.167.32.0/19','Quadranet, not an access provider (ASN-QUADRA-072). ');
+$ax += cidrblock($address,'107.178.140.0/22','Quadranet, not an access provider (ASN-QUADRA-073). ');
+$ax += cidrblock($address,'107.181.77.0/24','Quadranet, not an access provider (ASN-QUADRA-074). ');
+$ax += cidrblock($address,'138.128.192.0/20','Quadranet, not an access provider (ASN-QUADRA-075). ');
+$ax += cidrblock($address,'138.128.220.0/22','Quadranet, not an access provider (ASN-QUADRA-076). ');
+$ax += cidrblock($address,'146.71.32.0/20','Quadranet, not an access provider (ASN-QUADRA-077). ');
+$ax += cidrblock($address,'146.148.160.0/21','Quadranet, not an access provider (ASN-QUADRA-078). ');
+$ax += cidrblock($address,'154.16.108.0/22','Quadranet, not an access provider (ASN-QUADRA-079). ');
+$ax += cidrblock($address,'154.16.160.0/22','Quadranet, not an access provider (ASN-QUADRA-080). ');
+$ax += cidrblock($address,'154.16.166.0/24','Quadranet, not an access provider (ASN-QUADRA-081). ');
+$ax += cidrblock($address,'155.94.128.0/17','Quadranet, not an access provider (ASN-QUADRA-082). ');
+$ax += cidrblock($address,'155.254.38.0/24','Quadranet, not an access provider (ASN-QUADRA-083). ');
+$ax += cidrblock($address,'160.202.168.0/22','Quadranet, not an access provider (ASN-QUADRA-084). ');
+$ax += cidrblock($address,'162.211.65.0/24','Quadranet, not an access provider (ASN-QUADRA-085). ');
+$ax += cidrblock($address,'162.211.67.0/24','Quadranet, not an access provider (ASN-QUADRA-086). ');
+$ax += cidrblock($address,'162.218.208.0/22','Quadranet, not an access provider (ASN-QUADRA-087). ');
+$ax += cidrblock($address,'162.220.8.0/21','Quadranet, not an access provider (ASN-QUADRA-088). ');
+$ax += cidrblock($address,'162.220.244.0/24','Quadranet, not an access provider (ASN-QUADRA-089). ');
+$ax += cidrblock($address,'162.245.184.0/21','Quadranet, not an access provider (ASN-QUADRA-090). ');
 $ax += cidrblock($address,'162.253.178.0/23','Quadranet, not an access provider (ASN-QUADRA-091). ');
 $ax += cidrblock($address,'167.160.36.0/24','Quadranet, not an access provider (ASN-QUADRA-092). ');
 $ax += cidrblock($address,'167.160.160.0/19','Quadranet, not an access provider (ASN-QUADRA-093). ');
-$ax += cidrblock($address,'172.97.64.0/24','Quadranet, not an access provider (ASN-QUADRA-094). ');
-$ax += cidrblock($address,'172.97.66.0/23','Quadranet, not an access provider (ASN-QUADRA-095). ');
-$ax += cidrblock($address,'172.97.68.0/24','Quadranet, not an access provider (ASN-QUADRA-096). ');
-$ax += cidrblock($address,'172.110.24.0/24','Quadranet, not an access provider (ASN-QUADRA-097). ');
-$ax += cidrblock($address,'173.44.32.0/19','Quadranet, not an access provider (ASN-QUADRA-098). ');
-$ax += cidrblock($address,'173.205.80.0/20','Quadranet, not an access provider (ASN-QUADRA-099). ');
-$ax += cidrblock($address,'173.254.192.0/18','Quadranet, not an access provider (ASN-QUADRA-100). ');
-$ax += cidrblock($address,'183.182.10.0/24','Quadranet, not an access provider (ASN-QUADRA-101). ');
-$ax += cidrblock($address,'185.73.128.0/22','Quadranet, not an access provider (ASN-QUADRA-102). ');
-$ax += cidrblock($address,'185.121.152.0/24','Quadranet, not an access provider (ASN-QUADRA-103). ');
-$ax += cidrblock($address,'192.52.166.0/23','Quadranet, not an access provider (ASN-QUADRA-104). ');
-$ax += cidrblock($address,'192.119.140.0/22','Quadranet, not an access provider (ASN-QUADRA-105). ');
-$ax += cidrblock($address,'192.161.48.0/20','Quadranet, not an access provider (ASN-QUADRA-106). ');
-$ax += cidrblock($address,'192.161.160.0/19','Quadranet, not an access provider (ASN-QUADRA-107). ');
-$ax += cidrblock($address,'192.169.6.0/23','Quadranet, not an access provider (ASN-QUADRA-108). ');
-$ax += cidrblock($address,'192.189.2.0/24','Quadranet, not an access provider (ASN-QUADRA-109). ');
-$ax += cidrblock($address,'192.225.224.0/22','Quadranet, not an access provider (ASN-QUADRA-110). ');
-$ax += cidrblock($address,'192.225.228.0/23','Quadranet, not an access provider (ASN-QUADRA-111). ');
-$ax += cidrblock($address,'193.17.68.0/24','Quadranet, not an access provider (ASN-QUADRA-112). ');
-$ax += cidrblock($address,'193.30.161.0/24','Quadranet, not an access provider (ASN-QUADRA-113). ');
-$ax += cidrblock($address,'193.200.30.0/24','Quadranet, not an access provider (ASN-QUADRA-114). ');
-$ax += cidrblock($address,'198.55.96.0/19','Quadranet, not an access provider (ASN-QUADRA-115). ');
-$ax += cidrblock($address,'198.96.88.0/21','Quadranet, not an access provider (ASN-QUADRA-116). ');
-$ax += cidrblock($address,'198.175.228.0/24','Quadranet, not an access provider (ASN-QUADRA-117). ');
-$ax += cidrblock($address,'198.180.167.0/24','Quadranet, not an access provider (ASN-QUADRA-118). ');
-$ax += cidrblock($address,'199.89.0.0/23','Quadranet, not an access provider (ASN-QUADRA-119). ');
-$ax += cidrblock($address,'199.180.254.0/23','Quadranet, not an access provider (ASN-QUADRA-120). ');
-$ax += cidrblock($address,'199.202.223.0/24','Quadranet, not an access provider (ASN-QUADRA-121). ');
-$ax += cidrblock($address,'199.249.182.0/24','Quadranet, not an access provider (ASN-QUADRA-122). ');
-$ax += cidrblock($address,'202.131.55.0/24','Quadranet, not an access provider (ASN-QUADRA-123). ');
-$ax += cidrblock($address,'203.7.164.0/24','Quadranet, not an access provider (ASN-QUADRA-124). ');
-$ax += cidrblock($address,'204.44.64.0/18','Quadranet, not an access provider (ASN-QUADRA-125). ');
-$ax += cidrblock($address,'204.152.192.0/19','Quadranet, not an access provider (ASN-QUADRA-126). ');
-$ax += cidrblock($address,'206.126.96.0/24','Quadranet, not an access provider (ASN-QUADRA-127). ');
-$ax += cidrblock($address,'207.246.200.0/24','Quadranet, not an access provider (ASN-QUADRA-128). ');
-$ax += cidrblock($address,'216.45.48.0/20','Quadranet, not an access provider (ASN-QUADRA-129). ');
-$ax += cidrblock($address,'216.144.224.0/20','Quadranet, not an access provider (ASN-QUADRA-130). ');
-$ax += cidrblock($address,'218.246.130.0/24','Quadranet, not an access provider (ASN-QUADRA-131). ');
+$ax += cidrblock($address,'172.97.70.0/24','Quadranet, not an access provider (ASN-QUADRA-094). ');
+$ax += cidrblock($address,'172.110.24.0/24','Quadranet, not an access provider (ASN-QUADRA-095). ');
+$ax += cidrblock($address,'173.44.32.0/19','Quadranet, not an access provider (ASN-QUADRA-096). ');
+$ax += cidrblock($address,'173.205.80.0/20','Quadranet, not an access provider (ASN-QUADRA-097). ');
+$ax += cidrblock($address,'173.254.192.0/18','Quadranet, not an access provider (ASN-QUADRA-098). ');
+$ax += cidrblock($address,'183.182.10.0/24','Quadranet, not an access provider (ASN-QUADRA-99). ');
+$ax += cidrblock($address,'185.73.128.0/22','Quadranet, not an access provider (ASN-QUADRA-100). ');
+$ax += cidrblock($address,'185.121.152.0/24','Quadranet, not an access provider (ASN-QUADRA-101). ');
+$ax += cidrblock($address,'192.52.166.0/23','Quadranet, not an access provider (ASN-QUADRA-102). ');
+$ax += cidrblock($address,'192.119.140.0/22','Quadranet, not an access provider (ASN-QUADRA-103). ');
+$ax += cidrblock($address,'192.161.48.0/20','Quadranet, not an access provider (ASN-QUADRA-104). ');
+$ax += cidrblock($address,'192.161.160.0/19','Quadranet, not an access provider (ASN-QUADRA-105). ');
+$ax += cidrblock($address,'192.169.6.0/23','Quadranet, not an access provider (ASN-QUADRA-106). ');
+$ax += cidrblock($address,'192.189.2.0/24','Quadranet, not an access provider (ASN-QUADRA-107). ');
+$ax += cidrblock($address,'192.225.224.0/22','Quadranet, not an access provider (ASN-QUADRA-108). ');
+$ax += cidrblock($address,'192.225.228.0/23','Quadranet, not an access provider (ASN-QUADRA-109). ');
+$ax += cidrblock($address,'193.17.68.0/24','Quadranet, not an access provider (ASN-QUADRA-110). ');
+$ax += cidrblock($address,'193.30.161.0/24','Quadranet, not an access provider (ASN-QUADRA-111). ');
+$ax += cidrblock($address,'193.200.30.0/24','Quadranet, not an access provider (ASN-QUADRA-112). ');
+$ax += cidrblock($address,'195.137.220.0/23','Quadranet, not an access provider (ASN-QUADRA-113). ');
+$ax += cidrblock($address,'198.55.96.0/19','Quadranet, not an access provider (ASN-QUADRA-114). ');
+$ax += cidrblock($address,'198.96.88.0/21','Quadranet, not an access provider (ASN-QUADRA-115). ');
+$ax += cidrblock($address,'198.175.228.0/24','Quadranet, not an access provider (ASN-QUADRA-116). ');
+$ax += cidrblock($address,'198.180.167.0/24','Quadranet, not an access provider (ASN-QUADRA-117). ');
+$ax += cidrblock($address,'199.89.0.0/23','Quadranet, not an access provider (ASN-QUADRA-118). ');
+$ax += cidrblock($address,'199.180.254.0/23','Quadranet, not an access provider (ASN-QUADRA-119). ');
+$ax += cidrblock($address,'199.202.223.0/24','Quadranet, not an access provider (ASN-QUADRA-120). ');
+$ax += cidrblock($address,'199.249.182.0/24','Quadranet, not an access provider (ASN-QUADRA-121). ');
+$ax += cidrblock($address,'202.131.55.0/24','Quadranet, not an access provider (ASN-QUADRA-122). ');
+$ax += cidrblock($address,'203.7.164.0/24','Quadranet, not an access provider (ASN-QUADRA-123). ');
+$ax += cidrblock($address,'204.44.64.0/18','Quadranet, not an access provider (ASN-QUADRA-124). ');
+$ax += cidrblock($address,'204.152.192.0/19','Quadranet, not an access provider (ASN-QUADRA-125). ');
+$ax += cidrblock($address,'206.126.96.0/24','Quadranet, not an access provider (ASN-QUADRA-126). ');
+$ax += cidrblock($address,'207.246.200.0/24','Quadranet, not an access provider (ASN-QUADRA-127). ');
+$ax += cidrblock($address,'216.45.48.0/20','Quadranet, not an access provider (ASN-QUADRA-128). ');
+$ax += cidrblock($address,'216.144.224.0/20','Quadranet, not an access provider (ASN-QUADRA-129). ');
+$ax += cidrblock($address,'218.246.130.0/24','Quadranet, not an access provider (ASN-QUADRA-130). ');
 
 
 // Colocrossing (updated 2016.02.27)
@@ -3976,49 +3930,46 @@ $ax += cidrblock($address,'198.177.56.0/21','Serveryou Network, not an access pr
 $ax += cidrblock($address,'199.231.64.0/21','Serveryou Network, not an access provider (ASN-11282-12). ');
 
 
-// Hostspace Networks (updated 2016.03.18)
-// AS26484
+// Hostspace Networks
+// AS26484 (updated 2016.06.09)
 $ax += cidrblock($address,'23.226.54.0/24','Hostspace Networks, not an access provider (ASN-26484-00). ');
 $ax += cidrblock($address,'23.226.57.0/24','Hostspace Networks, not an access provider (ASN-26484-01). ');
-$ax += cidrblock($address,'23.234.0.0/20','Hostspace Networks, not an access provider (ASN-26484-02). ');
-$ax += cidrblock($address,'23.234.16.0/21','Hostspace Networks, not an access provider (ASN-26484-03). ');
-$ax += cidrblock($address,'23.234.24.0/23','Hostspace Networks, not an access provider (ASN-26484-04). ');
-$ax += cidrblock($address,'23.234.26.0/24','Hostspace Networks, not an access provider (ASN-26484-05). ');
-$ax += cidrblock($address,'23.234.28.0/22','Hostspace Networks, not an access provider (ASN-26484-06). ');
-$ax += cidrblock($address,'23.234.32.0/21','Hostspace Networks, not an access provider (ASN-26484-07). ');
-$ax += cidrblock($address,'23.234.48.0/21','Hostspace Networks, not an access provider (ASN-26484-08). ');
-$ax += cidrblock($address,'23.234.60.0/22','Hostspace Networks, not an access provider (ASN-26484-09). ');
-$ax += cidrblock($address,'23.235.165.0/24','Hostspace Networks, not an access provider (ASN-26484-10). ');
-$ax += cidrblock($address,'23.235.170.0/24','Hostspace Networks, not an access provider (ASN-26484-11). ');
-$ax += cidrblock($address,'23.248.198.0/24','Hostspace Networks, not an access provider (ASN-26484-12). ');
-$ax += cidrblock($address,'23.248.201.0/24','Hostspace Networks, not an access provider (ASN-26484-13). ');
-$ax += cidrblock($address,'23.248.202.0/24','Hostspace Networks, not an access provider (ASN-26484-14). ');
-$ax += cidrblock($address,'23.248.205.0/24','Hostspace Networks, not an access provider (ASN-26484-15). ');
-$ax += cidrblock($address,'23.248.206.0/24','Hostspace Networks, not an access provider (ASN-26484-16). ');
-$ax += cidrblock($address,'23.248.227.0/24','Hostspace Networks, not an access provider (ASN-26484-17). ');
-$ax += cidrblock($address,'23.248.242.0/24','Hostspace Networks, not an access provider (ASN-26484-18). ');
-$ax += cidrblock($address,'23.252.160.0/20','Hostspace Networks, not an access provider (ASN-26484-19). ');
-$ax += cidrblock($address,'43.228.232.0/22','Hostspace Networks, not an access provider (ASN-26484-20). ');
-$ax += cidrblock($address,'43.230.112.0/22','Hostspace Networks, not an access provider (ASN-26484-21). ');
-$ax += cidrblock($address,'43.230.140.0/22','Hostspace Networks, not an access provider (ASN-26484-22). ');
-$ax += cidrblock($address,'43.230.144.0/22','Hostspace Networks, not an access provider (ASN-26484-23). ');
-$ax += cidrblock($address,'45.61.240.0/20','Hostspace Networks, not an access provider (ASN-26484-24). ');
-$ax += cidrblock($address,'66.102.253.0/24','Hostspace Networks, not an access provider (ASN-26484-25). ');
-$ax += cidrblock($address,'98.159.100.0/23','Hostspace Networks, not an access provider (ASN-26484-26). ');
-$ax += cidrblock($address,'103.41.184.0/24','Hostspace Networks, not an access provider (ASN-26484-27). ');
-$ax += cidrblock($address,'103.47.240.0/22','Hostspace Networks, not an access provider (ASN-26484-28). ');
-$ax += cidrblock($address,'103.49.156.0/22','Hostspace Networks, not an access provider (ASN-26484-29). ');
-$ax += cidrblock($address,'103.49.208.0/21','Hostspace Networks, not an access provider (ASN-26484-30). ');
-$ax += cidrblock($address,'103.53.7.0/24','Hostspace Networks, not an access provider (ASN-26484-31). ');
-$ax += cidrblock($address,'162.211.180.0/22','Hostspace Networks, not an access provider (ASN-26484-32). ');
-$ax += cidrblock($address,'162.212.180.0/22','Hostspace Networks, not an access provider (ASN-26484-33). ');
-$ax += cidrblock($address,'162.251.92.0/22','Hostspace Networks, not an access provider (ASN-26484-34). ');
-$ax += cidrblock($address,'192.126.112.0/21','Hostspace Networks, not an access provider (ASN-26484-35). ');
-$ax += cidrblock($address,'192.126.120.0/22','Hostspace Networks, not an access provider (ASN-26484-36). ');
-$ax += cidrblock($address,'192.126.126.0/23','Hostspace Networks, not an access provider (ASN-26484-37). ');
-$ax += cidrblock($address,'198.44.248.0/22','Hostspace Networks, not an access provider (ASN-26484-38). ');
-$ax += cidrblock($address,'198.177.127.0/24','Hostspace Networks, not an access provider (ASN-26484-39). ');
-$ax += cidrblock($address,'207.254.182.0/24','Hostspace Networks, not an access provider (ASN-26484-40). ');
+$ax += cidrblock($address,'23.234.0.0/19','Hostspace Networks, not an access provider (ASN-26484-02). ');
+$ax += cidrblock($address,'23.234.32.0/21','Hostspace Networks, not an access provider (ASN-26484-03). ');
+$ax += cidrblock($address,'23.234.48.0/21','Hostspace Networks, not an access provider (ASN-26484-04). ');
+$ax += cidrblock($address,'23.234.60.0/22','Hostspace Networks, not an access provider (ASN-26484-05). ');
+$ax += cidrblock($address,'23.235.165.0/24','Hostspace Networks, not an access provider (ASN-26484-06). ');
+$ax += cidrblock($address,'23.235.170.0/24','Hostspace Networks, not an access provider (ASN-26484-07). ');
+$ax += cidrblock($address,'23.248.198.0/24','Hostspace Networks, not an access provider (ASN-26484-08). ');
+$ax += cidrblock($address,'23.248.201.0/24','Hostspace Networks, not an access provider (ASN-26484-09). ');
+$ax += cidrblock($address,'23.248.202.0/24','Hostspace Networks, not an access provider (ASN-26484-10). ');
+$ax += cidrblock($address,'23.248.205.0/24','Hostspace Networks, not an access provider (ASN-26484-11). ');
+$ax += cidrblock($address,'23.248.206.0/24','Hostspace Networks, not an access provider (ASN-26484-12). ');
+$ax += cidrblock($address,'23.248.227.0/24','Hostspace Networks, not an access provider (ASN-26484-13). ');
+$ax += cidrblock($address,'23.248.242.0/24','Hostspace Networks, not an access provider (ASN-26484-14). ');
+$ax += cidrblock($address,'23.252.160.0/20','Hostspace Networks, not an access provider (ASN-26484-15). ');
+$ax += cidrblock($address,'43.228.232.0/22','Hostspace Networks, not an access provider (ASN-26484-16). ');
+$ax += cidrblock($address,'43.230.112.0/22','Hostspace Networks, not an access provider (ASN-26484-17). ');
+$ax += cidrblock($address,'43.230.140.0/22','Hostspace Networks, not an access provider (ASN-26484-18). ');
+$ax += cidrblock($address,'43.230.144.0/22','Hostspace Networks, not an access provider (ASN-26484-19). ');
+$ax += cidrblock($address,'45.61.240.0/20','Hostspace Networks, not an access provider (ASN-26484-20). ');
+$ax += cidrblock($address,'66.102.253.0/24','Hostspace Networks, not an access provider (ASN-26484-21). ');
+$ax += cidrblock($address,'98.159.100.0/23','Hostspace Networks, not an access provider (ASN-26484-22). ');
+$ax += cidrblock($address,'103.41.184.0/24','Hostspace Networks, not an access provider (ASN-26484-23). ');
+$ax += cidrblock($address,'103.47.240.0/22','Hostspace Networks, not an access provider (ASN-26484-24). ');
+$ax += cidrblock($address,'103.49.156.0/22','Hostspace Networks, not an access provider (ASN-26484-25). ');
+$ax += cidrblock($address,'103.49.208.0/21','Hostspace Networks, not an access provider (ASN-26484-26). ');
+$ax += cidrblock($address,'103.53.7.0/24','Hostspace Networks, not an access provider (ASN-26484-27). ');
+$ax += cidrblock($address,'162.211.180.0/22','Hostspace Networks, not an access provider (ASN-26484-28). ');
+$ax += cidrblock($address,'162.212.180.0/22','Hostspace Networks, not an access provider (ASN-26484-29). ');
+$ax += cidrblock($address,'162.251.92.0/22','Hostspace Networks, not an access provider (ASN-26484-30). ');
+$ax += cidrblock($address,'192.126.112.0/21','Hostspace Networks, not an access provider (ASN-26484-31). ');
+$ax += cidrblock($address,'192.126.120.0/22','Hostspace Networks, not an access provider (ASN-26484-32). ');
+$ax += cidrblock($address,'192.126.126.0/23','Hostspace Networks, not an access provider (ASN-26484-33). ');
+$ax += cidrblock($address,'192.151.230.0/23','Hostspace Networks, not an access provider (ASN-26484-34). ');
+$ax += cidrblock($address,'198.44.248.0/22','Hostspace Networks, not an access provider (ASN-26484-35). ');
+$ax += cidrblock($address,'198.177.127.0/24','Hostspace Networks, not an access provider (ASN-26484-36). ');
+$ax += cidrblock($address,'207.254.182.0/24','Hostspace Networks, not an access provider (ASN-26484-37). ');
 
 
 // Connexions4London Ltd
@@ -4379,43 +4330,39 @@ $ax += cidrblock($address,'208.64.24.0/21','Versaweb, LLC (ASN-VERSAWEB-14). ');
 $ax += cidrblock($address,'208.66.72.0/21','Versaweb, LLC (ASN-VERSAWEB-15). ');
 
 
-// Volume Drive (updated 2016.01.23)
-// Hosting Datawagon Spam
-// AS27176, AS46664
-$ax += cidrblock($address,'45.119.40.0/22','Volume Drive spamhost (AS-VOLUMEDRIVE-00). ');
-$ax += cidrblock($address,'45.119.208.0/22','Volume Drive spamhost (AS-VOLUMEDRIVE-01). ');
-$ax += cidrblock($address,'74.118.192.0/22','Volume Drive spamhost (AS-VOLUMEDRIVE-02). ');
-$ax += cidrblock($address,'103.59.92.0/22','Volume Drive spamhost (AS-VOLUMEDRIVE-03). ');
-$ax += cidrblock($address,'103.60.12.0/22','Volume Drive spamhost (AS-VOLUMEDRIVE-04). ');
-$ax += cidrblock($address,'103.196.26.0/23','Volume Drive spamhost (AS-VOLUMEDRIVE-05). ');
-$ax += cidrblock($address,'104.37.44.0/22','Volume Drive spamhost (AS-VOLUMEDRIVE-06). ');
-$ax += cidrblock($address,'104.128.236.0/24','Volume Drive spamhost (AS-VOLUMEDRIVE-07). ');
-$ax += cidrblock($address,'104.192.0.0/22','Volume Drive spamhost (AS-VOLUMEDRIVE-08). ');
-$ax += cidrblock($address,'104.193.8.0/22','Volume Drive spamhost (AS-VOLUMEDRIVE-09). ');
-$ax += cidrblock($address,'104.219.232.0/21','Volume Drive spamhost (AS-VOLUMEDRIVE-10). ');
-$ax += cidrblock($address,'104.245.96.0/21','Volume Drive spamhost (AS-VOLUMEDRIVE-11). ');
-$ax += cidrblock($address,'104.255.64.0/21','Volume Drive spamhost (AS-VOLUMEDRIVE-12). ');
-$ax += cidrblock($address,'107.182.16.0/20','Volume Drive spamhost (AS-VOLUMEDRIVE-13). ');
-$ax += cidrblock($address,'142.0.32.0/21','Volume Drive spamhost (AS-VOLUMEDRIVE-14). ');
-$ax += cidrblock($address,'142.0.40.0/22','Volume Drive spamhost (AS-VOLUMEDRIVE-15). ');
-$ax += cidrblock($address,'142.0.44.0/23','Volume Drive spamhost (AS-VOLUMEDRIVE-16). ');
-$ax += cidrblock($address,'142.0.46.0/24','Volume Drive spamhost (AS-VOLUMEDRIVE-17). ');
-$ax += cidrblock($address,'161.123.233.0/24','Volume Drive spamhost (AS-VOLUMEDRIVE-18). ');
-$ax += cidrblock($address,'162.213.24.0/21','Volume Drive spamhost (AS-VOLUMEDRIVE-19). ');
-$ax += cidrblock($address,'162.248.72.0/21','Volume Drive spamhost (AS-VOLUMEDRIVE-20). ');
-$ax += cidrblock($address,'162.253.66.0/24','Volume Drive spamhost (AS-VOLUMEDRIVE-21). ');
-$ax += cidrblock($address,'172.81.128.0/21','Volume Drive spamhost (AS-VOLUMEDRIVE-22). ');
-$ax += cidrblock($address,'173.242.112.0/20','Volume Drive spamhost (AS-VOLUMEDRIVE-23). ');
-$ax += cidrblock($address,'181.41.196.0/24','Volume Drive spamhost (AS-VOLUMEDRIVE-24). ');
-$ax += cidrblock($address,'191.96.8.0/24','Volume Drive spamhost (AS-VOLUMEDRIVE-25). ');
-$ax += cidrblock($address,'191.101.51.0/24','Volume Drive spamhost (AS-VOLUMEDRIVE-26). ');
-$ax += cidrblock($address,'192.69.88.0/21','Volume Drive spamhost (AS-VOLUMEDRIVE-27). ');
-$ax += cidrblock($address,'199.19.104.0/21','Volume Drive spamhost (AS-VOLUMEDRIVE-28). ');
-$ax += cidrblock($address,'199.115.228.0/22','Volume Drive spamhost (AS-VOLUMEDRIVE-29). ');
-$ax += cidrblock($address,'199.168.136.0/21','Volume Drive spamhost (AS-VOLUMEDRIVE-30). ');
-$ax += cidrblock($address,'199.180.112.0/21','Volume Drive spamhost (AS-VOLUMEDRIVE-31). ');
-$ax += cidrblock($address,'199.254.168.0/24','Volume Drive spamhost (AS-VOLUMEDRIVE-32). ');
-$ax += cidrblock($address,'204.124.180.0/22','Volume Drive spamhost (AS-VOLUMEDRIVE-33). ');
+// DataWagon LLC
+// AS27176 (updated 2016.06.09)
+$ax += cidrblock($address,'1.3.3.0/24','DataWagon LLC; Access denied (ASN-DATAWAGON-0). ');
+$ax += cidrblock($address,'45.119.208.0/22','DataWagon LLC; Access denied (ASN-DATAWAGON-1). ');
+$ax += cidrblock($address,'103.60.12.0/22','DataWagon LLC; Access denied (ASN-DATAWAGON-2). ');
+$ax += cidrblock($address,'104.192.0.0/22','DataWagon LLC; Access denied (ASN-DATAWAGON-3). ');
+$ax += cidrblock($address,'104.219.232.0/21','DataWagon LLC; Access denied (ASN-DATAWAGON-4). ');
+$ax += cidrblock($address,'172.81.128.0/21','DataWagon LLC; Access denied (ASN-DATAWAGON-5). ');
+$ax += cidrblock($address,'209.66.128.0/20','DataWagon LLC; Access denied (ASN-DATAWAGON-6). ');
+
+
+// VolumeDrive
+// AS46664 (updated 2016.06.09)
+$ax += cidrblock($address,'74.118.192.0/22','VolumeDrive; Access denied (ASN-VOLUMEDRIVE-00). ');
+$ax += cidrblock($address,'104.37.44.0/22','VolumeDrive; Access denied (ASN-VOLUMEDRIVE-01). ');
+$ax += cidrblock($address,'104.193.8.0/22','VolumeDrive; Access denied (ASN-VOLUMEDRIVE-02). ');
+$ax += cidrblock($address,'104.245.96.0/21','VolumeDrive; Access denied (ASN-VOLUMEDRIVE-03). ');
+$ax += cidrblock($address,'104.255.64.0/21','VolumeDrive; Access denied (ASN-VOLUMEDRIVE-04). ');
+$ax += cidrblock($address,'107.182.16.0/20','VolumeDrive; Access denied (ASN-VOLUMEDRIVE-05). ');
+$ax += cidrblock($address,'142.0.32.0/21','VolumeDrive; Access denied (ASN-VOLUMEDRIVE-06). ');
+$ax += cidrblock($address,'142.0.40.0/22','VolumeDrive; Access denied (ASN-VOLUMEDRIVE-07). ');
+$ax += cidrblock($address,'142.0.44.0/23','VolumeDrive; Access denied (ASN-VOLUMEDRIVE-08). ');
+$ax += cidrblock($address,'142.0.46.0/24','VolumeDrive; Access denied (ASN-VOLUMEDRIVE-09). ');
+$ax += cidrblock($address,'162.213.24.0/21','VolumeDrive; Access denied (ASN-VOLUMEDRIVE-10). ');
+$ax += cidrblock($address,'162.248.72.0/21','VolumeDrive; Access denied (ASN-VOLUMEDRIVE-11). ');
+$ax += cidrblock($address,'173.242.112.0/20','VolumeDrive; Access denied (ASN-VOLUMEDRIVE-12). ');
+$ax += cidrblock($address,'192.69.88.0/21','VolumeDrive; Access denied (ASN-VOLUMEDRIVE-13). ');
+$ax += cidrblock($address,'199.19.104.0/21','VolumeDrive; Access denied (ASN-VOLUMEDRIVE-14). ');
+$ax += cidrblock($address,'199.115.228.0/22','VolumeDrive; Access denied (ASN-VOLUMEDRIVE-15). ');
+$ax += cidrblock($address,'199.168.136.0/21','VolumeDrive; Access denied (ASN-VOLUMEDRIVE-16). ');
+$ax += cidrblock($address,'199.180.112.0/21','VolumeDrive; Access denied (ASN-VOLUMEDRIVE-17). ');
+$ax += cidrblock($address,'199.254.168.0/24','VolumeDrive; Access denied (ASN-VOLUMEDRIVE-18). ');
+$ax += cidrblock($address,'204.124.180.0/22','VolumeDrive; Access denied (ASN-VOLUMEDRIVE-19). ');
 
 
 // WorldStream
@@ -4455,7 +4402,7 @@ $ax += cidrblock($address,'198.105.117.0/24','Worldstream (ASN-49981-31). ');
 $ax += cidrblock($address,'217.23.0.0/20','Worldstream (ASN-49981-32). ');
 
 
-// UOL (updated 2016.01.23)
+// UOL (updated 2016.06.09)
 // AS7162
 $ax += cidrblock($address,'186.234.0.0/18','AS7162, attacked SbS (ASN-7162-00). ');
 $ax += cidrblock($address,'186.234.64.0/20','AS7162, attacked SbS (ASN-7162-01). ');
@@ -4464,15 +4411,13 @@ $ax += cidrblock($address,'186.234.128.0/18','AS7162, attacked SbS (ASN-7162-03)
 $ax += cidrblock($address,'186.234.195.0/24','AS7162, attacked SbS (ASN-7162-04). ');
 $ax += cidrblock($address,'186.234.196.0/24','AS7162, attacked SbS (ASN-7162-05). ');
 $ax += cidrblock($address,'186.234.211.0/24','AS7162, attacked SbS (ASN-7162-06). ');
-$ax += cidrblock($address,'186.234.253.0/24','AS7162, attacked SbS (ASN-7162-07). ');
-$ax += cidrblock($address,'187.17.64.0/18','AS7162, attacked SbS (ASN-7162-08). ');
-$ax += cidrblock($address,'189.36.51.0/24','AS7162, attacked SbS (ASN-7162-09). ');
-$ax += cidrblock($address,'189.38.56.0/21','AS7162, attacked SbS (ASN-7162-10). ');
-$ax += cidrblock($address,'200.98.0.0/16','AS7162, attacked SbS (ASN-7162-11). ');
-$ax += cidrblock($address,'200.147.0.0/16','AS7162, attacked SbS (ASN-7162-12). ');
-$ax += cidrblock($address,'200.187.192.0/18','AS7162, attacked SbS (ASN-7162-13). ');
-$ax += cidrblock($address,'200.221.0.0/16','AS7162, attacked SbS (ASN-7162-14). ');
-$ax += cidrblock($address,'201.85.123.0/24','AS7162, attacked SbS (ASN-7162-15). ');
+$ax += cidrblock($address,'187.17.64.0/18','AS7162, attacked SbS (ASN-7162-07). ');
+$ax += cidrblock($address,'189.38.56.0/21','AS7162, attacked SbS (ASN-7162-08). ');
+$ax += cidrblock($address,'200.98.0.0/16','AS7162, attacked SbS (ASN-7162-09). ');
+$ax += cidrblock($address,'200.147.0.0/16','AS7162, attacked SbS (ASN-7162-10). ');
+$ax += cidrblock($address,'200.187.192.0/18','AS7162, attacked SbS (ASN-7162-11). ');
+$ax += cidrblock($address,'200.221.0.0/16','AS7162, attacked SbS (ASN-7162-12). ');
+$ax += cidrblock($address,'201.85.123.0/24','AS7162, attacked SbS (ASN-7162-13). ');
 
 
 // Choopa (Constant source of attacks, and assisted in DDoS of SbS)
@@ -4721,7 +4666,7 @@ $ax += cidrblock($address,'213.136.64.0/19','Contabo GmbH, cloud provider (ASN-C
 
 
 // AltusHost B.V. (Cloud provider)
-// AS51430 (updated 2016.03.10)
+// AS51430 (updated 2016.03.10 / checked 2016.06.09)
 $ax += cidrblock($address,'5.62.20.0/24','AltusHost B.V., cloud provider (ASN-ALTUS-00). ');
 $ax += cidrblock($address,'31.3.152.0/21','AltusHost B.V., cloud provider (ASN-ALTUS-01). ');
 $ax += cidrblock($address,'37.46.112.0/23','AltusHost B.V., cloud provider (ASN-ALTUS-02). ');
@@ -7329,6 +7274,176 @@ $ax += cidrblock($address,'207.192.68.0/22','Linode, LLC; Access denied (ASN-LIN
 $ax += cidrblock($address,'207.192.72.0/22','Linode, LLC; Access denied (ASN-LINODE-52). ');
 $ax += cidrblock($address,'209.123.162.0/24','Linode, LLC; Access denied (ASN-LINODE-53). ');
 $ax += cidrblock($address,'209.123.234.0/24','Linode, LLC; Access denied (ASN-LINODE-54). ');
+
+
+// Cyber Wurx LLC
+// AS22653 (updated 2016.06.09)
+$ax += cidrblock($address,'66.154.0.0/18','Cyber Wurx LLC; Access denied (ASN-CYBERWURX-0). ');
+$ax += cidrblock($address,'66.154.64.0/19','Cyber Wurx LLC; Access denied (ASN-CYBERWURX-1). ');
+$ax += cidrblock($address,'69.5.112.0/23','Cyber Wurx LLC; Access denied (ASN-CYBERWURX-2). ');
+$ax += cidrblock($address,'69.61.0.0/17','Cyber Wurx LLC; Access denied (ASN-CYBERWURX-3). ');
+$ax += cidrblock($address,'103.196.26.0/23','Cyber Wurx LLC; Access denied (ASN-CYBERWURX-4). ');
+$ax += cidrblock($address,'103.197.90.0/23','Cyber Wurx LLC; Access denied (ASN-CYBERWURX-5). ');
+$ax += cidrblock($address,'206.130.88.0/24','Cyber Wurx LLC; Access denied (ASN-CYBERWURX-6). ');
+$ax += cidrblock($address,'209.124.64.0/19','Cyber Wurx LLC; Access denied (ASN-CYBERWURX-7). ');
+$ax += cidrblock($address,'216.137.144.0/20','Cyber Wurx LLC; Access denied (ASN-CYBERWURX-8). ');
+$ax += cidrblock($address,'220.158.192.0/22','Cyber Wurx LLC; Access denied (ASN-CYBERWURX-9). ');
+
+
+// Host Sailor Ltd.
+// AS60117 (updated 2016.06.09)
+$ax += cidrblock($address,'131.72.136.0/22','Host Sailor Ltd; Access denied (ASN-HOSTSAILOR-00). ');
+$ax += cidrblock($address,'138.99.216.0/22','Host Sailor Ltd; Access denied (ASN-HOSTSAILOR-01). ');
+$ax += cidrblock($address,'158.46.128.0/19','Host Sailor Ltd; Access denied (ASN-HOSTSAILOR-02). ');
+$ax += cidrblock($address,'161.123.192.0/18','Host Sailor Ltd; Access denied (ASN-HOSTSAILOR-03). ');
+$ax += cidrblock($address,'178.171.48.0/24','Host Sailor Ltd; Access denied (ASN-HOSTSAILOR-04). ');
+$ax += cidrblock($address,'178.171.57.0/24','Host Sailor Ltd; Access denied (ASN-HOSTSAILOR-05). ');
+$ax += cidrblock($address,'178.171.58.0/23','Host Sailor Ltd; Access denied (ASN-HOSTSAILOR-06). ');
+$ax += cidrblock($address,'178.171.60.0/22','Host Sailor Ltd; Access denied (ASN-HOSTSAILOR-07). ');
+$ax += cidrblock($address,'185.45.192.0/23','Host Sailor Ltd; Access denied (ASN-HOSTSAILOR-08). ');
+$ax += cidrblock($address,'185.82.200.0/22','Host Sailor Ltd; Access denied (ASN-HOSTSAILOR-09). ');
+$ax += cidrblock($address,'185.91.148.0/22','Host Sailor Ltd; Access denied (ASN-HOSTSAILOR-10). ');
+$ax += cidrblock($address,'185.106.120.0/22','Host Sailor Ltd; Access denied (ASN-HOSTSAILOR-11). ');
+$ax += cidrblock($address,'185.117.72.0/22','Host Sailor Ltd; Access denied (ASN-HOSTSAILOR-12). ');
+$ax += cidrblock($address,'185.121.154.0/24','Host Sailor Ltd; Access denied (ASN-HOSTSAILOR-13). ');
+$ax += cidrblock($address,'185.141.24.0/22','Host Sailor Ltd; Access denied (ASN-HOSTSAILOR-14). ');
+$ax += cidrblock($address,'185.146.32.0/22','Host Sailor Ltd; Access denied (ASN-HOSTSAILOR-15). ');
+$ax += cidrblock($address,'212.68.172.0/22','Host Sailor Ltd; Access denied (ASN-HOSTSAILOR-16). ');
+$ax += cidrblock($address,'212.68.176.0/20','Host Sailor Ltd; Access denied (ASN-HOSTSAILOR-17). ');
+
+
+// Digital Energy Technologies Chile SpA
+// AS61440 (updated 2016.06.09)
+$ax += cidrblock($address,'104.243.241.0/24','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-000). ');
+$ax += cidrblock($address,'138.99.120.0/22','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-001). ');
+$ax += cidrblock($address,'154.16.19.0/24','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-002). ');
+$ax += cidrblock($address,'154.16.104.0/21','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-003). ');
+$ax += cidrblock($address,'154.16.120.0/21','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-004). ');
+$ax += cidrblock($address,'154.16.133.0/24','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-005). ');
+$ax += cidrblock($address,'154.16.134.0/23','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-006). ');
+$ax += cidrblock($address,'154.16.136.0/23','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-007). ');
+$ax += cidrblock($address,'154.16.140.0/22','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-008). ');
+$ax += cidrblock($address,'154.16.144.0/21','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-009). ');
+$ax += cidrblock($address,'154.16.152.0/22','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-010). ');
+$ax += cidrblock($address,'154.16.160.0/19','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-011). ');
+$ax += cidrblock($address,'154.16.192.0/18','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-012). ');
+$ax += cidrblock($address,'154.127.48.0/24','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-013). ');
+$ax += cidrblock($address,'154.127.52.0/24','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-014). ');
+$ax += cidrblock($address,'172.94.56.0/21','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-017). ');
+$ax += cidrblock($address,'172.94.117.0/24','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-018). ');
+$ax += cidrblock($address,'172.111.131.0/24','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-019). ');
+$ax += cidrblock($address,'172.111.132.0/24','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-020). ');
+$ax += cidrblock($address,'179.61.195.0/24','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-021). ');
+$ax += cidrblock($address,'179.61.197.0/24','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-022). ');
+$ax += cidrblock($address,'179.61.199.0/24','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-023). ');
+$ax += cidrblock($address,'179.61.205.0/24','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-024). ');
+$ax += cidrblock($address,'179.61.207.0/24','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-025). ');
+$ax += cidrblock($address,'179.61.209.0/24','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-026). ');
+$ax += cidrblock($address,'179.61.211.0/24','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-027). ');
+$ax += cidrblock($address,'179.61.212.0/22','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-028). ');
+$ax += cidrblock($address,'179.61.220.0/23','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-029). ');
+$ax += cidrblock($address,'179.61.222.0/24','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-030). ');
+$ax += cidrblock($address,'179.61.232.0/24','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-031). ');
+$ax += cidrblock($address,'179.61.236.0/24','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-032). ');
+$ax += cidrblock($address,'179.61.238.0/24','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-033). ');
+$ax += cidrblock($address,'179.61.241.0/24','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-034). ');
+$ax += cidrblock($address,'179.61.243.0/24','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-035). ');
+$ax += cidrblock($address,'179.61.244.0/22','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-036). ');
+$ax += cidrblock($address,'179.61.249.0/24','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-037). ');
+$ax += cidrblock($address,'179.61.254.0/23','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-038). ');
+$ax += cidrblock($address,'181.41.192.0/24','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-039). ');
+$ax += cidrblock($address,'181.41.194.0/23','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-040). ');
+$ax += cidrblock($address,'181.41.196.0/22','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-041). ');
+$ax += cidrblock($address,'181.41.200.0/21','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-042). ');
+$ax += cidrblock($address,'181.41.208.0/20','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-043). ');
+$ax += cidrblock($address,'181.214.0.0/19','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-044). ');
+$ax += cidrblock($address,'181.214.32.0/24','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-045). ');
+$ax += cidrblock($address,'181.214.34.0/24','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-046). ');
+$ax += cidrblock($address,'181.214.36.0/24','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-047). ');
+$ax += cidrblock($address,'181.214.38.0/23','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-048). ');
+$ax += cidrblock($address,'181.214.40.0/21','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-049). ');
+$ax += cidrblock($address,'181.214.48.0/23','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-050). ');
+$ax += cidrblock($address,'181.214.51.0/24','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-051). ');
+$ax += cidrblock($address,'181.214.58.0/23','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-052). ');
+$ax += cidrblock($address,'181.214.60.0/22','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-053). ');
+$ax += cidrblock($address,'181.214.64.0/22','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-054). ');
+$ax += cidrblock($address,'181.214.68.0/23','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-055). ');
+$ax += cidrblock($address,'181.214.245.0/24','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-056). ');
+$ax += cidrblock($address,'181.214.248.0/21','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-057). ');
+$ax += cidrblock($address,'181.215.0.0/18','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-058). ');
+$ax += cidrblock($address,'181.215.88.0/21','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-059). ');
+$ax += cidrblock($address,'181.215.96.0/19','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-060). ');
+$ax += cidrblock($address,'181.215.128.0/19','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-061). ');
+$ax += cidrblock($address,'181.215.160.0/20','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-062). ');
+$ax += cidrblock($address,'181.215.192.0/20','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-063). ');
+$ax += cidrblock($address,'181.215.240.0/22','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-064). ');
+$ax += cidrblock($address,'181.215.252.0/22','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-065). ');
+$ax += cidrblock($address,'191.96.0.0/21','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-066). ');
+$ax += cidrblock($address,'191.96.8.0/22','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-067). ');
+$ax += cidrblock($address,'191.96.13.0/24','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-068). ');
+$ax += cidrblock($address,'191.96.15.0/24','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-069). ');
+$ax += cidrblock($address,'191.96.16.0/22','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-070). ');
+$ax += cidrblock($address,'191.96.20.0/24','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-071). ');
+$ax += cidrblock($address,'191.96.22.0/23','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-072). ');
+$ax += cidrblock($address,'191.96.24.0/23','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-073). ');
+$ax += cidrblock($address,'191.96.26.0/24','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-074). ');
+$ax += cidrblock($address,'191.96.28.0/22','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-075). ');
+$ax += cidrblock($address,'191.96.32.0/22','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-076). ');
+$ax += cidrblock($address,'191.96.62.0/23','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-077). ');
+$ax += cidrblock($address,'191.96.64.0/23','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-078). ');
+$ax += cidrblock($address,'191.96.68.0/22','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-079). ');
+$ax += cidrblock($address,'191.96.92.0/22','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-080). ');
+$ax += cidrblock($address,'191.96.98.0/23','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-081). ');
+$ax += cidrblock($address,'191.96.112.0/22','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-082). ');
+$ax += cidrblock($address,'191.96.122.0/23','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-083). ');
+$ax += cidrblock($address,'191.96.128.0/18','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-084). ');
+$ax += cidrblock($address,'191.96.192.0/20','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-085). ');
+$ax += cidrblock($address,'191.96.208.0/22','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-086). ');
+$ax += cidrblock($address,'191.96.215.0/24','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-087). ');
+$ax += cidrblock($address,'191.96.216.0/21','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-088). ');
+$ax += cidrblock($address,'191.96.224.0/24','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-089). ');
+$ax += cidrblock($address,'191.96.228.0/23','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-090). ');
+$ax += cidrblock($address,'191.96.230.0/24','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-091). ');
+$ax += cidrblock($address,'191.96.232.0/21','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-092). ');
+$ax += cidrblock($address,'191.96.244.0/22','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-093). ');
+$ax += cidrblock($address,'191.96.248.0/21','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-094). ');
+$ax += cidrblock($address,'191.101.0.0/20','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-095). ');
+$ax += cidrblock($address,'191.101.18.0/23','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-096). ');
+$ax += cidrblock($address,'191.101.32.0/23','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-097). ');
+$ax += cidrblock($address,'191.101.48.0/24','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-098). ');
+$ax += cidrblock($address,'191.101.56.0/23','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-99). ');
+$ax += cidrblock($address,'191.101.62.0/24','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-100). ');
+$ax += cidrblock($address,'191.101.136.0/21','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-101). ');
+$ax += cidrblock($address,'191.101.144.0/23','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-102). ');
+$ax += cidrblock($address,'191.101.152.0/21','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-103). ');
+$ax += cidrblock($address,'191.101.160.0/20','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-104). ');
+$ax += cidrblock($address,'191.101.190.0/23','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-105). ');
+$ax += cidrblock($address,'191.101.208.0/22','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-106). ');
+$ax += cidrblock($address,'191.101.224.0/20','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-107). ');
+$ax += cidrblock($address,'191.101.241.0/24','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-108). ');
+$ax += cidrblock($address,'191.101.244.0/24','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-109). ');
+$ax += cidrblock($address,'191.101.246.0/23','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-110). ');
+$ax += cidrblock($address,'191.101.248.0/23','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-111). ');
+$ax += cidrblock($address,'191.101.252.0/22','Digital Energy Technologies Chile SpA; Access denied (ASN-DETECH-112). ');
+
+
+// Host Europe GmbH
+// AS20738 (updated 2016.06.09)
+$ax += cidrblock($address,'37.122.208.0/21','Host Europe GmbH; Access denied (ASN-HOSTEUROPE-00). ');
+$ax += cidrblock($address,'46.32.224.0/19','Host Europe GmbH; Access denied (ASN-HOSTEUROPE-01). ');
+$ax += cidrblock($address,'79.170.40.0/21','Host Europe GmbH; Access denied (ASN-HOSTEUROPE-02). ');
+$ax += cidrblock($address,'80.90.192.0/20','Host Europe GmbH; Access denied (ASN-HOSTEUROPE-03). ');
+$ax += cidrblock($address,'81.21.64.0/20','Host Europe GmbH; Access denied (ASN-HOSTEUROPE-04). ');
+$ax += cidrblock($address,'91.109.0.0/20','Host Europe GmbH; Access denied (ASN-HOSTEUROPE-05). ');
+$ax += cidrblock($address,'92.60.112.0/20','Host Europe GmbH; Access denied (ASN-HOSTEUROPE-06). ');
+$ax += cidrblock($address,'94.136.32.0/19','Host Europe GmbH; Access denied (ASN-HOSTEUROPE-07). ');
+$ax += cidrblock($address,'95.131.64.0/21','Host Europe GmbH; Access denied (ASN-HOSTEUROPE-08). ');
+$ax += cidrblock($address,'109.104.64.0/19','Host Europe GmbH; Access denied (ASN-HOSTEUROPE-09). ');
+$ax += cidrblock($address,'176.32.224.0/21','Host Europe GmbH; Access denied (ASN-HOSTEUROPE-10). ');
+$ax += cidrblock($address,'212.48.64.0/19','Host Europe GmbH; Access denied (ASN-HOSTEUROPE-11). ');
+$ax += cidrblock($address,'212.67.192.0/19','Host Europe GmbH; Access denied (ASN-HOSTEUROPE-12). ');
+$ax += cidrblock($address,'217.8.240.0/20','Host Europe GmbH; Access denied (ASN-HOSTEUROPE-13). ');
+$ax += cidrblock($address,'217.199.160.0/19','Host Europe GmbH; Access denied (ASN-HOSTEUROPE-14). ');
 
 
 // *More, and smaller bad networks to avoid...

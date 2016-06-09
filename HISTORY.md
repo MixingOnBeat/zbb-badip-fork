@@ -466,3 +466,19 @@ History/Changelog of this repository (and of those updates merged into it) is as
 - Connexions4London Ltd CIDRs updated.
 - SingleHop, Inc CIDRs updated.
 - Repository updated with new changes.
+
+#####2016-06-09
+- Hurricane Electric CIDRs and associated bypasses updated.
+- UOL CIDRs updated.
+- DataWagon LLC CIDRs updated.
+- VolumeDrive CIDRs updated.
+- Reliable Hosting Services CIDRs updated.
+- Plus Server CIDRs updated.
+- Cyber Wurx LLC CIDRs added.
+- Host Sailor Ltd. CIDRs added.
+- Digital Energy Technologies Chile SpA CIDRs added.
+- Quadranet CIDRs updated.
+- Hostspace Networks CIDRs updated.
+- Tzulo Inc CIDRs updated.
+- Host Europe GmbH CIDRs added.
+- Repository updated with new changes.
