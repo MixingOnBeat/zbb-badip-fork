@@ -482,3 +482,10 @@ History/Changelog of this repository (and of those updates merged into it) is as
 - Tzulo Inc CIDRs updated.
 - Host Europe GmbH CIDRs added.
 - Repository updated with new changes.
+
+#####2016-06-17
+- Nazwa.pl Sp.z.o.o. CIDRs added.
+- eSited Solutions CIDRs added.
+- The Endurance International Group, Inc. CIDRs added.
+- Choopa, LLC CIDRs updated.
+- Repository updated with new changes.
