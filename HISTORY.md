@@ -489,3 +489,15 @@ History/Changelog of this repository (and of those updates merged into it) is as
 - The Endurance International Group, Inc. CIDRs added.
 - Choopa, LLC CIDRs updated.
 - Repository updated with new changes.
+
+#####2016-06-19
+- ColoCrossing CIDRs updated.
+
+#####2016-07-02
+- Equinix Asia Pacific CIDRs added.
+- Atlantic.net, Inc. CIDRs added.
+- DataCorpore Servios e Representaes CIDRs added.
+- Vieira Arts Ltda ME CIDRs added.
+- PSYCHZ.NET updated.
+- AltusHost B.V. updated.
+- Repository updated with new changes.
