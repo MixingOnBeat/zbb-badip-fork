@@ -501,3 +501,12 @@ History/Changelog of this repository (and of those updates merged into it) is as
 - PSYCHZ.NET updated.
 - AltusHost B.V. updated.
 - Repository updated with new changes.
+
+#####2016-07-09
+- Contabo GmbH CIDRs updated.
+- Quasi Networks LTD (formerly, Ecatel Network) CIDRs updated.
+- Krypt Technologies CIDRs updated.
+
+#####2016-07-10
+- AS43333 CIDRs added.
+- Repository updated with new changes.
