@@ -510,3 +510,26 @@ History/Changelog of this repository (and of those updates merged into it) is as
 #####2016-07-10
 - AS43333 CIDRs added.
 - Repository updated with new changes.
+
+#####2016-07-10 (Again)
+- Some smaller, stand-alone CIDRs removed (no longer required/relevant).
+- Panamaserver.com CIDRs added.
+- Bird Hosting Inc. CIDRs added.
+
+#####2016-07-13
+- RAM Host and Total Server Solutions L.L.C. section split into two separate sections and updated.
+
+#####2016-07-16
+- Data Room, Inc CIDRs added.
+- WowRack CIDRs updated.
+
+#####2016-07-20
+- Removed numerous duplicated and outdated signatures.
+- Normalised the format used for all signature IDs.
+- PCCW Global / Beyond The Network America, Inc CIDRs updated (two new ASNs found).
+- Zayo Bandwidth Inc CIDRs added.
+- TeNeT Scientific Production Enterprise LLC CIDRs added.
+- Bay Area Internet Solutions CIDRs added.
+- USinternetworking Inc CIDRs added.
+- Link11 GmbH CIDRs added.
+- Repository updated with new changes.
