@@ -533,3 +533,13 @@ History/Changelog of this repository (and of those updates merged into it) is as
 - USinternetworking Inc CIDRs added.
 - Link11 GmbH CIDRs added.
 - Repository updated with new changes.
+
+#####2016-07-24
+- Trans-IX B.V. CIDRs added.
+- Keyweb AG CIDRs added.
+- STARNET S.R.L CIDRs added.
+- AS31423 CIDRs added.
+
+#####2016-07-28
+- Bezeq International CIDRs updated.
+- Repository updated with new changes.
