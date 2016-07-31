@@ -543,3 +543,7 @@ History/Changelog of this repository (and of those updates merged into it) is as
 #####2016-07-28
 - Bezeq International CIDRs updated.
 - Repository updated with new changes.
+
+#####2016-07-31
+- Sun Network CIDRs updated.
+- Repository updated with new changes.
