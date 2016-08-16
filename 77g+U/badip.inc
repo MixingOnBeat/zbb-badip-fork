@@ -18,7 +18,7 @@
  * FOR USE WITH ZB BLOCK OR ANY GNU/GPL V.2 COMPLIANT DERIVATIVE
  */
 
-$zbbversion .= ' / BADIP-2016-07+U.4'; // Version number goes here. (product code)-(Year)-(Month)(issue letter)(+U = Unofficial fork, non-mainlined release).(Build number)
+$zbbversion .= ' / BADIP-2016-08+U.0'; // Version number goes here. (product code)-(Year)-(Month)(issue letter)(+U = Unofficial fork, non-mainlined release).(Build number)
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -1982,31 +1982,44 @@ $ax += cidrblock($address, '216.67.224.0/19', 'Pegasus Web Technologies / Fortre
 $ax += cidrblock($address, '216.74.96.0/19', 'Pegasus Web Technologies / Fortress ITX, Not an access provider (AS-PWEBFITX-33). ');
 
 
-// Steadfast DNS (updated 2016.03.13)
+// Steadfast DNS (updated 2016.08.15)
 // AS32748, AS46440
 $ax += cidrblock($address, '23.29.128.0/19', 'Steadfast DNS (AS-SFDNS-00). ');
-$ax += cidrblock($address, '45.114.132.0/22', 'Steadfast DNS (AS-SFDNS-01). ');
-$ax += cidrblock($address, '49.156.0.0/22', 'Steadfast DNS (AS-SFDNS-02). ');
-$ax += cidrblock($address, '50.31.0.0/17', 'Steadfast DNS (AS-SFDNS-03). ');
-$ax += cidrblock($address, '66.85.89.0/24', 'Steadfast DNS (AS-SFDNS-04). ');
-$ax += cidrblock($address, '67.202.64.0/18', 'Steadfast DNS (AS-SFDNS-05). ');
-$ax += cidrblock($address, '69.162.128.0/18', 'Steadfast DNS (AS-SFDNS-06). ');
-$ax += cidrblock($address, '74.120.120.0/22', 'Steadfast DNS (AS-SFDNS-07). ');
-$ax += cidrblock($address, '103.30.196.0/22', 'Steadfast DNS (AS-SFDNS-08). ');
-$ax += cidrblock($address, '103.54.84.0/22', 'Steadfast DNS (AS-SFDNS-09). ');
-$ax += cidrblock($address, '104.171.128.0/21', 'Steadfast DNS (AS-SFDNS-10). ');
-$ax += cidrblock($address, '107.191.176.0/22', 'Steadfast DNS (AS-SFDNS-11). ');
-$ax += cidrblock($address, '162.208.54.0/23', 'Steadfast DNS (AS-SFDNS-12). ');
-$ax += cidrblock($address, '162.210.96.0/21', 'Steadfast DNS (AS-SFDNS-13). ');
-$ax += cidrblock($address, '162.249.125.0/24', 'Steadfast DNS (AS-SFDNS-14). ');
-$ax += cidrblock($address, '162.249.126.0/23', 'Steadfast DNS (AS-SFDNS-15). ');
-$ax += cidrblock($address, '167.89.0.0/20', 'Steadfast DNS (AS-SFDNS-16). ');
-$ax += cidrblock($address, '198.23.48.0/20', 'Steadfast DNS (AS-SFDNS-17). ');
-$ax += cidrblock($address, '204.238.229.0/24', 'Steadfast DNS (AS-SFDNS-18). ');
-$ax += cidrblock($address, '208.66.168.0/21', 'Steadfast DNS (AS-SFDNS-19). ');
-$ax += cidrblock($address, '208.100.0.0/18', 'Steadfast DNS (AS-SFDNS-20). ');
-$ax += cidrblock($address, '208.117.0.0/18', 'Steadfast DNS (AS-SFDNS-21). ');
-$ax += cidrblock($address, '216.86.144.0/20', 'Steadfast DNS (AS-SFDNS-22). ');
+$ax += cidrblock($address, '49.156.0.0/22', 'Steadfast DNS (AS-SFDNS-01). ');
+$ax += cidrblock($address, '50.31.0.0/17', 'Steadfast DNS (AS-SFDNS-02). ');
+$ax += cidrblock($address, '66.85.89.0/24', 'Steadfast DNS (AS-SFDNS-03). ');
+$ax += cidrblock($address, '67.20.50.0/23', 'Steadfast DNS (AS-SFDNS-04). ');
+$ax += cidrblock($address, '67.20.52.0/23', 'Steadfast DNS (AS-SFDNS-05). ');
+$ax += cidrblock($address, '67.20.57.0/24', 'Steadfast DNS (AS-SFDNS-06). ');
+$ax += cidrblock($address, '67.20.58.0/24', 'Steadfast DNS (AS-SFDNS-07). ');
+$ax += cidrblock($address, '67.20.61.0/24', 'Steadfast DNS (AS-SFDNS-08). ');
+$ax += cidrblock($address, '67.20.62.0/24', 'Steadfast DNS (AS-SFDNS-09). ');
+$ax += cidrblock($address, '67.202.64.0/18', 'Steadfast DNS (AS-SFDNS-10). ');
+$ax += cidrblock($address, '69.162.128.0/18', 'Steadfast DNS (AS-SFDNS-11). ');
+$ax += cidrblock($address, '72.44.88.0/22', 'Steadfast DNS (AS-SFDNS-12). ');
+$ax += cidrblock($address, '72.44.93.0/24', 'Steadfast DNS (AS-SFDNS-13). ');
+$ax += cidrblock($address, '72.44.94.0/23', 'Steadfast DNS (AS-SFDNS-14). ');
+$ax += cidrblock($address, '74.120.120.0/22', 'Steadfast DNS (AS-SFDNS-15). ');
+$ax += cidrblock($address, '103.30.196.0/22', 'Steadfast DNS (AS-SFDNS-16). ');
+$ax += cidrblock($address, '104.36.56.0/21', 'Steadfast DNS (AS-SFDNS-17). ');
+$ax += cidrblock($address, '104.171.128.0/21', 'Steadfast DNS (AS-SFDNS-18). ');
+$ax += cidrblock($address, '107.191.176.0/22', 'Steadfast DNS (AS-SFDNS-19). ');
+$ax += cidrblock($address, '162.208.54.0/23', 'Steadfast DNS (AS-SFDNS-20). ');
+$ax += cidrblock($address, '162.210.96.0/21', 'Steadfast DNS (AS-SFDNS-21). ');
+$ax += cidrblock($address, '162.249.124.0/22', 'Steadfast DNS (AS-SFDNS-22). ');
+$ax += cidrblock($address, '167.89.0.0/20', 'Steadfast DNS (AS-SFDNS-23). ');
+$ax += cidrblock($address, '173.249.144.0/23', 'Steadfast DNS (AS-SFDNS-24). ');
+$ax += cidrblock($address, '173.249.149.0/24', 'Steadfast DNS (AS-SFDNS-25). ');
+$ax += cidrblock($address, '173.249.150.0/23', 'Steadfast DNS (AS-SFDNS-26). ');
+$ax += cidrblock($address, '173.249.152.0/24', 'Steadfast DNS (AS-SFDNS-27). ');
+$ax += cidrblock($address, '185.153.164.0/22', 'Steadfast DNS (AS-SFDNS-28). ');
+$ax += cidrblock($address, '198.23.48.0/20', 'Steadfast DNS (AS-SFDNS-29). ');
+$ax += cidrblock($address, '199.48.252.0/22', 'Steadfast DNS (AS-SFDNS-30). ');
+$ax += cidrblock($address, '204.238.229.0/24', 'Steadfast DNS (AS-SFDNS-31). ');
+$ax += cidrblock($address, '208.66.168.0/21', 'Steadfast DNS (AS-SFDNS-32). ');
+$ax += cidrblock($address, '208.100.0.0/18', 'Steadfast DNS (AS-SFDNS-33). ');
+$ax += cidrblock($address, '208.117.0.0/18', 'Steadfast DNS (AS-SFDNS-34). ');
+$ax += cidrblock($address, '216.86.144.0/20', 'Steadfast DNS (AS-SFDNS-35). ');
 
 
 // CyberBunker (updated 2016.04.27)
@@ -2114,7 +2127,7 @@ $ax += cidrblock($address, '195.2.240.0/23', 'ASN pinspb.ru (ASN-44050-PINAS-63)
 $ax += cidrblock($address, '195.211.124.0/22', 'ASN pinspb.ru (ASN-44050-PINAS-64). ');
 
 
-// OVH Networks (updated 2016.04.18)
+// OVH Networks (updated 2016.08.15)
 // Not an access provider, allows rampant abuse, hosts badware/bad services.
 // AS16276
 $ax += cidrblock($address, '5.39.0.0/17', 'OVH Networks (ASN-16276-OVH-00). ');
@@ -2146,29 +2159,30 @@ $ax += cidrblock($address, '91.134.0.0/16', 'OVH Networks (ASN-16276-OVH-25). ')
 $ax += cidrblock($address, '92.222.0.0/16', 'OVH Networks (ASN-16276-OVH-26). ');
 $ax += cidrblock($address, '94.23.0.0/16', 'OVH Networks (ASN-16276-OVH-27). ');
 $ax += cidrblock($address, '103.5.12.0/22', 'OVH Networks (ASN-16276-OVH-28). ');
-$ax += cidrblock($address, '142.4.192.0/19', 'OVH Networks (ASN-16276-OVH-29). ');
-$ax += cidrblock($address, '149.56.0.0/16', 'OVH Networks (ASN-16276-OVH-30). ');
-$ax += cidrblock($address, '149.202.0.0/16', 'OVH Networks (ASN-16276-OVH-31). ');
-$ax += cidrblock($address, '151.80.0.0/16', 'OVH Networks (ASN-16276-OVH-32). ');
-$ax += cidrblock($address, '158.69.0.0/16', 'OVH Networks (ASN-16276-OVH-33). ');
-$ax += cidrblock($address, '164.132.0.0/16', 'OVH Networks (ASN-16276-OVH-34). ');
-$ax += cidrblock($address, '167.114.0.0/16', 'OVH Networks (ASN-16276-OVH-35). ');
-$ax += cidrblock($address, '176.31.0.0/16', 'OVH Networks (ASN-16276-OVH-36). ');
-$ax += cidrblock($address, '178.32.0.0/15', 'OVH Networks (ASN-16276-OVH-37). ');
-$ax += cidrblock($address, '185.12.32.0/23', 'OVH Networks (ASN-16276-OVH-38). ');
-$ax += cidrblock($address, '188.165.0.0/16', 'OVH Networks (ASN-16276-OVH-39). ');
-$ax += cidrblock($address, '192.95.0.0/18', 'OVH Networks (ASN-16276-OVH-40). ');
-$ax += cidrblock($address, '192.99.0.0/16', 'OVH Networks (ASN-16276-OVH-41). ');
-$ax += cidrblock($address, '193.104.19.0/24', 'OVH Networks (ASN-16276-OVH-42). ');
-$ax += cidrblock($address, '193.109.63.0/24', 'OVH Networks (ASN-16276-OVH-43). ');
-$ax += cidrblock($address, '195.110.30.0/23', 'OVH Networks (ASN-16276-OVH-44). ');
-$ax += cidrblock($address, '195.246.232.0/23', 'OVH Networks (ASN-16276-OVH-45). ');
-$ax += cidrblock($address, '198.27.64.0/18', 'OVH Networks (ASN-16276-OVH-46). ');
-$ax += cidrblock($address, '198.50.128.0/17', 'OVH Networks (ASN-16276-OVH-47). ');
-$ax += cidrblock($address, '198.100.144.0/20', 'OVH Networks (ASN-16276-OVH-48). ');
-$ax += cidrblock($address, '198.245.48.0/20', 'OVH Networks (ASN-16276-OVH-49). ');
-$ax += cidrblock($address, '213.186.32.0/19', 'OVH Networks (ASN-16276-OVH-50). ');
-$ax += cidrblock($address, '213.251.128.0/18', 'OVH Networks (ASN-16276-OVH-51). ');
+$ax += cidrblock($address, '137.74.0.0/16', 'OVH Networks (ASN-16276-OVH-29). ');
+$ax += cidrblock($address, '142.4.192.0/19', 'OVH Networks (ASN-16276-OVH-30). ');
+$ax += cidrblock($address, '149.56.0.0/16', 'OVH Networks (ASN-16276-OVH-31). ');
+$ax += cidrblock($address, '149.202.0.0/16', 'OVH Networks (ASN-16276-OVH-32). ');
+$ax += cidrblock($address, '151.80.0.0/16', 'OVH Networks (ASN-16276-OVH-33). ');
+$ax += cidrblock($address, '158.69.0.0/16', 'OVH Networks (ASN-16276-OVH-34). ');
+$ax += cidrblock($address, '164.132.0.0/16', 'OVH Networks (ASN-16276-OVH-35). ');
+$ax += cidrblock($address, '167.114.0.0/16', 'OVH Networks (ASN-16276-OVH-36). ');
+$ax += cidrblock($address, '176.31.0.0/16', 'OVH Networks (ASN-16276-OVH-37). ');
+$ax += cidrblock($address, '178.32.0.0/15', 'OVH Networks (ASN-16276-OVH-38). ');
+$ax += cidrblock($address, '185.12.32.0/23', 'OVH Networks (ASN-16276-OVH-39). ');
+$ax += cidrblock($address, '188.165.0.0/16', 'OVH Networks (ASN-16276-OVH-40). ');
+$ax += cidrblock($address, '192.95.0.0/18', 'OVH Networks (ASN-16276-OVH-41). ');
+$ax += cidrblock($address, '192.99.0.0/16', 'OVH Networks (ASN-16276-OVH-42). ');
+$ax += cidrblock($address, '193.104.19.0/24', 'OVH Networks (ASN-16276-OVH-43). ');
+$ax += cidrblock($address, '193.109.63.0/24', 'OVH Networks (ASN-16276-OVH-44). ');
+$ax += cidrblock($address, '195.110.30.0/23', 'OVH Networks (ASN-16276-OVH-45). ');
+$ax += cidrblock($address, '195.246.232.0/23', 'OVH Networks (ASN-16276-OVH-46). ');
+$ax += cidrblock($address, '198.27.64.0/18', 'OVH Networks (ASN-16276-OVH-47). ');
+$ax += cidrblock($address, '198.50.128.0/17', 'OVH Networks (ASN-16276-OVH-48). ');
+$ax += cidrblock($address, '198.100.144.0/20', 'OVH Networks (ASN-16276-OVH-49). ');
+$ax += cidrblock($address, '198.245.48.0/20', 'OVH Networks (ASN-16276-OVH-50). ');
+$ax += cidrblock($address, '213.186.32.0/19', 'OVH Networks (ASN-16276-OVH-51). ');
+$ax += cidrblock($address, '213.251.128.0/18', 'OVH Networks (ASN-16276-OVH-52). ');
 
 
 // TEST: Reprieve for possible human clusters on OVH DSL (started: APR-04-14)
@@ -2391,7 +2405,7 @@ $ax += cidrblock($address, '217.119.63.0/24', 'Plus Server, not an access provid
 $ax += cidrblock($address, '217.172.160.0/19', 'Plus Server, not an access provider (AS-PLSSRV-66). ');
 
 
-// Trend Micro (updated 2016.01.20 / checked 2016.03.12)
+// Trend Micro (updated 2016.08.09)
 // AS16880, AS36421
 $ax += cidrblock($address, '8.30.172.0/24', 'Trend Micro. Follows their users around, and attempts to get into restricted/private parts of websites. Privacy risk & replay attack (AS-TRENDM-00). ');
 $ax += cidrblock($address, '66.180.80.0/20', 'Trend Micro. Follows their users around, and attempts to get into restricted/private parts of websites. Privacy risk & replay attack (AS-TRENDM-01). ');
@@ -2399,14 +2413,13 @@ $ax += cidrblock($address, '150.70.0.0/20', 'Trend Micro. Follows their users ar
 $ax += cidrblock($address, '150.70.31.0/24', 'Trend Micro. Follows their users around, and attempts to get into restricted/private parts of websites. Privacy risk & replay attack (AS-TRENDM-03). ');
 $ax += cidrblock($address, '150.70.48.0/20', 'Trend Micro. Follows their users around, and attempts to get into restricted/private parts of websites. Privacy risk & replay attack (AS-TRENDM-04). ');
 $ax += cidrblock($address, '150.70.64.0/18', 'Trend Micro. Follows their users around, and attempts to get into restricted/private parts of websites. Privacy risk & replay attack (AS-TRENDM-05). ');
-$ax += cidrblock($address, '150.70.144.0/20', 'Trend Micro. Follows their users around, and attempts to get into restricted/private parts of websites. Privacy risk & replay attack (AS-TRENDM-06). ');
-$ax += cidrblock($address, '150.70.160.0/19', 'Trend Micro. Follows their users around, and attempts to get into restricted/private parts of websites. Privacy risk & replay attack (AS-TRENDM-07). ');
-$ax += cidrblock($address, '150.70.192.0/21', 'Trend Micro. Follows their users around, and attempts to get into restricted/private parts of websites. Privacy risk & replay attack (AS-TRENDM-08). ');
-$ax += cidrblock($address, '150.70.224.0/19', 'Trend Micro. Follows their users around, and attempts to get into restricted/private parts of websites. Privacy risk & replay attack (AS-TRENDM-09). ');
-$ax += cidrblock($address, '202.3.185.0/24', 'Trend Micro. Follows their users around, and attempts to get into restricted/private parts of websites. Privacy risk & replay attack (AS-TRENDM-10). ');
-$ax += cidrblock($address, '206.165.76.0/24', 'Trend Micro. Follows their users around, and attempts to get into restricted/private parts of websites. Privacy risk & replay attack (AS-TRENDM-11). ');
-$ax += cidrblock($address, '216.99.128.0/20', 'Trend Micro. Follows their users around, and attempts to get into restricted/private parts of websites. Privacy risk & replay attack (AS-TRENDM-12). ');
-$ax += cidrblock($address, '216.104.0.0/19', 'Trend Micro. Follows their users around, and attempts to get into restricted/private parts of websites. Privacy risk & replay attack (AS-TRENDM-13). ');
+$ax += cidrblock($address, '150.70.160.0/19', 'Trend Micro. Follows their users around, and attempts to get into restricted/private parts of websites. Privacy risk & replay attack (AS-TRENDM-06). ');
+$ax += cidrblock($address, '150.70.192.0/21', 'Trend Micro. Follows their users around, and attempts to get into restricted/private parts of websites. Privacy risk & replay attack (AS-TRENDM-07). ');
+$ax += cidrblock($address, '150.70.224.0/19', 'Trend Micro. Follows their users around, and attempts to get into restricted/private parts of websites. Privacy risk & replay attack (AS-TRENDM-08). ');
+$ax += cidrblock($address, '202.3.185.0/24', 'Trend Micro. Follows their users around, and attempts to get into restricted/private parts of websites. Privacy risk & replay attack (AS-TRENDM-09). ');
+$ax += cidrblock($address, '206.165.76.0/24', 'Trend Micro. Follows their users around, and attempts to get into restricted/private parts of websites. Privacy risk & replay attack (AS-TRENDM-10). ');
+$ax += cidrblock($address, '216.99.128.0/20', 'Trend Micro. Follows their users around, and attempts to get into restricted/private parts of websites. Privacy risk & replay attack (AS-TRENDM-11). ');
+$ax += cidrblock($address, '216.104.16.0/20', 'Trend Micro. Follows their users around, and attempts to get into restricted/private parts of websites. Privacy risk & replay attack (AS-TRENDM-12). ');
 
 
 /**
@@ -2735,7 +2748,7 @@ $ax += cidrblock($address, '208.68.36.0/22', 'Digital Ocean, Inc. Not an access 
 $ax += cidrblock($address, '218.208.39.0/24', 'Digital Ocean, Inc. Not an access provider ISP (AS-DOGROUP-52). ');
 
 
-// Root SA (updated 2016.03.13)
+// Root SA (updated 2016.08.15)
 // AS5577
 $ax += cidrblock($address, '31.131.7.0/24', 'Root SA (ASN-5577-ROOTSA-00). ');
 $ax += cidrblock($address, '83.243.8.0/21', 'Root SA (ASN-5577-ROOTSA-01). ');
@@ -2746,7 +2759,7 @@ $ax += cidrblock($address, '146.185.239.0/24', 'Root SA (ASN-5577-ROOTSA-05). ')
 $ax += cidrblock($address, '179.63.80.0/20', 'Root SA (ASN-5577-ROOTSA-06). ');
 $ax += cidrblock($address, '185.103.172.0/24', 'Root SA (ASN-5577-ROOTSA-07). ');
 $ax += cidrblock($address, '185.103.174.0/24', 'Root SA (ASN-5577-ROOTSA-08). ');
-$ax += cidrblock($address, '185.121.24.0/23', 'Root SA (ASN-5577-ROOTSA-09). ');
+$ax += cidrblock($address, '185.153.151.0/24', 'Root SA (ASN-5577-ROOTSA-09). ');
 $ax += cidrblock($address, '194.68.32.0/24', 'Root SA (ASN-5577-ROOTSA-10). ');
 $ax += cidrblock($address, '195.24.72.0/21', 'Root SA (ASN-5577-ROOTSA-11). ');
 $ax += cidrblock($address, '195.26.4.0/23', 'Root SA (ASN-5577-ROOTSA-12). ');
@@ -2944,31 +2957,36 @@ $ax += cidrblock($address, '205.251.0.0/17', 'InfoRelay Online Systems. Not an a
 $ax += cidrblock($address, '208.94.144.0/24', 'InfoRelay Online Systems. Not an access provider ISP (ASN-33597-INFORELAY-20). ');
 
 
-// Westhost (updated 2016.03.13)
+// Westhost (updated 2016.08.15)
 // AS29854
 $ax += cidrblock($address, '27.126.249.0/24', 'Westhost, not an access provider ISP (ASN-29854-WESTHOST-00). ');
 $ax += cidrblock($address, '50.115.112.0/20', 'Westhost, not an access provider ISP (ASN-29854-WESTHOST-01). ');
 $ax += cidrblock($address, '67.212.224.0/20', 'Westhost, not an access provider ISP (ASN-29854-WESTHOST-02). ');
-$ax += cidrblock($address, '68.169.32.0/20', 'Westhost, not an access provider ISP (ASN-29854-WESTHOST-03). ');
-$ax += cidrblock($address, '69.36.160.0/19', 'Westhost, not an access provider ISP (ASN-29854-WESTHOST-04). ');
-$ax += cidrblock($address, '104.245.11.0/24', 'Westhost, not an access provider ISP (ASN-29854-WESTHOST-05). ');
-$ax += cidrblock($address, '107.181.188.0/24', 'Westhost, not an access provider ISP (ASN-29854-WESTHOST-06). ');
-$ax += cidrblock($address, '107.182.224.0/20', 'Westhost, not an access provider ISP (ASN-29854-WESTHOST-07). ');
-$ax += cidrblock($address, '172.98.91.0/24', 'Westhost, not an access provider ISP (ASN-29854-WESTHOST-08). ');
-$ax += cidrblock($address, '173.244.192.0/19', 'Westhost, not an access provider ISP (ASN-29854-WESTHOST-09). ');
-$ax += cidrblock($address, '173.255.128.0/22', 'Westhost, not an access provider ISP (ASN-29854-WESTHOST-10). ');
-$ax += cidrblock($address, '174.127.104.0/21', 'Westhost, not an access provider ISP (ASN-29854-WESTHOST-11). ');
-$ax += cidrblock($address, '174.127.112.0/21', 'Westhost, not an access provider ISP (ASN-29854-WESTHOST-12). ');
-$ax += cidrblock($address, '185.72.156.0/22', 'Westhost, not an access provider ISP (ASN-29854-WESTHOST-13). ');
-$ax += cidrblock($address, '192.245.255.0/24', 'Westhost, not an access provider ISP (ASN-29854-WESTHOST-14). ');
-$ax += cidrblock($address, '198.105.208.0/20', 'Westhost, not an access provider ISP (ASN-29854-WESTHOST-15). ');
-$ax += cidrblock($address, '199.189.104.0/21', 'Westhost, not an access provider ISP (ASN-29854-WESTHOST-16). ');
-$ax += cidrblock($address, '199.195.192.0/21', 'Westhost, not an access provider ISP (ASN-29854-WESTHOST-17). ');
-$ax += cidrblock($address, '206.130.96.0/19', 'Westhost, not an access provider ISP (ASN-29854-WESTHOST-18). ');
-$ax += cidrblock($address, '206.190.128.0/19', 'Westhost, not an access provider ISP (ASN-29854-WESTHOST-19). ');
-$ax += cidrblock($address, '208.131.128.0/19', 'Westhost, not an access provider ISP (ASN-29854-WESTHOST-20). ');
-$ax += cidrblock($address, '209.95.32.0/19', 'Westhost, not an access provider ISP (ASN-29854-WESTHOST-21). ');
-$ax += cidrblock($address, '209.236.64.0/20', 'Westhost, not an access provider ISP (ASN-29854-WESTHOST-22). ');
+$ax += cidrblock($address, '67.213.219.0/24', 'Westhost, not an access provider ISP (ASN-29854-WESTHOST-03). ');
+$ax += cidrblock($address, '68.169.32.0/20', 'Westhost, not an access provider ISP (ASN-29854-WESTHOST-04). ');
+$ax += cidrblock($address, '69.36.160.0/19', 'Westhost, not an access provider ISP (ASN-29854-WESTHOST-05). ');
+$ax += cidrblock($address, '74.123.244.0/22', 'Westhost, not an access provider ISP (ASN-29854-WESTHOST-06). ');
+$ax += cidrblock($address, '104.245.11.0/24', 'Westhost, not an access provider ISP (ASN-29854-WESTHOST-07). ');
+$ax += cidrblock($address, '107.182.224.0/20', 'Westhost, not an access provider ISP (ASN-29854-WESTHOST-08). ');
+$ax += cidrblock($address, '162.244.167.0/24', 'Westhost, not an access provider ISP (ASN-29854-WESTHOST-09). ');
+$ax += cidrblock($address, '173.244.192.0/19', 'Westhost, not an access provider ISP (ASN-29854-WESTHOST-10). ');
+$ax += cidrblock($address, '173.255.128.0/22', 'Westhost, not an access provider ISP (ASN-29854-WESTHOST-11). ');
+$ax += cidrblock($address, '174.127.79.0/24', 'Westhost, not an access provider ISP (ASN-29854-WESTHOST-12). ');
+$ax += cidrblock($address, '174.127.84.0/24', 'Westhost, not an access provider ISP (ASN-29854-WESTHOST-13). ');
+$ax += cidrblock($address, '174.127.104.0/21', 'Westhost, not an access provider ISP (ASN-29854-WESTHOST-14). ');
+$ax += cidrblock($address, '174.127.112.0/21', 'Westhost, not an access provider ISP (ASN-29854-WESTHOST-15). ');
+$ax += cidrblock($address, '181.215.252.0/24', 'Westhost, not an access provider ISP (ASN-29854-WESTHOST-16). ');
+$ax += cidrblock($address, '185.72.156.0/22', 'Westhost, not an access provider ISP (ASN-29854-WESTHOST-17). ');
+$ax += cidrblock($address, '192.40.144.0/21', 'Westhost, not an access provider ISP (ASN-29854-WESTHOST-18). ');
+$ax += cidrblock($address, '192.245.255.0/24', 'Westhost, not an access provider ISP (ASN-29854-WESTHOST-19). ');
+$ax += cidrblock($address, '198.105.208.0/20', 'Westhost, not an access provider ISP (ASN-29854-WESTHOST-20). ');
+$ax += cidrblock($address, '199.189.104.0/21', 'Westhost, not an access provider ISP (ASN-29854-WESTHOST-21). ');
+$ax += cidrblock($address, '199.195.192.0/21', 'Westhost, not an access provider ISP (ASN-29854-WESTHOST-22). ');
+$ax += cidrblock($address, '206.130.96.0/19', 'Westhost, not an access provider ISP (ASN-29854-WESTHOST-23). ');
+$ax += cidrblock($address, '206.190.128.0/19', 'Westhost, not an access provider ISP (ASN-29854-WESTHOST-24). ');
+$ax += cidrblock($address, '208.131.128.0/19', 'Westhost, not an access provider ISP (ASN-29854-WESTHOST-25). ');
+$ax += cidrblock($address, '209.95.32.0/19', 'Westhost, not an access provider ISP (ASN-29854-WESTHOST-26). ');
+$ax += cidrblock($address, '209.236.64.0/20', 'Westhost, not an access provider ISP (ASN-29854-WESTHOST-27). ');
 
 
 // Bezeq International (updated 2016.07.28)
@@ -3067,13 +3085,14 @@ $ax += cidrblock($address, '208.30.51.0/24', 'Known hostile network (ASN-7914-CS
 $ax += cidrblock($address, '208.33.13.0/24', 'Known hostile network (ASN-7914-CSI-7). ');
 
 
-// Avante Hosting (updated 2016.03.13)
+// Avante Hosting (updated 2016.08.15)
 // AS36137
-$ax += cidrblock($address, '66.248.192.0/19', 'Avante Hosting, not an access provider (ASN-36137-AVANTE-0). ');
-$ax += cidrblock($address, '192.119.148.0/24', 'Avante Hosting, not an access provider (ASN-36137-AVANTE-1). ');
-$ax += cidrblock($address, '192.241.8.0/21', 'Avante Hosting, not an access provider (ASN-36137-AVANTE-2). ');
-$ax += cidrblock($address, '198.52.128.0/17', 'Avante Hosting, not an access provider (ASN-36137-AVANTE-3). ');
-$ax += cidrblock($address, '199.195.156.0/22', 'Avante Hosting, not an access provider (ASN-36137-AVANTE-4). ');
+$ax += cidrblock($address, '66.248.192.0/21', 'Avante Hosting, not an access provider (ASN-36137-AVANTE-0). ');
+$ax += cidrblock($address, '66.248.208.0/20', 'Avante Hosting, not an access provider (ASN-36137-AVANTE-1). ');
+$ax += cidrblock($address, '192.119.148.0/24', 'Avante Hosting, not an access provider (ASN-36137-AVANTE-2). ');
+$ax += cidrblock($address, '192.241.8.0/21', 'Avante Hosting, not an access provider (ASN-36137-AVANTE-3). ');
+$ax += cidrblock($address, '198.52.128.0/17', 'Avante Hosting, not an access provider (ASN-36137-AVANTE-4). ');
+$ax += cidrblock($address, '199.195.156.0/22', 'Avante Hosting, not an access provider (ASN-36137-AVANTE-5). ');
 
 
 // Tex-Link Communications, Inc. (updated 2016.01.21 / checked 2016.03.13)
@@ -4119,7 +4138,7 @@ $ax += cidrblock($address, '212.20.224.0/19', 'Cloud services linked to captcha 
 $ax += cidrblock($address, '217.30.112.0/20', 'Cloud services linked to captcha crackers (ASN-12703-PULSANT-47). ');
 
 
-// Private Layer INC (updated 2016.03.13)
+// Private Layer INC (updated 2016.08.09)
 // AS51852
 $ax += cidrblock($address, '31.7.56.0/21', 'Private Layer INC (ASN-PRIVATELAYER-51852-00). ');
 $ax += cidrblock($address, '31.44.189.0/24', 'Private Layer INC (ASN-PRIVATELAYER-51852-01). ');
@@ -4127,11 +4146,10 @@ $ax += cidrblock($address, '46.19.136.0/21', 'Private Layer INC (ASN-PRIVATELAYE
 $ax += cidrblock($address, '46.102.152.0/24', 'Private Layer INC (ASN-PRIVATELAYER-51852-03). ');
 $ax += cidrblock($address, '81.17.16.0/20', 'Private Layer INC (ASN-PRIVATELAYER-51852-04). ');
 $ax += cidrblock($address, '141.255.160.0/21', 'Private Layer INC (ASN-PRIVATELAYER-51852-05). ');
-$ax += cidrblock($address, '172.111.182.0/24', 'Private Layer INC (ASN-PRIVATELAYER-51852-06). ');
-$ax += cidrblock($address, '176.223.111.0/24', 'Private Layer INC (ASN-PRIVATELAYER-51852-07). ');
-$ax += cidrblock($address, '179.43.128.0/18', 'Private Layer INC (ASN-PRIVATELAYER-51852-08). ');
-$ax += cidrblock($address, '185.12.44.0/22', 'Private Layer INC (ASN-PRIVATELAYER-51852-09). ');
-$ax += cidrblock($address, '190.211.252.0/22', 'Private Layer INC (ASN-PRIVATELAYER-51852-10). ');
+$ax += cidrblock($address, '176.223.111.0/24', 'Private Layer INC (ASN-PRIVATELAYER-51852-06). ');
+$ax += cidrblock($address, '179.43.128.0/18', 'Private Layer INC (ASN-PRIVATELAYER-51852-07). ');
+$ax += cidrblock($address, '185.12.44.0/22', 'Private Layer INC (ASN-PRIVATELAYER-51852-08). ');
+$ax += cidrblock($address, '190.211.252.0/22', 'Private Layer INC (ASN-PRIVATELAYER-51852-09). ');
 
 
 // PSYCHZ.NET (updated 2016.07.02)
@@ -4342,20 +4360,21 @@ $ax += cidrblock($address, '194.145.220.0/23', 'ALNET SKS-Lugan (AS-35804-ALNET-
 $ax += cidrblock($address, '213.111.128.0/18', 'ALNET SKS-Lugan (AS-35804-ALNET-7). ');
 
 
-// MTS-INDIA-IN (updated 2016.01.22 / checked 2016.03.13)
+// MTS-INDIA-IN (updated 2016.08.09)
 // Allows spammer botnets to run wild on it's 116.202.0.0/15 block, possibly more.
 // AS131222
 $ax += cidrblock($address, '103.18.64.0/22', 'MTS-INDIA (ASN-131222-00). ');
 $ax += cidrblock($address, '116.202.0.0/19', 'MTS-INDIA (ASN-131222-01). ');
 $ax += cidrblock($address, '116.202.32.0/20', 'MTS-INDIA (ASN-131222-02). ');
 $ax += cidrblock($address, '116.202.48.0/21', 'MTS-INDIA (ASN-131222-03). ');
-$ax += cidrblock($address, '116.202.64.0/18', 'MTS-INDIA (ASN-131222-04). ');
-$ax += cidrblock($address, '116.202.128.0/17', 'MTS-INDIA (ASN-131222-05). ');
-$ax += cidrblock($address, '116.203.0.0/16', 'MTS-INDIA (ASN-131222-06). ');
-$ax += cidrblock($address, '163.47.12.0/22', 'MTS-INDIA (ASN-131222-07). ');
-$ax += cidrblock($address, '180.149.32.0/22', 'MTS-INDIA (ASN-131222-08). ');
-$ax += cidrblock($address, '180.149.40.0/22', 'MTS-INDIA (ASN-131222-09). ');
-$ax += cidrblock($address, '180.215.0.0/16', 'MTS-INDIA (ASN-131222-10). ');
+$ax += cidrblock($address, '116.202.60.0/22', 'MTS-INDIA (ASN-131222-04). ');
+$ax += cidrblock($address, '116.202.64.0/18', 'MTS-INDIA (ASN-131222-05). ');
+$ax += cidrblock($address, '116.202.128.0/17', 'MTS-INDIA (ASN-131222-06). ');
+$ax += cidrblock($address, '116.203.0.0/16', 'MTS-INDIA (ASN-131222-07). ');
+$ax += cidrblock($address, '163.47.12.0/22', 'MTS-INDIA (ASN-131222-08). ');
+$ax += cidrblock($address, '180.149.32.0/22', 'MTS-INDIA (ASN-131222-09). ');
+$ax += cidrblock($address, '180.149.40.0/22', 'MTS-INDIA (ASN-131222-10). ');
+$ax += cidrblock($address, '180.215.0.0/16', 'MTS-INDIA (ASN-131222-11). ');
 
 
 // Versaweb, LLC
@@ -4450,7 +4469,7 @@ $ax += cidrblock($address, '198.105.117.0/24', 'Worldstream; Access denied (ASN-
 $ax += cidrblock($address, '217.23.0.0/20', 'Worldstream; Access denied (ASN-49981-WORLDSTREAM-32). ');
 
 
-// UOL (updated 2016.06.09)
+// UOL (updated 2016.08.16)
 // AS7162
 $ax += cidrblock($address, '186.234.0.0/18', 'AS7162, attacked SbS (ASN-7162-UOL-00). ');
 $ax += cidrblock($address, '186.234.64.0/20', 'AS7162, attacked SbS (ASN-7162-UOL-01). ');
@@ -4459,13 +4478,14 @@ $ax += cidrblock($address, '186.234.128.0/18', 'AS7162, attacked SbS (ASN-7162-U
 $ax += cidrblock($address, '186.234.195.0/24', 'AS7162, attacked SbS (ASN-7162-UOL-04). ');
 $ax += cidrblock($address, '186.234.196.0/24', 'AS7162, attacked SbS (ASN-7162-UOL-05). ');
 $ax += cidrblock($address, '186.234.211.0/24', 'AS7162, attacked SbS (ASN-7162-UOL-06). ');
-$ax += cidrblock($address, '187.17.64.0/18', 'AS7162, attacked SbS (ASN-7162-UOL-07). ');
-$ax += cidrblock($address, '189.38.56.0/21', 'AS7162, attacked SbS (ASN-7162-UOL-08). ');
-$ax += cidrblock($address, '200.98.0.0/16', 'AS7162, attacked SbS (ASN-7162-UOL-09). ');
-$ax += cidrblock($address, '200.147.0.0/16', 'AS7162, attacked SbS (ASN-7162-UOL-10). ');
-$ax += cidrblock($address, '200.187.192.0/18', 'AS7162, attacked SbS (ASN-7162-UOL-11). ');
-$ax += cidrblock($address, '200.221.0.0/16', 'AS7162, attacked SbS (ASN-7162-UOL-12). ');
-$ax += cidrblock($address, '201.85.123.0/24', 'AS7162, attacked SbS (ASN-7162-UOL-13). ');
+$ax += cidrblock($address, '186.234.224.0/22', 'AS7162, attacked SbS (ASN-7162-UOL-07). ');
+$ax += cidrblock($address, '187.17.64.0/18', 'AS7162, attacked SbS (ASN-7162-UOL-08). ');
+$ax += cidrblock($address, '189.38.56.0/21', 'AS7162, attacked SbS (ASN-7162-UOL-09). ');
+$ax += cidrblock($address, '200.98.0.0/16', 'AS7162, attacked SbS (ASN-7162-UOL-10). ');
+$ax += cidrblock($address, '200.147.0.0/16', 'AS7162, attacked SbS (ASN-7162-UOL-11). ');
+$ax += cidrblock($address, '200.187.192.0/18', 'AS7162, attacked SbS (ASN-7162-UOL-12). ');
+$ax += cidrblock($address, '200.221.0.0/16', 'AS7162, attacked SbS (ASN-7162-UOL-13). ');
+$ax += cidrblock($address, '201.85.123.0/24', 'AS7162, attacked SbS (ASN-7162-UOL-14). ');
 
 
 // Choopa, LLC
@@ -8052,6 +8072,24 @@ $ax += cidrblock($address, '185.22.8.0/22', 'AS31423 Access denied (ASN-31423-PR
 $ax += cidrblock($address, '193.151.96.0/22', 'AS31423 Access denied (ASN-31423-PROMAX-3). ');
 $ax += cidrblock($address, '194.106.214.0/23', 'AS31423 Access denied (ASN-31423-PROMAX-4). ');
 $ax += cidrblock($address, '217.173.0.0/20', 'AS31423 Access denied (ASN-31423-PROMAX-5). ');
+
+
+// Rebel Hosting
+// AS26481 (updated 2016.08.05)
+$ax += cidrblock($address, '4.53.201.0/24', 'Rebel Hosting; Access denied (ASN-26481-REBELHOSTING-00). ');
+$ax += cidrblock($address, '8.12.162.0/23', 'Rebel Hosting; Access denied (ASN-26481-REBELHOSTING-01). ');
+$ax += cidrblock($address, '8.12.164.0/24', 'Rebel Hosting; Access denied (ASN-26481-REBELHOSTING-02). ');
+$ax += cidrblock($address, '8.14.145.0/24', 'Rebel Hosting; Access denied (ASN-26481-REBELHOSTING-03). ');
+$ax += cidrblock($address, '8.14.146.0/23', 'Rebel Hosting; Access denied (ASN-26481-REBELHOSTING-04). ');
+$ax += cidrblock($address, '50.117.44.0/24', 'Rebel Hosting; Access denied (ASN-26481-REBELHOSTING-05). ');
+$ax += cidrblock($address, '64.158.146.0/23', 'Rebel Hosting; Access denied (ASN-26481-REBELHOSTING-06). ');
+$ax += cidrblock($address, '69.46.72.0/24', 'Rebel Hosting; Access denied (ASN-26481-REBELHOSTING-07). ');
+$ax += cidrblock($address, '69.46.93.0/24', 'Rebel Hosting; Access denied (ASN-26481-REBELHOSTING-08). ');
+$ax += cidrblock($address, '199.33.120.0/21', 'Rebel Hosting; Access denied (ASN-26481-REBELHOSTING-09). ');
+$ax += cidrblock($address, '205.164.40.0/24', 'Rebel Hosting; Access denied (ASN-26481-REBELHOSTING-10). ');
+$ax += cidrblock($address, '209.73.146.0/24', 'Rebel Hosting; Access denied (ASN-26481-REBELHOSTING-11). ');
+$ax += cidrblock($address, '209.74.104.0/21', 'Rebel Hosting; Access denied (ASN-26481-REBELHOSTING-12). ');
+$ax += cidrblock($address, '216.172.150.0/24', 'Rebel Hosting; Access denied (ASN-26481-REBELHOSTING-13). ');
 
 
 // *More, and smaller bad networks to avoid...

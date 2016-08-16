@@ -547,3 +547,24 @@ History/Changelog of this repository (and of those updates merged into it) is as
 #####2016-07-31
 - Sun Network CIDRs updated.
 - Repository updated with new changes.
+
+#####2016-08-05
+- Rebel Hosting CIDRs added.
+
+#####2016-08-09
+- MTS-INDIA CIDRs updated.
+- Private Layer INC CIDRs updated.
+- Trend Micro CIDRs updated.
+
+#####2016-08-15
+- OVH Networks CIDRs updated.
+- Avante Hosting CIDRs updated.
+- Westhost CIDRs updated.
+- Root SA CIDRs updated.
+- Steadfast DNS CIDRs updated.
+
+#####2016-08-16
+- UOL CIDRs updated.
+
+#####2016-08-17
+- Repository updated with new changes.
