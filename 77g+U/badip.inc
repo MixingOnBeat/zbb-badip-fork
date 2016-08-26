@@ -18,7 +18,7 @@
  * FOR USE WITH ZB BLOCK OR ANY GNU/GPL V.2 COMPLIANT DERIVATIVE
  */
 
-$zbbversion .= ' / BADIP-2016-08+U.0'; // Version number goes here. (product code)-(Year)-(Month)(issue letter)(+U = Unofficial fork, non-mainlined release).(Build number)
+$zbbversion .= ' / BADIP-2016-08+U.1'; // Version number goes here. (product code)-(Year)-(Month)(issue letter)(+U = Unofficial fork, non-mainlined release).(Build number)
 
 // *php 5 fix
 global $whyblockout, $ax;
@@ -28,7 +28,7 @@ global $whyblockout, $ax;
 // *IPs and IP Ranges
 
 $ax += cidrblock($address, '194.71.222.0/23', 'ERRSY-NET: Proxy services for scrapers and SEOs (IP-105). '); // Checked: 2016.04.17 (Not sure if valid; New ASN, "BinaryGrid Industries AB"; "ERRSY-NET" no longer listed); AS24668
-$ax += cidrblock($address, '203.160.0.0/23', 'Vietnam Junk Mailer/Forum Spammer (Spoofed as 203.160.1.49 localhost!) (IP-069). '); // Updated: 2016.04.17
+$ax += cidrblock($address, '203.160.0.0/23', 'Vietnam Junk Mailer/Forum Spammer; Spoofs as localhost (IP-069). '); // Updated: 2016.04.17 / Checked: 2016.08.19
 $ax += iprange($address, '193.200.150.0', '193.200.150.255', 'Anonymizing proxy network, hacker\'s paradise (IP-057). '); // Checked: 2016.04.13 (Good); www.anonymouse.org
 $ax += lmatch($address, '78.158.11.226', 'Project Honey Pot rule-breaker, vulnerability scanner (IP-107). '); // Checked: 2016.04.17 (Good); AS43700
 
@@ -1620,127 +1620,116 @@ $ax += cidrblock($address, '216.238.147.0/24', 'Akamai Technologies; Access deni
 $ax += cidrblock($address, '219.76.11.0/24', 'Akamai Technologies; Access denied (AS-AKAMAI-199). ');
 
 
-// Portlane Networks AB (updated 2016.01.20 / checked 2016.03.12)
+// Portlane Networks AB (updated 2016.08.26)
 // Huge set of anonymous VPN and Proxy spamming services!
 // AS42708
 $ax += cidrblock($address, '5.198.248.0/21', 'Portlane Networks AB (ASN-42708-PORTLANE-000). ');
 $ax += cidrblock($address, '5.249.160.0/21', 'Portlane Networks AB (ASN-42708-PORTLANE-001). ');
 $ax += cidrblock($address, '5.254.128.0/19', 'Portlane Networks AB (ASN-42708-PORTLANE-002). ');
-$ax += cidrblock($address, '31.187.64.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-003). ');
-$ax += cidrblock($address, '31.187.76.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-004). ');
-$ax += cidrblock($address, '31.220.4.0/22', 'Portlane Networks AB (ASN-42708-PORTLANE-005). ');
-$ax += cidrblock($address, '31.220.15.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-006). ');
-$ax += cidrblock($address, '31.220.30.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-007). ');
-$ax += cidrblock($address, '31.220.42.0/23', 'Portlane Networks AB (ASN-42708-PORTLANE-008). ');
-$ax += cidrblock($address, '31.220.44.0/23', 'Portlane Networks AB (ASN-42708-PORTLANE-009). ');
-$ax += cidrblock($address, '46.246.0.0/17', 'Portlane Networks AB (ASN-42708-PORTLANE-010). ');
-$ax += cidrblock($address, '80.67.0.0/20', 'Portlane Networks AB (ASN-42708-PORTLANE-011). ');
-$ax += cidrblock($address, '80.243.125.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-012). ');
-$ax += cidrblock($address, '91.213.246.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-013). ');
-$ax += cidrblock($address, '91.217.189.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-014). ');
-$ax += cidrblock($address, '91.236.116.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-015). ');
-$ax += cidrblock($address, '109.230.199.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-016). ');
-$ax += cidrblock($address, '141.138.208.0/21', 'Portlane Networks AB (ASN-42708-PORTLANE-017). ');
-$ax += cidrblock($address, '153.92.126.0/23', 'Portlane Networks AB (ASN-42708-PORTLANE-018). ');
-$ax += cidrblock($address, '172.94.0.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-019). ');
-$ax += cidrblock($address, '176.126.65.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-020). ');
-$ax += cidrblock($address, '176.126.84.0/23', 'Portlane Networks AB (ASN-42708-PORTLANE-021). ');
-$ax += cidrblock($address, '178.73.192.0/18', 'Portlane Networks AB (ASN-42708-PORTLANE-022). ');
-$ax += cidrblock($address, '185.5.44.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-023). ');
-$ax += cidrblock($address, '185.9.3.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-024). ');
-$ax += cidrblock($address, '185.13.40.0/22', 'Portlane Networks AB (ASN-42708-PORTLANE-025). ');
-$ax += cidrblock($address, '185.16.87.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-026). ');
-$ax += cidrblock($address, '185.66.144.0/22', 'Portlane Networks AB (ASN-42708-PORTLANE-027). ');
-$ax += cidrblock($address, '185.97.214.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-028). ');
-$ax += cidrblock($address, '185.120.6.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-029). ');
-$ax += cidrblock($address, '188.126.64.0/19', 'Portlane Networks AB (ASN-42708-PORTLANE-030). ');
-$ax += cidrblock($address, '192.36.119.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-031). ');
-$ax += cidrblock($address, '192.36.121.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-032). ');
-$ax += cidrblock($address, '192.36.154.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-033). ');
-$ax += cidrblock($address, '192.36.166.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-034). ');
-$ax += cidrblock($address, '192.36.198.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-035). ');
-$ax += cidrblock($address, '192.36.207.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-036). ');
-$ax += cidrblock($address, '192.36.217.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-037). ');
-$ax += cidrblock($address, '192.36.226.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-038). ');
-$ax += cidrblock($address, '192.36.241.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-039). ');
-$ax += cidrblock($address, '192.36.248.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-040). ');
-$ax += cidrblock($address, '192.71.8.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-041). ');
-$ax += cidrblock($address, '192.71.10.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-042). ');
-$ax += cidrblock($address, '192.71.12.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-043). ');
-$ax += cidrblock($address, '192.71.23.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-044). ');
-$ax += cidrblock($address, '192.71.30.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-045). ');
-$ax += cidrblock($address, '192.71.36.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-046). ');
-$ax += cidrblock($address, '192.71.38.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-047). ');
-$ax += cidrblock($address, '192.71.42.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-048). ');
-$ax += cidrblock($address, '192.71.44.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-049). ');
-$ax += cidrblock($address, '192.71.46.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-050). ');
-$ax += cidrblock($address, '192.71.48.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-051). ');
-$ax += cidrblock($address, '192.71.50.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-052). ');
-$ax += cidrblock($address, '192.71.52.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-053). ');
-$ax += cidrblock($address, '192.71.57.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-054). ');
-$ax += cidrblock($address, '192.71.59.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-055). ');
-$ax += cidrblock($address, '192.71.61.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-056). ');
-$ax += cidrblock($address, '192.71.74.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-057). ');
-$ax += cidrblock($address, '192.71.81.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-058). ');
-$ax += cidrblock($address, '192.71.103.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-059). ');
-$ax += cidrblock($address, '192.71.126.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-060). ');
-$ax += cidrblock($address, '192.71.142.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-061). ');
-$ax += cidrblock($address, '192.71.144.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-062). ');
-$ax += cidrblock($address, '192.121.122.0/23', 'Portlane Networks AB (ASN-42708-PORTLANE-063). ');
-$ax += cidrblock($address, '192.121.124.0/23', 'Portlane Networks AB (ASN-42708-PORTLANE-064). ');
-$ax += cidrblock($address, '192.121.126.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-065). ');
-$ax += cidrblock($address, '192.121.134.0/23', 'Portlane Networks AB (ASN-42708-PORTLANE-066). ');
-$ax += cidrblock($address, '192.121.136.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-067). ');
-$ax += cidrblock($address, '192.121.146.0/23', 'Portlane Networks AB (ASN-42708-PORTLANE-068). ');
-$ax += cidrblock($address, '192.121.148.0/23', 'Portlane Networks AB (ASN-42708-PORTLANE-069). ');
-$ax += cidrblock($address, '192.121.152.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-070). ');
-$ax += cidrblock($address, '192.121.155.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-071). ');
-$ax += cidrblock($address, '192.121.185.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-072). ');
-$ax += cidrblock($address, '192.121.186.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-073). ');
-$ax += cidrblock($address, '192.121.225.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-074). ');
-$ax += cidrblock($address, '192.121.251.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-075). ');
-$ax += cidrblock($address, '192.165.17.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-076). ');
-$ax += cidrblock($address, '192.165.48.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-077). ');
-$ax += cidrblock($address, '192.165.121.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-078). ');
-$ax += cidrblock($address, '192.165.123.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-079). ');
-$ax += cidrblock($address, '192.165.205.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-080). ');
-$ax += cidrblock($address, '192.176.27.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-081). ');
-$ax += cidrblock($address, '192.176.28.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-082). ');
-$ax += cidrblock($address, '193.25.127.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-083). ');
-$ax += cidrblock($address, '193.105.134.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-084). ');
-$ax += cidrblock($address, '193.180.123.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-085). ');
-$ax += cidrblock($address, '193.181.16.0/22', 'Portlane Networks AB (ASN-42708-PORTLANE-086). ');
-$ax += cidrblock($address, '193.181.234.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-087). ');
-$ax += cidrblock($address, '193.182.19.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-088). ');
-$ax += cidrblock($address, '193.183.82.0/23', 'Portlane Networks AB (ASN-42708-PORTLANE-089). ');
-$ax += cidrblock($address, '193.183.84.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-090). ');
-$ax += cidrblock($address, '193.183.86.0/23', 'Portlane Networks AB (ASN-42708-PORTLANE-091). ');
-$ax += cidrblock($address, '193.183.88.0/23', 'Portlane Networks AB (ASN-42708-PORTLANE-092). ');
-$ax += cidrblock($address, '193.183.108.0/22', 'Portlane Networks AB (ASN-42708-PORTLANE-093). ');
-$ax += cidrblock($address, '193.183.120.0/22', 'Portlane Networks AB (ASN-42708-PORTLANE-094). ');
-$ax += cidrblock($address, '193.234.255.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-095). ');
-$ax += cidrblock($address, '193.235.73.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-096). ');
-$ax += cidrblock($address, '193.235.200.0/23', 'Portlane Networks AB (ASN-42708-PORTLANE-097). ');
-$ax += cidrblock($address, '194.14.28.0/23', 'Portlane Networks AB (ASN-42708-PORTLANE-098). ');
-$ax += cidrblock($address, '194.14.45.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-099). ');
-$ax += cidrblock($address, '194.14.85.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-100). ');
-$ax += cidrblock($address, '194.14.87.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-101). ');
-$ax += cidrblock($address, '194.14.206.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-102). ');
-$ax += cidrblock($address, '194.14.222.0/23', 'Portlane Networks AB (ASN-42708-PORTLANE-103). ');
-$ax += cidrblock($address, '194.68.96.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-104). ');
-$ax += cidrblock($address, '194.68.112.0/23', 'Portlane Networks AB (ASN-42708-PORTLANE-105). ');
-$ax += cidrblock($address, '194.103.9.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-106). ');
-$ax += cidrblock($address, '194.103.11.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-107). ');
-$ax += cidrblock($address, '194.103.33.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-108). ');
-$ax += cidrblock($address, '194.103.207.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-109). ');
-$ax += cidrblock($address, '194.103.211.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-110). ');
-$ax += cidrblock($address, '194.103.212.0/23', 'Portlane Networks AB (ASN-42708-PORTLANE-111). ');
-$ax += cidrblock($address, '194.132.11.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-112). ');
-$ax += cidrblock($address, '194.132.31.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-113). ');
-$ax += cidrblock($address, '194.132.112.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-114). ');
-$ax += cidrblock($address, '194.132.115.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-115). ');
-$ax += cidrblock($address, '194.132.200.0/22', 'Portlane Networks AB (ASN-42708-PORTLANE-116). ');
-$ax += cidrblock($address, '198.105.121.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-117). ');
+$ax += cidrblock($address, '46.246.0.0/17', 'Portlane Networks AB (ASN-42708-PORTLANE-003). ');
+$ax += cidrblock($address, '80.67.0.0/20', 'Portlane Networks AB (ASN-42708-PORTLANE-004). ');
+$ax += cidrblock($address, '80.243.125.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-005). ');
+$ax += cidrblock($address, '91.213.246.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-006). ');
+$ax += cidrblock($address, '91.217.189.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-007). ');
+$ax += cidrblock($address, '91.236.116.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-008). ');
+$ax += cidrblock($address, '109.230.199.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-009). ');
+$ax += cidrblock($address, '141.138.208.0/21', 'Portlane Networks AB (ASN-42708-PORTLANE-010). ');
+$ax += cidrblock($address, '159.253.28.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-011). ');
+$ax += cidrblock($address, '172.94.0.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-012). ');
+$ax += cidrblock($address, '178.73.192.0/18', 'Portlane Networks AB (ASN-42708-PORTLANE-013). ');
+$ax += cidrblock($address, '185.5.44.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-014). ');
+$ax += cidrblock($address, '185.9.3.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-015). ');
+$ax += cidrblock($address, '185.13.40.0/22', 'Portlane Networks AB (ASN-42708-PORTLANE-016). ');
+$ax += cidrblock($address, '185.16.87.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-017). ');
+$ax += cidrblock($address, '185.66.144.0/22', 'Portlane Networks AB (ASN-42708-PORTLANE-018). ');
+$ax += cidrblock($address, '185.97.214.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-019). ');
+$ax += cidrblock($address, '185.117.88.0/23', 'Portlane Networks AB (ASN-42708-PORTLANE-020). ');
+$ax += cidrblock($address, '185.142.237.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-021). ');
+$ax += cidrblock($address, '188.126.64.0/19', 'Portlane Networks AB (ASN-42708-PORTLANE-022). ');
+$ax += cidrblock($address, '192.36.119.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-023). ');
+$ax += cidrblock($address, '192.36.121.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-024). ');
+$ax += cidrblock($address, '192.36.154.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-025). ');
+$ax += cidrblock($address, '192.36.166.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-026). ');
+$ax += cidrblock($address, '192.36.198.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-027). ');
+$ax += cidrblock($address, '192.36.207.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-028). ');
+$ax += cidrblock($address, '192.36.217.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-029). ');
+$ax += cidrblock($address, '192.36.226.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-030). ');
+$ax += cidrblock($address, '192.36.241.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-031). ');
+$ax += cidrblock($address, '192.36.248.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-032). ');
+$ax += cidrblock($address, '192.71.8.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-033). ');
+$ax += cidrblock($address, '192.71.10.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-034). ');
+$ax += cidrblock($address, '192.71.12.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-035). ');
+$ax += cidrblock($address, '192.71.23.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-036). ');
+$ax += cidrblock($address, '192.71.30.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-037). ');
+$ax += cidrblock($address, '192.71.36.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-038). ');
+$ax += cidrblock($address, '192.71.38.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-039). ');
+$ax += cidrblock($address, '192.71.42.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-040). ');
+$ax += cidrblock($address, '192.71.44.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-041). ');
+$ax += cidrblock($address, '192.71.46.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-042). ');
+$ax += cidrblock($address, '192.71.48.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-043). ');
+$ax += cidrblock($address, '192.71.50.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-044). ');
+$ax += cidrblock($address, '192.71.52.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-045). ');
+$ax += cidrblock($address, '192.71.57.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-046). ');
+$ax += cidrblock($address, '192.71.59.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-047). ');
+$ax += cidrblock($address, '192.71.61.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-048). ');
+$ax += cidrblock($address, '192.71.74.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-049). ');
+$ax += cidrblock($address, '192.71.81.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-050). ');
+$ax += cidrblock($address, '192.71.103.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-051). ');
+$ax += cidrblock($address, '192.71.126.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-052). ');
+$ax += cidrblock($address, '192.71.142.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-053). ');
+$ax += cidrblock($address, '192.71.144.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-054). ');
+$ax += cidrblock($address, '192.121.122.0/23', 'Portlane Networks AB (ASN-42708-PORTLANE-055). ');
+$ax += cidrblock($address, '192.121.124.0/23', 'Portlane Networks AB (ASN-42708-PORTLANE-056). ');
+$ax += cidrblock($address, '192.121.126.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-057). ');
+$ax += cidrblock($address, '192.121.134.0/23', 'Portlane Networks AB (ASN-42708-PORTLANE-058). ');
+$ax += cidrblock($address, '192.121.136.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-059). ');
+$ax += cidrblock($address, '192.121.146.0/23', 'Portlane Networks AB (ASN-42708-PORTLANE-060). ');
+$ax += cidrblock($address, '192.121.148.0/23', 'Portlane Networks AB (ASN-42708-PORTLANE-061). ');
+$ax += cidrblock($address, '192.121.152.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-062). ');
+$ax += cidrblock($address, '192.121.155.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-063). ');
+$ax += cidrblock($address, '192.121.185.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-064). ');
+$ax += cidrblock($address, '192.121.186.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-065). ');
+$ax += cidrblock($address, '192.121.225.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-066). ');
+$ax += cidrblock($address, '192.121.251.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-067). ');
+$ax += cidrblock($address, '192.165.48.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-068). ');
+$ax += cidrblock($address, '192.165.121.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-069). ');
+$ax += cidrblock($address, '192.165.123.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-070). ');
+$ax += cidrblock($address, '192.165.205.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-071). ');
+$ax += cidrblock($address, '192.176.27.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-072). ');
+$ax += cidrblock($address, '192.176.28.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-073). ');
+$ax += cidrblock($address, '193.25.127.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-074). ');
+$ax += cidrblock($address, '193.105.134.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-075). ');
+$ax += cidrblock($address, '193.180.123.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-076). ');
+$ax += cidrblock($address, '193.181.16.0/22', 'Portlane Networks AB (ASN-42708-PORTLANE-077). ');
+$ax += cidrblock($address, '193.181.234.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-078). ');
+$ax += cidrblock($address, '193.182.19.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-079). ');
+$ax += cidrblock($address, '193.183.82.0/23', 'Portlane Networks AB (ASN-42708-PORTLANE-080). ');
+$ax += cidrblock($address, '193.183.84.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-081). ');
+$ax += cidrblock($address, '193.183.86.0/23', 'Portlane Networks AB (ASN-42708-PORTLANE-082). ');
+$ax += cidrblock($address, '193.183.88.0/23', 'Portlane Networks AB (ASN-42708-PORTLANE-083). ');
+$ax += cidrblock($address, '193.183.108.0/22', 'Portlane Networks AB (ASN-42708-PORTLANE-084). ');
+$ax += cidrblock($address, '193.183.120.0/22', 'Portlane Networks AB (ASN-42708-PORTLANE-085). ');
+$ax += cidrblock($address, '193.235.200.0/23', 'Portlane Networks AB (ASN-42708-PORTLANE-086). ');
+$ax += cidrblock($address, '194.14.28.0/23', 'Portlane Networks AB (ASN-42708-PORTLANE-087). ');
+$ax += cidrblock($address, '194.14.45.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-088). ');
+$ax += cidrblock($address, '194.14.85.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-089). ');
+$ax += cidrblock($address, '194.14.87.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-090). ');
+$ax += cidrblock($address, '194.14.206.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-091). ');
+$ax += cidrblock($address, '194.14.222.0/23', 'Portlane Networks AB (ASN-42708-PORTLANE-092). ');
+$ax += cidrblock($address, '194.68.96.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-093). ');
+$ax += cidrblock($address, '194.68.112.0/23', 'Portlane Networks AB (ASN-42708-PORTLANE-094). ');
+$ax += cidrblock($address, '194.103.9.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-095). ');
+$ax += cidrblock($address, '194.103.11.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-096). ');
+$ax += cidrblock($address, '194.103.33.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-097). ');
+$ax += cidrblock($address, '194.103.207.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-098). ');
+$ax += cidrblock($address, '194.103.211.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-99). ');
+$ax += cidrblock($address, '194.103.212.0/23', 'Portlane Networks AB (ASN-42708-PORTLANE-100). ');
+$ax += cidrblock($address, '194.132.11.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-101). ');
+$ax += cidrblock($address, '194.132.31.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-102). ');
+$ax += cidrblock($address, '194.132.112.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-103). ');
+$ax += cidrblock($address, '194.132.115.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-104). ');
+$ax += cidrblock($address, '194.132.200.0/22', 'Portlane Networks AB (ASN-42708-PORTLANE-105). ');
+$ax += cidrblock($address, '198.105.121.0/24', 'Portlane Networks AB (ASN-42708-PORTLANE-106). ');
 
 
 // Inter Connects Inc (updated 2016.05.21)
@@ -2316,7 +2305,7 @@ $ax += cidrblock($address, '217.147.80.0/20', 'IOMart, Privax, RapidSwitch (AS-I
 $ax += cidrblock($address, '217.194.208.0/20', 'IOMart, Privax, RapidSwitch (AS-IOMART-117). ');
 
 
-// Bytemark Anonymous Proxies (updated 2016.01.20 / checked 2016.03.12)
+// Bytemark Anonymous Proxies (updated 2016.01.20 / checked 2016.08.26)
 // AS35425
 $ax += cidrblock($address, '5.28.56.0/21', 'Bytemark Anonymous Proxies (ASN-35425-BYTEMARK-00). ');
 $ax += cidrblock($address, '5.153.224.0/21', 'Bytemark Anonymous Proxies (ASN-35425-BYTEMARK-01). ');
@@ -2846,42 +2835,45 @@ $ax += cidrblock($address, '206.226.64.0/18', 'Tzulo Inc (ASN-11878-TZULO-49). '
 $ax += cidrblock($address, '208.77.16.0/21', 'Tzulo Inc (ASN-11878-TZULO-50). ');
 
 
-// Corpcolo (updated 2016.03.13)
+// Corporate Colocation Inc (updated 2016.08.26)
 // AS17139
 $ax += cidrblock($address, '45.3.32.0/20', 'Corpcolo (ASN-17139-CORPCOLO-00). ');
 $ax += cidrblock($address, '45.3.55.0/24', 'Corpcolo (ASN-17139-CORPCOLO-01). ');
 $ax += cidrblock($address, '45.3.56.0/21', 'Corpcolo (ASN-17139-CORPCOLO-02). ');
 $ax += cidrblock($address, '45.78.80.0/20', 'Corpcolo (ASN-17139-CORPCOLO-03). ');
-$ax += cidrblock($address, '66.117.0.0/20', 'Corpcolo (ASN-17139-CORPCOLO-04). ');
-$ax += cidrblock($address, '68.64.160.0/20', 'Corpcolo (ASN-17139-CORPCOLO-05). ');
-$ax += cidrblock($address, '72.37.152.0/24', 'Corpcolo (ASN-17139-CORPCOLO-06). ');
-$ax += cidrblock($address, '74.82.37.0/24', 'Corpcolo (ASN-17139-CORPCOLO-07). ');
-$ax += cidrblock($address, '74.124.192.0/19', 'Corpcolo (ASN-17139-CORPCOLO-08). ');
-$ax += cidrblock($address, '103.193.184.0/22', 'Corpcolo (ASN-17139-CORPCOLO-09). ');
-$ax += cidrblock($address, '104.167.16.0/22', 'Corpcolo (ASN-17139-CORPCOLO-10). ');
-$ax += cidrblock($address, '104.167.20.0/24', 'Corpcolo (ASN-17139-CORPCOLO-11). ');
-$ax += cidrblock($address, '104.167.22.0/23', 'Corpcolo (ASN-17139-CORPCOLO-12). ');
-$ax += cidrblock($address, '104.167.24.0/22', 'Corpcolo (ASN-17139-CORPCOLO-13). ');
-$ax += cidrblock($address, '104.167.28.0/23', 'Corpcolo (ASN-17139-CORPCOLO-14). ');
-$ax += cidrblock($address, '104.207.32.0/19', 'Corpcolo (ASN-17139-CORPCOLO-15). ');
-$ax += cidrblock($address, '162.220.218.0/24', 'Corpcolo (ASN-17139-CORPCOLO-16). ');
-$ax += cidrblock($address, '172.86.120.0/21', 'Corpcolo (ASN-17139-CORPCOLO-17). ');
-$ax += cidrblock($address, '172.98.214.0/24', 'Corpcolo (ASN-17139-CORPCOLO-18). ');
-$ax += cidrblock($address, '173.247.224.0/19', 'Corpcolo (ASN-17139-CORPCOLO-19). ');
-$ax += cidrblock($address, '192.80.191.0/24', 'Corpcolo (ASN-17139-CORPCOLO-20). ');
-$ax += cidrblock($address, '199.83.102.0/24', 'Corpcolo (ASN-17139-CORPCOLO-21). ');
-$ax += cidrblock($address, '199.195.142.0/23', 'Corpcolo (ASN-17139-CORPCOLO-22). ');
-$ax += cidrblock($address, '205.134.224.0/19', 'Corpcolo (ASN-17139-CORPCOLO-23). ');
-$ax += cidrblock($address, '206.62.144.0/22', 'Corpcolo (ASN-17139-CORPCOLO-24). ');
-$ax += cidrblock($address, '206.62.148.0/24', 'Corpcolo (ASN-17139-CORPCOLO-25). ');
-$ax += cidrblock($address, '208.51.60.0/22', 'Corpcolo (ASN-17139-CORPCOLO-26). ');
-$ax += cidrblock($address, '216.179.168.0/21', 'Corpcolo (ASN-17139-CORPCOLO-27). ');
-$ax += cidrblock($address, '216.179.208.0/24', 'Corpcolo (ASN-17139-CORPCOLO-28). ');
-$ax += cidrblock($address, '216.179.212.0/24', 'Corpcolo (ASN-17139-CORPCOLO-29). ');
-$ax += cidrblock($address, '216.179.218.0/24', 'Corpcolo (ASN-17139-CORPCOLO-30). ');
-$ax += cidrblock($address, '216.193.197.0/24', 'Corpcolo (ASN-17139-CORPCOLO-31). ');
-$ax += cidrblock($address, '216.193.219.0/24', 'Corpcolo (ASN-17139-CORPCOLO-32). ');
-$ax += cidrblock($address, '216.193.251.0/24', 'Corpcolo (ASN-17139-CORPCOLO-33). ');
+$ax += cidrblock($address, '59.153.60.0/23', 'Corpcolo (ASN-17139-CORPCOLO-04). ');
+$ax += cidrblock($address, '59.153.63.0/24', 'Corpcolo (ASN-17139-CORPCOLO-05). ');
+$ax += cidrblock($address, '66.117.0.0/20', 'Corpcolo (ASN-17139-CORPCOLO-06). ');
+$ax += cidrblock($address, '68.64.160.0/20', 'Corpcolo (ASN-17139-CORPCOLO-07). ');
+$ax += cidrblock($address, '72.37.152.0/24', 'Corpcolo (ASN-17139-CORPCOLO-08). ');
+$ax += cidrblock($address, '74.82.37.0/24', 'Corpcolo (ASN-17139-CORPCOLO-09). ');
+$ax += cidrblock($address, '74.124.192.0/19', 'Corpcolo (ASN-17139-CORPCOLO-10). ');
+$ax += cidrblock($address, '103.193.184.0/22', 'Corpcolo (ASN-17139-CORPCOLO-11). ');
+$ax += cidrblock($address, '104.167.16.0/22', 'Corpcolo (ASN-17139-CORPCOLO-12). ');
+$ax += cidrblock($address, '104.167.20.0/24', 'Corpcolo (ASN-17139-CORPCOLO-13). ');
+$ax += cidrblock($address, '104.167.22.0/23', 'Corpcolo (ASN-17139-CORPCOLO-14). ');
+$ax += cidrblock($address, '104.167.24.0/22', 'Corpcolo (ASN-17139-CORPCOLO-15). ');
+$ax += cidrblock($address, '104.167.28.0/23', 'Corpcolo (ASN-17139-CORPCOLO-16). ');
+$ax += cidrblock($address, '104.207.32.0/19', 'Corpcolo (ASN-17139-CORPCOLO-17). ');
+$ax += cidrblock($address, '162.220.218.0/24', 'Corpcolo (ASN-17139-CORPCOLO-18). ');
+$ax += cidrblock($address, '172.86.120.0/21', 'Corpcolo (ASN-17139-CORPCOLO-19). ');
+$ax += cidrblock($address, '172.98.214.0/24', 'Corpcolo (ASN-17139-CORPCOLO-20). ');
+$ax += cidrblock($address, '173.247.224.0/19', 'Corpcolo (ASN-17139-CORPCOLO-21). ');
+$ax += cidrblock($address, '192.80.191.0/24', 'Corpcolo (ASN-17139-CORPCOLO-22). ');
+$ax += cidrblock($address, '199.83.102.0/24', 'Corpcolo (ASN-17139-CORPCOLO-23). ');
+$ax += cidrblock($address, '199.195.142.0/23', 'Corpcolo (ASN-17139-CORPCOLO-24). ');
+$ax += cidrblock($address, '205.134.224.0/19', 'Corpcolo (ASN-17139-CORPCOLO-25). ');
+$ax += cidrblock($address, '206.62.144.0/22', 'Corpcolo (ASN-17139-CORPCOLO-26). ');
+$ax += cidrblock($address, '206.62.148.0/24', 'Corpcolo (ASN-17139-CORPCOLO-27). ');
+$ax += cidrblock($address, '208.51.60.0/22', 'Corpcolo (ASN-17139-CORPCOLO-28). ');
+$ax += cidrblock($address, '208.103.154.0/24', 'Corpcolo (ASN-17139-CORPCOLO-29). ');
+$ax += cidrblock($address, '216.179.168.0/21', 'Corpcolo (ASN-17139-CORPCOLO-30). ');
+$ax += cidrblock($address, '216.179.208.0/24', 'Corpcolo (ASN-17139-CORPCOLO-31). ');
+$ax += cidrblock($address, '216.179.212.0/24', 'Corpcolo (ASN-17139-CORPCOLO-32). ');
+$ax += cidrblock($address, '216.179.218.0/24', 'Corpcolo (ASN-17139-CORPCOLO-33). ');
+$ax += cidrblock($address, '216.193.197.0/24', 'Corpcolo (ASN-17139-CORPCOLO-34). ');
+$ax += cidrblock($address, '216.193.219.0/24', 'Corpcolo (ASN-17139-CORPCOLO-35). ');
+$ax += cidrblock($address, '216.193.251.0/24', 'Corpcolo (ASN-17139-CORPCOLO-36). ');
 
 
 // iWeb Technologies Inc. (updated 2016.01.20 / checked 2016.03.13)
@@ -2933,28 +2925,29 @@ $ax += cidrblock($address, '216.151.184.0/24', 'Reliable Hosting Services. Not a
 $ax += cidrblock($address, '216.169.128.0/20', 'Reliable Hosting Services. Not an access provider ISP (AS-RELIA-15). ');
 
 
-// InfoRelay Online Systems, Inc. (updated 2016.01.27 / checked 2016.03.13)
+// InfoRelay Online Systems, Inc. (updated 2016.08.26)
 // AS33597
-$ax += cidrblock($address, '38.81.194.0/23', 'InfoRelay Online Systems. Not an access provider ISP (ASN-33597-INFORELAY-01). ');
-$ax += cidrblock($address, '66.231.176.0/20', 'InfoRelay Online Systems. Not an access provider ISP (ASN-33597-INFORELAY-02). ');
-$ax += cidrblock($address, '67.208.64.0/19', 'InfoRelay Online Systems. Not an access provider ISP (ASN-33597-INFORELAY-03). ');
-$ax += cidrblock($address, '69.26.176.0/23', 'InfoRelay Online Systems. Not an access provider ISP (ASN-33597-INFORELAY-04). ');
-$ax += cidrblock($address, '69.26.178.0/24', 'InfoRelay Online Systems. Not an access provider ISP (ASN-33597-INFORELAY-05). ');
-$ax += cidrblock($address, '69.169.0.0/17', 'InfoRelay Online Systems. Not an access provider ISP (ASN-33597-INFORELAY-06). ');
-$ax += cidrblock($address, '70.33.160.0/19', 'InfoRelay Online Systems. Not an access provider ISP (ASN-33597-INFORELAY-07). ');
-$ax += cidrblock($address, '74.112.255.0/24', 'InfoRelay Online Systems. Not an access provider ISP (ASN-33597-INFORELAY-08). ');
-$ax += cidrblock($address, '130.185.182.0/23', 'InfoRelay Online Systems. Not an access provider ISP (ASN-33597-INFORELAY-09). ');
-$ax += cidrblock($address, '173.45.0.0/18', 'InfoRelay Online Systems. Not an access provider ISP (ASN-33597-INFORELAY-10). ');
-$ax += cidrblock($address, '173.205.128.0/17', 'InfoRelay Online Systems. Not an access provider ISP (ASN-33597-INFORELAY-11). ');
-$ax += cidrblock($address, '173.245.104.0/22', 'InfoRelay Online Systems. Not an access provider ISP (ASN-33597-INFORELAY-12). ');
-$ax += cidrblock($address, '173.245.108.0/24', 'InfoRelay Online Systems. Not an access provider ISP (ASN-33597-INFORELAY-13). ');
-$ax += cidrblock($address, '174.128.128.0/18', 'InfoRelay Online Systems. Not an access provider ISP (ASN-33597-INFORELAY-14). ');
-$ax += cidrblock($address, '198.62.86.0/24', 'InfoRelay Online Systems. Not an access provider ISP (ASN-33597-INFORELAY-15). ');
-$ax += cidrblock($address, '199.115.248.0/22', 'InfoRelay Online Systems. Not an access provider ISP (ASN-33597-INFORELAY-16). ');
-$ax += cidrblock($address, '199.167.224.0/24', 'InfoRelay Online Systems. Not an access provider ISP (ASN-33597-INFORELAY-17). ');
-$ax += cidrblock($address, '199.188.228.0/22', 'InfoRelay Online Systems. Not an access provider ISP (ASN-33597-INFORELAY-18). ');
-$ax += cidrblock($address, '205.251.0.0/17', 'InfoRelay Online Systems. Not an access provider ISP (ASN-33597-INFORELAY-19). ');
-$ax += cidrblock($address, '208.94.144.0/24', 'InfoRelay Online Systems. Not an access provider ISP (ASN-33597-INFORELAY-20). ');
+$ax += cidrblock($address, '38.81.194.0/23', 'InfoRelay Online Systems. Not an access provider ISP (ASN-33597-INFORELAY-00). ');
+$ax += cidrblock($address, '66.231.176.0/20', 'InfoRelay Online Systems. Not an access provider ISP (ASN-33597-INFORELAY-01). ');
+$ax += cidrblock($address, '67.208.64.0/19', 'InfoRelay Online Systems. Not an access provider ISP (ASN-33597-INFORELAY-02). ');
+$ax += cidrblock($address, '69.26.176.0/23', 'InfoRelay Online Systems. Not an access provider ISP (ASN-33597-INFORELAY-03). ');
+$ax += cidrblock($address, '69.26.178.0/24', 'InfoRelay Online Systems. Not an access provider ISP (ASN-33597-INFORELAY-04). ');
+$ax += cidrblock($address, '69.169.0.0/17', 'InfoRelay Online Systems. Not an access provider ISP (ASN-33597-INFORELAY-05). ');
+$ax += cidrblock($address, '70.33.160.0/19', 'InfoRelay Online Systems. Not an access provider ISP (ASN-33597-INFORELAY-06). ');
+$ax += cidrblock($address, '74.112.255.0/24', 'InfoRelay Online Systems. Not an access provider ISP (ASN-33597-INFORELAY-07). ');
+$ax += cidrblock($address, '130.185.182.0/23', 'InfoRelay Online Systems. Not an access provider ISP (ASN-33597-INFORELAY-08). ');
+$ax += cidrblock($address, '173.45.0.0/18', 'InfoRelay Online Systems. Not an access provider ISP (ASN-33597-INFORELAY-09). ');
+$ax += cidrblock($address, '173.205.128.0/17', 'InfoRelay Online Systems. Not an access provider ISP (ASN-33597-INFORELAY-10). ');
+$ax += cidrblock($address, '173.245.104.0/22', 'InfoRelay Online Systems. Not an access provider ISP (ASN-33597-INFORELAY-11). ');
+$ax += cidrblock($address, '173.245.108.0/24', 'InfoRelay Online Systems. Not an access provider ISP (ASN-33597-INFORELAY-12). ');
+$ax += cidrblock($address, '174.128.128.0/18', 'InfoRelay Online Systems. Not an access provider ISP (ASN-33597-INFORELAY-13). ');
+$ax += cidrblock($address, '198.62.86.0/24', 'InfoRelay Online Systems. Not an access provider ISP (ASN-33597-INFORELAY-14). ');
+$ax += cidrblock($address, '199.115.248.0/22', 'InfoRelay Online Systems. Not an access provider ISP (ASN-33597-INFORELAY-15). ');
+$ax += cidrblock($address, '199.167.224.0/24', 'InfoRelay Online Systems. Not an access provider ISP (ASN-33597-INFORELAY-16). ');
+$ax += cidrblock($address, '199.188.228.0/22', 'InfoRelay Online Systems. Not an access provider ISP (ASN-33597-INFORELAY-17). ');
+$ax += cidrblock($address, '205.251.0.0/17', 'InfoRelay Online Systems. Not an access provider ISP (ASN-33597-INFORELAY-18). ');
+$ax += cidrblock($address, '208.94.144.0/24', 'InfoRelay Online Systems. Not an access provider ISP (ASN-33597-INFORELAY-19). ');
+$ax += cidrblock($address, '209.170.138.0/24', 'InfoRelay Online Systems. Not an access provider ISP (ASN-33597-INFORELAY-20). ');
 
 
 // Westhost (updated 2016.08.15)
@@ -3073,7 +3066,7 @@ $ax += cidrblock($address, '201.218.160.0/19', 'DataShack, LC. Not an access pro
 $ax += cidrblock($address, '208.67.0.0/23', 'DataShack, LC. Not an access provider ISP (ASN-33387-DATASHACK-14). ');
 
 
-// CoS International (updated 2016.01.20 / checked 2016.03.13)
+// CoS International (updated 2016.01.20 / checked 2016.08.26)
 // AS7914
 $ax += cidrblock($address, '12.9.239.0/24', 'Known hostile network (ASN-7914-CSI-0). ');
 $ax += cidrblock($address, '192.216.201.0/24', 'Known hostile network (ASN-7914-CSI-1). ');
@@ -3105,12 +3098,15 @@ $ax += cidrblock($address, '72.18.64.0/19', 'Tex-Link Communications, not an acc
 $ax += cidrblock($address, '208.99.0.0/18', 'Tex-Link Communications, not an access provider (ASN-11457-TEXLINK-5). ');
 
 
-// Ready Server, Dedicated Server Hosting (updated 2016.01.21 / checked 2016.03.13)
+// Ready Server, Dedicated Server Hosting (updated 2016.08.26)
 // AS63930
 $ax += cidrblock($address, '45.125.192.0/22', 'Ready Server, not an access provider (ASN-63930-RSRVR-0). ');
-$ax += cidrblock($address, '103.47.208.0/22', 'Ready Server, not an access provider (ASN-63930-RSRVR-1). ');
-$ax += cidrblock($address, '103.195.151.0/24', 'Ready Server, not an access provider (ASN-63930-RSRVR-2). ');
-$ax += cidrblock($address, '192.241.8.0/24', 'Ready Server, not an access provider (ASN-63930-RSRVR-4). ');
+$ax += cidrblock($address, '103.41.173.0/24', 'Ready Server, not an access provider (ASN-63930-RSRVR-1). ');
+$ax += cidrblock($address, '103.47.208.0/22', 'Ready Server, not an access provider (ASN-63930-RSRVR-2). ');
+$ax += cidrblock($address, '103.195.151.0/24', 'Ready Server, not an access provider (ASN-63930-RSRVR-3). ');
+$ax += cidrblock($address, '103.200.208.0/22', 'Ready Server, not an access provider (ASN-63930-RSRVR-4). ');
+$ax += cidrblock($address, '103.217.253.0/24', 'Ready Server, not an access provider (ASN-63930-RSRVR-5). ');
+$ax += cidrblock($address, '113.20.156.0/24', 'Ready Server, not an access provider (ASN-63930-RSRVR-6). ');
 
 
 // 1&1 Internet SE (updated 2016.05.20)
@@ -3153,7 +3149,7 @@ $ax += cidrblock($address, '217.160.0.0/16', 'One and One hosting, not an access
 $ax += cidrblock($address, '217.174.240.0/20', 'One and One hosting, not an access provider (ASN-8560-1AND1-35). ');
 
 
-// Swift Networks Limited (updated 2016.01.21 / checked 2016.03.13)
+// Swift Networks Limited (updated 2016.01.21 / checked 2016.08.26)
 // AS36923
 $ax += cidrblock($address, '41.58.0.0/16', 'Swift Networks Limited is blocked by the system administrator, Nigeria, nuf said (ASN-36923-SWIFT-0). ');
 $ax += cidrblock($address, '41.189.0.0/19', 'Swift Networks Limited is blocked by the system administrator, Nigeria, nuf said (ASN-36923-SWIFT-1). ');
@@ -3427,7 +3423,7 @@ $ax += cidrblock($address, '219.113.0.0/19', 'Internap Network Services Corporat
 $ax += cidrblock($address, '220.158.248.0/22', 'Internap Network Services Corporation, Cloud and CDN, not an access provider (AS-INTERNAP-253). ');
 
 
-// WEBSUPPORT-SRO-SK-AS (updated 2016.01.21 / checked 2016.03.13)
+// WEBSUPPORT-SRO-SK-AS (updated 2016.01.21 / checked 2016.08.26)
 // AS51013
 $ax += cidrblock($address, '37.9.168.0/21', 'Nasty slovak proxy service, participated in DoS attack (ASN-51013-WEBSUP-0). ');
 $ax += cidrblock($address, '185.111.88.0/22', 'Nasty slovak proxy service, participated in DoS attack (ASN-51013-WEBSUP-1). ');
@@ -3500,21 +3496,20 @@ $ax += cidrblock($address, '185.23.88.0/23', 'HyperHosting, Cloud and CDN, not a
 $ax += cidrblock($address, '194.219.79.0/24', 'HyperHosting, Cloud and CDN, not an access provider (ASN-197746-HYPERHOST-6). ');
 
 
-// SWIFT VENTURES Inc (updated 2016.01.22 / checked 2016.03.20)
+// SWIFT VENTURES Inc (updated 2016.08.26)
 // AS25700
-$ax += cidrblock($address, '74.117.174.0/24', 'Swift Ventures spam/scrape network (ASN-25700-SWIFT-00). ');
-$ax += cidrblock($address, '204.8.32.0/24', 'Swift Ventures spam/scrape network (ASN-25700-SWIFT-01). ');
-$ax += cidrblock($address, '204.8.34.0/24', 'Swift Ventures spam/scrape network (ASN-25700-SWIFT-02). ');
-$ax += cidrblock($address, '204.13.164.0/22', 'Swift Ventures spam/scrape network (ASN-25700-SWIFT-03). ');
-$ax += cidrblock($address, '204.14.122.0/23', 'Swift Ventures spam/scrape network (ASN-25700-SWIFT-04). ');
-$ax += cidrblock($address, '204.15.224.0/21', 'Swift Ventures spam/scrape network (ASN-25700-SWIFT-05). ');
-$ax += cidrblock($address, '208.99.192.0/21', 'Swift Ventures spam/scrape network (ASN-25700-SWIFT-06). ');
-$ax += cidrblock($address, '208.99.200.0/24', 'Swift Ventures spam/scrape network (ASN-25700-SWIFT-07). ');
-$ax += cidrblock($address, '208.99.202.0/23', 'Swift Ventures spam/scrape network (ASN-25700-SWIFT-08). ');
-$ax += cidrblock($address, '208.99.204.0/22', 'Swift Ventures spam/scrape network (ASN-25700-SWIFT-09). ');
-$ax += cidrblock($address, '208.99.208.0/22', 'Swift Ventures spam/scrape network (ASN-25700-SWIFT-10). ');
-$ax += cidrblock($address, '208.99.214.0/23', 'Swift Ventures spam/scrape network (ASN-25700-SWIFT-11). ');
-$ax += cidrblock($address, '208.99.216.0/21', 'Swift Ventures spam/scrape network (ASN-25700-SWIFT-12). ');
+$ax += cidrblock($address, '204.8.32.0/24', 'Swift Ventures spam/scrape network (ASN-25700-SWIFT-00). ');
+$ax += cidrblock($address, '204.8.34.0/24', 'Swift Ventures spam/scrape network (ASN-25700-SWIFT-01). ');
+$ax += cidrblock($address, '204.13.164.0/22', 'Swift Ventures spam/scrape network (ASN-25700-SWIFT-02). ');
+$ax += cidrblock($address, '204.14.122.0/23', 'Swift Ventures spam/scrape network (ASN-25700-SWIFT-03). ');
+$ax += cidrblock($address, '204.15.224.0/21', 'Swift Ventures spam/scrape network (ASN-25700-SWIFT-04). ');
+$ax += cidrblock($address, '208.99.192.0/21', 'Swift Ventures spam/scrape network (ASN-25700-SWIFT-05). ');
+$ax += cidrblock($address, '208.99.200.0/24', 'Swift Ventures spam/scrape network (ASN-25700-SWIFT-06). ');
+$ax += cidrblock($address, '208.99.202.0/23', 'Swift Ventures spam/scrape network (ASN-25700-SWIFT-07). ');
+$ax += cidrblock($address, '208.99.204.0/22', 'Swift Ventures spam/scrape network (ASN-25700-SWIFT-08). ');
+$ax += cidrblock($address, '208.99.208.0/22', 'Swift Ventures spam/scrape network (ASN-25700-SWIFT-09). ');
+$ax += cidrblock($address, '208.99.214.0/23', 'Swift Ventures spam/scrape network (ASN-25700-SWIFT-10). ');
+$ax += cidrblock($address, '208.99.216.0/21', 'Swift Ventures spam/scrape network (ASN-25700-SWIFT-11). ');
 
 
 // iDeal Hosting Tic. Ltd. Sti. (updated 2016.03.28)
@@ -3538,7 +3533,7 @@ $ax += cidrblock($address, '213.238.178.0/23', 'iDeal Hosting (AS-iDEAL-14). ');
 
 
 // CyberVerse (Colocated Data Centers)
-// AS11051 (updated 2016.01.22 / checked 2016.03.15)
+// AS11051 (updated 2016.01.22 / checked 2016.08.26)
 $ax += cidrblock($address, '66.172.0.0/18', 'CyberVerse (ASN-11051-CYBERVERSE-0). ');
 $ax += cidrblock($address, '66.180.192.0/20', 'CyberVerse (ASN-11051-CYBERVERSE-1). ');
 $ax += cidrblock($address, '76.8.16.0/20', 'CyberVerse (ASN-11051-CYBERVERSE-2). ');
@@ -3896,21 +3891,22 @@ $ax += cidrblock($address, '216.246.49.0/24', 'Colocrossing Network, not an acce
 $ax += cidrblock($address, '216.246.108.0/23', 'Colocrossing Network, not an access provider (ASN-36352-COLOCROSSING-170). ');
 
 
-// Serveryou Network (updated 2016.01.22 / checked 2016.03.20)
+// Serveryou Network (updated 2016.08.26)
 // AS11282
 $ax += cidrblock($address, '104.251.224.0/21', 'Serveryou Network, not an access provider (ASN-11282-SERVERYOU-00). ');
 $ax += cidrblock($address, '104.251.232.0/22', 'Serveryou Network, not an access provider (ASN-11282-SERVERYOU-01). ');
 $ax += cidrblock($address, '104.251.236.0/23', 'Serveryou Network, not an access provider (ASN-11282-SERVERYOU-02). ');
-$ax += cidrblock($address, '122.10.120.0/21', 'Serveryou Network, not an access provider (ASN-11282-SERVERYOU-03). ');
-$ax += cidrblock($address, '192.0.16.0/20', 'Serveryou Network, not an access provider (ASN-11282-SERVERYOU-04). ');
-$ax += cidrblock($address, '192.249.80.0/22', 'Serveryou Network, not an access provider (ASN-11282-SERVERYOU-05). ');
-$ax += cidrblock($address, '198.1.128.0/18', 'Serveryou Network, not an access provider (ASN-11282-SERVERYOU-06). ');
-$ax += cidrblock($address, '198.15.128.0/17', 'Serveryou Network, not an access provider (ASN-11282-SERVERYOU-07). ');
-$ax += cidrblock($address, '198.44.224.0/20', 'Serveryou Network, not an access provider (ASN-11282-SERVERYOU-08). ');
-$ax += cidrblock($address, '198.44.252.0/23', 'Serveryou Network, not an access provider (ASN-11282-SERVERYOU-09). ');
-$ax += cidrblock($address, '198.105.160.0/19', 'Serveryou Network, not an access provider (ASN-11282-SERVERYOU-10). ');
-$ax += cidrblock($address, '198.177.56.0/21', 'Serveryou Network, not an access provider (ASN-11282-SERVERYOU-11). ');
-$ax += cidrblock($address, '199.231.64.0/21', 'Serveryou Network, not an access provider (ASN-11282-SERVERYOU-12). ');
+$ax += cidrblock($address, '122.10.121.0/24', 'Serveryou Network, not an access provider (ASN-11282-SERVERYOU-03). ');
+$ax += cidrblock($address, '122.10.123.0/24', 'Serveryou Network, not an access provider (ASN-11282-SERVERYOU-04). ');
+$ax += cidrblock($address, '192.0.16.0/20', 'Serveryou Network, not an access provider (ASN-11282-SERVERYOU-05). ');
+$ax += cidrblock($address, '192.249.80.0/22', 'Serveryou Network, not an access provider (ASN-11282-SERVERYOU-06). ');
+$ax += cidrblock($address, '198.1.128.0/18', 'Serveryou Network, not an access provider (ASN-11282-SERVERYOU-07). ');
+$ax += cidrblock($address, '198.15.128.0/17', 'Serveryou Network, not an access provider (ASN-11282-SERVERYOU-08). ');
+$ax += cidrblock($address, '198.44.224.0/20', 'Serveryou Network, not an access provider (ASN-11282-SERVERYOU-09). ');
+$ax += cidrblock($address, '198.44.252.0/23', 'Serveryou Network, not an access provider (ASN-11282-SERVERYOU-10). ');
+$ax += cidrblock($address, '198.105.160.0/19', 'Serveryou Network, not an access provider (ASN-11282-SERVERYOU-11). ');
+$ax += cidrblock($address, '198.177.56.0/21', 'Serveryou Network, not an access provider (ASN-11282-SERVERYOU-12). ');
+$ax += cidrblock($address, '199.231.64.0/21', 'Serveryou Network, not an access provider (ASN-11282-SERVERYOU-13). ');
 
 
 // Hostspace Networks
@@ -4058,7 +4054,7 @@ $ax += cidrblock($address, '216.104.32.0/20', 'Singlehop Network (ASN-32475-SING
 $ax += cidrblock($address, '216.151.166.0/24', 'Singlehop Network (ASN-32475-SINGLEHOP-54). ');
 
 
-// eUKhost LTD (updated 2016.01.22 / checked 2016.03.13)
+// eUKhost LTD (updated 2016.01.22 / checked 2016.08.15)
 // AS29550
 $ax += cidrblock($address, '31.193.128.0/20', 'Cloud services linked to captcha crackers (ASN-29550-eUKhost-00). ');
 $ax += cidrblock($address, '85.234.128.0/19', 'Cloud services linked to captcha crackers (ASN-29550-eUKhost-01). ');
@@ -4079,7 +4075,7 @@ $ax += cidrblock($address, '213.229.64.0/18', 'Cloud services linked to captcha 
 $ax += cidrblock($address, '217.112.80.0/20', 'Cloud services linked to captcha crackers (ASN-29550-eUKhost-16). ');
 
 
-// Total Web Solutions Ltd (updated 2016.01.22 / checked 2016.03.13)
+// Total Web Solutions Ltd (updated 2016.01.22 / checked 2016.08.15)
 // AS8669
 $ax += cidrblock($address, '195.206.160.0/23', 'Cloud services linked to captcha crackers (ASN-8669-TOTALWEB-0). ');
 $ax += cidrblock($address, '195.206.162.0/24', 'Cloud services linked to captcha crackers (ASN-8669-TOTALWEB-1). ');
@@ -7182,9 +7178,56 @@ $ax += cidrblock($address, '200.16.0.0/22', 'OPTICAL TECHNOLOGIES S.A.C.; Access
 
 
 // Hosting Services Inc
-// AS29302 (updated 2016.05.30)
-$ax += cidrblock($address, '5.63.144.0/21', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-0). ');
-$ax += cidrblock($address, '146.185.16.0/20', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-1). ');
+// AS29302, AS32780 (updated 2016.08.19)
+$ax += cidrblock($address, '5.63.144.0/21', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-00). ');
+$ax += cidrblock($address, '31.207.8.0/21', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-01). ');
+$ax += cidrblock($address, '31.207.16.0/20', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-02). ');
+$ax += cidrblock($address, '45.41.132.0/24', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-03). ');
+$ax += cidrblock($address, '45.56.129.0/24', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-04). ');
+$ax += cidrblock($address, '50.31.240.0/23', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-05). ');
+$ax += cidrblock($address, '50.31.252.0/22', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-06). ');
+$ax += cidrblock($address, '69.168.224.0/24', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-07). ');
+$ax += cidrblock($address, '89.35.164.0/22', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-08). ');
+$ax += cidrblock($address, '89.36.232.0/22', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-09). ');
+$ax += cidrblock($address, '89.38.106.0/23', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-10). ');
+$ax += cidrblock($address, '89.40.108.0/23', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-11). ');
+$ax += cidrblock($address, '89.42.48.0/23', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-12). ');
+$ax += cidrblock($address, '89.46.132.0/22', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-13). ');
+$ax += cidrblock($address, '93.115.102.0/23', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-14). ');
+$ax += cidrblock($address, '93.118.40.0/22', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-15). ');
+$ax += cidrblock($address, '98.158.176.0/20', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-16). ');
+$ax += cidrblock($address, '103.198.0.0/24', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-17). ');
+$ax += cidrblock($address, '104.194.217.0/24', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-18). ');
+$ax += cidrblock($address, '104.238.56.0/24', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-19). ');
+$ax += cidrblock($address, '104.245.9.0/24', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-20). ');
+$ax += cidrblock($address, '107.182.225.0/24', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-21). ');
+$ax += cidrblock($address, '107.182.226.0/24', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-22). ');
+$ax += cidrblock($address, '107.182.230.0/23', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-23). ');
+$ax += cidrblock($address, '107.182.236.0/23', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-24). ');
+$ax += cidrblock($address, '142.147.89.0/24', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-25). ');
+$ax += cidrblock($address, '142.147.90.0/24', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-26). ');
+$ax += cidrblock($address, '146.185.16.0/20', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-27). ');
+$ax += cidrblock($address, '154.16.184.0/21', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-28). ');
+$ax += cidrblock($address, '172.98.69.0/24', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-29). ');
+$ax += cidrblock($address, '173.244.195.0/24', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-30). ');
+$ax += cidrblock($address, '173.244.200.0/23', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-31). ');
+$ax += cidrblock($address, '173.244.202.0/24', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-32). ');
+$ax += cidrblock($address, '173.244.217.0/24', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-33). ');
+$ax += cidrblock($address, '173.244.222.0/23', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-34). ');
+$ax += cidrblock($address, '174.127.70.0/24', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-35). ');
+$ax += cidrblock($address, '174.127.91.0/24', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-36). ');
+$ax += cidrblock($address, '174.127.120.0/21', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-37). ');
+$ax += cidrblock($address, '179.191.179.0/24', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-38). ');
+$ax += cidrblock($address, '179.191.180.0/23', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-39). ');
+$ax += cidrblock($address, '185.7.224.0/23', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-40). ');
+$ax += cidrblock($address, '185.7.226.0/24', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-41). ');
+$ax += cidrblock($address, '188.210.94.0/23', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-42). ');
+$ax += cidrblock($address, '191.96.180.0/24', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-43). ');
+$ax += cidrblock($address, '191.96.184.0/24', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-44). ');
+$ax += cidrblock($address, '206.217.196.0/22', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-45). ');
+$ax += cidrblock($address, '209.95.50.0/23', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-46). ');
+$ax += cidrblock($address, '209.95.52.0/24', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-47). ');
+$ax += cidrblock($address, '216.119.144.0/20', 'Hosting Services Inc; Access denied (ASN-29302-HOSTINGSERVICES-48). ');
 
 
 // Awareness Software Limited
@@ -8090,6 +8133,111 @@ $ax += cidrblock($address, '205.164.40.0/24', 'Rebel Hosting; Access denied (ASN
 $ax += cidrblock($address, '209.73.146.0/24', 'Rebel Hosting; Access denied (ASN-26481-REBELHOSTING-11). ');
 $ax += cidrblock($address, '209.74.104.0/21', 'Rebel Hosting; Access denied (ASN-26481-REBELHOSTING-12). ');
 $ax += cidrblock($address, '216.172.150.0/24', 'Rebel Hosting; Access denied (ASN-26481-REBELHOSTING-13). ');
+
+
+// Packet Flip, LLC; Anonymous proxy services (updated 2016.08.19)
+$ax += cidrblock($address, '31.207.8.0/21', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-00). ');
+$ax += cidrblock($address, '31.207.16.0/20', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-01). ');
+$ax += cidrblock($address, '45.41.140.0/22', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-02). ');
+$ax += cidrblock($address, '45.43.2.0/23', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-03). ');
+$ax += cidrblock($address, '45.43.10.0/23', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-04). ');
+$ax += cidrblock($address, '45.43.14.0/23', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-05). ');
+$ax += cidrblock($address, '45.43.18.0/23', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-06). ');
+$ax += cidrblock($address, '45.43.20.0/24', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-07). ');
+$ax += cidrblock($address, '45.43.22.0/24', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-08). ');
+$ax += cidrblock($address, '45.43.24.0/24', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-09). ');
+$ax += cidrblock($address, '46.102.148.0/22', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-10). ');
+$ax += cidrblock($address, '66.11.112.0/24', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-11). ');
+$ax += cidrblock($address, '66.11.114.0/24', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-12). ');
+$ax += cidrblock($address, '66.11.116.0/24', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-13). ');
+$ax += cidrblock($address, '66.11.118.0/24', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-14). ');
+$ax += cidrblock($address, '66.11.123.0/24', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-15). ');
+$ax += cidrblock($address, '74.91.32.0/20', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-16). ');
+$ax += cidrblock($address, '80.240.108.0/23', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-17). ');
+$ax += cidrblock($address, '82.97.192.0/23', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-18). ');
+$ax += cidrblock($address, '84.247.32.0/22', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-19). ');
+$ax += cidrblock($address, '86.105.160.0/22', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-20). ');
+$ax += cidrblock($address, '86.106.120.0/24', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-21). ');
+$ax += cidrblock($address, '89.32.203.0/24', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-22). ');
+$ax += cidrblock($address, '89.35.164.0/22', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-23). ');
+$ax += cidrblock($address, '89.36.232.0/22', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-24). ');
+$ax += cidrblock($address, '89.37.28.0/24', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-25). ');
+$ax += cidrblock($address, '89.38.106.0/23', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-26). ');
+$ax += cidrblock($address, '89.39.150.0/24', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-27). ');
+$ax += cidrblock($address, '89.40.108.0/23', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-28). ');
+$ax += cidrblock($address, '89.42.48.0/23', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-29). ');
+$ax += cidrblock($address, '89.43.51.0/24', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-30). ');
+$ax += cidrblock($address, '89.43.68.0/23', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-31). ');
+$ax += cidrblock($address, '89.46.132.0/22', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-32). ');
+$ax += cidrblock($address, '89.47.63.0/24', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-33). ');
+$ax += cidrblock($address, '93.114.92.0/22', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-34). ');
+$ax += cidrblock($address, '93.115.48.0/22', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-35). ');
+$ax += cidrblock($address, '93.115.102.0/23', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-36). ');
+$ax += cidrblock($address, '93.118.40.0/23', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-37). ');
+$ax += cidrblock($address, '104.143.88.0/22', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-38). ');
+$ax += cidrblock($address, '104.194.192.0/22', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-39). ');
+$ax += cidrblock($address, '104.255.224.0/24', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-40). ');
+$ax += cidrblock($address, '104.255.226.0/24', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-41). ');
+$ax += cidrblock($address, '104.255.228.0/24', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-42). ');
+$ax += cidrblock($address, '104.255.230.0/24', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-43). ');
+$ax += cidrblock($address, '185.125.64.0/22', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-44). ');
+$ax += cidrblock($address, '188.210.94.0/23', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-45). ');
+$ax += cidrblock($address, '188.212.120.0/24', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-46). ');
+$ax += cidrblock($address, '188.214.40.0/21', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-47). ');
+$ax += cidrblock($address, '188.240.32.0/22', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-48). ');
+$ax += cidrblock($address, '193.124.240.0/22', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-49). ');
+$ax += cidrblock($address, '194.58.24.0/22', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-50). ');
+$ax += cidrblock($address, '194.58.216.0/22', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-51). ');
+$ax += cidrblock($address, '194.135.48.0/22', 'Packet Flip, LLC; Access denied (AS-PACKETFLIP-52). ');
+
+
+// FAST.hit Web Hosting
+// AS24381 (updated 2016.08.19)
+$ax += cidrblock($address, '61.8.176.0/20', 'FAST.hit Web Hosting (ASN-24381-FASTHIT-0). ');
+$ax += cidrblock($address, '116.50.16.0/21', 'FAST.hit Web Hosting (ASN-24381-FASTHIT-1). ');
+$ax += cidrblock($address, '202.53.4.0/22', 'FAST.hit Web Hosting (ASN-24381-FASTHIT-2). ');
+$ax += cidrblock($address, '203.25.143.0/24', 'FAST.hit Web Hosting (ASN-24381-FASTHIT-3). ');
+
+
+// Netelligent Hosting Services Inc.
+// AS10929 (updated 2016.08.19)
+$ax += cidrblock($address, '38.80.76.0/24', 'Netelligent Hosting Services Inc (ASN-10929-NETELLIGENT-00). ');
+$ax += cidrblock($address, '63.243.164.0/24', 'Netelligent Hosting Services Inc (ASN-10929-NETELLIGENT-01). ');
+$ax += cidrblock($address, '64.15.64.0/20', 'Netelligent Hosting Services Inc (ASN-10929-NETELLIGENT-02). ');
+$ax += cidrblock($address, '67.212.64.0/19', 'Netelligent Hosting Services Inc (ASN-10929-NETELLIGENT-03). ');
+$ax += cidrblock($address, '68.71.32.0/19', 'Netelligent Hosting Services Inc (ASN-10929-NETELLIGENT-04). ');
+$ax += cidrblock($address, '69.165.80.0/20', 'Netelligent Hosting Services Inc (ASN-10929-NETELLIGENT-05). ');
+$ax += cidrblock($address, '154.70.201.0/24', 'Netelligent Hosting Services Inc (ASN-10929-NETELLIGENT-06). ');
+$ax += cidrblock($address, '184.170.128.0/20', 'Netelligent Hosting Services Inc (ASN-10929-NETELLIGENT-07). ');
+$ax += cidrblock($address, '192.154.136.0/21', 'Netelligent Hosting Services Inc (ASN-10929-NETELLIGENT-08). ');
+$ax += cidrblock($address, '199.119.254.0/24', 'Netelligent Hosting Services Inc (ASN-10929-NETELLIGENT-09). ');
+$ax += cidrblock($address, '199.122.116.0/22', 'Netelligent Hosting Services Inc (ASN-10929-NETELLIGENT-10). ');
+$ax += cidrblock($address, '204.147.76.0/22', 'Netelligent Hosting Services Inc (ASN-10929-NETELLIGENT-11). ');
+$ax += cidrblock($address, '205.151.108.0/22', 'Netelligent Hosting Services Inc (ASN-10929-NETELLIGENT-12). ');
+$ax += cidrblock($address, '205.204.64.0/19', 'Netelligent Hosting Services Inc (ASN-10929-NETELLIGENT-13). ');
+$ax += cidrblock($address, '206.123.11.0/24', 'Netelligent Hosting Services Inc (ASN-10929-NETELLIGENT-14). ');
+$ax += cidrblock($address, '208.79.218.0/23', 'Netelligent Hosting Services Inc (ASN-10929-NETELLIGENT-15). ');
+$ax += cidrblock($address, '208.82.120.0/22', 'Netelligent Hosting Services Inc (ASN-10929-NETELLIGENT-16). ');
+$ax += cidrblock($address, '209.44.96.0/19', 'Netelligent Hosting Services Inc (ASN-10929-NETELLIGENT-17). ');
+
+
+// Powerbase DataCenter Services (HK) Ltd
+// AS9925 (updated 2016.08.19)
+$ax += cidrblock($address, '202.60.228.0/22', 'Powerbase DataCenter Services (HK) Ltd (ASN-9925-POWERBASE-00). ');
+$ax += cidrblock($address, '202.60.232.0/21', 'Powerbase DataCenter Services (HK) Ltd (ASN-9925-POWERBASE-01). ');
+$ax += cidrblock($address, '202.60.240.0/20', 'Powerbase DataCenter Services (HK) Ltd (ASN-9925-POWERBASE-02). ');
+$ax += cidrblock($address, '202.77.128.0/21', 'Powerbase DataCenter Services (HK) Ltd (ASN-9925-POWERBASE-03). ');
+$ax += cidrblock($address, '202.77.140.0/22', 'Powerbase DataCenter Services (HK) Ltd (ASN-9925-POWERBASE-04). ');
+$ax += cidrblock($address, '202.77.144.0/20', 'Powerbase DataCenter Services (HK) Ltd (ASN-9925-POWERBASE-05). ');
+$ax += cidrblock($address, '202.77.160.0/19', 'Powerbase DataCenter Services (HK) Ltd (ASN-9925-POWERBASE-06). ');
+$ax += cidrblock($address, '202.77.192.0/18', 'Powerbase DataCenter Services (HK) Ltd (ASN-9925-POWERBASE-07). ');
+$ax += cidrblock($address, '202.123.160.0/20', 'Powerbase DataCenter Services (HK) Ltd (ASN-9925-POWERBASE-08). ');
+$ax += cidrblock($address, '202.123.192.0/19', 'Powerbase DataCenter Services (HK) Ltd (ASN-9925-POWERBASE-09). ');
+$ax += cidrblock($address, '202.153.96.0/19', 'Powerbase DataCenter Services (HK) Ltd (ASN-9925-POWERBASE-10). ');
+$ax += cidrblock($address, '203.86.160.0/19', 'Powerbase DataCenter Services (HK) Ltd (ASN-9925-POWERBASE-11). ');
+$ax += cidrblock($address, '203.105.0.0/18', 'Powerbase DataCenter Services (HK) Ltd (ASN-9925-POWERBASE-12). ');
+$ax += cidrblock($address, '203.161.224.0/19', 'Powerbase DataCenter Services (HK) Ltd (ASN-9925-POWERBASE-13). ');
+$ax += cidrblock($address, '203.215.240.0/20', 'Powerbase DataCenter Services (HK) Ltd (ASN-9925-POWERBASE-14). ');
 
 
 // *More, and smaller bad networks to avoid...

@@ -568,3 +568,19 @@ History/Changelog of this repository (and of those updates merged into it) is as
 
 #####2016-08-17
 - Repository updated with new changes.
+
+#####2016-08-19
+- Packet Flip, LLC CIDRs added.
+- FAST.hit Web Hosting CIDRs added.
+- Netelligent Hosting Services Inc CIDRs added.
+- Powerbase DataCenter Services (HK) Ltd CIDRs added.
+- Hosting Services Inc CIDRs updated (1 new ASN found).
+
+#####2016-08-26
+- Serveryou CIDRs updated.
+- SWIFT VENTURES Inc CIDRs updated.
+- Ready Server CIDRs updated.
+- Portlane Networks AB CIDRs updated.
+- Corporate Colocation Inc CIDRs updated.
+- InfoRelay Online Systems CIDRs updated.
+- Repository updated with new changes.
