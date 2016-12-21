@@ -337,3 +337,250 @@ History/Changelog of this repository (and of those updates merged into it) is as
 
 #####2016-04-18
 - Repository updated with new changes.
+
+#####2016-04-18
+- Repository updated with new changes.
+- OVH Networks CIDRs updated.
+
+#####2016-04-23
+- Swiftway CIDRs updated.
+- MYLOC CIDRs updated.
+
+#####2016-04-25
+- Digital Ocean CIDRs updated.
+- Drake Holdings CIDRs added.
+- Sia Nano IT CIDRs added.
+- IOMart CIDRs updated.
+- ALNET-AS PP SKS-Lugan CIDRs updated.
+- XEEX CIDRs updated.
+- Tzulo Inc CIDRs updated.
+- Repository updated with new changes.
+
+#####2016-04-27
+- Rackspace CIDRs updated.
+- Mir Telematiki CIDRs added.
+- Pakistan Telecom CIDRs updated.
+- Spamahost CIDRs updated.
+- CyberBunker CIDRs updated.
+- Pegasus Web Technology CIDRs updated.
+- Repository updated with new changes.
+
+#####2016-04-30
+- Eonix Corporation CIDRs updated.
+- Repository updated with new changes.
+
+#####2016-05-15
+- Elos Host CIDRs added.
+- Repository updated with new changes.
+
+#####2016-05-20
+- Sharktech CIDRs added.
+- Sun Network CIDRs added.
+- HT CIDRs added.
+- VpsQuan L.L.C CIDRs added.
+- Trellian Pty. Limited CIDRs added.
+- INTERIA.PL CIDRs added.
+- ShangHai AnchNet Tec CIDRs added.
+- Computer Network Information Center CIDRs added.
+- Take 2 Hosting, Inc CIDRs added.
+- Global Frag Networks CIDRs added.
+- Royal Network Technology and Rainbow Network Ltd CIDRs added.
+- CommuniLink Internet CIDRs added.
+- 1&1 Internet SE CIDRs updated.
+- Çizgi Telekomünikasyon CIDRs added.
+
+#####2016-05-21
+- Unified Layer CIDRs updated.
+- Confluence Networks Inc CIDRs added.
+- Hetzner Online GmbH CIDRs updated.
+- PVNT Networks CIDRs removed (no announces for nearly 6 months; seems to be a dead ASN).
+- Some previously commented-out optional signatures removed (better to share these separately to the forums or to include as separate files; users shouldn't need to modify the core signature files to enable optional blocks).
+- Agava Ltd CIDRs added.
+- SoftLayer Technologies CIDRs updated.
+- IQHost Ltd CIDRs added.
+- Netinternet Bilgisayar ve Telekomunikasyon CIDRs updated.
+- Avesta Networks LLC CIDRs added.
+- Hosting Operator eServer.ru Ltd CIDRs added.
+- Webzilla B.V. CIDRs added.
+- Aerotek Bilisim Taahhut Sanayi ve Ticaret Limited Sirketi CIDRs added.
+- CJSC Registrar R01 CIDRs added.
+- Redstation Network CIDRs updated.
+- Inter Connects Inc (formerly: WEBXXPERTS) CIDRs updated.
+- WholeSale Internet, Inc CIDRs split from DataShack, LC CIDRs; both updated.
+- Init7 CIDRs added.
+- K SERVERS LTD CIDRs added.
+- WorldStream CIDRs updated.
+- Repository updated with new changes.
+
+#####2016-05-22
+- Pulsant (Scotland) Ltd CIDRs updated.
+
+#####2016-05-24
+- RamNode LLC CIDRs added.
+- RouteLabel V.O.F. CIDRs added.
+- MnogoByte LLC CIDRs added.
+- Biznes-Host.pl CIDRs added.
+- Yes Networks Unlimited Ltd CIDRs added.
+- Staminus Communications CIDRs added.
+- Enzu Inc CIDRs added.
+- EGIHosting CIDRs added.
+- Hosting Solutions International, Inc CIDRs added.
+- ONLINE S.A.S. CIDRs added.
+- HZ Hosting Ltd (formerly: Fortunix Networks L.P.) CIDRs added.
+- Repository updated with new changes.
+
+#####2016-05-26
+- FranTech Solutions CIDRs added.
+- Contina CIDRs added.
+- Micfo, LLC. CIDRs updated.
+- Continuum Data Centers, LLC CIDRs added.
+- ESDS Software Solution CIDRs added.
+- QuickPacket, LLC CIDRs added.
+
+#####2016-05-27
+- ScaleUp Technologies CIDRs added.
+- HIVELOCITY VENTURES CORP CIDRs added.
+- XT GLOBAL NETWORKS LTD CIDRs added.
+- Datacenter IP, LLC CIDRs added.
+- MBA DATACENTERS S.L. CIDRs added.
+- CachedNet LLC CIDRs added.
+- Hawk Host Inc CIDRs added.
+- CariNet, Inc CIDRs added.
+- Proxy Pipe, Inc CIDRs added.
+- Repository updated with new changes.
+
+#####2016-05-30
+- UK-2 Limited CIDRs added.
+- Reasonnet IP Networks B.V. CIDRs added.
+- IT7 Networks Inc CIDRs added.
+- OPTICAL TECHNOLOGIES S.A.C. CIDRs added.
+- Hosting Services Inc CIDRs added.
+- Awareness Software Limited CIDRs added.
+- Incero LLC CIDRs added.
+- Linode, LLC CIDRs added.
+
+#####2016-05-31
+- Prolexic section split in half between JPMorgan Chase & Co and Akamai (Akamai section/CIDRs added, JPMorgan section/CIDRs added, Prolexic section removed).
+
+#####2016-06-02
+- Connexions4London Ltd CIDRs updated.
+- SingleHop, Inc CIDRs updated.
+- Repository updated with new changes.
+
+#####2016-06-09
+- Hurricane Electric CIDRs and associated bypasses updated.
+- UOL CIDRs updated.
+- DataWagon LLC CIDRs updated.
+- VolumeDrive CIDRs updated.
+- Reliable Hosting Services CIDRs updated.
+- Plus Server CIDRs updated.
+- Cyber Wurx LLC CIDRs added.
+- Host Sailor Ltd. CIDRs added.
+- Digital Energy Technologies Chile SpA CIDRs added.
+- Quadranet CIDRs updated.
+- Hostspace Networks CIDRs updated.
+- Tzulo Inc CIDRs updated.
+- Host Europe GmbH CIDRs added.
+- Repository updated with new changes.
+
+#####2016-06-17
+- Nazwa.pl Sp.z.o.o. CIDRs added.
+- eSited Solutions CIDRs added.
+- The Endurance International Group, Inc. CIDRs added.
+- Choopa, LLC CIDRs updated.
+- Repository updated with new changes.
+
+#####2016-06-19
+- ColoCrossing CIDRs updated.
+
+#####2016-07-02
+- Equinix Asia Pacific CIDRs added.
+- Atlantic.net, Inc. CIDRs added.
+- DataCorpore Servios e Representaes CIDRs added.
+- Vieira Arts Ltda ME CIDRs added.
+- PSYCHZ.NET updated.
+- AltusHost B.V. updated.
+- Repository updated with new changes.
+
+#####2016-07-09
+- Contabo GmbH CIDRs updated.
+- Quasi Networks LTD (formerly, Ecatel Network) CIDRs updated.
+- Krypt Technologies CIDRs updated.
+
+#####2016-07-10
+- AS43333 CIDRs added.
+- Repository updated with new changes.
+
+#####2016-07-10 (Again)
+- Some smaller, stand-alone CIDRs removed (no longer required/relevant).
+- Panamaserver.com CIDRs added.
+- Bird Hosting Inc. CIDRs added.
+
+#####2016-07-13
+- RAM Host and Total Server Solutions L.L.C. section split into two separate sections and updated.
+
+#####2016-07-16
+- Data Room, Inc CIDRs added.
+- WowRack CIDRs updated.
+
+#####2016-07-20
+- Removed numerous duplicated and outdated signatures.
+- Normalised the format used for all signature IDs.
+- PCCW Global / Beyond The Network America, Inc CIDRs updated (two new ASNs found).
+- Zayo Bandwidth Inc CIDRs added.
+- TeNeT Scientific Production Enterprise LLC CIDRs added.
+- Bay Area Internet Solutions CIDRs added.
+- USinternetworking Inc CIDRs added.
+- Link11 GmbH CIDRs added.
+- Repository updated with new changes.
+
+#####2016-07-24
+- Trans-IX B.V. CIDRs added.
+- Keyweb AG CIDRs added.
+- STARNET S.R.L CIDRs added.
+- AS31423 CIDRs added.
+
+#####2016-07-28
+- Bezeq International CIDRs updated.
+- Repository updated with new changes.
+
+#####2016-07-31
+- Sun Network CIDRs updated.
+- Repository updated with new changes.
+
+#####2016-08-05
+- Rebel Hosting CIDRs added.
+
+#####2016-08-09
+- MTS-INDIA CIDRs updated.
+- Private Layer INC CIDRs updated.
+- Trend Micro CIDRs updated.
+
+#####2016-08-15
+- OVH Networks CIDRs updated.
+- Avante Hosting CIDRs updated.
+- Westhost CIDRs updated.
+- Root SA CIDRs updated.
+- Steadfast DNS CIDRs updated.
+
+#####2016-08-16
+- UOL CIDRs updated.
+
+#####2016-08-17
+- Repository updated with new changes.
+
+#####2016-08-19
+- Packet Flip, LLC CIDRs added.
+- FAST.hit Web Hosting CIDRs added.
+- Netelligent Hosting Services Inc CIDRs added.
+- Powerbase DataCenter Services (HK) Ltd CIDRs added.
+- Hosting Services Inc CIDRs updated (1 new ASN found).
+
+#####2016-08-26
+- Serveryou CIDRs updated.
+- SWIFT VENTURES Inc CIDRs updated.
+- Ready Server CIDRs updated.
+- Portlane Networks AB CIDRs updated.
+- Corporate Colocation Inc CIDRs updated.
+- InfoRelay Online Systems CIDRs updated.
+- Repository updated with new changes.
